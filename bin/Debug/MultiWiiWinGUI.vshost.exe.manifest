@@ -4,7 +4,7 @@
   <description asmv2:iconFile="mwwingui.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5746.39733" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5749.5316" language="neutral" processorArchitecture="x86" />
     <commandLine file="MultiWiiWinGUI.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -151,26 +151,38 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MultiWiiWinGUI.exe" size="7193088">
-      <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5746.39733" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MultiWiiWinGUI.exe" size="7605760">
+      <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5749.5316" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>a6lIr4Z+WI+2qpJolHMfqQHg6H4=</dsig:DigestValue>
+        <dsig:DigestValue>PNiApdfyjKUhHgSTM95fIQ+A9B0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZedGraph.dll" size="311296">
-      <assemblyIdentity name="ZedGraph" version="5.1.2.878" publicKeyToken="02A83CBD123FCD60" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ZedGraph.dll" size="295424">
+      <assemblyIdentity name="ZedGraph" version="5.1.7.430" publicKeyToken="02A83CBD123FCD60" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>jEx48giTomWn7sr6QWr9Ke98CTk=</dsig:DigestValue>
+        <dsig:DigestValue>+o/cTiO84fz4zIww6VNCoOi4wSQ=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-CN\ZedGraph.resources.dll" size="4096">
+      <assemblyIdentity name="ZedGraph.resources" version="5.1.7.430" publicKeyToken="02A83CBD123FCD60" language="zh-cn" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>hwDsTEwe3VKjhuVvUJvv6m1wcRI=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -226,6 +238,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
       <dsig:DigestValue>2jmj7l5rSw0yVb/vlWAYkK/YBwk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="License-LGPL.txt" size="26929">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>QENH7QiLPxLCkr8NG7IzYwErNFw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="logfields.xml" size="3538" writeableType="applicationData">

@@ -45,7 +45,7 @@ namespace MultiWiiWinGUI
 
         #region Common variables (properties)
 
-        const string sVersion = "2.4";
+        const string SVersion = "2.4";
         byte byteVersion = 230;
         uint iNaviVersion = 7;                //Navigation code version
         const string sVersionUrl = "http://mw-wingui.googlecode.com/svn/trunk/WinGui2/version.xml";
@@ -180,7 +180,7 @@ namespace MultiWiiWinGUI
         static GMapOverlay GMOverlayPOI;
 
         static GMapProvider[] mapProviders;
-        static PointLatLng copterPos = new PointLatLng(47.402489, 19.071558);       //Just the corrds of my flying place
+        static PointLatLng copterPos = new PointLatLng(22.7615254,108.2599211);       //Just the corrds of my flying place
 
         static bool isMouseDown = false;
         static bool isMouseDraging = false;
@@ -361,7 +361,7 @@ namespace MultiWiiWinGUI
             //Now there must be a valid settings file, so we can continue with normal execution
 
             splash_screen splash = new splash_screen();
-            splash.sVersionLabel = sVersion;
+            splash.sVersionLabel = SVersion;
             splash.Show();
             splash.Refresh();
             //Start with Settings file read, and parse exit if unsuccessfull
@@ -377,7 +377,7 @@ namespace MultiWiiWinGUI
             read_options_config();                  //read and parse optionsconfig.xml file. sets iCheckBoxItems
             iCheckBoxItems = 24;                    //Theoretical maximum
 
-            splash.sStatus = "Building internal data structures...";
+            splash.sStatus = "正在构建内部数据...";
             splash.Refresh();
 
             mw_gui = new mw_data_gui(iPidItems, iCheckBoxItems, gui_settings.iSoftwareVersion);
@@ -450,7 +450,7 @@ namespace MultiWiiWinGUI
 
             b_save_gui_settings.BackColor = Color.Transparent;
 
-            splash.sStatus = "Build PID structures...";
+            splash.sStatus = "正在创建PID数据结构...";
             splash.Refresh();
 
 
@@ -3156,7 +3156,7 @@ namespace MultiWiiWinGUI
         private void b_about_Click(object sender, EventArgs e)
         {
             frmAbout aboutform = new frmAbout();
-            aboutform.sVersionLabel = sVersion;
+            aboutform.sVersionLabel = SVersion;
             aboutform.sFcVersionLabel = "MultiWii version " + sRelName;
             aboutform.ShowDialog();
         }
@@ -3185,7 +3185,7 @@ namespace MultiWiiWinGUI
                 sVersionFromSVN = doc.Element("application").Element("version").Value;
                 string sCommentFromSVN = doc.Element("application").Element("comment").Value;
                 this.Cursor = Cursors.Default;
-                if (String.Compare(sVersionFromSVN, sVersion) == 0)
+                if (String.Compare(sVersionFromSVN, SVersion) == 0)
                 {
                     MessageBoxEx.Show(this, "You have the latest version : " + sVersionFromSVN, "No update available", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
@@ -4451,7 +4451,7 @@ namespace MultiWiiWinGUI
             tw.WriteComment("MultiWii 任务");
             tw.WriteComment("MultiWii FC software revision 2.3dev");
             tw.WriteStartElement("MISSION");
-            tw.WriteStartElement("VERSION value=\"" + sVersion + "\""); tw.WriteEndElement();
+            tw.WriteStartElement("VERSION value=\"" + SVersion + "\""); tw.WriteEndElement();
 
 
             for (int i = 0; i < missionDataGrid.Rows.Count; i++)
@@ -4490,7 +4490,7 @@ namespace MultiWiiWinGUI
 
                             if (String.Compare(reader.Name, "version", true) == 0 && reader.HasAttributes)
                             {
-                                if (reader.GetAttribute("value") != sVersion)
+                                if (reader.GetAttribute("value") != SVersion)
                                 {
                                     throw new System.InvalidOperationException("任务版本并非当前WinGUI版本的");
                                 }
