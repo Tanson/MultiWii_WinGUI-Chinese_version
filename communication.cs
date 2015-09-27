@@ -58,12 +58,12 @@ namespace MultiWiiWinGUI
                     MessageBoxEx.Show(this, "Please check if you have selected the right com port", "Error device not responding", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 case 2:
-                    MessageBoxEx.Show(this, "飞行控制软件版本不匹配。预期版本:" + Convert.ToString(byteVersion) + " 当前版本:" + Convert.ToString(mw_gui.version), "Invalid FC version number", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBoxEx.Show(this, "Flight control sw version missmatch. Expected:"+Convert.ToString(byteVersion)+" Got:"+Convert.ToString(mw_gui.version), "Invalid FC version number", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     break;
                 default:
                     break;
             }
-            b_connect.Text = "连接";
+            b_connect.Text = "Connect";
             b_connect.Image = Properties.Resources.connect;
             isConnected = false;
             timer_realtime.Stop();                       //Stop timer(s), whatever it takes
@@ -86,7 +86,7 @@ namespace MultiWiiWinGUI
             if (serialPort.IsOpen)              //Disconnect
             {
                 delete_RC_Checkboxes();
-                b_connect.Text = "连接";
+                b_connect.Text = "Connect";
                 b_connect.Image = Properties.Resources.connect;
                 isConnected = false;
                 timer_realtime.Stop();                       //Stop timer(s), whatever it takes
@@ -127,7 +127,7 @@ namespace MultiWiiWinGUI
                 catch
                 {
                     //WRONG, it seems that the combobox selection pointed to a port which is no longer available
-                    MessageBoxEx.Show(this, "请检查您的USB连接.\r\n按下确定按钮将重载串口列表", "串口打开错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBoxEx.Show(this, "Please check that your USB cable is still connected.\r\nAfter you press OK, Serial ports will be re-enumerated", "Error opening COM port", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     serial_ports_enumerate();
                     return; //Exit without connecting;
                 }
@@ -214,7 +214,7 @@ namespace MultiWiiWinGUI
                 {
                     if (get_navi_version() != iNaviVersion)
                     {
-                        MessageBoxEx.Show(this, "导航代码版本不匹配!\r\nGUI version: v" + Convert.ToString(iNaviVersion) +
+                        MessageBoxEx.Show(this, "Navigation code version missmatch!\r\nGUI version: v" + Convert.ToString(iNaviVersion) +
                                           " Controller version: v" + Convert.ToString(get_navi_version()) + "\r\n Navigation functions disabled!", "Code version missmatch", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
                         naviGroup.Enabled = false;
                     }
@@ -319,7 +319,7 @@ namespace MultiWiiWinGUI
 
             }
 
-            if (missing_packets) MessageBoxEx.Show("响应包到达不完全，请重新读取并检查参数是否真的保存成功了","响应包丢失",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
+            if (missing_packets) MessageBoxEx.Show("Not all response packets were arrived,\rplease reread parameters and check that save really happened.","Response Packets Lost",MessageBoxButtons.OK,MessageBoxIcon.Exclamation);
 
             bOptions_needs_refresh = true;
             update_gui();
