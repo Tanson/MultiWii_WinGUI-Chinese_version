@@ -45,26 +45,10 @@
             this.label11 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
-            this.battery_indicator1 = new MultiWiiGUIControls.battery_indicator();
-            this.vertical_speed_indicator1 = new MultiWiiGUIControls.vertical_speed_indicator();
-            this.altitude_meter1 = new MultiWiiGUIControls.altitude_meter();
-            this.attitudeIndicatorInstrumentControl1 = new MultiWiiGUIControls.artifical_horizon();
-            this.gpsIndicator = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
-            this.headingIndicatorInstrumentControl1 = new MultiWiiGUIControls.heading_indicator();
             this.label47 = new System.Windows.Forms.Label();
-            this.rc_input_control1 = new MultiWiiGUIControls.rc_input_control();
-            this.motorsIndicator1 = new MultiWiiGUIControls.MWGUIMotors();
-            this.indACC = new MultiWiiGUIControls.indicator_lamp();
-            this.indGPS = new MultiWiiGUIControls.indicator_lamp();
-            this.indOPTIC = new MultiWiiGUIControls.indicator_lamp();
-            this.indBARO = new MultiWiiGUIControls.indicator_lamp();
-            this.indMAG = new MultiWiiGUIControls.indicator_lamp();
-            this.indSONAR = new MultiWiiGUIControls.indicator_lamp();
             this.label81 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
-            this.barNoise = new MultiWiiGUIControls.ColorProgressBar();
-            this.barRSSI = new MultiWiiGUIControls.ColorProgressBar();
             this.labelRSSI = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.labelNoise = new System.Windows.Forms.Label();
@@ -81,17 +65,12 @@
             this.l_powersum = new System.Windows.Forms.Label();
             this.tabPageMisson = new System.Windows.Forms.TabPage();
             this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsMenuAddWP = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddPosholdTimed = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddPosholdUnlim = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddRTH = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuAddLand = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuAddJump = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuAddPOI = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuSetHead = new System.Windows.Forms.ToolStripMenuItem();
             this.tsMenuDeleteWP = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.clearMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.createCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bulkAltitudeChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
@@ -108,14 +87,7 @@
             this.splitContainer9 = new System.Windows.Forms.SplitContainer();
             this.btnMapZoopDown = new System.Windows.Forms.Button();
             this.btnMapZoomUp = new System.Windows.Forms.Button();
-            this.battery_indicator2 = new MultiWiiGUIControls.battery_indicator();
-            this.barRSSIMission = new MultiWiiGUIControls.ColorProgressBar();
             this.lNavError = new System.Windows.Forms.Label();
-            this.cbAutoPan = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbShowGauges = new MultiWiiGUIControls.CheckBoxEx();
-            this.altitude_meter2 = new MultiWiiGUIControls.altitude_meter();
-            this.vertical_speed_indicator2 = new MultiWiiGUIControls.vertical_speed_indicator();
-            this.gpsIndicator2 = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
             this.LMousePos = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.MainMap = new GMap.NET.WindowsForms.GMapControl();
@@ -145,9 +117,6 @@
             this.LATCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LONCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ALTCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.UP = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Down = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DEL = new System.Windows.Forms.DataGridViewImageColumn();
             this.label75 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
@@ -165,23 +134,13 @@
             this.nLandSpeed = new System.Windows.Forms.NumericUpDown();
             this.label71 = new System.Windows.Forms.Label();
             this.nFence = new System.Windows.Forms.NumericUpDown();
-            this.cbNavBaroTakeover = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavDisableSticks = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavGPS_filtering = new MultiWiiGUIControls.CheckBoxEx();
             this.label88 = new System.Windows.Forms.Label();
-            this.cbNavGPS_Lead = new MultiWiiGUIControls.CheckBoxEx();
             this.nBanking = new System.Windows.Forms.NumericUpDown();
-            this.cbNavResetHome = new MultiWiiGUIControls.CheckBoxEx();
             this.label87 = new System.Windows.Forms.Label();
-            this.cbNavHeadingControl = new MultiWiiGUIControls.CheckBoxEx();
             this.nCrosstrack = new System.Windows.Forms.NumericUpDown();
-            this.cbNavTailFirst = new MultiWiiGUIControls.CheckBoxEx();
             this.label86 = new System.Windows.Forms.Label();
-            this.cbNavRTHHead = new MultiWiiGUIControls.CheckBoxEx();
             this.nRTHAlt = new System.Windows.Forms.NumericUpDown();
-            this.cbNavWaitRTHAlt = new MultiWiiGUIControls.CheckBoxEx();
             this.label85 = new System.Windows.Forms.Label();
-            this.cbNavSlowNav = new MultiWiiGUIControls.CheckBoxEx();
             this.nMinSpeed = new System.Windows.Forms.NumericUpDown();
             this.nWPRadius = new System.Windows.Forms.NumericUpDown();
             this.label84 = new System.Windows.Forms.Label();
@@ -210,8 +169,6 @@
             this.nRATE_tpid = new System.Windows.Forms.NumericUpDown();
             this.nRATE_yaw = new System.Windows.Forms.NumericUpDown();
             this.nRATE_rp = new System.Windows.Forms.NumericUpDown();
-            this.throttle_expo_control1 = new MultiWiiGUIControls.throttle_expo_control();
-            this.rc_expo_control1 = new MultiWiiGUIControls.rc_expo_control();
             this.tabPageConf = new System.Windows.Forms.TabPage();
             this.lVBatConf = new System.Windows.Forms.Label();
             this.labelvbat = new System.Windows.Forms.Label();
@@ -251,21 +208,13 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.nSrvRate4 = new System.Windows.Forms.NumericUpDown();
             this.label56 = new System.Windows.Forms.Label();
-            this.cbSrvRev1 = new MultiWiiGUIControls.CheckBoxEx();
             this.label55 = new System.Windows.Forms.Label();
-            this.cbSrvRev2 = new MultiWiiGUIControls.CheckBoxEx();
             this.label54 = new System.Windows.Forms.Label();
-            this.cbSrvRev3 = new MultiWiiGUIControls.CheckBoxEx();
             this.label53 = new System.Windows.Forms.Label();
-            this.cbSrvRev4 = new MultiWiiGUIControls.CheckBoxEx();
             this.label52 = new System.Windows.Forms.Label();
-            this.cbSrvRev5 = new MultiWiiGUIControls.CheckBoxEx();
             this.label51 = new System.Windows.Forms.Label();
-            this.cbSrvRev6 = new MultiWiiGUIControls.CheckBoxEx();
             this.nSrvMax8 = new System.Windows.Forms.NumericUpDown();
-            this.cbSrvRev7 = new MultiWiiGUIControls.CheckBoxEx();
             this.nSrvMax7 = new System.Windows.Forms.NumericUpDown();
-            this.cbSrvRev8 = new MultiWiiGUIControls.CheckBoxEx();
             this.nSrvMax6 = new System.Windows.Forms.NumericUpDown();
             this.lSrvID1 = new System.Windows.Forms.Label();
             this.nSrvMax5 = new System.Windows.Forms.NumericUpDown();
@@ -314,8 +263,6 @@
             this.tabPageRC = new System.Windows.Forms.TabPage();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.rci_Control_settings = new MultiWiiGUIControls.rc_input_control();
             this.tabSensorGraph = new System.Windows.Forms.TabPage();
             this.splitContainer10 = new System.Windows.Forms.SplitContainer();
             this.splitContainer11 = new System.Windows.Forms.SplitContainer();
@@ -437,25 +384,78 @@
             this.cb_serial_port = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.cb_serial_speed = new System.Windows.Forms.ToolStripComboBox();
-            this.b_connect = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.b_read_settings = new System.Windows.Forms.ToolStripButton();
-            this.b_write_settings = new System.Windows.Forms.ToolStripButton();
-            this.b_reset = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.b_load_from_file = new System.Windows.Forms.ToolStripButton();
-            this.b_write_to_file = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.b_log = new System.Windows.Forms.ToolStripButton();
-            this.b_start_KML_log = new System.Windows.Forms.ToolStripButton();
-            this.b_log_browser = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.b_about = new System.Windows.Forms.ToolStripButton();
-            this.bDebugWindws = new System.Windows.Forms.ToolStripButton();
+            this.timer_announce = new System.Windows.Forms.Timer(this.components);
+            this.battery_indicator1 = new MultiWiiGUIControls.battery_indicator();
+            this.vertical_speed_indicator1 = new MultiWiiGUIControls.vertical_speed_indicator();
+            this.altitude_meter1 = new MultiWiiGUIControls.altitude_meter();
+            this.attitudeIndicatorInstrumentControl1 = new MultiWiiGUIControls.artifical_horizon();
+            this.gpsIndicator = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
+            this.headingIndicatorInstrumentControl1 = new MultiWiiGUIControls.heading_indicator();
+            this.rc_input_control1 = new MultiWiiGUIControls.rc_input_control();
+            this.motorsIndicator1 = new MultiWiiGUIControls.MWGUIMotors();
+            this.indACC = new MultiWiiGUIControls.indicator_lamp();
+            this.indGPS = new MultiWiiGUIControls.indicator_lamp();
+            this.indOPTIC = new MultiWiiGUIControls.indicator_lamp();
+            this.indBARO = new MultiWiiGUIControls.indicator_lamp();
+            this.indMAG = new MultiWiiGUIControls.indicator_lamp();
+            this.indSONAR = new MultiWiiGUIControls.indicator_lamp();
+            this.barNoise = new MultiWiiGUIControls.ColorProgressBar();
+            this.barRSSI = new MultiWiiGUIControls.ColorProgressBar();
+            this.battery_indicator2 = new MultiWiiGUIControls.battery_indicator();
+            this.barRSSIMission = new MultiWiiGUIControls.ColorProgressBar();
+            this.cbAutoPan = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbShowGauges = new MultiWiiGUIControls.CheckBoxEx();
+            this.altitude_meter2 = new MultiWiiGUIControls.altitude_meter();
+            this.vertical_speed_indicator2 = new MultiWiiGUIControls.vertical_speed_indicator();
+            this.gpsIndicator2 = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
+            this.cbNavBaroTakeover = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavDisableSticks = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavGPS_filtering = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavGPS_Lead = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavResetHome = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavHeadingControl = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavTailFirst = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavRTHHead = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavWaitRTHAlt = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavSlowNav = new MultiWiiGUIControls.CheckBoxEx();
+            this.throttle_expo_control1 = new MultiWiiGUIControls.throttle_expo_control();
+            this.rc_expo_control1 = new MultiWiiGUIControls.rc_expo_control();
+            this.cbSrvRev1 = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbSrvRev2 = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbSrvRev3 = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbSrvRev4 = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbSrvRev5 = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbSrvRev6 = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbSrvRev7 = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbSrvRev8 = new MultiWiiGUIControls.CheckBoxEx();
+            this.rci_Control_settings = new MultiWiiGUIControls.rc_input_control();
             this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
             this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.timer_announce = new System.Windows.Forms.Timer(this.components);
+            this.tsMenuAddWP = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddPosholdTimed = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddPosholdUnlim = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddRTH = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.UP = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Down = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DEL = new System.Windows.Forms.DataGridViewImageColumn();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.b_connect = new System.Windows.Forms.ToolStripButton();
+            this.b_read_settings = new System.Windows.Forms.ToolStripButton();
+            this.b_write_settings = new System.Windows.Forms.ToolStripButton();
+            this.b_reset = new System.Windows.Forms.ToolStripButton();
+            this.b_load_from_file = new System.Windows.Forms.ToolStripButton();
+            this.b_write_to_file = new System.Windows.Forms.ToolStripButton();
+            this.b_log = new System.Windows.Forms.ToolStripButton();
+            this.b_start_KML_log = new System.Windows.Forms.ToolStripButton();
+            this.b_log_browser = new System.Windows.Forms.ToolStripButton();
+            this.b_about = new System.Windows.Forms.ToolStripButton();
+            this.bDebugWindws = new System.Windows.Forms.ToolStripButton();
             this.tabMain.SuspendLayout();
             this.tabPageFlightDeck.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -561,7 +561,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nSrvRate7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nSrvRate8)).BeginInit();
             this.tabPageRC.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabSensorGraph.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
             this.splitContainer10.Panel2.SuspendLayout();
@@ -579,6 +578,7 @@
             this.groupBox3.SuspendLayout();
             this.tabPageVideo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).BeginInit();
+            this.splitContainer6.Panel1.SuspendLayout();
             this.splitContainer6.Panel2.SuspendLayout();
             this.splitContainer6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nFrameRate)).BeginInit();
@@ -589,10 +589,12 @@
             this.tabPageCLI.SuspendLayout();
             this.gbTerminal.SuspendLayout();
             this.toolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabMain
             // 
+            resources.ApplyResources(this.tabMain, "tabMain");
             this.tabMain.Controls.Add(this.tabPageFlightDeck);
             this.tabMain.Controls.Add(this.tabPageMisson);
             this.tabMain.Controls.Add(this.tabPagePID);
@@ -602,17 +604,16 @@
             this.tabMain.Controls.Add(this.tabPageVideo);
             this.tabMain.Controls.Add(this.tabPageSettings);
             this.tabMain.Controls.Add(this.tabPageCLI);
-            resources.ApplyResources(this.tabMain, "tabMain");
             this.tabMain.Name = "tabMain";
             this.tabMain.SelectedIndex = 1;
             this.tabMain.SelectedIndexChanged += new System.EventHandler(this.tabMain_SelectedIndexChanged);
             // 
             // tabPageFlightDeck
             // 
+            resources.ApplyResources(this.tabPageFlightDeck, "tabPageFlightDeck");
             this.tabPageFlightDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPageFlightDeck.Controls.Add(this.splitContainer1);
             this.tabPageFlightDeck.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.tabPageFlightDeck, "tabPageFlightDeck");
             this.tabPageFlightDeck.Name = "tabPageFlightDeck";
             // 
             // splitContainer1
@@ -623,6 +624,7 @@
             // 
             // splitContainer1.Panel1
             // 
+            resources.ApplyResources(this.splitContainer1.Panel1, "splitContainer1.Panel1");
             this.splitContainer1.Panel1.Controls.Add(this.bBind);
             this.splitContainer1.Panel1.Controls.Add(this.b_cal_acc);
             this.splitContainer1.Panel1.Controls.Add(this.cb_monitor_rate);
@@ -634,28 +636,29 @@
             // 
             // splitContainer1.Panel2
             // 
+            resources.ApplyResources(this.splitContainer1.Panel2, "splitContainer1.Panel2");
             this.splitContainer1.Panel2.Controls.Add(this.splitContainer2);
             // 
             // bBind
             // 
-            this.bBind.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.bBind, "bBind");
+            this.bBind.ForeColor = System.Drawing.Color.Black;
             this.bBind.Name = "bBind";
             this.bBind.UseVisualStyleBackColor = true;
             this.bBind.Click += new System.EventHandler(this.bBind_Click);
             // 
             // b_cal_acc
             // 
-            this.b_cal_acc.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_cal_acc, "b_cal_acc");
+            this.b_cal_acc.ForeColor = System.Drawing.Color.Black;
             this.b_cal_acc.Name = "b_cal_acc";
             this.b_cal_acc.UseVisualStyleBackColor = true;
             this.b_cal_acc.Click += new System.EventHandler(this.b_cal_acc_Click);
             // 
             // cb_monitor_rate
             // 
-            this.cb_monitor_rate.BackColor = System.Drawing.Color.DimGray;
             resources.ApplyResources(this.cb_monitor_rate, "cb_monitor_rate");
+            this.cb_monitor_rate.BackColor = System.Drawing.Color.DimGray;
             this.cb_monitor_rate.ForeColor = System.Drawing.Color.White;
             this.cb_monitor_rate.FormattingEnabled = true;
             this.cb_monitor_rate.Name = "cb_monitor_rate";
@@ -669,16 +672,16 @@
             // 
             // b_pause
             // 
-            this.b_pause.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_pause, "b_pause");
+            this.b_pause.ForeColor = System.Drawing.Color.Black;
             this.b_pause.Name = "b_pause";
             this.b_pause.UseVisualStyleBackColor = true;
             this.b_pause.Click += new System.EventHandler(this.b_pause_Click);
             // 
             // b_cal_mag
             // 
-            this.b_cal_mag.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_cal_mag, "b_cal_mag");
+            this.b_cal_mag.ForeColor = System.Drawing.Color.Black;
             this.b_cal_mag.Name = "b_cal_mag";
             this.b_cal_mag.UseVisualStyleBackColor = true;
             this.b_cal_mag.Click += new System.EventHandler(this.b_cal_mag_Click);
@@ -701,10 +704,12 @@
             // 
             // splitContainer2.Panel1
             // 
+            resources.ApplyResources(this.splitContainer2.Panel1, "splitContainer2.Panel1");
             this.splitContainer2.Panel1.Controls.Add(this.splitContainer3);
             // 
             // splitContainer2.Panel2
             // 
+            resources.ApplyResources(this.splitContainer2.Panel2, "splitContainer2.Panel2");
             this.splitContainer2.Panel2.Controls.Add(this.label81);
             this.splitContainer2.Panel2.Controls.Add(this.label80);
             this.splitContainer2.Panel2.Controls.Add(this.label79);
@@ -733,6 +738,7 @@
             // 
             // splitContainer3.Panel1
             // 
+            resources.ApplyResources(this.splitContainer3.Panel1, "splitContainer3.Panel1");
             this.splitContainer3.Panel1.Controls.Add(this.battery_indicator1);
             this.splitContainer3.Panel1.Controls.Add(this.vertical_speed_indicator1);
             this.splitContainer3.Panel1.Controls.Add(this.altitude_meter1);
@@ -742,6 +748,7 @@
             // 
             // splitContainer3.Panel2
             // 
+            resources.ApplyResources(this.splitContainer3.Panel2, "splitContainer3.Panel2");
             this.splitContainer3.Panel2.Controls.Add(this.label47);
             this.splitContainer3.Panel2.Controls.Add(this.rc_input_control1);
             this.splitContainer3.Panel2.Controls.Add(this.motorsIndicator1);
@@ -752,81 +759,10 @@
             this.splitContainer3.Panel2.Controls.Add(this.indMAG);
             this.splitContainer3.Panel2.Controls.Add(this.indSONAR);
             // 
-            // battery_indicator1
-            // 
-            resources.ApplyResources(this.battery_indicator1, "battery_indicator1");
-            this.battery_indicator1.Name = "battery_indicator1";
-            // 
-            // vertical_speed_indicator1
-            // 
-            resources.ApplyResources(this.vertical_speed_indicator1, "vertical_speed_indicator1");
-            this.vertical_speed_indicator1.Name = "vertical_speed_indicator1";
-            // 
-            // altitude_meter1
-            // 
-            resources.ApplyResources(this.altitude_meter1, "altitude_meter1");
-            this.altitude_meter1.Name = "altitude_meter1";
-            // 
-            // attitudeIndicatorInstrumentControl1
-            // 
-            resources.ApplyResources(this.attitudeIndicatorInstrumentControl1, "attitudeIndicatorInstrumentControl1");
-            this.attitudeIndicatorInstrumentControl1.Name = "attitudeIndicatorInstrumentControl1";
-            this.attitudeIndicatorInstrumentControl1.Click += new System.EventHandler(this.attitudeIndicatorInstrumentControl1_Click);
-            // 
-            // gpsIndicator
-            // 
-            resources.ApplyResources(this.gpsIndicator, "gpsIndicator");
-            this.gpsIndicator.Name = "gpsIndicator";
-            // 
-            // headingIndicatorInstrumentControl1
-            // 
-            resources.ApplyResources(this.headingIndicatorInstrumentControl1, "headingIndicatorInstrumentControl1");
-            this.headingIndicatorInstrumentControl1.Name = "headingIndicatorInstrumentControl1";
-            // 
             // label47
             // 
             resources.ApplyResources(this.label47, "label47");
             this.label47.Name = "label47";
-            // 
-            // rc_input_control1
-            // 
-            resources.ApplyResources(this.rc_input_control1, "rc_input_control1");
-            this.rc_input_control1.Name = "rc_input_control1";
-            // 
-            // motorsIndicator1
-            // 
-            resources.ApplyResources(this.motorsIndicator1, "motorsIndicator1");
-            this.motorsIndicator1.Name = "motorsIndicator1";
-            // 
-            // indACC
-            // 
-            resources.ApplyResources(this.indACC, "indACC");
-            this.indACC.Name = "indACC";
-            // 
-            // indGPS
-            // 
-            resources.ApplyResources(this.indGPS, "indGPS");
-            this.indGPS.Name = "indGPS";
-            // 
-            // indOPTIC
-            // 
-            resources.ApplyResources(this.indOPTIC, "indOPTIC");
-            this.indOPTIC.Name = "indOPTIC";
-            // 
-            // indBARO
-            // 
-            resources.ApplyResources(this.indBARO, "indBARO");
-            this.indBARO.Name = "indBARO";
-            // 
-            // indMAG
-            // 
-            resources.ApplyResources(this.indMAG, "indMAG");
-            this.indMAG.Name = "indMAG";
-            // 
-            // indSONAR
-            // 
-            resources.ApplyResources(this.indSONAR, "indSONAR");
-            this.indSONAR.Name = "indSONAR";
             // 
             // label81
             // 
@@ -842,32 +778,6 @@
             // 
             resources.ApplyResources(this.label79, "label79");
             this.label79.Name = "label79";
-            // 
-            // barNoise
-            // 
-            this.barNoise.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.barNoise.BkgColor = System.Drawing.Color.Transparent;
-            this.barNoise.BorderColor = System.Drawing.Color.Black;
-            this.barNoise.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
-            resources.ApplyResources(this.barNoise, "barNoise");
-            this.barNoise.Maximum = 255;
-            this.barNoise.Minimum = 0;
-            this.barNoise.Name = "barNoise";
-            this.barNoise.Step = 1;
-            this.barNoise.Value = 0;
-            // 
-            // barRSSI
-            // 
-            this.barRSSI.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.barRSSI.BkgColor = System.Drawing.Color.Transparent;
-            this.barRSSI.BorderColor = System.Drawing.Color.Black;
-            this.barRSSI.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
-            resources.ApplyResources(this.barRSSI, "barRSSI");
-            this.barRSSI.Maximum = 255;
-            this.barRSSI.Minimum = 0;
-            this.barRSSI.Name = "barRSSI";
-            this.barRSSI.Step = 1;
-            this.barRSSI.Value = 0;
             // 
             // labelRSSI
             // 
@@ -941,14 +851,15 @@
             // 
             // tabPageMisson
             // 
+            resources.ApplyResources(this.tabPageMisson, "tabPageMisson");
             this.tabPageMisson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPageMisson.ContextMenuStrip = this.contextMenuStripMap;
             this.tabPageMisson.Controls.Add(this.splitContainer7);
-            resources.ApplyResources(this.tabPageMisson, "tabPageMisson");
             this.tabPageMisson.Name = "tabPageMisson";
             // 
             // contextMenuStripMap
             // 
+            resources.ApplyResources(this.contextMenuStripMap, "contextMenuStripMap");
             this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsMenuAddWP,
             this.tsMenuAddPosholdTimed,
@@ -966,100 +877,64 @@
             this.toolStripSeparator6,
             this.fetchMapTilesToolStripMenuItem});
             this.contextMenuStripMap.Name = "contextMenuStripMap";
-            resources.ApplyResources(this.contextMenuStripMap, "contextMenuStripMap");
             this.contextMenuStripMap.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripMap_Opening);
-            // 
-            // tsMenuAddWP
-            // 
-            this.tsMenuAddWP.Image = global::MultiWiiWinGUI.Properties.Resources.wpicon;
-            this.tsMenuAddWP.Name = "tsMenuAddWP";
-            resources.ApplyResources(this.tsMenuAddWP, "tsMenuAddWP");
-            this.tsMenuAddWP.Click += new System.EventHandler(this.tsMenuAddWP_Click);
-            // 
-            // tsMenuAddPosholdTimed
-            // 
-            this.tsMenuAddPosholdTimed.Image = global::MultiWiiWinGUI.Properties.Resources.phicon;
-            this.tsMenuAddPosholdTimed.Name = "tsMenuAddPosholdTimed";
-            resources.ApplyResources(this.tsMenuAddPosholdTimed, "tsMenuAddPosholdTimed");
-            this.tsMenuAddPosholdTimed.Click += new System.EventHandler(this.tsMenuAddPosholdTimed_Click);
-            // 
-            // tsMenuAddPosholdUnlim
-            // 
-            this.tsMenuAddPosholdUnlim.Image = global::MultiWiiWinGUI.Properties.Resources.poshold_unlim;
-            this.tsMenuAddPosholdUnlim.Name = "tsMenuAddPosholdUnlim";
-            resources.ApplyResources(this.tsMenuAddPosholdUnlim, "tsMenuAddPosholdUnlim");
-            this.tsMenuAddPosholdUnlim.Click += new System.EventHandler(this.tsMenuAddPosholdUnlim_Click);
-            // 
-            // tsMenuAddRTH
-            // 
-            this.tsMenuAddRTH.Image = global::MultiWiiWinGUI.Properties.Resources.bluehome;
-            this.tsMenuAddRTH.Name = "tsMenuAddRTH";
-            resources.ApplyResources(this.tsMenuAddRTH, "tsMenuAddRTH");
-            this.tsMenuAddRTH.Click += new System.EventHandler(this.tsMenuAddRTH_Click);
             // 
             // tsMenuAddLand
             // 
-            this.tsMenuAddLand.Name = "tsMenuAddLand";
             resources.ApplyResources(this.tsMenuAddLand, "tsMenuAddLand");
+            this.tsMenuAddLand.Name = "tsMenuAddLand";
             this.tsMenuAddLand.Click += new System.EventHandler(this.tsMenuAddLand_Click);
             // 
             // tsMenuAddJump
             // 
-            this.tsMenuAddJump.Name = "tsMenuAddJump";
             resources.ApplyResources(this.tsMenuAddJump, "tsMenuAddJump");
+            this.tsMenuAddJump.Name = "tsMenuAddJump";
             this.tsMenuAddJump.Click += new System.EventHandler(this.tsMenuAddJump_Click);
             // 
             // tsMenuAddPOI
             // 
-            this.tsMenuAddPOI.Name = "tsMenuAddPOI";
             resources.ApplyResources(this.tsMenuAddPOI, "tsMenuAddPOI");
+            this.tsMenuAddPOI.Name = "tsMenuAddPOI";
             this.tsMenuAddPOI.Click += new System.EventHandler(this.tsMenuAddPOI_Click);
             // 
             // tsMenuSetHead
             // 
-            this.tsMenuSetHead.Name = "tsMenuSetHead";
             resources.ApplyResources(this.tsMenuSetHead, "tsMenuSetHead");
+            this.tsMenuSetHead.Name = "tsMenuSetHead";
             this.tsMenuSetHead.Click += new System.EventHandler(this.tsMenuSetHead_Click);
             // 
             // tsMenuDeleteWP
             // 
-            this.tsMenuDeleteWP.Name = "tsMenuDeleteWP";
             resources.ApplyResources(this.tsMenuDeleteWP, "tsMenuDeleteWP");
+            this.tsMenuDeleteWP.Name = "tsMenuDeleteWP";
             this.tsMenuDeleteWP.Click += new System.EventHandler(this.tsMenuDeleteWP_Click);
             // 
             // toolStripSeparator5
             // 
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
             resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
-            // 
-            // clearMissionToolStripMenuItem
-            // 
-            this.clearMissionToolStripMenuItem.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
-            this.clearMissionToolStripMenuItem.Name = "clearMissionToolStripMenuItem";
-            resources.ApplyResources(this.clearMissionToolStripMenuItem, "clearMissionToolStripMenuItem");
-            this.clearMissionToolStripMenuItem.Click += new System.EventHandler(this.clearMissionToolStripMenuItem_Click);
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
             // 
             // createCircleToolStripMenuItem
             // 
-            this.createCircleToolStripMenuItem.Name = "createCircleToolStripMenuItem";
             resources.ApplyResources(this.createCircleToolStripMenuItem, "createCircleToolStripMenuItem");
+            this.createCircleToolStripMenuItem.Name = "createCircleToolStripMenuItem";
             this.createCircleToolStripMenuItem.Click += new System.EventHandler(this.createCircleToolStripMenuItem_Click);
             // 
             // bulkAltitudeChangeToolStripMenuItem
             // 
-            this.bulkAltitudeChangeToolStripMenuItem.Name = "bulkAltitudeChangeToolStripMenuItem";
             resources.ApplyResources(this.bulkAltitudeChangeToolStripMenuItem, "bulkAltitudeChangeToolStripMenuItem");
+            this.bulkAltitudeChangeToolStripMenuItem.Name = "bulkAltitudeChangeToolStripMenuItem";
             this.bulkAltitudeChangeToolStripMenuItem.Click += new System.EventHandler(this.bulkAltitudeChangeToolStripMenuItem_Click);
             // 
             // toolStripSeparator6
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
             resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
             // 
             // fetchMapTilesToolStripMenuItem
             // 
-            this.fetchMapTilesToolStripMenuItem.Name = "fetchMapTilesToolStripMenuItem";
             resources.ApplyResources(this.fetchMapTilesToolStripMenuItem, "fetchMapTilesToolStripMenuItem");
+            this.fetchMapTilesToolStripMenuItem.Name = "fetchMapTilesToolStripMenuItem";
             this.fetchMapTilesToolStripMenuItem.Click += new System.EventHandler(this.fetchMapTilesToolStripMenuItem_Click);
             // 
             // splitContainer7
@@ -1070,6 +945,7 @@
             // 
             // splitContainer7.Panel1
             // 
+            resources.ApplyResources(this.splitContainer7.Panel1, "splitContainer7.Panel1");
             this.splitContainer7.Panel1.Controls.Add(this.cbShowFlightPath);
             this.splitContainer7.Panel1.Controls.Add(this.cbShowPos);
             this.splitContainer7.Panel1.Controls.Add(this.cbShowWP);
@@ -1080,6 +956,7 @@
             // 
             // splitContainer7.Panel2
             // 
+            resources.ApplyResources(this.splitContainer7.Panel2, "splitContainer7.Panel2");
             this.splitContainer7.Panel2.Controls.Add(this.spcontMapMain);
             // 
             // cbShowFlightPath
@@ -1150,11 +1027,13 @@
             // 
             // spcontMapMain.Panel1
             // 
+            resources.ApplyResources(this.spcontMapMain.Panel1, "spcontMapMain.Panel1");
             this.spcontMapMain.Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.spcontMapMain.Panel1.Controls.Add(this.splitContainer9);
             // 
             // spcontMapMain.Panel2
             // 
+            resources.ApplyResources(this.spcontMapMain.Panel2, "spcontMapMain.Panel2");
             this.spcontMapMain.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.spcontMapMain.Panel2.Controls.Add(this.splitContainer8);
             this.spcontMapMain.Panel2.Leave += new System.EventHandler(this.txtDefAlt_TextChanged);
@@ -1167,6 +1046,7 @@
             // 
             // splitContainer9.Panel1
             // 
+            resources.ApplyResources(this.splitContainer9.Panel1, "splitContainer9.Panel1");
             this.splitContainer9.Panel1.Controls.Add(this.btnMapZoopDown);
             this.splitContainer9.Panel1.Controls.Add(this.btnMapZoomUp);
             this.splitContainer9.Panel1.Controls.Add(this.battery_indicator2);
@@ -1183,6 +1063,7 @@
             // 
             // splitContainer9.Panel2
             // 
+            resources.ApplyResources(this.splitContainer9.Panel2, "splitContainer9.Panel2");
             this.splitContainer9.Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.splitContainer9.Panel2.Controls.Add(this.lNavState);
             this.splitContainer9.Panel2.Controls.Add(this.lGpsMode);
@@ -1215,71 +1096,11 @@
             this.btnMapZoomUp.UseVisualStyleBackColor = true;
             this.btnMapZoomUp.Click += new System.EventHandler(this.btnMapZoomUp_Click);
             // 
-            // battery_indicator2
-            // 
-            resources.ApplyResources(this.battery_indicator2, "battery_indicator2");
-            this.battery_indicator2.Name = "battery_indicator2";
-            // 
-            // barRSSIMission
-            // 
-            resources.ApplyResources(this.barRSSIMission, "barRSSIMission");
-            this.barRSSIMission.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.barRSSIMission.BkgColor = System.Drawing.Color.Transparent;
-            this.barRSSIMission.BorderColor = System.Drawing.Color.Black;
-            this.barRSSIMission.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
-            this.barRSSIMission.Maximum = 255;
-            this.barRSSIMission.Minimum = 0;
-            this.barRSSIMission.Name = "barRSSIMission";
-            this.barRSSIMission.Step = 1;
-            this.barRSSIMission.Value = 0;
-            // 
             // lNavError
             // 
             resources.ApplyResources(this.lNavError, "lNavError");
             this.lNavError.ForeColor = System.Drawing.Color.Red;
             this.lNavError.Name = "lNavError";
-            // 
-            // cbAutoPan
-            // 
-            resources.ApplyResources(this.cbAutoPan, "cbAutoPan");
-            this.cbAutoPan.aux = 0;
-            this.cbAutoPan.BackColor = System.Drawing.Color.Transparent;
-            this.cbAutoPan.Checked = true;
-            this.cbAutoPan.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbAutoPan.ForeColor = System.Drawing.Color.White;
-            this.cbAutoPan.IsHighlighted = false;
-            this.cbAutoPan.item = 0;
-            this.cbAutoPan.Name = "cbAutoPan";
-            this.cbAutoPan.rclevel = 0;
-            this.cbAutoPan.UseVisualStyleBackColor = false;
-            // 
-            // cbShowGauges
-            // 
-            resources.ApplyResources(this.cbShowGauges, "cbShowGauges");
-            this.cbShowGauges.aux = 0;
-            this.cbShowGauges.BackColor = System.Drawing.Color.Transparent;
-            this.cbShowGauges.ForeColor = System.Drawing.Color.White;
-            this.cbShowGauges.IsHighlighted = false;
-            this.cbShowGauges.item = 0;
-            this.cbShowGauges.Name = "cbShowGauges";
-            this.cbShowGauges.rclevel = 0;
-            this.cbShowGauges.UseVisualStyleBackColor = false;
-            this.cbShowGauges.CheckedChanged += new System.EventHandler(this.cbShowGauges_CheckedChanged);
-            // 
-            // altitude_meter2
-            // 
-            resources.ApplyResources(this.altitude_meter2, "altitude_meter2");
-            this.altitude_meter2.Name = "altitude_meter2";
-            // 
-            // vertical_speed_indicator2
-            // 
-            resources.ApplyResources(this.vertical_speed_indicator2, "vertical_speed_indicator2");
-            this.vertical_speed_indicator2.Name = "vertical_speed_indicator2";
-            // 
-            // gpsIndicator2
-            // 
-            resources.ApplyResources(this.gpsIndicator2, "gpsIndicator2");
-            this.gpsIndicator2.Name = "gpsIndicator2";
             // 
             // LMousePos
             // 
@@ -1296,10 +1117,10 @@
             // 
             // MainMap
             // 
+            resources.ApplyResources(this.MainMap, "MainMap");
             this.MainMap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.MainMap.Bearing = 0F;
             this.MainMap.CanDragMap = true;
-            resources.ApplyResources(this.MainMap, "MainMap");
             this.MainMap.EmptyTileColor = System.Drawing.Color.MidnightBlue;
             this.MainMap.GrayScaleMode = false;
             this.MainMap.HelperLineOption = GMap.NET.WindowsForms.HelperLineOptions.DontShow;
@@ -1354,9 +1175,9 @@
             // 
             // txtGTCAlt
             // 
+            resources.ApplyResources(this.txtGTCAlt, "txtGTCAlt");
             this.txtGTCAlt.BackColor = System.Drawing.Color.White;
             this.txtGTCAlt.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.txtGTCAlt, "txtGTCAlt");
             this.txtGTCAlt.Name = "txtGTCAlt";
             // 
             // label46
@@ -1428,10 +1249,12 @@
             // 
             // splitContainer8.Panel1
             // 
+            resources.ApplyResources(this.splitContainer8.Panel1, "splitContainer8.Panel1");
             this.splitContainer8.Panel1.Controls.Add(this.missionDataGrid);
             // 
             // splitContainer8.Panel2
             // 
+            resources.ApplyResources(this.splitContainer8.Panel2, "splitContainer8.Panel2");
             this.splitContainer8.Panel2.Controls.Add(this.label75);
             this.splitContainer8.Panel2.Controls.Add(this.label74);
             this.splitContainer8.Panel2.Controls.Add(this.label73);
@@ -1446,6 +1269,7 @@
             // 
             // missionDataGrid
             // 
+            resources.ApplyResources(this.missionDataGrid, "missionDataGrid");
             this.missionDataGrid.AllowUserToAddRows = false;
             this.missionDataGrid.AllowUserToDeleteRows = false;
             this.missionDataGrid.AllowUserToResizeRows = false;
@@ -1481,7 +1305,6 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.missionDataGrid.DefaultCellStyle = dataGridViewCellStyle2;
-            resources.ApplyResources(this.missionDataGrid, "missionDataGrid");
             this.missionDataGrid.EnableHeadersVisualStyles = false;
             this.missionDataGrid.Name = "missionDataGrid";
             this.missionDataGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
@@ -1548,24 +1371,6 @@
             resources.ApplyResources(this.ALTCOL, "ALTCOL");
             this.ALTCOL.Name = "ALTCOL";
             // 
-            // UP
-            // 
-            resources.ApplyResources(this.UP, "UP");
-            this.UP.Image = global::MultiWiiWinGUI.Properties.Resources.up_btn;
-            this.UP.Name = "UP";
-            // 
-            // Down
-            // 
-            resources.ApplyResources(this.Down, "Down");
-            this.Down.Image = global::MultiWiiWinGUI.Properties.Resources.down_btn;
-            this.Down.Name = "Down";
-            // 
-            // DEL
-            // 
-            resources.ApplyResources(this.DEL, "DEL");
-            this.DEL.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
-            this.DEL.Name = "DEL";
-            // 
             // label75
             // 
             resources.ApplyResources(this.label75, "label75");
@@ -1620,9 +1425,9 @@
             // 
             // txtDefAlt
             // 
+            resources.ApplyResources(this.txtDefAlt, "txtDefAlt");
             this.txtDefAlt.BackColor = System.Drawing.Color.White;
             this.txtDefAlt.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.txtDefAlt, "txtDefAlt");
             this.txtDefAlt.Name = "txtDefAlt";
             this.txtDefAlt.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtDefAlt_KeyDown);
             this.txtDefAlt.Leave += new System.EventHandler(this.txtDefAlt_TextChanged);
@@ -1641,6 +1446,7 @@
             // 
             // tabPagePID
             // 
+            resources.ApplyResources(this.tabPagePID, "tabPagePID");
             this.tabPagePID.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPagePID.Controls.Add(this.naviGroup);
             this.tabPagePID.Controls.Add(this.label2);
@@ -1658,11 +1464,11 @@
             this.tabPagePID.Controls.Add(this.groupBox12);
             this.tabPagePID.Controls.Add(this.throttle_expo_control1);
             this.tabPagePID.Controls.Add(this.rc_expo_control1);
-            resources.ApplyResources(this.tabPagePID, "tabPagePID");
             this.tabPagePID.Name = "tabPagePID";
             // 
             // naviGroup
             // 
+            resources.ApplyResources(this.naviGroup, "naviGroup");
             this.naviGroup.Controls.Add(this.label41);
             this.naviGroup.Controls.Add(this.nLandSpeed);
             this.naviGroup.Controls.Add(this.label71);
@@ -1694,7 +1500,6 @@
             this.naviGroup.Controls.Add(this.label82);
             this.naviGroup.Controls.Add(this.nMaxAlt);
             this.naviGroup.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.naviGroup, "naviGroup");
             this.naviGroup.Name = "naviGroup";
             this.naviGroup.TabStop = false;
             // 
@@ -1706,8 +1511,8 @@
             // 
             // nLandSpeed
             // 
-            this.nLandSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nLandSpeed, "nLandSpeed");
+            this.nLandSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nLandSpeed.Increment = new decimal(new int[] {
             10,
             0,
@@ -1733,8 +1538,8 @@
             // 
             // nFence
             // 
-            this.nFence.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nFence, "nFence");
+            this.nFence.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nFence.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1747,60 +1552,16 @@
             0,
             0});
             // 
-            // cbNavBaroTakeover
-            // 
-            resources.ApplyResources(this.cbNavBaroTakeover, "cbNavBaroTakeover");
-            this.cbNavBaroTakeover.aux = 0;
-            this.cbNavBaroTakeover.ForeColor = System.Drawing.Color.White;
-            this.cbNavBaroTakeover.IsHighlighted = false;
-            this.cbNavBaroTakeover.item = 0;
-            this.cbNavBaroTakeover.Name = "cbNavBaroTakeover";
-            this.cbNavBaroTakeover.rclevel = 0;
-            this.cbNavBaroTakeover.UseVisualStyleBackColor = true;
-            // 
-            // cbNavDisableSticks
-            // 
-            resources.ApplyResources(this.cbNavDisableSticks, "cbNavDisableSticks");
-            this.cbNavDisableSticks.aux = 0;
-            this.cbNavDisableSticks.ForeColor = System.Drawing.Color.White;
-            this.cbNavDisableSticks.IsHighlighted = false;
-            this.cbNavDisableSticks.item = 0;
-            this.cbNavDisableSticks.Name = "cbNavDisableSticks";
-            this.cbNavDisableSticks.rclevel = 0;
-            this.cbNavDisableSticks.UseVisualStyleBackColor = true;
-            // 
-            // cbNavGPS_filtering
-            // 
-            resources.ApplyResources(this.cbNavGPS_filtering, "cbNavGPS_filtering");
-            this.cbNavGPS_filtering.aux = 0;
-            this.cbNavGPS_filtering.ForeColor = System.Drawing.Color.White;
-            this.cbNavGPS_filtering.IsHighlighted = false;
-            this.cbNavGPS_filtering.item = 0;
-            this.cbNavGPS_filtering.Name = "cbNavGPS_filtering";
-            this.cbNavGPS_filtering.rclevel = 0;
-            this.cbNavGPS_filtering.UseVisualStyleBackColor = true;
-            // 
             // label88
             // 
             resources.ApplyResources(this.label88, "label88");
             this.label88.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label88.Name = "label88";
             // 
-            // cbNavGPS_Lead
-            // 
-            resources.ApplyResources(this.cbNavGPS_Lead, "cbNavGPS_Lead");
-            this.cbNavGPS_Lead.aux = 0;
-            this.cbNavGPS_Lead.ForeColor = System.Drawing.Color.White;
-            this.cbNavGPS_Lead.IsHighlighted = false;
-            this.cbNavGPS_Lead.item = 0;
-            this.cbNavGPS_Lead.Name = "cbNavGPS_Lead";
-            this.cbNavGPS_Lead.rclevel = 0;
-            this.cbNavGPS_Lead.UseVisualStyleBackColor = true;
-            // 
             // nBanking
             // 
-            this.nBanking.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nBanking, "nBanking");
+            this.nBanking.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nBanking.Maximum = new decimal(new int[] {
             45,
             0,
@@ -1818,39 +1579,17 @@
             0,
             0});
             // 
-            // cbNavResetHome
-            // 
-            resources.ApplyResources(this.cbNavResetHome, "cbNavResetHome");
-            this.cbNavResetHome.aux = 0;
-            this.cbNavResetHome.ForeColor = System.Drawing.Color.White;
-            this.cbNavResetHome.IsHighlighted = false;
-            this.cbNavResetHome.item = 0;
-            this.cbNavResetHome.Name = "cbNavResetHome";
-            this.cbNavResetHome.rclevel = 0;
-            this.cbNavResetHome.UseVisualStyleBackColor = true;
-            // 
             // label87
             // 
             resources.ApplyResources(this.label87, "label87");
             this.label87.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label87.Name = "label87";
             // 
-            // cbNavHeadingControl
-            // 
-            resources.ApplyResources(this.cbNavHeadingControl, "cbNavHeadingControl");
-            this.cbNavHeadingControl.aux = 0;
-            this.cbNavHeadingControl.ForeColor = System.Drawing.Color.White;
-            this.cbNavHeadingControl.IsHighlighted = false;
-            this.cbNavHeadingControl.item = 0;
-            this.cbNavHeadingControl.Name = "cbNavHeadingControl";
-            this.cbNavHeadingControl.rclevel = 0;
-            this.cbNavHeadingControl.UseVisualStyleBackColor = true;
-            // 
             // nCrosstrack
             // 
+            resources.ApplyResources(this.nCrosstrack, "nCrosstrack");
             this.nCrosstrack.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nCrosstrack.DecimalPlaces = 2;
-            resources.ApplyResources(this.nCrosstrack, "nCrosstrack");
             this.nCrosstrack.Increment = new decimal(new int[] {
             1,
             0,
@@ -1873,39 +1612,16 @@
             0,
             0});
             // 
-            // cbNavTailFirst
-            // 
-            resources.ApplyResources(this.cbNavTailFirst, "cbNavTailFirst");
-            this.cbNavTailFirst.aux = 0;
-            this.cbNavTailFirst.ForeColor = System.Drawing.Color.White;
-            this.cbNavTailFirst.IsHighlighted = false;
-            this.cbNavTailFirst.item = 0;
-            this.cbNavTailFirst.Name = "cbNavTailFirst";
-            this.cbNavTailFirst.rclevel = 0;
-            this.cbNavTailFirst.UseVisualStyleBackColor = true;
-            // 
             // label86
             // 
             resources.ApplyResources(this.label86, "label86");
             this.label86.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label86.Name = "label86";
             // 
-            // cbNavRTHHead
-            // 
-            resources.ApplyResources(this.cbNavRTHHead, "cbNavRTHHead");
-            this.cbNavRTHHead.aux = 0;
-            this.cbNavRTHHead.ForeColor = System.Drawing.Color.White;
-            this.cbNavRTHHead.IsHighlighted = false;
-            this.cbNavRTHHead.item = 0;
-            this.cbNavRTHHead.Name = "cbNavRTHHead";
-            this.cbNavRTHHead.rclevel = 0;
-            this.cbNavRTHHead.UseVisualStyleBackColor = true;
-            this.cbNavRTHHead.CheckedChanged += new System.EventHandler(this.checkBoxEx5_CheckedChanged);
-            // 
             // nRTHAlt
             // 
-            this.nRTHAlt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nRTHAlt, "nRTHAlt");
+            this.nRTHAlt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nRTHAlt.Maximum = new decimal(new int[] {
             1000,
             0,
@@ -1918,38 +1634,16 @@
             0,
             0});
             // 
-            // cbNavWaitRTHAlt
-            // 
-            resources.ApplyResources(this.cbNavWaitRTHAlt, "cbNavWaitRTHAlt");
-            this.cbNavWaitRTHAlt.aux = 0;
-            this.cbNavWaitRTHAlt.ForeColor = System.Drawing.Color.White;
-            this.cbNavWaitRTHAlt.IsHighlighted = false;
-            this.cbNavWaitRTHAlt.item = 0;
-            this.cbNavWaitRTHAlt.Name = "cbNavWaitRTHAlt";
-            this.cbNavWaitRTHAlt.rclevel = 0;
-            this.cbNavWaitRTHAlt.UseVisualStyleBackColor = true;
-            // 
             // label85
             // 
             resources.ApplyResources(this.label85, "label85");
             this.label85.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label85.Name = "label85";
             // 
-            // cbNavSlowNav
-            // 
-            resources.ApplyResources(this.cbNavSlowNav, "cbNavSlowNav");
-            this.cbNavSlowNav.aux = 0;
-            this.cbNavSlowNav.ForeColor = System.Drawing.Color.White;
-            this.cbNavSlowNav.IsHighlighted = false;
-            this.cbNavSlowNav.item = 0;
-            this.cbNavSlowNav.Name = "cbNavSlowNav";
-            this.cbNavSlowNav.rclevel = 0;
-            this.cbNavSlowNav.UseVisualStyleBackColor = true;
-            // 
             // nMinSpeed
             // 
-            this.nMinSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nMinSpeed, "nMinSpeed");
+            this.nMinSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nMinSpeed.Increment = new decimal(new int[] {
             10,
             0,
@@ -1974,8 +1668,8 @@
             // 
             // nWPRadius
             // 
-            this.nWPRadius.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nWPRadius, "nWPRadius");
+            this.nWPRadius.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nWPRadius.Increment = new decimal(new int[] {
             10,
             0,
@@ -2012,8 +1706,8 @@
             // 
             // nMaxSpeed
             // 
-            this.nMaxSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nMaxSpeed, "nMaxSpeed");
+            this.nMaxSpeed.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nMaxSpeed.Increment = new decimal(new int[] {
             10,
             0,
@@ -2038,8 +1732,8 @@
             // 
             // nSafeWPDist
             // 
-            this.nSafeWPDist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nSafeWPDist, "nSafeWPDist");
+            this.nSafeWPDist.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nSafeWPDist.Increment = new decimal(new int[] {
             10,
             0,
@@ -2076,8 +1770,8 @@
             // 
             // nMaxAlt
             // 
-            this.nMaxAlt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.nMaxAlt, "nMaxAlt");
+            this.nMaxAlt.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nMaxAlt.Maximum = new decimal(new int[] {
             500,
             0,
@@ -2109,10 +1803,10 @@
             // 
             // nTEXPO
             // 
+            resources.ApplyResources(this.nTEXPO, "nTEXPO");
             this.nTEXPO.BackColor = System.Drawing.Color.LightGray;
             this.nTEXPO.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nTEXPO.DecimalPlaces = 2;
-            resources.ApplyResources(this.nTEXPO, "nTEXPO");
             this.nTEXPO.Increment = new decimal(new int[] {
             1,
             0,
@@ -2128,10 +1822,10 @@
             // 
             // nTMID
             // 
+            resources.ApplyResources(this.nTMID, "nTMID");
             this.nTMID.BackColor = System.Drawing.Color.LightGray;
             this.nTMID.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nTMID.DecimalPlaces = 2;
-            resources.ApplyResources(this.nTMID, "nTMID");
             this.nTMID.Increment = new decimal(new int[] {
             1,
             0,
@@ -2191,10 +1885,10 @@
             // 
             // nRCRate
             // 
+            resources.ApplyResources(this.nRCRate, "nRCRate");
             this.nRCRate.BackColor = System.Drawing.Color.LightGray;
             this.nRCRate.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nRCRate.DecimalPlaces = 2;
-            resources.ApplyResources(this.nRCRate, "nRCRate");
             this.nRCRate.Increment = new decimal(new int[] {
             1,
             0,
@@ -2210,10 +1904,10 @@
             // 
             // nRCExpo
             // 
+            resources.ApplyResources(this.nRCExpo, "nRCExpo");
             this.nRCExpo.BackColor = System.Drawing.Color.LightGray;
             this.nRCExpo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nRCExpo.DecimalPlaces = 2;
-            resources.ApplyResources(this.nRCExpo, "nRCExpo");
             this.nRCExpo.Increment = new decimal(new int[] {
             1,
             0,
@@ -2235,13 +1929,13 @@
             // 
             // groupBox12
             // 
+            resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.Controls.Add(this.label50);
             this.groupBox12.Controls.Add(this.label_sok);
             this.groupBox12.Controls.Add(this.label60);
             this.groupBox12.Controls.Add(this.nRATE_tpid);
             this.groupBox12.Controls.Add(this.nRATE_yaw);
             this.groupBox12.Controls.Add(this.nRATE_rp);
-            resources.ApplyResources(this.groupBox12, "groupBox12");
             this.groupBox12.ForeColor = System.Drawing.Color.White;
             this.groupBox12.Name = "groupBox12";
             this.groupBox12.TabStop = false;
@@ -2266,10 +1960,10 @@
             // 
             // nRATE_tpid
             // 
+            resources.ApplyResources(this.nRATE_tpid, "nRATE_tpid");
             this.nRATE_tpid.BackColor = System.Drawing.Color.LightGray;
             this.nRATE_tpid.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nRATE_tpid.DecimalPlaces = 2;
-            resources.ApplyResources(this.nRATE_tpid, "nRATE_tpid");
             this.nRATE_tpid.Increment = new decimal(new int[] {
             1,
             0,
@@ -2285,10 +1979,10 @@
             // 
             // nRATE_yaw
             // 
+            resources.ApplyResources(this.nRATE_yaw, "nRATE_yaw");
             this.nRATE_yaw.BackColor = System.Drawing.Color.LightGray;
             this.nRATE_yaw.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nRATE_yaw.DecimalPlaces = 2;
-            resources.ApplyResources(this.nRATE_yaw, "nRATE_yaw");
             this.nRATE_yaw.Increment = new decimal(new int[] {
             1,
             0,
@@ -2304,10 +1998,10 @@
             // 
             // nRATE_rp
             // 
+            resources.ApplyResources(this.nRATE_rp, "nRATE_rp");
             this.nRATE_rp.BackColor = System.Drawing.Color.LightGray;
             this.nRATE_rp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nRATE_rp.DecimalPlaces = 2;
-            resources.ApplyResources(this.nRATE_rp, "nRATE_rp");
             this.nRATE_rp.Increment = new decimal(new int[] {
             1,
             0,
@@ -2321,18 +2015,9 @@
             this.nRATE_rp.Name = "nRATE_rp";
             this.nRATE_rp.ValueChanged += new System.EventHandler(this.nRATE_rp_ValueChanged);
             // 
-            // throttle_expo_control1
-            // 
-            resources.ApplyResources(this.throttle_expo_control1, "throttle_expo_control1");
-            this.throttle_expo_control1.Name = "throttle_expo_control1";
-            // 
-            // rc_expo_control1
-            // 
-            resources.ApplyResources(this.rc_expo_control1, "rc_expo_control1");
-            this.rc_expo_control1.Name = "rc_expo_control1";
-            // 
             // tabPageConf
             // 
+            resources.ApplyResources(this.tabPageConf, "tabPageConf");
             this.tabPageConf.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPageConf.Controls.Add(this.lVBatConf);
             this.tabPageConf.Controls.Add(this.labelvbat);
@@ -2341,7 +2026,6 @@
             this.tabPageConf.Controls.Add(this.groupBox6);
             this.tabPageConf.Controls.Add(this.groupBox5);
             this.tabPageConf.Controls.Add(this.groupBox4);
-            resources.ApplyResources(this.tabPageConf, "tabPageConf");
             this.tabPageConf.Name = "tabPageConf";
             // 
             // lVBatConf
@@ -2358,6 +2042,7 @@
             // 
             // groupBox8
             // 
+            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Controls.Add(this.label58);
             this.groupBox8.Controls.Add(this.lMaxThr);
             this.groupBox8.Controls.Add(this.label9);
@@ -2367,7 +2052,6 @@
             this.groupBox8.Controls.Add(this.nMinThr);
             this.groupBox8.Controls.Add(this.lMinCommand);
             this.groupBox8.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox8, "groupBox8");
             this.groupBox8.Name = "groupBox8";
             this.groupBox8.TabStop = false;
             // 
@@ -2397,9 +2081,9 @@
             // 
             // nFSThr
             // 
+            resources.ApplyResources(this.nFSThr, "nFSThr");
             this.nFSThr.BackColor = System.Drawing.Color.LightGray;
             this.nFSThr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.nFSThr, "nFSThr");
             this.nFSThr.Maximum = new decimal(new int[] {
             2000,
             0,
@@ -2420,9 +2104,9 @@
             // 
             // nMinThr
             // 
+            resources.ApplyResources(this.nMinThr, "nMinThr");
             this.nMinThr.BackColor = System.Drawing.Color.LightGray;
             this.nMinThr.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.nMinThr, "nMinThr");
             this.nMinThr.Maximum = new decimal(new int[] {
             1500,
             0,
@@ -2443,12 +2127,12 @@
             // 
             // groupBox7
             // 
+            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Controls.Add(this.label62);
             this.groupBox7.Controls.Add(this.lLife);
             this.groupBox7.Controls.Add(this.label61);
             this.groupBox7.Controls.Add(this.lArms);
             this.groupBox7.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox7, "groupBox7");
             this.groupBox7.Name = "groupBox7";
             this.groupBox7.TabStop = false;
             // 
@@ -2478,6 +2162,7 @@
             // 
             // groupBox6
             // 
+            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Controls.Add(this.label68);
             this.groupBox6.Controls.Add(this.nVBatCritical);
             this.groupBox6.Controls.Add(this.nPAlarm);
@@ -2489,7 +2174,6 @@
             this.groupBox6.Controls.Add(this.label64);
             this.groupBox6.Controls.Add(this.label67);
             this.groupBox6.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox6, "groupBox6");
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.TabStop = false;
             // 
@@ -2501,9 +2185,9 @@
             // 
             // nVBatCritical
             // 
+            resources.ApplyResources(this.nVBatCritical, "nVBatCritical");
             this.nVBatCritical.BackColor = System.Drawing.Color.LightGray;
             this.nVBatCritical.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.nVBatCritical, "nVBatCritical");
             this.nVBatCritical.Maximum = new decimal(new int[] {
             64000,
             0,
@@ -2513,9 +2197,9 @@
             // 
             // nPAlarm
             // 
+            resources.ApplyResources(this.nPAlarm, "nPAlarm");
             this.nPAlarm.BackColor = System.Drawing.Color.LightGray;
             this.nPAlarm.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.nPAlarm, "nPAlarm");
             this.nPAlarm.Maximum = new decimal(new int[] {
             64000,
             0,
@@ -2525,9 +2209,9 @@
             // 
             // nVBatWarn2
             // 
+            resources.ApplyResources(this.nVBatWarn2, "nVBatWarn2");
             this.nVBatWarn2.BackColor = System.Drawing.Color.LightGray;
             this.nVBatWarn2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.nVBatWarn2, "nVBatWarn2");
             this.nVBatWarn2.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2543,9 +2227,9 @@
             // 
             // nVBatWarn1
             // 
+            resources.ApplyResources(this.nVBatWarn1, "nVBatWarn1");
             this.nVBatWarn1.BackColor = System.Drawing.Color.LightGray;
             this.nVBatWarn1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.nVBatWarn1, "nVBatWarn1");
             this.nVBatWarn1.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2561,9 +2245,9 @@
             // 
             // nVBatScale
             // 
+            resources.ApplyResources(this.nVBatScale, "nVBatScale");
             this.nVBatScale.BackColor = System.Drawing.Color.LightGray;
             this.nVBatScale.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.nVBatScale, "nVBatScale");
             this.nVBatScale.Maximum = new decimal(new int[] {
             255,
             0,
@@ -2585,6 +2269,7 @@
             // 
             // groupBox5
             // 
+            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Controls.Add(this.cbMagSign);
             this.groupBox5.Controls.Add(this.linkLabel1);
             this.groupBox5.Controls.Add(this.nMagDeg);
@@ -2593,17 +2278,16 @@
             this.groupBox5.Controls.Add(this.label48);
             this.groupBox5.Controls.Add(this.nMagMin);
             this.groupBox5.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox5, "groupBox5");
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.TabStop = false;
             // 
             // cbMagSign
             // 
+            resources.ApplyResources(this.cbMagSign, "cbMagSign");
             this.cbMagSign.FormattingEnabled = true;
             this.cbMagSign.Items.AddRange(new object[] {
             resources.GetString("cbMagSign.Items"),
             resources.GetString("cbMagSign.Items1")});
-            resources.ApplyResources(this.cbMagSign, "cbMagSign");
             this.cbMagSign.Name = "cbMagSign";
             this.cbMagSign.SelectedIndexChanged += new System.EventHandler(this.cbMagSign_SelectedIndexChanged);
             // 
@@ -2647,6 +2331,7 @@
             // 
             // groupBox4
             // 
+            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Controls.Add(this.nSrvRate4);
             this.groupBox4.Controls.Add(this.label56);
             this.groupBox4.Controls.Add(this.cbSrvRev1);
@@ -2710,14 +2395,13 @@
             this.groupBox4.Controls.Add(this.nSrvRate7);
             this.groupBox4.Controls.Add(this.nSrvRate8);
             this.groupBox4.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox4, "groupBox4");
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.TabStop = false;
             // 
             // nSrvRate4
             // 
-            this.nSrvRate4.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate4, "nSrvRate4");
+            this.nSrvRate4.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate4.Name = "nSrvRate4";
             this.nSrvRate4.Value = new decimal(new int[] {
             100,
@@ -2731,31 +2415,11 @@
             this.label56.ForeColor = System.Drawing.Color.White;
             this.label56.Name = "label56";
             // 
-            // cbSrvRev1
-            // 
-            resources.ApplyResources(this.cbSrvRev1, "cbSrvRev1");
-            this.cbSrvRev1.aux = 0;
-            this.cbSrvRev1.IsHighlighted = false;
-            this.cbSrvRev1.item = 0;
-            this.cbSrvRev1.Name = "cbSrvRev1";
-            this.cbSrvRev1.rclevel = 0;
-            this.cbSrvRev1.UseVisualStyleBackColor = true;
-            // 
             // label55
             // 
             resources.ApplyResources(this.label55, "label55");
             this.label55.ForeColor = System.Drawing.Color.White;
             this.label55.Name = "label55";
-            // 
-            // cbSrvRev2
-            // 
-            resources.ApplyResources(this.cbSrvRev2, "cbSrvRev2");
-            this.cbSrvRev2.aux = 0;
-            this.cbSrvRev2.IsHighlighted = false;
-            this.cbSrvRev2.item = 0;
-            this.cbSrvRev2.Name = "cbSrvRev2";
-            this.cbSrvRev2.rclevel = 0;
-            this.cbSrvRev2.UseVisualStyleBackColor = true;
             // 
             // label54
             // 
@@ -2763,31 +2427,11 @@
             this.label54.ForeColor = System.Drawing.Color.White;
             this.label54.Name = "label54";
             // 
-            // cbSrvRev3
-            // 
-            resources.ApplyResources(this.cbSrvRev3, "cbSrvRev3");
-            this.cbSrvRev3.aux = 0;
-            this.cbSrvRev3.IsHighlighted = false;
-            this.cbSrvRev3.item = 0;
-            this.cbSrvRev3.Name = "cbSrvRev3";
-            this.cbSrvRev3.rclevel = 0;
-            this.cbSrvRev3.UseVisualStyleBackColor = true;
-            // 
             // label53
             // 
             resources.ApplyResources(this.label53, "label53");
             this.label53.ForeColor = System.Drawing.Color.White;
             this.label53.Name = "label53";
-            // 
-            // cbSrvRev4
-            // 
-            resources.ApplyResources(this.cbSrvRev4, "cbSrvRev4");
-            this.cbSrvRev4.aux = 0;
-            this.cbSrvRev4.IsHighlighted = false;
-            this.cbSrvRev4.item = 0;
-            this.cbSrvRev4.Name = "cbSrvRev4";
-            this.cbSrvRev4.rclevel = 0;
-            this.cbSrvRev4.UseVisualStyleBackColor = true;
             // 
             // label52
             // 
@@ -2795,31 +2439,11 @@
             this.label52.ForeColor = System.Drawing.Color.White;
             this.label52.Name = "label52";
             // 
-            // cbSrvRev5
-            // 
-            resources.ApplyResources(this.cbSrvRev5, "cbSrvRev5");
-            this.cbSrvRev5.aux = 0;
-            this.cbSrvRev5.IsHighlighted = false;
-            this.cbSrvRev5.item = 0;
-            this.cbSrvRev5.Name = "cbSrvRev5";
-            this.cbSrvRev5.rclevel = 0;
-            this.cbSrvRev5.UseVisualStyleBackColor = true;
-            // 
             // label51
             // 
             resources.ApplyResources(this.label51, "label51");
             this.label51.ForeColor = System.Drawing.Color.White;
             this.label51.Name = "label51";
-            // 
-            // cbSrvRev6
-            // 
-            resources.ApplyResources(this.cbSrvRev6, "cbSrvRev6");
-            this.cbSrvRev6.aux = 0;
-            this.cbSrvRev6.IsHighlighted = false;
-            this.cbSrvRev6.item = 0;
-            this.cbSrvRev6.Name = "cbSrvRev6";
-            this.cbSrvRev6.rclevel = 0;
-            this.cbSrvRev6.UseVisualStyleBackColor = true;
             // 
             // nSrvMax8
             // 
@@ -2841,16 +2465,6 @@
             0,
             0});
             // 
-            // cbSrvRev7
-            // 
-            resources.ApplyResources(this.cbSrvRev7, "cbSrvRev7");
-            this.cbSrvRev7.aux = 0;
-            this.cbSrvRev7.IsHighlighted = false;
-            this.cbSrvRev7.item = 0;
-            this.cbSrvRev7.Name = "cbSrvRev7";
-            this.cbSrvRev7.rclevel = 0;
-            this.cbSrvRev7.UseVisualStyleBackColor = true;
-            // 
             // nSrvMax7
             // 
             resources.ApplyResources(this.nSrvMax7, "nSrvMax7");
@@ -2870,16 +2484,6 @@
             0,
             0,
             0});
-            // 
-            // cbSrvRev8
-            // 
-            resources.ApplyResources(this.cbSrvRev8, "cbSrvRev8");
-            this.cbSrvRev8.aux = 0;
-            this.cbSrvRev8.IsHighlighted = false;
-            this.cbSrvRev8.item = 0;
-            this.cbSrvRev8.Name = "cbSrvRev8";
-            this.cbSrvRev8.rclevel = 0;
-            this.cbSrvRev8.UseVisualStyleBackColor = true;
             // 
             // nSrvMax6
             // 
@@ -3320,8 +2924,8 @@
             // 
             // nSrvRate1
             // 
-            this.nSrvRate1.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate1, "nSrvRate1");
+            this.nSrvRate1.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate1.Name = "nSrvRate1";
             this.nSrvRate1.Value = new decimal(new int[] {
             100,
@@ -3351,8 +2955,8 @@
             // 
             // nSrvRate2
             // 
-            this.nSrvRate2.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate2, "nSrvRate2");
+            this.nSrvRate2.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate2.Name = "nSrvRate2";
             this.nSrvRate2.Value = new decimal(new int[] {
             100,
@@ -3382,8 +2986,8 @@
             // 
             // nSrvRate3
             // 
-            this.nSrvRate3.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate3, "nSrvRate3");
+            this.nSrvRate3.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate3.Name = "nSrvRate3";
             this.nSrvRate3.Value = new decimal(new int[] {
             100,
@@ -3413,8 +3017,8 @@
             // 
             // nSrvRate5
             // 
-            this.nSrvRate5.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate5, "nSrvRate5");
+            this.nSrvRate5.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate5.Name = "nSrvRate5";
             this.nSrvRate5.Value = new decimal(new int[] {
             100,
@@ -3444,8 +3048,8 @@
             // 
             // nSrvRate6
             // 
-            this.nSrvRate6.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate6, "nSrvRate6");
+            this.nSrvRate6.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate6.Name = "nSrvRate6";
             this.nSrvRate6.Value = new decimal(new int[] {
             100,
@@ -3475,8 +3079,8 @@
             // 
             // nSrvRate7
             // 
-            this.nSrvRate7.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate7, "nSrvRate7");
+            this.nSrvRate7.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate7.Name = "nSrvRate7";
             this.nSrvRate7.Value = new decimal(new int[] {
             100,
@@ -3486,8 +3090,8 @@
             // 
             // nSrvRate8
             // 
-            this.nSrvRate8.Cursor = System.Windows.Forms.Cursors.Default;
             resources.ApplyResources(this.nSrvRate8, "nSrvRate8");
+            this.nSrvRate8.Cursor = System.Windows.Forms.Cursors.Default;
             this.nSrvRate8.Name = "nSrvRate8";
             this.nSrvRate8.Value = new decimal(new int[] {
             100,
@@ -3497,12 +3101,12 @@
             // 
             // tabPageRC
             // 
+            resources.ApplyResources(this.tabPageRC, "tabPageRC");
             this.tabPageRC.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPageRC.Controls.Add(this.label5);
             this.tabPageRC.Controls.Add(this.label4);
-            this.tabPageRC.Controls.Add(this.pictureBox1);
             this.tabPageRC.Controls.Add(this.rci_Control_settings);
-            resources.ApplyResources(this.tabPageRC, "tabPageRC");
+            this.tabPageRC.Controls.Add(this.pictureBox1);
             this.tabPageRC.Name = "tabPageRC";
             // 
             // label5
@@ -3517,23 +3121,11 @@
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
             // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::MultiWiiWinGUI.Properties.Resources.checkbox_legend;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
-            // rci_Control_settings
-            // 
-            resources.ApplyResources(this.rci_Control_settings, "rci_Control_settings");
-            this.rci_Control_settings.Name = "rci_Control_settings";
-            // 
             // tabSensorGraph
             // 
+            resources.ApplyResources(this.tabSensorGraph, "tabSensorGraph");
             this.tabSensorGraph.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabSensorGraph.Controls.Add(this.splitContainer10);
-            resources.ApplyResources(this.tabSensorGraph, "tabSensorGraph");
             this.tabSensorGraph.Name = "tabSensorGraph";
             // 
             // splitContainer10
@@ -3541,8 +3133,13 @@
             resources.ApplyResources(this.splitContainer10, "splitContainer10");
             this.splitContainer10.Name = "splitContainer10";
             // 
+            // splitContainer10.Panel1
+            // 
+            resources.ApplyResources(this.splitContainer10.Panel1, "splitContainer10.Panel1");
+            // 
             // splitContainer10.Panel2
             // 
+            resources.ApplyResources(this.splitContainer10.Panel2, "splitContainer10.Panel2");
             this.splitContainer10.Panel2.Controls.Add(this.splitContainer11);
             // 
             // splitContainer11
@@ -3552,10 +3149,12 @@
             // 
             // splitContainer11.Panel1
             // 
+            resources.ApplyResources(this.splitContainer11.Panel1, "splitContainer11.Panel1");
             this.splitContainer11.Panel1.Controls.Add(this.splitContainer12);
             // 
             // splitContainer11.Panel2
             // 
+            resources.ApplyResources(this.splitContainer11.Panel2, "splitContainer11.Panel2");
             this.splitContainer11.Panel2.Controls.Add(this.groupBox1);
             this.splitContainer11.Panel2.Controls.Add(this.groupBox2);
             this.splitContainer11.Panel2.Controls.Add(this.cb_alt);
@@ -3573,10 +3172,12 @@
             // 
             // splitContainer12.Panel1
             // 
+            resources.ApplyResources(this.splitContainer12.Panel1, "splitContainer12.Panel1");
             this.splitContainer12.Panel1.Controls.Add(this.zgMonitor);
             // 
             // splitContainer12.Panel2
             // 
+            resources.ApplyResources(this.splitContainer12.Panel2, "splitContainer12.Panel2");
             this.splitContainer12.Panel2.Controls.Add(this.label28);
             this.splitContainer12.Panel2.Controls.Add(this.cb_dbg1);
             this.splitContainer12.Panel2.Controls.Add(this.l_dbg1);
@@ -3606,8 +3207,8 @@
             // 
             // label28
             // 
-            this.label28.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.label28, "label28");
+            this.label28.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label28.ForeColor = System.Drawing.Color.Black;
             this.label28.Name = "label28";
             // 
@@ -3631,8 +3232,8 @@
             // 
             // label33
             // 
-            this.label33.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.label33, "label33");
+            this.label33.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label33.ForeColor = System.Drawing.Color.Black;
             this.label33.Name = "label33";
             // 
@@ -3656,15 +3257,15 @@
             // 
             // label38
             // 
-            this.label38.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.label38, "label38");
+            this.label38.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label38.ForeColor = System.Drawing.Color.Black;
             this.label38.Name = "label38";
             // 
             // label40
             // 
-            this.label40.BackColor = System.Drawing.Color.PaleTurquoise;
             resources.ApplyResources(this.label40, "label40");
+            this.label40.BackColor = System.Drawing.Color.PaleTurquoise;
             this.label40.ForeColor = System.Drawing.Color.Black;
             this.label40.Name = "label40";
             // 
@@ -3682,6 +3283,7 @@
             // 
             // groupBox1
             // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
             this.groupBox1.Controls.Add(this.b_uncheck_all_ACC);
             this.groupBox1.Controls.Add(this.b_check_all_ACC);
@@ -3695,22 +3297,21 @@
             this.groupBox1.Controls.Add(this.label14);
             this.groupBox1.Controls.Add(this.cb_acc_roll);
             this.groupBox1.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox1, "groupBox1");
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.TabStop = false;
             // 
             // b_uncheck_all_ACC
             // 
-            this.b_uncheck_all_ACC.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_uncheck_all_ACC, "b_uncheck_all_ACC");
+            this.b_uncheck_all_ACC.ForeColor = System.Drawing.Color.Black;
             this.b_uncheck_all_ACC.Name = "b_uncheck_all_ACC";
             this.b_uncheck_all_ACC.UseVisualStyleBackColor = true;
             this.b_uncheck_all_ACC.Click += new System.EventHandler(this.b_uncheck_all_ACC_Click);
             // 
             // b_check_all_ACC
             // 
-            this.b_check_all_ACC.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_check_all_ACC, "b_check_all_ACC");
+            this.b_check_all_ACC.ForeColor = System.Drawing.Color.Black;
             this.b_check_all_ACC.Name = "b_check_all_ACC";
             this.b_check_all_ACC.UseVisualStyleBackColor = true;
             this.b_check_all_ACC.Click += new System.EventHandler(this.b_check_all_ACC_Click);
@@ -3732,8 +3333,8 @@
             // 
             // label18
             // 
-            this.label18.BackColor = System.Drawing.Color.Blue;
             resources.ApplyResources(this.label18, "label18");
+            this.label18.BackColor = System.Drawing.Color.Blue;
             this.label18.Name = "label18";
             // 
             // cb_acc_z
@@ -3746,8 +3347,8 @@
             // 
             // label16
             // 
-            this.label16.BackColor = System.Drawing.Color.Green;
             resources.ApplyResources(this.label16, "label16");
+            this.label16.BackColor = System.Drawing.Color.Green;
             this.label16.Name = "label16";
             // 
             // cb_acc_pitch
@@ -3760,8 +3361,8 @@
             // 
             // label14
             // 
-            this.label14.BackColor = System.Drawing.Color.Red;
             resources.ApplyResources(this.label14, "label14");
+            this.label14.BackColor = System.Drawing.Color.Red;
             this.label14.Name = "label14";
             // 
             // cb_acc_roll
@@ -3774,6 +3375,7 @@
             // 
             // groupBox2
             // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.BackColor = System.Drawing.Color.Transparent;
             this.groupBox2.Controls.Add(this.b_uncheck_all_GYRO);
             this.groupBox2.Controls.Add(this.b_check_all_GYRO);
@@ -3787,22 +3389,21 @@
             this.groupBox2.Controls.Add(this.label31);
             this.groupBox2.Controls.Add(this.cb_gyro_roll);
             this.groupBox2.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox2, "groupBox2");
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.TabStop = false;
             // 
             // b_uncheck_all_GYRO
             // 
-            this.b_uncheck_all_GYRO.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_uncheck_all_GYRO, "b_uncheck_all_GYRO");
+            this.b_uncheck_all_GYRO.ForeColor = System.Drawing.Color.Black;
             this.b_uncheck_all_GYRO.Name = "b_uncheck_all_GYRO";
             this.b_uncheck_all_GYRO.UseVisualStyleBackColor = true;
             this.b_uncheck_all_GYRO.Click += new System.EventHandler(this.b_uncheck_all_GYRO_Click);
             // 
             // b_check_all_GYRO
             // 
-            this.b_check_all_GYRO.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_check_all_GYRO, "b_check_all_GYRO");
+            this.b_check_all_GYRO.ForeColor = System.Drawing.Color.Black;
             this.b_check_all_GYRO.Name = "b_check_all_GYRO";
             this.b_check_all_GYRO.UseVisualStyleBackColor = true;
             this.b_check_all_GYRO.Click += new System.EventHandler(this.b_check_all_GYRO_Click);
@@ -3824,8 +3425,8 @@
             // 
             // label29
             // 
-            this.label29.BackColor = System.Drawing.Color.Magenta;
             resources.ApplyResources(this.label29, "label29");
+            this.label29.BackColor = System.Drawing.Color.Magenta;
             this.label29.ForeColor = System.Drawing.Color.Black;
             this.label29.Name = "label29";
             // 
@@ -3839,8 +3440,8 @@
             // 
             // label30
             // 
-            this.label30.BackColor = System.Drawing.Color.Cyan;
             resources.ApplyResources(this.label30, "label30");
+            this.label30.BackColor = System.Drawing.Color.Cyan;
             this.label30.ForeColor = System.Drawing.Color.Black;
             this.label30.Name = "label30";
             // 
@@ -3854,8 +3455,8 @@
             // 
             // label31
             // 
-            this.label31.BackColor = System.Drawing.Color.Khaki;
             resources.ApplyResources(this.label31, "label31");
+            this.label31.BackColor = System.Drawing.Color.Khaki;
             this.label31.ForeColor = System.Drawing.Color.Black;
             this.label31.Name = "label31";
             // 
@@ -3875,13 +3476,14 @@
             // 
             // label22
             // 
-            this.label22.BackColor = System.Drawing.Color.Gainsboro;
             resources.ApplyResources(this.label22, "label22");
+            this.label22.BackColor = System.Drawing.Color.Gainsboro;
             this.label22.ForeColor = System.Drawing.Color.Black;
             this.label22.Name = "label22";
             // 
             // groupBox3
             // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.BackColor = System.Drawing.Color.Transparent;
             this.groupBox3.Controls.Add(this.b_uncheck_all_MAG);
             this.groupBox3.Controls.Add(this.b_check_all_MAG);
@@ -3895,22 +3497,21 @@
             this.groupBox3.Controls.Add(this.label37);
             this.groupBox3.Controls.Add(this.cb_mag_roll);
             this.groupBox3.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox3, "groupBox3");
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.TabStop = false;
             // 
             // b_uncheck_all_MAG
             // 
-            this.b_uncheck_all_MAG.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_uncheck_all_MAG, "b_uncheck_all_MAG");
+            this.b_uncheck_all_MAG.ForeColor = System.Drawing.Color.Black;
             this.b_uncheck_all_MAG.Name = "b_uncheck_all_MAG";
             this.b_uncheck_all_MAG.UseVisualStyleBackColor = true;
             this.b_uncheck_all_MAG.Click += new System.EventHandler(this.b_uncheck_all_MAG_Click);
             // 
             // b_check_all_MAG
             // 
-            this.b_check_all_MAG.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_check_all_MAG, "b_check_all_MAG");
+            this.b_check_all_MAG.ForeColor = System.Drawing.Color.Black;
             this.b_check_all_MAG.Name = "b_check_all_MAG";
             this.b_check_all_MAG.UseVisualStyleBackColor = true;
             this.b_check_all_MAG.Click += new System.EventHandler(this.b_check_all_MAG_Click);
@@ -3932,8 +3533,8 @@
             // 
             // label35
             // 
-            this.label35.BackColor = System.Drawing.Color.DarkGoldenrod;
             resources.ApplyResources(this.label35, "label35");
+            this.label35.BackColor = System.Drawing.Color.DarkGoldenrod;
             this.label35.Name = "label35";
             // 
             // cb_mag_yaw
@@ -3944,8 +3545,8 @@
             // 
             // label36
             // 
-            this.label36.BackColor = System.Drawing.Color.MediumPurple;
             resources.ApplyResources(this.label36, "label36");
+            this.label36.BackColor = System.Drawing.Color.MediumPurple;
             this.label36.Name = "label36";
             // 
             // cb_mag_pitch
@@ -3956,8 +3557,8 @@
             // 
             // label37
             // 
-            this.label37.BackColor = System.Drawing.Color.CadetBlue;
             resources.ApplyResources(this.label37, "label37");
+            this.label37.BackColor = System.Drawing.Color.CadetBlue;
             this.label37.Name = "label37";
             // 
             // cb_mag_roll
@@ -3986,44 +3587,33 @@
             // 
             // label26
             // 
-            this.label26.BackColor = System.Drawing.Color.Orange;
             resources.ApplyResources(this.label26, "label26");
+            this.label26.BackColor = System.Drawing.Color.Orange;
             this.label26.ForeColor = System.Drawing.Color.Black;
             this.label26.Name = "label26";
             // 
             // tabPageVideo
             // 
+            resources.ApplyResources(this.tabPageVideo, "tabPageVideo");
             this.tabPageVideo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPageVideo.Controls.Add(this.splitContainer6);
             this.tabPageVideo.Controls.Add(this.l_capture_file);
-            resources.ApplyResources(this.tabPageVideo, "tabPageVideo");
             this.tabPageVideo.Name = "tabPageVideo";
-            // 
-            // videoSourcePlayer
-            // 
-            this.videoSourcePlayer.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.videoSourcePlayer.Location = new System.Drawing.Point(0, 0);
-            this.videoSourcePlayer.Name = "videoSourcePlayer";
-            this.videoSourcePlayer.Padding = new System.Windows.Forms.Padding(10);
-            this.videoSourcePlayer.Size = new System.Drawing.Size(829, 444);
-            this.videoSourcePlayer.TabIndex = 0;
-            this.videoSourcePlayer.Text = "videoSourcePlayer";
-            this.videoSourcePlayer.VideoSource = null;
-            this.videoSourcePlayer.SizeChanged += new System.EventHandler(this.videoSourcePlayer_SizeChanged);
             // 
             // splitContainer6
             // 
             resources.ApplyResources(this.splitContainer6, "splitContainer6");
             this.splitContainer6.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer6.Name = "splitContainer6";
-
             // 
             // splitContainer6.Panel1
             // 
+            resources.ApplyResources(this.splitContainer6.Panel1, "splitContainer6.Panel1");
             this.splitContainer6.Panel1.Controls.Add(this.videoSourcePlayer);
             // 
             // splitContainer6.Panel2
             // 
+            resources.ApplyResources(this.splitContainer6.Panel2, "splitContainer6.Panel2");
             this.splitContainer6.Panel2.Controls.Add(this.dropdown_devices);
             this.splitContainer6.Panel2.Controls.Add(this.b_video_connect);
             this.splitContainer6.Panel2.Controls.Add(this.label19);
@@ -4035,7 +3625,13 @@
             this.splitContainer6.Panel2.Controls.Add(this.label15);
             this.splitContainer6.Panel2.Controls.Add(this.nBitRate);
             this.splitContainer6.Panel2.Controls.Add(this.label13);
-           
+            // 
+            // videoSourcePlayer
+            // 
+            resources.ApplyResources(this.videoSourcePlayer, "videoSourcePlayer");
+            this.videoSourcePlayer.Name = "videoSourcePlayer";
+            this.videoSourcePlayer.VideoSource = null;
+            this.videoSourcePlayer.SizeChanged += new System.EventHandler(this.videoSourcePlayer_SizeChanged);
             // 
             // dropdown_devices
             // 
@@ -4158,6 +3754,7 @@
             // 
             // tabPageSettings
             // 
+            resources.ApplyResources(this.tabPageSettings, "tabPageSettings");
             this.tabPageSettings.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPageSettings.Controls.Add(this.groupBox9);
             this.tabPageSettings.Controls.Add(this.cbCellcount);
@@ -4177,11 +3774,11 @@
             this.tabPageSettings.Controls.Add(this.l_LogFolder);
             this.tabPageSettings.Controls.Add(this.label20);
             this.tabPageSettings.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.tabPageSettings, "tabPageSettings");
             this.tabPageSettings.Name = "tabPageSettings";
             // 
             // groupBox9
             // 
+            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Controls.Add(this.label42);
             this.groupBox9.Controls.Add(this.comboSpeakInterval);
             this.groupBox9.Controls.Add(this.cbSpeakDist);
@@ -4189,7 +3786,6 @@
             this.groupBox9.Controls.Add(this.cbSpeakBattery);
             this.groupBox9.Controls.Add(this.cbGUISpeechEnabled);
             this.groupBox9.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox9, "groupBox9");
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.TabStop = false;
             // 
@@ -4200,6 +3796,7 @@
             // 
             // comboSpeakInterval
             // 
+            resources.ApplyResources(this.comboSpeakInterval, "comboSpeakInterval");
             this.comboSpeakInterval.FormattingEnabled = true;
             this.comboSpeakInterval.Items.AddRange(new object[] {
             resources.GetString("comboSpeakInterval.Items"),
@@ -4207,7 +3804,6 @@
             resources.GetString("comboSpeakInterval.Items2"),
             resources.GetString("comboSpeakInterval.Items3"),
             resources.GetString("comboSpeakInterval.Items4")});
-            resources.ApplyResources(this.comboSpeakInterval, "comboSpeakInterval");
             this.comboSpeakInterval.Name = "comboSpeakInterval";
             this.comboSpeakInterval.SelectedIndexChanged += new System.EventHandler(this.comboSpeakInterval_SelectedIndexChanged);
             // 
@@ -4241,6 +3837,7 @@
             // 
             // cbCellcount
             // 
+            resources.ApplyResources(this.cbCellcount, "cbCellcount");
             this.cbCellcount.FormattingEnabled = true;
             this.cbCellcount.Items.AddRange(new object[] {
             resources.GetString("cbCellcount.Items"),
@@ -4253,7 +3850,6 @@
             resources.GetString("cbCellcount.Items7"),
             resources.GetString("cbCellcount.Items8"),
             resources.GetString("cbCellcount.Items9")});
-            resources.ApplyResources(this.cbCellcount, "cbCellcount");
             this.cbCellcount.Name = "cbCellcount";
             this.cbCellcount.SelectedIndexChanged += new System.EventHandler(this.cbCellcount_SelectedIndexChanged);
             // 
@@ -4269,8 +3865,8 @@
             // 
             // b_check_update
             // 
-            this.b_check_update.ForeColor = System.Drawing.Color.Black;
             resources.ApplyResources(this.b_check_update, "b_check_update");
+            this.b_check_update.ForeColor = System.Drawing.Color.Black;
             this.b_check_update.Name = "b_check_update";
             this.b_check_update.UseVisualStyleBackColor = true;
             this.b_check_update.Click += new System.EventHandler(this.b_check_update_Click);
@@ -4285,8 +3881,8 @@
             // 
             // l_Settings_folder
             // 
-            this.l_Settings_folder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.l_Settings_folder, "l_Settings_folder");
+            this.l_Settings_folder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.l_Settings_folder.Name = "l_Settings_folder";
             // 
             // label27
@@ -4296,6 +3892,7 @@
             // 
             // groupBox11
             // 
+            resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Controls.Add(this.cb_Log10);
             this.groupBox11.Controls.Add(this.cb_Log9);
             this.groupBox11.Controls.Add(this.cb_Log8);
@@ -4307,7 +3904,6 @@
             this.groupBox11.Controls.Add(this.cb_Log2);
             this.groupBox11.Controls.Add(this.cb_Log1);
             this.groupBox11.ForeColor = System.Drawing.Color.White;
-            resources.ApplyResources(this.groupBox11, "groupBox11");
             this.groupBox11.Name = "groupBox11";
             this.groupBox11.TabStop = false;
             // 
@@ -4383,9 +3979,9 @@
             // 
             // b_save_gui_settings
             // 
+            resources.ApplyResources(this.b_save_gui_settings, "b_save_gui_settings");
             this.b_save_gui_settings.BackColor = System.Drawing.Color.Transparent;
             this.b_save_gui_settings.ForeColor = System.Drawing.Color.Black;
-            resources.ApplyResources(this.b_save_gui_settings, "b_save_gui_settings");
             this.b_save_gui_settings.Name = "b_save_gui_settings";
             this.b_save_gui_settings.UseVisualStyleBackColor = false;
             this.b_save_gui_settings.Click += new System.EventHandler(this.b_save_gui_settings_Click);
@@ -4407,8 +4003,8 @@
             // 
             // l_Capture_folder
             // 
-            this.l_Capture_folder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.l_Capture_folder, "l_Capture_folder");
+            this.l_Capture_folder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.l_Capture_folder.Name = "l_Capture_folder";
             // 
             // label24
@@ -4426,8 +4022,8 @@
             // 
             // l_LogFolder
             // 
-            this.l_LogFolder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             resources.ApplyResources(this.l_LogFolder, "l_LogFolder");
+            this.l_LogFolder.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.l_LogFolder.Name = "l_LogFolder";
             // 
             // label20
@@ -4437,17 +4033,17 @@
             // 
             // tabPageCLI
             // 
+            resources.ApplyResources(this.tabPageCLI, "tabPageCLI");
             this.tabPageCLI.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabPageCLI.Controls.Add(this.gbTerminal);
-            resources.ApplyResources(this.tabPageCLI, "tabPageCLI");
             this.tabPageCLI.Name = "tabPageCLI";
             // 
             // gbTerminal
             // 
+            resources.ApplyResources(this.gbTerminal, "gbTerminal");
             this.gbTerminal.Controls.Add(this.cmdCLISend);
             this.gbTerminal.Controls.Add(this.txtCLICommand);
             this.gbTerminal.Controls.Add(this.txtCLIResult);
-            resources.ApplyResources(this.gbTerminal, "gbTerminal");
             this.gbTerminal.Name = "gbTerminal";
             this.gbTerminal.TabStop = false;
             // 
@@ -4467,8 +4063,8 @@
             // 
             // txtCLIResult
             // 
-            this.txtCLIResult.AllowDrop = true;
             resources.ApplyResources(this.txtCLIResult, "txtCLIResult");
+            this.txtCLIResult.AllowDrop = true;
             this.txtCLIResult.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.txtCLIResult.ForeColor = System.Drawing.SystemColors.Info;
             this.txtCLIResult.Name = "txtCLIResult";
@@ -4482,8 +4078,13 @@
             this.bkgWorker.WorkerSupportsCancellation = true;
             this.bkgWorker.DoWork += new System.ComponentModel.DoWorkEventHandler(this.bkgWorker_DoWork);
             // 
+            // folderBrowserDialog1
+            // 
+            resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
+            // 
             // toolStrip1
             // 
+            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.BackColor = System.Drawing.Color.Silver;
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
@@ -4508,128 +4109,418 @@
             this.b_about,
             this.bDebugWindws});
             this.toolStrip1.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            resources.ApplyResources(this.toolStrip1, "toolStrip1");
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             // 
             // toolStripLabel1
             // 
-            this.toolStripLabel1.Name = "toolStripLabel1";
             resources.ApplyResources(this.toolStripLabel1, "toolStripLabel1");
+            this.toolStripLabel1.Name = "toolStripLabel1";
             this.toolStripLabel1.Click += new System.EventHandler(this.toolStripLabel1_Click);
             // 
             // cb_serial_port
             // 
-            this.cb_serial_port.Name = "cb_serial_port";
             resources.ApplyResources(this.cb_serial_port, "cb_serial_port");
+            this.cb_serial_port.Name = "cb_serial_port";
             // 
             // toolStripLabel2
             // 
-            this.toolStripLabel2.Name = "toolStripLabel2";
             resources.ApplyResources(this.toolStripLabel2, "toolStripLabel2");
+            this.toolStripLabel2.Name = "toolStripLabel2";
             // 
             // cb_serial_speed
             // 
-            this.cb_serial_speed.Name = "cb_serial_speed";
             resources.ApplyResources(this.cb_serial_speed, "cb_serial_speed");
-            // 
-            // b_connect
-            // 
-            this.b_connect.Image = global::MultiWiiWinGUI.Properties.Resources.connect;
-            resources.ApplyResources(this.b_connect, "b_connect");
-            this.b_connect.Name = "b_connect";
-            this.b_connect.Click += new System.EventHandler(this.b_connect_Click);
+            this.cb_serial_speed.Name = "cb_serial_speed";
             // 
             // toolStripSeparator1
             // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
             resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
-            // 
-            // b_read_settings
-            // 
-            this.b_read_settings.Image = global::MultiWiiWinGUI.Properties.Resources.read_settings;
-            resources.ApplyResources(this.b_read_settings, "b_read_settings");
-            this.b_read_settings.Name = "b_read_settings";
-            this.b_read_settings.Click += new System.EventHandler(this.b_read_settings_Click);
-            // 
-            // b_write_settings
-            // 
-            this.b_write_settings.Image = global::MultiWiiWinGUI.Properties.Resources.write_settings;
-            resources.ApplyResources(this.b_write_settings, "b_write_settings");
-            this.b_write_settings.Name = "b_write_settings";
-            this.b_write_settings.Click += new System.EventHandler(this.b_write_settings_Click);
-            // 
-            // b_reset
-            // 
-            this.b_reset.Image = global::MultiWiiWinGUI.Properties.Resources.reset;
-            resources.ApplyResources(this.b_reset, "b_reset");
-            this.b_reset.Name = "b_reset";
-            this.b_reset.Click += new System.EventHandler(this.b_reset_Click);
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // toolStripSeparator2
             // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
             resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
-            // 
-            // b_load_from_file
-            // 
-            this.b_load_from_file.Image = global::MultiWiiWinGUI.Properties.Resources.load_from_file;
-            resources.ApplyResources(this.b_load_from_file, "b_load_from_file");
-            this.b_load_from_file.Name = "b_load_from_file";
-            this.b_load_from_file.Click += new System.EventHandler(this.b_load_from_file_Click);
-            // 
-            // b_write_to_file
-            // 
-            this.b_write_to_file.Image = global::MultiWiiWinGUI.Properties.Resources.write_to_file;
-            resources.ApplyResources(this.b_write_to_file, "b_write_to_file");
-            this.b_write_to_file.Name = "b_write_to_file";
-            this.b_write_to_file.Click += new System.EventHandler(this.b_write_to_file_Click);
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
             // 
             // toolStripSeparator3
             // 
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
             resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            // 
-            // b_log
-            // 
-            this.b_log.Image = global::MultiWiiWinGUI.Properties.Resources.start_log;
-            resources.ApplyResources(this.b_log, "b_log");
-            this.b_log.Name = "b_log";
-            this.b_log.Click += new System.EventHandler(this.b_log_Click);
-            // 
-            // b_start_KML_log
-            // 
-            this.b_start_KML_log.BackColor = System.Drawing.Color.Transparent;
-            this.b_start_KML_log.Image = global::MultiWiiWinGUI.Properties.Resources.earth_3;
-            resources.ApplyResources(this.b_start_KML_log, "b_start_KML_log");
-            this.b_start_KML_log.Name = "b_start_KML_log";
-            this.b_start_KML_log.Click += new System.EventHandler(this.b_start_KML_log_Click);
-            // 
-            // b_log_browser
-            // 
-            this.b_log_browser.Image = global::MultiWiiWinGUI.Properties.Resources.logbrowser;
-            resources.ApplyResources(this.b_log_browser, "b_log_browser");
-            this.b_log_browser.Name = "b_log_browser";
-            this.b_log_browser.Click += new System.EventHandler(this.b_log_browser_Click);
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
             // 
             // toolStripSeparator4
             // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
             resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
             // 
-            // b_about
+            // timer_announce
             // 
-            this.b_about.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.b_about.Image = global::MultiWiiWinGUI.Properties.Resources.about;
-            resources.ApplyResources(this.b_about, "b_about");
-            this.b_about.Name = "b_about";
-            this.b_about.Click += new System.EventHandler(this.b_about_Click);
+            this.timer_announce.Enabled = true;
+            this.timer_announce.Interval = 30000;
+            this.timer_announce.Tick += new System.EventHandler(this.timer_announce_Tick);
             // 
-            // bDebugWindws
+            // battery_indicator1
             // 
-            resources.ApplyResources(this.bDebugWindws, "bDebugWindws");
-            this.bDebugWindws.Name = "bDebugWindws";
-            this.bDebugWindws.Click += new System.EventHandler(this.bDebugWindws_Click);
+            resources.ApplyResources(this.battery_indicator1, "battery_indicator1");
+            this.battery_indicator1.Name = "battery_indicator1";
+            // 
+            // vertical_speed_indicator1
+            // 
+            resources.ApplyResources(this.vertical_speed_indicator1, "vertical_speed_indicator1");
+            this.vertical_speed_indicator1.Name = "vertical_speed_indicator1";
+            // 
+            // altitude_meter1
+            // 
+            resources.ApplyResources(this.altitude_meter1, "altitude_meter1");
+            this.altitude_meter1.Name = "altitude_meter1";
+            // 
+            // attitudeIndicatorInstrumentControl1
+            // 
+            resources.ApplyResources(this.attitudeIndicatorInstrumentControl1, "attitudeIndicatorInstrumentControl1");
+            this.attitudeIndicatorInstrumentControl1.Name = "attitudeIndicatorInstrumentControl1";
+            this.attitudeIndicatorInstrumentControl1.Click += new System.EventHandler(this.attitudeIndicatorInstrumentControl1_Click);
+            // 
+            // gpsIndicator
+            // 
+            resources.ApplyResources(this.gpsIndicator, "gpsIndicator");
+            this.gpsIndicator.Name = "gpsIndicator";
+            // 
+            // headingIndicatorInstrumentControl1
+            // 
+            resources.ApplyResources(this.headingIndicatorInstrumentControl1, "headingIndicatorInstrumentControl1");
+            this.headingIndicatorInstrumentControl1.Name = "headingIndicatorInstrumentControl1";
+            // 
+            // rc_input_control1
+            // 
+            resources.ApplyResources(this.rc_input_control1, "rc_input_control1");
+            this.rc_input_control1.Name = "rc_input_control1";
+            // 
+            // motorsIndicator1
+            // 
+            resources.ApplyResources(this.motorsIndicator1, "motorsIndicator1");
+            this.motorsIndicator1.Name = "motorsIndicator1";
+            // 
+            // indACC
+            // 
+            resources.ApplyResources(this.indACC, "indACC");
+            this.indACC.Name = "indACC";
+            // 
+            // indGPS
+            // 
+            resources.ApplyResources(this.indGPS, "indGPS");
+            this.indGPS.Name = "indGPS";
+            // 
+            // indOPTIC
+            // 
+            resources.ApplyResources(this.indOPTIC, "indOPTIC");
+            this.indOPTIC.Name = "indOPTIC";
+            // 
+            // indBARO
+            // 
+            resources.ApplyResources(this.indBARO, "indBARO");
+            this.indBARO.Name = "indBARO";
+            // 
+            // indMAG
+            // 
+            resources.ApplyResources(this.indMAG, "indMAG");
+            this.indMAG.Name = "indMAG";
+            // 
+            // indSONAR
+            // 
+            resources.ApplyResources(this.indSONAR, "indSONAR");
+            this.indSONAR.Name = "indSONAR";
+            // 
+            // barNoise
+            // 
+            resources.ApplyResources(this.barNoise, "barNoise");
+            this.barNoise.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.barNoise.BkgColor = System.Drawing.Color.Transparent;
+            this.barNoise.BorderColor = System.Drawing.Color.Black;
+            this.barNoise.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
+            this.barNoise.Maximum = 255;
+            this.barNoise.Minimum = 0;
+            this.barNoise.Name = "barNoise";
+            this.barNoise.Step = 1;
+            this.barNoise.Value = 0;
+            // 
+            // barRSSI
+            // 
+            resources.ApplyResources(this.barRSSI, "barRSSI");
+            this.barRSSI.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.barRSSI.BkgColor = System.Drawing.Color.Transparent;
+            this.barRSSI.BorderColor = System.Drawing.Color.Black;
+            this.barRSSI.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
+            this.barRSSI.Maximum = 255;
+            this.barRSSI.Minimum = 0;
+            this.barRSSI.Name = "barRSSI";
+            this.barRSSI.Step = 1;
+            this.barRSSI.Value = 0;
+            // 
+            // battery_indicator2
+            // 
+            resources.ApplyResources(this.battery_indicator2, "battery_indicator2");
+            this.battery_indicator2.Name = "battery_indicator2";
+            // 
+            // barRSSIMission
+            // 
+            resources.ApplyResources(this.barRSSIMission, "barRSSIMission");
+            this.barRSSIMission.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.barRSSIMission.BkgColor = System.Drawing.Color.Transparent;
+            this.barRSSIMission.BorderColor = System.Drawing.Color.Black;
+            this.barRSSIMission.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
+            this.barRSSIMission.Maximum = 255;
+            this.barRSSIMission.Minimum = 0;
+            this.barRSSIMission.Name = "barRSSIMission";
+            this.barRSSIMission.Step = 1;
+            this.barRSSIMission.Value = 0;
+            // 
+            // cbAutoPan
+            // 
+            resources.ApplyResources(this.cbAutoPan, "cbAutoPan");
+            this.cbAutoPan.aux = 0;
+            this.cbAutoPan.BackColor = System.Drawing.Color.Transparent;
+            this.cbAutoPan.Checked = true;
+            this.cbAutoPan.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbAutoPan.ForeColor = System.Drawing.Color.White;
+            this.cbAutoPan.IsHighlighted = false;
+            this.cbAutoPan.item = 0;
+            this.cbAutoPan.Name = "cbAutoPan";
+            this.cbAutoPan.rclevel = 0;
+            this.cbAutoPan.UseVisualStyleBackColor = false;
+            // 
+            // cbShowGauges
+            // 
+            resources.ApplyResources(this.cbShowGauges, "cbShowGauges");
+            this.cbShowGauges.aux = 0;
+            this.cbShowGauges.BackColor = System.Drawing.Color.Transparent;
+            this.cbShowGauges.ForeColor = System.Drawing.Color.White;
+            this.cbShowGauges.IsHighlighted = false;
+            this.cbShowGauges.item = 0;
+            this.cbShowGauges.Name = "cbShowGauges";
+            this.cbShowGauges.rclevel = 0;
+            this.cbShowGauges.UseVisualStyleBackColor = false;
+            this.cbShowGauges.CheckedChanged += new System.EventHandler(this.cbShowGauges_CheckedChanged);
+            // 
+            // altitude_meter2
+            // 
+            resources.ApplyResources(this.altitude_meter2, "altitude_meter2");
+            this.altitude_meter2.Name = "altitude_meter2";
+            // 
+            // vertical_speed_indicator2
+            // 
+            resources.ApplyResources(this.vertical_speed_indicator2, "vertical_speed_indicator2");
+            this.vertical_speed_indicator2.Name = "vertical_speed_indicator2";
+            // 
+            // gpsIndicator2
+            // 
+            resources.ApplyResources(this.gpsIndicator2, "gpsIndicator2");
+            this.gpsIndicator2.Name = "gpsIndicator2";
+            // 
+            // cbNavBaroTakeover
+            // 
+            resources.ApplyResources(this.cbNavBaroTakeover, "cbNavBaroTakeover");
+            this.cbNavBaroTakeover.aux = 0;
+            this.cbNavBaroTakeover.ForeColor = System.Drawing.Color.White;
+            this.cbNavBaroTakeover.IsHighlighted = false;
+            this.cbNavBaroTakeover.item = 0;
+            this.cbNavBaroTakeover.Name = "cbNavBaroTakeover";
+            this.cbNavBaroTakeover.rclevel = 0;
+            this.cbNavBaroTakeover.UseVisualStyleBackColor = true;
+            // 
+            // cbNavDisableSticks
+            // 
+            resources.ApplyResources(this.cbNavDisableSticks, "cbNavDisableSticks");
+            this.cbNavDisableSticks.aux = 0;
+            this.cbNavDisableSticks.ForeColor = System.Drawing.Color.White;
+            this.cbNavDisableSticks.IsHighlighted = false;
+            this.cbNavDisableSticks.item = 0;
+            this.cbNavDisableSticks.Name = "cbNavDisableSticks";
+            this.cbNavDisableSticks.rclevel = 0;
+            this.cbNavDisableSticks.UseVisualStyleBackColor = true;
+            // 
+            // cbNavGPS_filtering
+            // 
+            resources.ApplyResources(this.cbNavGPS_filtering, "cbNavGPS_filtering");
+            this.cbNavGPS_filtering.aux = 0;
+            this.cbNavGPS_filtering.ForeColor = System.Drawing.Color.White;
+            this.cbNavGPS_filtering.IsHighlighted = false;
+            this.cbNavGPS_filtering.item = 0;
+            this.cbNavGPS_filtering.Name = "cbNavGPS_filtering";
+            this.cbNavGPS_filtering.rclevel = 0;
+            this.cbNavGPS_filtering.UseVisualStyleBackColor = true;
+            // 
+            // cbNavGPS_Lead
+            // 
+            resources.ApplyResources(this.cbNavGPS_Lead, "cbNavGPS_Lead");
+            this.cbNavGPS_Lead.aux = 0;
+            this.cbNavGPS_Lead.ForeColor = System.Drawing.Color.White;
+            this.cbNavGPS_Lead.IsHighlighted = false;
+            this.cbNavGPS_Lead.item = 0;
+            this.cbNavGPS_Lead.Name = "cbNavGPS_Lead";
+            this.cbNavGPS_Lead.rclevel = 0;
+            this.cbNavGPS_Lead.UseVisualStyleBackColor = true;
+            // 
+            // cbNavResetHome
+            // 
+            resources.ApplyResources(this.cbNavResetHome, "cbNavResetHome");
+            this.cbNavResetHome.aux = 0;
+            this.cbNavResetHome.ForeColor = System.Drawing.Color.White;
+            this.cbNavResetHome.IsHighlighted = false;
+            this.cbNavResetHome.item = 0;
+            this.cbNavResetHome.Name = "cbNavResetHome";
+            this.cbNavResetHome.rclevel = 0;
+            this.cbNavResetHome.UseVisualStyleBackColor = true;
+            // 
+            // cbNavHeadingControl
+            // 
+            resources.ApplyResources(this.cbNavHeadingControl, "cbNavHeadingControl");
+            this.cbNavHeadingControl.aux = 0;
+            this.cbNavHeadingControl.ForeColor = System.Drawing.Color.White;
+            this.cbNavHeadingControl.IsHighlighted = false;
+            this.cbNavHeadingControl.item = 0;
+            this.cbNavHeadingControl.Name = "cbNavHeadingControl";
+            this.cbNavHeadingControl.rclevel = 0;
+            this.cbNavHeadingControl.UseVisualStyleBackColor = true;
+            // 
+            // cbNavTailFirst
+            // 
+            resources.ApplyResources(this.cbNavTailFirst, "cbNavTailFirst");
+            this.cbNavTailFirst.aux = 0;
+            this.cbNavTailFirst.ForeColor = System.Drawing.Color.White;
+            this.cbNavTailFirst.IsHighlighted = false;
+            this.cbNavTailFirst.item = 0;
+            this.cbNavTailFirst.Name = "cbNavTailFirst";
+            this.cbNavTailFirst.rclevel = 0;
+            this.cbNavTailFirst.UseVisualStyleBackColor = true;
+            // 
+            // cbNavRTHHead
+            // 
+            resources.ApplyResources(this.cbNavRTHHead, "cbNavRTHHead");
+            this.cbNavRTHHead.aux = 0;
+            this.cbNavRTHHead.ForeColor = System.Drawing.Color.White;
+            this.cbNavRTHHead.IsHighlighted = false;
+            this.cbNavRTHHead.item = 0;
+            this.cbNavRTHHead.Name = "cbNavRTHHead";
+            this.cbNavRTHHead.rclevel = 0;
+            this.cbNavRTHHead.UseVisualStyleBackColor = true;
+            this.cbNavRTHHead.CheckedChanged += new System.EventHandler(this.checkBoxEx5_CheckedChanged);
+            // 
+            // cbNavWaitRTHAlt
+            // 
+            resources.ApplyResources(this.cbNavWaitRTHAlt, "cbNavWaitRTHAlt");
+            this.cbNavWaitRTHAlt.aux = 0;
+            this.cbNavWaitRTHAlt.ForeColor = System.Drawing.Color.White;
+            this.cbNavWaitRTHAlt.IsHighlighted = false;
+            this.cbNavWaitRTHAlt.item = 0;
+            this.cbNavWaitRTHAlt.Name = "cbNavWaitRTHAlt";
+            this.cbNavWaitRTHAlt.rclevel = 0;
+            this.cbNavWaitRTHAlt.UseVisualStyleBackColor = true;
+            // 
+            // cbNavSlowNav
+            // 
+            resources.ApplyResources(this.cbNavSlowNav, "cbNavSlowNav");
+            this.cbNavSlowNav.aux = 0;
+            this.cbNavSlowNav.ForeColor = System.Drawing.Color.White;
+            this.cbNavSlowNav.IsHighlighted = false;
+            this.cbNavSlowNav.item = 0;
+            this.cbNavSlowNav.Name = "cbNavSlowNav";
+            this.cbNavSlowNav.rclevel = 0;
+            this.cbNavSlowNav.UseVisualStyleBackColor = true;
+            // 
+            // throttle_expo_control1
+            // 
+            resources.ApplyResources(this.throttle_expo_control1, "throttle_expo_control1");
+            this.throttle_expo_control1.Name = "throttle_expo_control1";
+            // 
+            // rc_expo_control1
+            // 
+            resources.ApplyResources(this.rc_expo_control1, "rc_expo_control1");
+            this.rc_expo_control1.Name = "rc_expo_control1";
+            // 
+            // cbSrvRev1
+            // 
+            resources.ApplyResources(this.cbSrvRev1, "cbSrvRev1");
+            this.cbSrvRev1.aux = 0;
+            this.cbSrvRev1.IsHighlighted = false;
+            this.cbSrvRev1.item = 0;
+            this.cbSrvRev1.Name = "cbSrvRev1";
+            this.cbSrvRev1.rclevel = 0;
+            this.cbSrvRev1.UseVisualStyleBackColor = true;
+            // 
+            // cbSrvRev2
+            // 
+            resources.ApplyResources(this.cbSrvRev2, "cbSrvRev2");
+            this.cbSrvRev2.aux = 0;
+            this.cbSrvRev2.IsHighlighted = false;
+            this.cbSrvRev2.item = 0;
+            this.cbSrvRev2.Name = "cbSrvRev2";
+            this.cbSrvRev2.rclevel = 0;
+            this.cbSrvRev2.UseVisualStyleBackColor = true;
+            // 
+            // cbSrvRev3
+            // 
+            resources.ApplyResources(this.cbSrvRev3, "cbSrvRev3");
+            this.cbSrvRev3.aux = 0;
+            this.cbSrvRev3.IsHighlighted = false;
+            this.cbSrvRev3.item = 0;
+            this.cbSrvRev3.Name = "cbSrvRev3";
+            this.cbSrvRev3.rclevel = 0;
+            this.cbSrvRev3.UseVisualStyleBackColor = true;
+            // 
+            // cbSrvRev4
+            // 
+            resources.ApplyResources(this.cbSrvRev4, "cbSrvRev4");
+            this.cbSrvRev4.aux = 0;
+            this.cbSrvRev4.IsHighlighted = false;
+            this.cbSrvRev4.item = 0;
+            this.cbSrvRev4.Name = "cbSrvRev4";
+            this.cbSrvRev4.rclevel = 0;
+            this.cbSrvRev4.UseVisualStyleBackColor = true;
+            // 
+            // cbSrvRev5
+            // 
+            resources.ApplyResources(this.cbSrvRev5, "cbSrvRev5");
+            this.cbSrvRev5.aux = 0;
+            this.cbSrvRev5.IsHighlighted = false;
+            this.cbSrvRev5.item = 0;
+            this.cbSrvRev5.Name = "cbSrvRev5";
+            this.cbSrvRev5.rclevel = 0;
+            this.cbSrvRev5.UseVisualStyleBackColor = true;
+            // 
+            // cbSrvRev6
+            // 
+            resources.ApplyResources(this.cbSrvRev6, "cbSrvRev6");
+            this.cbSrvRev6.aux = 0;
+            this.cbSrvRev6.IsHighlighted = false;
+            this.cbSrvRev6.item = 0;
+            this.cbSrvRev6.Name = "cbSrvRev6";
+            this.cbSrvRev6.rclevel = 0;
+            this.cbSrvRev6.UseVisualStyleBackColor = true;
+            // 
+            // cbSrvRev7
+            // 
+            resources.ApplyResources(this.cbSrvRev7, "cbSrvRev7");
+            this.cbSrvRev7.aux = 0;
+            this.cbSrvRev7.IsHighlighted = false;
+            this.cbSrvRev7.item = 0;
+            this.cbSrvRev7.Name = "cbSrvRev7";
+            this.cbSrvRev7.rclevel = 0;
+            this.cbSrvRev7.UseVisualStyleBackColor = true;
+            // 
+            // cbSrvRev8
+            // 
+            resources.ApplyResources(this.cbSrvRev8, "cbSrvRev8");
+            this.cbSrvRev8.aux = 0;
+            this.cbSrvRev8.IsHighlighted = false;
+            this.cbSrvRev8.item = 0;
+            this.cbSrvRev8.Name = "cbSrvRev8";
+            this.cbSrvRev8.rclevel = 0;
+            this.cbSrvRev8.UseVisualStyleBackColor = true;
+            // 
+            // rci_Control_settings
+            // 
+            resources.ApplyResources(this.rci_Control_settings, "rci_Control_settings");
+            this.rci_Control_settings.Name = "rci_Control_settings";
             // 
             // dataGridViewImageColumn1
             // 
@@ -4649,16 +4540,148 @@
             this.dataGridViewImageColumn3.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
             this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
             // 
-            // timer_announce
+            // tsMenuAddWP
             // 
-            this.timer_announce.Enabled = true;
-            this.timer_announce.Interval = 30000;
-            this.timer_announce.Tick += new System.EventHandler(this.timer_announce_Tick);
+            resources.ApplyResources(this.tsMenuAddWP, "tsMenuAddWP");
+            this.tsMenuAddWP.Image = global::MultiWiiWinGUI.Properties.Resources.wpicon;
+            this.tsMenuAddWP.Name = "tsMenuAddWP";
+            this.tsMenuAddWP.Click += new System.EventHandler(this.tsMenuAddWP_Click);
+            // 
+            // tsMenuAddPosholdTimed
+            // 
+            resources.ApplyResources(this.tsMenuAddPosholdTimed, "tsMenuAddPosholdTimed");
+            this.tsMenuAddPosholdTimed.Image = global::MultiWiiWinGUI.Properties.Resources.phicon;
+            this.tsMenuAddPosholdTimed.Name = "tsMenuAddPosholdTimed";
+            this.tsMenuAddPosholdTimed.Click += new System.EventHandler(this.tsMenuAddPosholdTimed_Click);
+            // 
+            // tsMenuAddPosholdUnlim
+            // 
+            resources.ApplyResources(this.tsMenuAddPosholdUnlim, "tsMenuAddPosholdUnlim");
+            this.tsMenuAddPosholdUnlim.Image = global::MultiWiiWinGUI.Properties.Resources.poshold_unlim;
+            this.tsMenuAddPosholdUnlim.Name = "tsMenuAddPosholdUnlim";
+            this.tsMenuAddPosholdUnlim.Click += new System.EventHandler(this.tsMenuAddPosholdUnlim_Click);
+            // 
+            // tsMenuAddRTH
+            // 
+            resources.ApplyResources(this.tsMenuAddRTH, "tsMenuAddRTH");
+            this.tsMenuAddRTH.Image = global::MultiWiiWinGUI.Properties.Resources.bluehome;
+            this.tsMenuAddRTH.Name = "tsMenuAddRTH";
+            this.tsMenuAddRTH.Click += new System.EventHandler(this.tsMenuAddRTH_Click);
+            // 
+            // clearMissionToolStripMenuItem
+            // 
+            resources.ApplyResources(this.clearMissionToolStripMenuItem, "clearMissionToolStripMenuItem");
+            this.clearMissionToolStripMenuItem.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
+            this.clearMissionToolStripMenuItem.Name = "clearMissionToolStripMenuItem";
+            this.clearMissionToolStripMenuItem.Click += new System.EventHandler(this.clearMissionToolStripMenuItem_Click);
+            // 
+            // UP
+            // 
+            resources.ApplyResources(this.UP, "UP");
+            this.UP.Image = global::MultiWiiWinGUI.Properties.Resources.up_btn;
+            this.UP.Name = "UP";
+            // 
+            // Down
+            // 
+            resources.ApplyResources(this.Down, "Down");
+            this.Down.Image = global::MultiWiiWinGUI.Properties.Resources.down_btn;
+            this.Down.Name = "Down";
+            // 
+            // DEL
+            // 
+            resources.ApplyResources(this.DEL, "DEL");
+            this.DEL.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
+            this.DEL.Name = "DEL";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::MultiWiiWinGUI.Properties.Resources.checkbox_legend;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
+            // b_connect
+            // 
+            resources.ApplyResources(this.b_connect, "b_connect");
+            this.b_connect.Image = global::MultiWiiWinGUI.Properties.Resources.connect;
+            this.b_connect.Name = "b_connect";
+            this.b_connect.Click += new System.EventHandler(this.b_connect_Click);
+            // 
+            // b_read_settings
+            // 
+            resources.ApplyResources(this.b_read_settings, "b_read_settings");
+            this.b_read_settings.Image = global::MultiWiiWinGUI.Properties.Resources.read_settings;
+            this.b_read_settings.Name = "b_read_settings";
+            this.b_read_settings.Click += new System.EventHandler(this.b_read_settings_Click);
+            // 
+            // b_write_settings
+            // 
+            resources.ApplyResources(this.b_write_settings, "b_write_settings");
+            this.b_write_settings.Image = global::MultiWiiWinGUI.Properties.Resources.write_settings;
+            this.b_write_settings.Name = "b_write_settings";
+            this.b_write_settings.Click += new System.EventHandler(this.b_write_settings_Click);
+            // 
+            // b_reset
+            // 
+            resources.ApplyResources(this.b_reset, "b_reset");
+            this.b_reset.Image = global::MultiWiiWinGUI.Properties.Resources.reset;
+            this.b_reset.Name = "b_reset";
+            this.b_reset.Click += new System.EventHandler(this.b_reset_Click);
+            // 
+            // b_load_from_file
+            // 
+            resources.ApplyResources(this.b_load_from_file, "b_load_from_file");
+            this.b_load_from_file.Image = global::MultiWiiWinGUI.Properties.Resources.load_from_file;
+            this.b_load_from_file.Name = "b_load_from_file";
+            this.b_load_from_file.Click += new System.EventHandler(this.b_load_from_file_Click);
+            // 
+            // b_write_to_file
+            // 
+            resources.ApplyResources(this.b_write_to_file, "b_write_to_file");
+            this.b_write_to_file.Image = global::MultiWiiWinGUI.Properties.Resources.write_to_file;
+            this.b_write_to_file.Name = "b_write_to_file";
+            this.b_write_to_file.Click += new System.EventHandler(this.b_write_to_file_Click);
+            // 
+            // b_log
+            // 
+            resources.ApplyResources(this.b_log, "b_log");
+            this.b_log.Image = global::MultiWiiWinGUI.Properties.Resources.start_log;
+            this.b_log.Name = "b_log";
+            this.b_log.Click += new System.EventHandler(this.b_log_Click);
+            // 
+            // b_start_KML_log
+            // 
+            resources.ApplyResources(this.b_start_KML_log, "b_start_KML_log");
+            this.b_start_KML_log.BackColor = System.Drawing.Color.Transparent;
+            this.b_start_KML_log.Image = global::MultiWiiWinGUI.Properties.Resources.earth_3;
+            this.b_start_KML_log.Name = "b_start_KML_log";
+            this.b_start_KML_log.Click += new System.EventHandler(this.b_start_KML_log_Click);
+            // 
+            // b_log_browser
+            // 
+            resources.ApplyResources(this.b_log_browser, "b_log_browser");
+            this.b_log_browser.Image = global::MultiWiiWinGUI.Properties.Resources.logbrowser;
+            this.b_log_browser.Name = "b_log_browser";
+            this.b_log_browser.Click += new System.EventHandler(this.b_log_browser_Click);
+            // 
+            // b_about
+            // 
+            resources.ApplyResources(this.b_about, "b_about");
+            this.b_about.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.b_about.Image = global::MultiWiiWinGUI.Properties.Resources.about;
+            this.b_about.Name = "b_about";
+            this.b_about.Click += new System.EventHandler(this.b_about_Click);
+            // 
+            // bDebugWindws
+            // 
+            resources.ApplyResources(this.bDebugWindws, "bDebugWindws");
+            this.bDebugWindws.Name = "bDebugWindws";
+            this.bDebugWindws.Click += new System.EventHandler(this.bDebugWindws_Click);
             // 
             // mainGUI
             // 
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             resources.ApplyResources(this, "$this");
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Controls.Add(this.tabMain);
             this.Controls.Add(this.toolStrip1);
@@ -4787,7 +4810,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nSrvRate8)).EndInit();
             this.tabPageRC.ResumeLayout(false);
             this.tabPageRC.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabSensorGraph.ResumeLayout(false);
             this.splitContainer10.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).EndInit();
@@ -4811,6 +4833,7 @@
             this.groupBox3.PerformLayout();
             this.tabPageVideo.ResumeLayout(false);
             this.tabPageVideo.PerformLayout();
+            this.splitContainer6.Panel1.ResumeLayout(false);
             this.splitContainer6.Panel2.ResumeLayout(false);
             this.splitContainer6.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).EndInit();
@@ -4828,6 +4851,7 @@
             this.gbTerminal.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

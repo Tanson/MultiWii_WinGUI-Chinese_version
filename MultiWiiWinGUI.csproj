@@ -284,6 +284,9 @@
     <EmbeddedResource Include="log_downloader.resx">
       <DependentUpon>log_downloader.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="mainGUI.zh-Hans.resx">
+      <DependentUpon>mainGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SensorGraph.resx">
       <DependentUpon>SensorGraph.cs</DependentUpon>
     </EmbeddedResource>

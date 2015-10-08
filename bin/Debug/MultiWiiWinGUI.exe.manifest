@@ -4,7 +4,7 @@
   <description asmv2:iconFile="mwwingui.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5749.5440" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5757.26037" language="neutral" processorArchitecture="x86" />
     <commandLine file="MultiWiiWinGUI.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -115,14 +115,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Video.FFMPEG.dll" size="61952">
-      <assemblyIdentity name="AForge.Video.FFMPEG" version="2.2.5.0" publicKeyToken="03563089B1BE05DD" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AForge.Video.FFMPEG.dll" size="60928">
+      <assemblyIdentity name="AForge.Video.FFMPEG" version="2.2.3.0" publicKeyToken="03563089B1BE05DD" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>W4P48nmTlN83UXmWBekpKyG3hQQ=</dsig:DigestValue>
+        <dsig:DigestValue>rw1Oewrlg1plOJ665MNa5hgws7c=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -151,14 +151,26 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MultiWiiWinGUI.exe" size="7605760">
-      <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5749.5440" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MultiWiiWinGUI.exe" size="7608832">
+      <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5757.26037" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>6ybusZLHFJB0XIjY6RgUgsMCPTU=</dsig:DigestValue>
+        <dsig:DigestValue>64rrj/CfT0ux/lKn18iMMY4cl7M=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hans\MultiWiiWinGUI.resources.dll" size="92160">
+      <assemblyIdentity name="MultiWiiWinGUI.resources" version="2.3.5757.26037" language="zh-Hans" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>h4xME4Ul3YhLbp7f+e5wOfzZmSU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

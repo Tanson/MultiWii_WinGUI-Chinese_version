@@ -274,15 +274,19 @@ namespace MultiWiiWinGUI
             MainMap.MaxZoom = 20;
             MainMap.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + "/mapcache/";
 
-            mapProviders = new GMapProvider[7];
+            mapProviders = new GMapProvider[9];
             mapProviders[0] = GMapProviders.BingHybridMap;
             mapProviders[1] = GMapProviders.BingSatelliteMap;
             mapProviders[2] = GMapProviders.GoogleSatelliteMap;
             mapProviders[3] = GMapProviders.GoogleHybridMap;
             mapProviders[4] = GMapProviders.OviSatelliteMap;
             mapProviders[5] = GMapProviders.OviHybridMap;
+            mapProviders[6] = GMapProviders.YahooHybridMap;
+            mapProviders[7] = GMapProviders.YahooMap;
+            mapProviders[8] = GMapProviders.YahooSatelliteMap;
 
-            for (int i = 0; i < 6; i++)
+
+            for (int i = 0; i < mapProviders.Length; i++)
             {
                 cbMapProviders.Items.Add(mapProviders[i]);
             }
@@ -395,10 +399,15 @@ namespace MultiWiiWinGUI
             splash.Refresh();
 
             MainMap.Manager.Mode = AccessMode.ServerAndCache;
-            if (!Stuff.PingNetwork("202.103.224.68"))
+            if (!Stuff.PingNetwork("www.sina.com.cn"))
             {
-                MainMap.Manager.Mode = AccessMode.CacheOnly;
-                MessageBox.Show("地图控件无法连接到互联网，将采用缓存模式.", "GMap.NET - Demo.WindowsForms", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                
+                DialogResult result = MessageBox.Show("地图控件无法连接到互联网，是否采用缓存模式？", "GMap.NET控件无法访问互联网", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if (result == DialogResult.Yes)
+                {
+                    MainMap.Manager.Mode = AccessMode.CacheOnly;
+                }
+               // MessageBox.Show("地图控件无法连接到互联网，将采用缓存模式.", "GMap.NET - Demo.WindowsForms", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -5301,7 +5310,15 @@ namespace MultiWiiWinGUI
             if (isArmed() && speech !=null && isConnected)
             {
                 if (gui_settings.announce_alt_enabled) speech.SpeakAsync("高度，气压计：" + Convert.ToString(mw_gui.EstAlt / 100) + "米，卫星：" + mw_gui.GPS_altitude + "米。");
-                if (gui_settings.announce_vbat_enabled) speech.SpeakAsync("电压" + Convert.ToString(((double)mw_gui.vBat) / 10) + "伏。");
+                var vat = ((double)mw_gui.vBat) / 10;
+                if (gui_settings.announce_vbat_enabled) speech.SpeakAsync("电压" +vat + "伏。");
+               
+                if (vat<=11.2)
+                {
+                    speech.SpeakAsync("电压低！");
+                    speech.SpeakAsync("电压低！");
+                    speech.SpeakAsync("电压低！");
+                }
                 if (gui_settings.announce_dist_enabled) speech.SpeakAsync("距返回点 " + Convert.ToString(mw_gui.GPS_distanceToHome) + "米。");
             }
         }
@@ -5347,6 +5364,8 @@ namespace MultiWiiWinGUI
             }
             
         }
+
+       
 
 
 

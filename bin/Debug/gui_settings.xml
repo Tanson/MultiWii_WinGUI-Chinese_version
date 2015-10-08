@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--MultiWiiWinGUI, Version 2.3.5749.5440-->
+<!--MultiWiiWinGUI, Version 2.3.5757.26037-->
 <!--GUI Settings-->
 <!--Do not change this file manually, unless you know what are you doing-->
 <PARAMETERS>
@@ -20,12 +20,12 @@
     <LOGNAV value="True" />
     <LOGPAR value="True" />
     <LOGDBG value="False" />
-    <MAPPROVIDER value="1" />
+    <MAPPROVIDER value="0" />
     <SPEECH_ENABLED value="True" />
     <ANNOUNCE_ALT value="True" />
     <ANNOUNCE_VBAT value="True" />
     <ANNOUNCE_DIST value="False" />
-    <ANNOUNCE_INTERVAL value="2" />
+    <ANNOUNCE_INTERVAL value="1" />
     <CELLCOUNT value="3" />
     <MAX_WP_NUMBER value="178" />
     <WP_RADIUS value="100" />

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -273,27 +274,76 @@ namespace MultiWiiWinGUI
 
     public class Stuff
     {
+        public static string GetIpByHostName(string hostName)
+        {
+            hostName = hostName.Trim();
+            if (hostName == string.Empty)
+                return string.Empty;
+            try
+            {
+                System.Net.IPHostEntry host = System.Net.Dns.GetHostEntry(hostName);
+                return host.AddressList.GetValue(0).ToString();
+            }
+            catch (Exception)
+            {
+                return string.Empty;
+            }
+        }  
         public static bool PingNetwork(string hostNameOrAddress)
         {
             bool pingStatus = false;
+            hostNameOrAddress = hostNameOrAddress.Trim();
+            if (hostNameOrAddress == string.Empty)
+                return false;
 
-            using (Ping p = new Ping())
+            try
             {
-                byte[] buffer = Encoding.ASCII.GetBytes("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
-                int timeout = 4444; // 4s
-
-                try
+                string ip = string.Empty;
+                IPAddress ipadd;
+                if (IPAddress.TryParse(hostNameOrAddress, out ipadd))
                 {
-                    PingReply reply = p.Send(hostNameOrAddress, timeout, buffer);
-                    pingStatus = (reply.Status == IPStatus.Success);
+                    ip = hostNameOrAddress;
                 }
-                catch (Exception)
+                else
                 {
-                    pingStatus = false;
+                    ip = GetIpByHostName(hostNameOrAddress);
+                }
+                //string ip = GetIpByHostName(hostNameOrAddress);
+                using (Ping p = new Ping())
+                {
+                    PingOptions options = new PingOptions();
+                    options.DontFragment = true;
+                    string data = "Test Data!";
+                    byte[] buffer = Encoding.ASCII.GetBytes(data);
+                    int timeout = 1000; // Timeout 时间，单位：毫秒  
+                    System.Net.NetworkInformation.PingReply reply = p.Send(ip, timeout, buffer, options);
+                    pingStatus = reply.Status == System.Net.NetworkInformation.IPStatus.Success;  
                 }
             }
-
+            catch (Exception ex)
+            {
+                Debug.Print(ex.Message);
+                pingStatus = false;  
+            }
             return pingStatus;
+
+            //using (Ping p = new Ping())
+            //{
+            //    byte[] buffer = Encoding.ASCII.GetBytes("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
+            //    int timeout = 4444; // 4s
+
+            //    try
+            //    {
+            //        PingReply reply = p.Send(hostNameOrAddress, timeout, buffer);
+            //        pingStatus = (reply.Status == IPStatus.Success);
+            //    }
+            //    catch (Exception)
+            //    {
+            //        pingStatus = false;
+            //    }
+            //}
+
+            //return pingStatus;
         }
     }
 
