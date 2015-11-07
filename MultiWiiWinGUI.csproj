@@ -145,12 +145,12 @@
       <HintPath>.\AForge.Video.FFMPEG.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.Core, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
-      <HintPath>packages\GMap.NET.WindowsForms.1.7.1\lib\net40\GMap.NET.Core.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\greatmaps-464b20bfe692\greatmaps_464b20bfe692\Build\Release-NETv2.0\GMap.NET.Core.dll</HintPath>
     </Reference>
     <Reference Include="GMap.NET.WindowsForms, Version=1.7.0.0, Culture=neutral, PublicKeyToken=b85b9027b614afef, processorArchitecture=MSIL">
-      <HintPath>packages\GMap.NET.WindowsForms.1.7.1\lib\net40\GMap.NET.WindowsForms.dll</HintPath>
-      <Private>True</Private>
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\greatmaps-464b20bfe692\greatmaps_464b20bfe692\Build\Release-NETv2.0\GMap.NET.WindowsForms.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -193,6 +193,7 @@
     <Compile Include="log_downloader.Designer.cs">
       <DependentUpon>log_downloader.cs</DependentUpon>
     </Compile>
+    <Compile Include="Module\HUD.cs" />
     <Compile Include="MWGUIControls\altitude_meter.cs">
       <SubType>Component</SubType>
     </Compile>

@@ -1,4 +1,5 @@
-﻿namespace MultiWiiWinGUI
+﻿using GMap.NET.MapProviders;
+namespace MultiWiiWinGUI
 {
     partial class mainGUI
     {
@@ -1010,7 +1011,7 @@
             resources.ApplyResources(this.cbMapProviders, "cbMapProviders");
             this.cbMapProviders.FormattingEnabled = true;
             this.cbMapProviders.Name = "cbMapProviders";
-            this.cbMapProviders.SelectedIndexChanged += new System.EventHandler(this.cbMapProviders_SelectedIndexChanged);
+           
             // 
             // b_Clear_Route
             // 

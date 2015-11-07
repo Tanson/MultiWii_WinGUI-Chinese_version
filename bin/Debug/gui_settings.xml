@@ -20,7 +20,7 @@
     <LOGNAV value="True" />
     <LOGPAR value="True" />
     <LOGDBG value="False" />
-    <MAPPROVIDER value="0" />
+    <MAPPROVIDER value="1" />
     <SPEECH_ENABLED value="True" />
     <ANNOUNCE_ALT value="True" />
     <ANNOUNCE_VBAT value="True" />

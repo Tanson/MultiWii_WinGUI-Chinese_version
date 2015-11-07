@@ -76,8 +76,8 @@ namespace MultiWiiWinGUI
                                "着陆正在进行中，如果可能的话请检查参数。"};
 
         string[] sSerialSpeeds = { "115200", "57600", "38400", "19200", "9600" };
-        string[] sRefreshSpeeds = { "10 Hz", "5 Hz", "2 Hz", "1 Hz" };
-        int[] iRefreshIntervals = { 10, 20, 50, 100 };
+        string[] sRefreshSpeeds = {"20 Hz", "10 Hz", "5 Hz", "2 Hz", "1 Hz" };
+        int[] iRefreshIntervals = {5, 10, 20, 50, 100 };
         const int rcLow = 1300;
         const int rcMid = 1700;
 
@@ -179,8 +179,7 @@ namespace MultiWiiWinGUI
         static GMapOverlay GMOverlayLiveData;
         static GMapOverlay GMOverlayPOI;
 
-        static GMapProvider[] mapProviders;
-        static PointLatLng copterPos = new PointLatLng(22.7615254,108.2599211);       //Just the corrds of my flying place
+        static PointLatLng copterPos = new PointLatLng(22.758201, 108.263773);       //Just the corrds of my flying place
 
         static bool isMouseDown = false;
         static bool isMouseDraging = false;
@@ -274,22 +273,11 @@ namespace MultiWiiWinGUI
             MainMap.MaxZoom = 20;
             MainMap.CacheLocation = Path.GetDirectoryName(Application.ExecutablePath) + "/mapcache/";
 
-            mapProviders = new GMapProvider[9];
-            mapProviders[0] = GMapProviders.BingHybridMap;
-            mapProviders[1] = GMapProviders.BingSatelliteMap;
-            mapProviders[2] = GMapProviders.GoogleSatelliteMap;
-            mapProviders[3] = GMapProviders.GoogleHybridMap;
-            mapProviders[4] = GMapProviders.OviSatelliteMap;
-            mapProviders[5] = GMapProviders.OviHybridMap;
-            mapProviders[6] = GMapProviders.YahooHybridMap;
-            mapProviders[7] = GMapProviders.YahooMap;
-            mapProviders[8] = GMapProviders.YahooSatelliteMap;
-
-
-            for (int i = 0; i < mapProviders.Length; i++)
-            {
-                cbMapProviders.Items.Add(mapProviders[i]);
-            }
+        
+            //for (int i = 0; i < mapProviders.Length; i++)
+            //{
+            //    cbMapProviders.Items.Add(mapProviders[i]);
+            //}
 
             // map events
 
@@ -411,9 +399,10 @@ namespace MultiWiiWinGUI
             }
 
 
-
+            cbMapProviders.DataSource = GMapProviders.List;
+            this.cbMapProviders.SelectedIndexChanged += new System.EventHandler(this.cbMapProviders_SelectedIndexChanged);
             cbMapProviders.SelectedIndex = gui_settings.iMapProviderSelectedIndex;
-            MainMap.MapProvider = mapProviders[gui_settings.iMapProviderSelectedIndex];
+            MainMap.MapProvider = (GMapProvider) cbMapProviders.Items[gui_settings.iMapProviderSelectedIndex];
             MainMap.Zoom = 18;
 
             splash.sStatus = "正在构建操作界面元素...";
@@ -1306,7 +1295,7 @@ namespace MultiWiiWinGUI
                         timer_realtime.Start();             //need to check about logging .....
                         break;
                     case GUIPages.Video:
-                        timer_realtime.Stop();
+                        timer_realtime.Start(); 
                         break;
                     case GUIPages.GUISettings:
                         timer_realtime.Stop();
@@ -3735,7 +3724,6 @@ namespace MultiWiiWinGUI
 
         private void cbMapProviders_SelectedIndexChanged(object sender, EventArgs e)
         {
-
             this.Cursor = Cursors.WaitCursor;
             //MainMap.MapProvider = GMapProviders.GoogleSatelliteMap;
             MainMap.MapProvider = (GMapProvider)cbMapProviders.SelectedItem;
@@ -4694,11 +4682,28 @@ namespace MultiWiiWinGUI
         private void videoSourcePlayer_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             Bitmap image = eventArgs.Frame;
-            //Graphics g = Graphics.FromImage(image);
+            Graphics g = Graphics.FromImage(image);
+            Font mydrawFont = new System.Drawing.Font("Arial", 8);
+            SolidBrush mydrawBrush = new System.Drawing.SolidBrush(Color.FromArgb(255,0,255,0));
+            g.DrawString(String.Format("BAT:{0}", mw_gui.vBat), mydrawFont, mydrawBrush, 10, 10);
+            Module.HUD.Airspeed = mw_gui.GPS_speed;
+            Module.HUD.Altitude = mw_gui.EstAlt;
+            Module.HUD.Heading = mw_gui.heading;
+            Module.HUD.Pitch = -mw_gui.angy;
+            Module.HUD.Roll = -mw_gui.angx;
 
-            //g.DrawString(String.Format("{0:0}", mw_gui.angx), drawFont, drawBrush, 100,100);
-
-
+            Module.HUD.DrawHorizon(g, image.Width, image.Height, -mw_gui.angy, -mw_gui.angx);
+            Module.HUD.DrawSpeedGuage(g, new Point(10, 50));
+            Module.HUD.DrawAltitudeGuage(g, new Point(image.Width - 70, 50));
+            Module.HUD.DrawRollGuage(g, new Point(image.Width / 2, 220));
+            Module.HUD.DrawCompass(g, new Point(image.Width / 2, image.Height - 80));
+            //气压计mw_gui.EstAlt（厘米）
+            //电压mw_gui.vBat（0.1v）
+            //方向mw_gui.heading 指南针角度
+            //俯仰mw_gui.angx  mw_gui.angy
+            //回家距离 GPS_distanceToHome;
+           //回家角度GPS_directionToHome;
+            //test
             if (bVideoRecording == true)
             {
                 tsFrameTimeStamp = tsFrameTimeStamp.Add(tsFrameRate);

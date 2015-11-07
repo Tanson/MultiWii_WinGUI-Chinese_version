@@ -108,10 +108,11 @@ namespace MultiWiiWinGUI
                 b_load_from_file.Enabled = false;
                 btnDownLoadMission.Enabled = false;
                 btnUploadMission.Enabled = false;
+                if (gui_settings.speech_enabled)
+                {
+                    speech.SpeakAsync("飞机通信信道断开。");
 
-                speech.SpeakAsync("飞机通信信道断开。");
-
-
+                }
             }
             else                               //Connect
             {
@@ -244,7 +245,10 @@ namespace MultiWiiWinGUI
                 bOptions_needs_refresh = true;
                 create_RC_Checkboxes(mw_gui.sBoxNames);
                 update_gui();
-                speech.SpeakAsync("飞机通信信道链接完成。");
+                if (gui_settings.speech_enabled)
+                {
+                    speech.SpeakAsync("飞机通信信道链接完成。");
+                }
             }
         }
 

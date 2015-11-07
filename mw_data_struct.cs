@@ -751,24 +751,53 @@ namespace MultiWiiWinGUI
         public int magx;    //Magnetometer 
         public int magy;    //Magnetometer 
         public int magz;   //Magnetometer 
-
-        public int EstAlt;
+        /// <summary>
+        /// 气压计高度(厘米)
+        /// </summary>
+        public int EstAlt;//气压计高度
+        /// <summary>
+        /// 垂直速度（厘米/秒）
+        /// </summary>
         public int vario;
-
+        /// <summary>
+        /// 指南针角度
+        /// </summary>
         public int heading;
         public int[] servos;
         public int[] motors;
-        public int rcRoll, rcPitch, rcYaw, rcThrottle;
+        public int rcRoll, rcPitch, rcYaw, rcThrottle;//遥控器输入的横滚，俯仰，航向，油门值
+        /// <summary>
+        /// AUX通道值数组
+        /// </summary>
         public int[] rcAUX;
         public int present;            //What sensors are present?
         public UInt32 mode;               //What mode are we in ?
+        /// <summary>
+        /// I2C错误数
+        /// </summary>
         public int i2cErrors;
+        /// <summary>
+        /// 循环时间（微妙）
+        /// </summary>
         public int cycleTime;
+        /// <summary>
+        /// 俯仰 Must be /10
+        /// </summary>
         public int angx;                //Must be /10
+        /// <summary>
+        /// 横滚 Must be /10
+        /// </summary>
         public int angy;                //Must be /10
+        /// <summary>
+        /// 飞行器类型
+        /// </summary>
         public byte multiType;
+        /// <summary>
+        /// 飞控软件版本
+        /// </summary>
         public byte version;
         public byte protocol_version;
+
         public UInt32 capability;
         public byte[] pidP;
         public byte[] pidI;
@@ -783,17 +812,53 @@ namespace MultiWiiWinGUI
         public UInt32[] activation;
         public string[] sBoxNames;
         public bool bUpdateBoxNames;
+        /// <summary>
+        /// 回家距离
+        /// </summary>
         public int GPS_distanceToHome;
+        /// <summary>
+        /// 回家角度
+        /// </summary>
         public int GPS_directionToHome;
+        /// <summary>
+        /// 卫星数量
+        /// </summary>
         public byte GPS_numSat;
+        /// <summary>
+        /// 2D/3D模式
+        /// </summary>
         public byte GPS_fix;
+        /// <summary>
+        /// GPS是否更新
+        /// </summary>
         public byte GPS_update;
+        /// <summary>
+        /// 当前经度
+        /// </summary>
         public int GPS_latitude;
+        /// <summary>
+        /// 当前纬度
+        /// </summary>
         public int GPS_longitude;
+        /// <summary>
+        /// 当前海拔（米）
+        /// </summary>
         public int GPS_altitude;
+        /// <summary>
+        /// 运动速度
+        /// </summary>
         public int GPS_speed;
+        /// <summary>
+        /// 返回点的经度
+        /// </summary>
         public int GPS_home_lat;
+        /// <summary>
+        /// 返回点的纬度
+        /// </summary>
         public int GPS_home_lon;
+        /// <summary>
+        /// 返回点的高度
+        /// </summary>
         public int GPS_home_alt;
         public int GPS_poshold_lat;
         public int GPS_poshold_lon;
@@ -802,15 +867,28 @@ namespace MultiWiiWinGUI
 
         //Analog
         public uint pMeterSum;
+        /// <summary>
+        /// 电池电压(必须除以10)
+        /// </summary>
         public byte vBat;
         public uint rssi;
         
         
         //Misc
         public uint powerTrigger;
+        /// <summary>
+        /// 最小油门
+        /// </summary>
         public uint minThrottle;
+        /// <summary>
+        /// 最大油门
+        /// </summary>
         public uint maxThrottle;
+        /// <summary>
+        /// 最小油门命令
+        /// </summary>
         public uint minCommand;
+
 
         public uint failsafe_throttle;
         public uint plog_arm;
