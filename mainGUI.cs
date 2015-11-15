@@ -4682,11 +4682,46 @@ namespace MultiWiiWinGUI
         private void videoSourcePlayer_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             Bitmap image = eventArgs.Frame;
+            if (videoH == 0)
+                videoH = image.Height;
+            if (videoW == 0)
+                videoW = image.Width;
             Graphics g = Graphics.FromImage(image);
-            Font mydrawFont = new System.Drawing.Font("Arial", 8);
-            SolidBrush mydrawBrush = new System.Drawing.SolidBrush(Color.FromArgb(255,0,255,0));
-            g.DrawString(String.Format("BAT:{0}", mw_gui.vBat), mydrawFont, mydrawBrush, 10, 10);
-            Module.HUD.Airspeed = mw_gui.GPS_speed;
+            Font mydrawFont = new Font("宋体", 9,FontStyle.Bold);  
+            SolidBrush mydrawBrush = new System.Drawing.SolidBrush(Color.FromArgb(150,Color.White));
+
+            g.DrawString(String.Format("电压:{0}", mw_gui.vBat), mydrawFont, mydrawBrush, 10, 5);
+            g.DrawString(String.Format("GPS:{0}", mw_gui.GPS_update), mydrawFont, mydrawBrush, 70, 5);
+            g.DrawString(String.Format("2D/3D:{0}", mw_gui.GPS_fix), mydrawFont, mydrawBrush, 10, 20);
+            g.DrawString(String.Format("卫星数量:{0}", mw_gui.GPS_numSat), mydrawFont, mydrawBrush, 70, 20);
+            g.DrawString(String.Format("距离:{0}", mw_gui.GPS_distanceToHome), mydrawFont, mydrawBrush,10, 35);
+            g.DrawString(String.Format("速度:{0}", mw_gui.GPS_speed), mydrawFont, mydrawBrush, 70,35);
+           // g.DrawString(String.Format("Speed:{0}", mw_gui.), mydrawFont, mydrawBrush, 110, image.Height - 65);
+
+            int txtspace = 10;
+            int txthight = image.Height - 50;
+
+            if(mw_gui.sBoxNames!=null)
+                for (int i = 0; i < mw_gui.sBoxNames.Length; i++)
+                {
+                    if ((mw_gui.mode & (1 << i)) > 0)
+                    {
+                        string sBoxName = mw_gui.sBoxNames[i];
+
+                        g.DrawString(sBoxName, mydrawFont, mydrawBrush, txtspace, txthight);
+                      
+                        txtspace = txtspace + sBoxName.Length*7 + 8;
+                        if (txtspace > image.Width/3)
+                        {
+                            txtspace = 10;
+                            txthight += 15;
+                        }
+                    }
+                }
+
+
+
+            Module.HUD.Airspeed = mw_gui.vario;
             Module.HUD.Altitude = mw_gui.EstAlt;
             Module.HUD.Heading = mw_gui.heading;
             Module.HUD.Pitch = -mw_gui.angy;
@@ -4716,6 +4751,8 @@ namespace MultiWiiWinGUI
 
         }
 
+        private int videoH = 0;
+        private int videoW = 0;
         private void b_video_connect_Click(object sender, EventArgs e)
         {
 
@@ -4727,6 +4764,8 @@ namespace MultiWiiWinGUI
                 // open it
                 OpenVideoSource(videoSource);
                 bVideoConnected = true;
+                videoH = 0;
+                videoW = 0;
                 b_video_connect.Text = "断开视频连接";
             }
             else
@@ -4752,7 +4791,7 @@ namespace MultiWiiWinGUI
                     vfwWriter = new VideoFileWriter();
                     //vfwWriter.Open("h:\\capture" + String.Format("-{0:yyMMdd-hhmm}", DateTime.Now) + ".avi", 640, 480, (int)nFrameRate.Value, (VideoCodec)cb_codec.SelectedIndex, (int)(1000000 * nBitRate.Value));
                     //create new video file
-                    vfwWriter.Open(gui_settings.sCaptureFolder + "\\capture" + String.Format("-{0:yyMMdd-hhmm}", DateTime.Now) + ".avi", 640, 480, (int)nFrameRate.Value, (VideoCodec)cb_codec.SelectedIndex, (int)(1000000 * nBitRate.Value));
+                    vfwWriter.Open(gui_settings.sCaptureFolder + "\\capture" + String.Format("-{0:yyMMdd-hhmm}", DateTime.Now) + ".avi", videoW, videoH, (int)nFrameRate.Value, (VideoCodec)cb_codec.SelectedIndex, (int)(1000000 * nBitRate.Value));
                     b_Record.Text = "录制视频中...";
                     b_Record.BackColor = Color.Red;
                     tsFrameTimeStamp = new TimeSpan(0);
