@@ -31,6 +31,7 @@ using GMap.NET.WindowsForms;
 using GMap.NET.WindowsForms.Markers;
 using GMap.NET.MapProviders;
 using System.Globalization;
+using System.Linq;
 using System.Reflection;
 using System.Media;
 using System.Speech;
@@ -2133,6 +2134,17 @@ namespace MultiWiiWinGUI
                         set_servo_control(3, true, "NICK Servo");
                         set_servo_control(4, true, "Roll Servo");
                         set_servo_control(6, true, "Collective Servo");
+                        break;
+                    default:
+                        if (mw_gui.sBoxNames.Any(a => a == "CAMSTAB"))
+                        {
+                            set_servo_control(0, true, "Pitch");
+                            set_servo_control(1, true, "Roll");
+                        }
+                        if (mw_gui.sBoxNames.Any(a => a == "CAMTRIG"))
+                        {
+                            set_servo_control(2, true, "Trigger");
+                        }
                         break;
                 }
 
