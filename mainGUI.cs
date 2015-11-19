@@ -37,6 +37,8 @@ using System.Media;
 using System.Speech;
 using System.Speech.Synthesis;
 using System.Windows.Forms;
+using MultiWiiWinGUI.Module;
+using MultiWiiWinGUI.MWGUIControls;
 
 namespace MultiWiiWinGUI
 {
@@ -180,8 +182,8 @@ namespace MultiWiiWinGUI
         static GMapOverlay GMOverlayLiveData;
         static GMapOverlay GMOverlayPOI;
 
-        static PointLatLng copterPos = new PointLatLng(22.758201, 108.263773);       //Just the corrds of my flying place
-
+        //static PointLatLng copterPos = new PointLatLng(22.758201, 108.263773);       //Just the corrds of my flying place
+        static PointLatLng copterPos = new PointLatLng(22.761075, 108.259851);
         static bool isMouseDown = false;
         static bool isMouseDraging = false;
 
@@ -268,6 +270,11 @@ namespace MultiWiiWinGUI
         public mainGUI()
         {
             InitializeComponent();
+            gui_settings = new GUI_settings();
+            if (!gui_settings.read_from_xml(sGuiSettingsFilename))
+            {
+                Environment.Exit(-1);
+            }
             #region map_setup
             // config map             
             MainMap.MinZoom = 1;
@@ -297,7 +304,8 @@ namespace MultiWiiWinGUI
             MainMap.ForceDoubleBuffer = true;
             MainMap.Manager.Mode = AccessMode.ServerAndCache;
 
-            MainMap.Position = copterPos;
+            MainMap.Position = GetChinesePoint(copterPos);
+            //MainMap.Position = copterPos;
 
             Pen penRoute = new Pen(Color.Yellow, 3);
             Pen penScale = new Pen(Color.Blue, 3);
@@ -323,7 +331,7 @@ namespace MultiWiiWinGUI
 
 
             GMOverlayLiveData.Markers.Clear();
-            GMOverlayLiveData.Markers.Add(new GMapMarkerCopter(copterPos, 0, 0, 0, 3));
+            GMOverlayLiveData.Markers.Add(new GMapMarkerCopter(GetChinesePoint(copterPos), 0, 0, 0, 3));
 
             GMRouteFlightPath = new GMapRoute(points, "flightpath");
             GMRouteFlightPath.Stroke = penRoute;
@@ -399,10 +407,11 @@ namespace MultiWiiWinGUI
                // MessageBox.Show("地图控件无法连接到互联网，将采用缓存模式.", "GMap.NET - Demo.WindowsForms", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-
+            cbGpsCorrect.Checked = gui_settings.GpsCorrect;
             cbMapProviders.DataSource = GMapProviders.List;
             this.cbMapProviders.SelectedIndexChanged += new System.EventHandler(this.cbMapProviders_SelectedIndexChanged);
             cbMapProviders.SelectedIndex = gui_settings.iMapProviderSelectedIndex;
+           
             MainMap.MapProvider = (GMapProvider) cbMapProviders.Items[gui_settings.iMapProviderSelectedIndex];
             MainMap.Zoom = 18;
 
@@ -1392,7 +1401,6 @@ namespace MultiWiiWinGUI
                                 iCheckBoxItems++;
                             }
 
-
                             if (String.Compare(reader.Name, "version", true) == 0 && reader.HasAttributes)
                             {
                                 reader.MoveToAttribute("id");
@@ -1499,6 +1507,9 @@ namespace MultiWiiWinGUI
 
             byte ptr;
 
+            double lat;
+            double lng;
+            PointLatLng point;
             switch (cmd)
             {
                 case MSP.MSP_IDENT:
@@ -1565,8 +1576,14 @@ namespace MultiWiiWinGUI
                     ptr = 0;
                     mw_gui.GPS_fix = (byte)inBuf[ptr++];
                     mw_gui.GPS_numSat = (byte)inBuf[ptr++];
-                    mw_gui.GPS_latitude = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
-                    mw_gui.GPS_longitude = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                    lat = 0;
+                    lng = 0;
+                    lat=BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                    lng=BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                    point = GetChinesePoint(lat / 10000000, lng / 10000000);
+                    mw_gui.GPS_latitude = (int) (point.Lat*10000000);
+                    mw_gui.GPS_longitude = (int) (point.Lng*10000000);
+
                     mw_gui.GPS_altitude = BitConverter.ToInt16(inBuf, ptr); ptr += 2;
                     mw_gui.GPS_speed = BitConverter.ToInt16(inBuf, ptr); ptr += 2;
                     break;
@@ -1713,8 +1730,13 @@ namespace MultiWiiWinGUI
                     if (wp_no == 0)
                     {
                         ptr++;  //Action is ignored
-                        mw_gui.GPS_home_lat = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
-                        mw_gui.GPS_home_lon = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        lat = 0;
+                        lng = 0;
+                        lat = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        lng = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        point = GetChinesePoint(lat / 10000000, lng / 10000000);
+                        mw_gui.GPS_home_lat = (int)(point.Lat * 10000000);
+                        mw_gui.GPS_home_lon = (int)(point.Lng * 10000000);
                         mw_gui.GPS_home_alt = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
                         bHomeRecorded = true;
                         //flag comes here but not care
@@ -1722,8 +1744,13 @@ namespace MultiWiiWinGUI
                     if (wp_no == 255)
                     {
                         ptr++; //action is ignored
-                        mw_gui.GPS_poshold_lat = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
-                        mw_gui.GPS_poshold_lon = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        lat = 0;
+                        lng = 0;
+                        lat = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        lng = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        point = GetChinesePoint(lat / 10000000, lng / 10000000);
+                        mw_gui.GPS_poshold_lat = (int)(point.Lat * 10000000);
+                        mw_gui.GPS_poshold_lon = (int)(point.Lng * 10000000);
                         mw_gui.GPS_poshold_alt = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
                         bPosholdRecorded = true;
 
@@ -3688,7 +3715,6 @@ namespace MultiWiiWinGUI
                 }
                 else
                 {
-
                     PointLatLng pnew = MainMap.FromLocalToLatLng(e.X, e.Y);
 
                     int? pIndex = (int?)CurentRectMarker.Tag;
@@ -3744,6 +3770,7 @@ namespace MultiWiiWinGUI
             MainMap.Zoom = 18;
             MainMap.Invalidate(false);
             gui_settings.iMapProviderSelectedIndex = cbMapProviders.SelectedIndex;
+            gui_settings.GpsCorrect = cbGpsCorrect.Checked;
             gui_settings.save_to_xml(sGuiSettingsFilename);
 
 
@@ -4593,6 +4620,10 @@ namespace MultiWiiWinGUI
         //Temporary implementation to 
         private void sendWPToMultiWii(SerialPort serialport, int wp_number, byte action, double lat, double lon, int alt, int p1,int p2, int p3, byte flag)  
         {
+            var point = GetGpsPoint(lat, lon);
+            lat = point.Lat;
+            lon = point.Lng;
+
             byte[] buffer = new byte[250];          //this must be long enough
             int bptr = 0;                           //buffer pointer
             byte[] bInt16 = new byte[2];            //two byte buffer for converting int to two separated bytes
@@ -5198,7 +5229,7 @@ namespace MultiWiiWinGUI
         {
             string head = "0";
             int iHead = 0;
-            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show("设置航向", "设置飞行器的航向位置 (0-360度) -1标示清除航向控制", ref head))
+            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show(MWGUIControlsResources.mainGUI_tsMenuSetHead_Click_设置航向, MWGUIControlsResources.mainGUI_tsMenuSetHead_Click_设置飞行器的航向位置, ref head))
                 return;
             int.TryParse(head, out iHead);
             addWP("SET_HEAD", iHead, 0, 0, 0, 0, 0);
@@ -5216,15 +5247,15 @@ namespace MultiWiiWinGUI
         {
 
             string RadiusIn = "50";
-            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show("半径", "半径（最小20米）", ref RadiusIn))
+            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show(MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_半径, MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_RadiusIn, ref RadiusIn))
                 return;
 
             string Pointsin = "20";
-            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show("位置", "圆上生成的点（最小5，最大30）", ref Pointsin))
+            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show(MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_位置, MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_Pointsin, ref Pointsin))
                 return;
 
             string Directionin = "1";
-            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show("位置", "圆的飞行方向（- 1或1）", ref Directionin))
+            if (System.Windows.Forms.DialogResult.Cancel == InputBox.Show(MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_位置, MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_Directionin, ref Directionin))
                 return;
 
             int Points = 0;
@@ -5233,19 +5264,19 @@ namespace MultiWiiWinGUI
 
             if (!int.TryParse(RadiusIn, out Radius) || Radius < 20)
             {
-                MessageBox.Show("无效半径");
+                MessageBox.Show(MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_无效半径);
                 return;
             }
 
             if (!int.TryParse(Pointsin, out Points) || Points < 5 || Points >30 )
             {
-                MessageBox.Show("无效的位置点");
+                MessageBox.Show(MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_无效的位置点);
                 return;
             }
 
             if (!int.TryParse(Directionin, out Direction))
             {
-                MessageBox.Show("无效的方向数据");
+                MessageBox.Show(MWGUIControlsResources.mainGUI_createCircleToolStripMenuItem_Click_无效的方向数据);
                 return;
             }
 
@@ -5287,7 +5318,7 @@ namespace MultiWiiWinGUI
         private void bulkAltitudeChangeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             string altdif = "0";
-            InputBox.Show("变更高度", "请输入所需的高度变化（正负值）", ref altdif);
+            InputBox.Show(MWGUIControlsResources.mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_title, MWGUIControlsResources.mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_body, ref altdif);
 
             int altchange = int.Parse(altdif);
 
@@ -5313,7 +5344,7 @@ namespace MultiWiiWinGUI
                      updateMap();
                      updateIndex();
                  }
-                 catch { MessageBox.Show("航点错误, 请重新选择."); }
+                 catch { MessageBox.Show(MWGUIControlsResources.mainGUI_tsMenuDeleteWP_Click_航点错误__请重新选择_提示); }
              }
          }
 
@@ -5367,15 +5398,15 @@ namespace MultiWiiWinGUI
             {
                 if (gui_settings.announce_alt_enabled) speech.SpeakAsync("高度，气压计：" + Convert.ToString(mw_gui.EstAlt / 100) + "米，卫星：" + mw_gui.GPS_altitude + "米。");
                 var vat = ((double)mw_gui.vBat) / 10;
-                if (gui_settings.announce_vbat_enabled) speech.SpeakAsync("电压" +vat + "伏。");
+                if (gui_settings.announce_vbat_enabled) speech.SpeakAsync(string.Format(MWGUIControlsResources.mainGUI_timer_announce_Tick_Speek_Bat, vat));
                
                 if (vat<=11.2)
                 {
-                    speech.SpeakAsync("电压低！");
-                    speech.SpeakAsync("电压低！");
-                    speech.SpeakAsync("电压低！");
+                    speech.SpeakAsync(MWGUIControlsResources.mainGUI_timer_announce_Tick_Speek_LowBat);
+                    speech.SpeakAsync(MWGUIControlsResources.mainGUI_timer_announce_Tick_Speek_LowBat);
+                    speech.SpeakAsync(MWGUIControlsResources.mainGUI_timer_announce_Tick_Speek_LowBat);
                 }
-                if (gui_settings.announce_dist_enabled) speech.SpeakAsync("距返回点 " + Convert.ToString(mw_gui.GPS_distanceToHome) + "米。");
+                if (gui_settings.announce_dist_enabled) speech.SpeakAsync(string.Format(MWGUIControlsResources.mainGUI_timer_announce_Tick_Speek_GPS_distanceToHome, Convert.ToString(mw_gui.GPS_distanceToHome)));
             }
         }
 
@@ -5421,8 +5452,56 @@ namespace MultiWiiWinGUI
             
         }
 
-       
+        private PointLatLng GetChinesePoint(PointLatLng point)
+        {
+            if (gui_settings.GpsCorrect)
+            {
+                return Module.EvilTransform.WGS2GCJ(point);
+            }
+            else
+            {
+                return point;
+            }
+        }
+        private PointLatLng GetChinesePoint(double lat,double lng)
+        {
+            if (gui_settings.GpsCorrect)
+            {
+                return Module.EvilTransform.WGS2GCJ(lat,lng);
+            }
+            else
+            {
+                return new PointLatLng(lat,lng);
+            }
+        }
+        private PointLatLng GetGpsPoint(PointLatLng point)
+        {
+            if (gui_settings.GpsCorrect)
+            {
+                return Module.EvilTransform.GCJ2WGS(point);
+            }
+            else
+            {
+                return point;
+            }
+        }
+        private PointLatLng GetGpsPoint(double lat, double lng)
+        {
+            if (gui_settings.GpsCorrect)
+            {
+                return Module.EvilTransform.GCJ2WGS(lat, lng);
+            }
+            else
+            {
+                return new PointLatLng(lat, lng);
+            }
+        }
 
+        private void cbGpsCorrect_CheckedChanged(object sender, EventArgs e)
+        {
+            gui_settings.GpsCorrect = cbGpsCorrect.Checked;
+            gui_settings.save_to_xml(sGuiSettingsFilename);
+        }
 
 
  

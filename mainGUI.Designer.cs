@@ -33,8 +33,6 @@ namespace MultiWiiWinGUI
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(mainGUI));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.tabMain = new System.Windows.Forms.TabControl();
-            this.tabPageFlightDeck = new System.Windows.Forms.TabPage();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.bBind = new System.Windows.Forms.Button();
             this.b_cal_acc = new System.Windows.Forms.Button();
@@ -46,10 +44,26 @@ namespace MultiWiiWinGUI
             this.label11 = new System.Windows.Forms.Label();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
+            this.battery_indicator1 = new MultiWiiGUIControls.battery_indicator();
+            this.vertical_speed_indicator1 = new MultiWiiGUIControls.vertical_speed_indicator();
+            this.altitude_meter1 = new MultiWiiGUIControls.altitude_meter();
+            this.attitudeIndicatorInstrumentControl1 = new MultiWiiGUIControls.artifical_horizon();
+            this.gpsIndicator = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
+            this.headingIndicatorInstrumentControl1 = new MultiWiiGUIControls.heading_indicator();
             this.label47 = new System.Windows.Forms.Label();
+            this.rc_input_control1 = new MultiWiiGUIControls.rc_input_control();
+            this.motorsIndicator1 = new MultiWiiGUIControls.MWGUIMotors();
+            this.indACC = new MultiWiiGUIControls.indicator_lamp();
+            this.indGPS = new MultiWiiGUIControls.indicator_lamp();
+            this.indOPTIC = new MultiWiiGUIControls.indicator_lamp();
+            this.indBARO = new MultiWiiGUIControls.indicator_lamp();
+            this.indMAG = new MultiWiiGUIControls.indicator_lamp();
+            this.indSONAR = new MultiWiiGUIControls.indicator_lamp();
             this.label81 = new System.Windows.Forms.Label();
             this.label80 = new System.Windows.Forms.Label();
             this.label79 = new System.Windows.Forms.Label();
+            this.barNoise = new MultiWiiGUIControls.ColorProgressBar();
+            this.barRSSI = new MultiWiiGUIControls.ColorProgressBar();
             this.labelRSSI = new System.Windows.Forms.Label();
             this.label69 = new System.Windows.Forms.Label();
             this.labelNoise = new System.Windows.Forms.Label();
@@ -64,19 +78,8 @@ namespace MultiWiiWinGUI
             this.labelCRCErrors = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.l_powersum = new System.Windows.Forms.Label();
-            this.tabPageMisson = new System.Windows.Forms.TabPage();
-            this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
-            this.tsMenuAddLand = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddJump = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddPOI = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuSetHead = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuDeleteWP = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
-            this.createCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bulkAltitudeChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
-            this.fetchMapTilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.cbGpsCorrect = new System.Windows.Forms.CheckBox();
             this.cbShowFlightPath = new System.Windows.Forms.CheckBox();
             this.cbShowPos = new System.Windows.Forms.CheckBox();
             this.cbShowWP = new System.Windows.Forms.CheckBox();
@@ -88,7 +91,14 @@ namespace MultiWiiWinGUI
             this.splitContainer9 = new System.Windows.Forms.SplitContainer();
             this.btnMapZoopDown = new System.Windows.Forms.Button();
             this.btnMapZoomUp = new System.Windows.Forms.Button();
+            this.battery_indicator2 = new MultiWiiGUIControls.battery_indicator();
+            this.barRSSIMission = new MultiWiiGUIControls.ColorProgressBar();
             this.lNavError = new System.Windows.Forms.Label();
+            this.cbAutoPan = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbShowGauges = new MultiWiiGUIControls.CheckBoxEx();
+            this.altitude_meter2 = new MultiWiiGUIControls.altitude_meter();
+            this.vertical_speed_indicator2 = new MultiWiiGUIControls.vertical_speed_indicator();
+            this.gpsIndicator2 = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
             this.LMousePos = new System.Windows.Forms.Label();
             this.label45 = new System.Windows.Forms.Label();
             this.MainMap = new GMap.NET.WindowsForms.GMapControl();
@@ -118,6 +128,9 @@ namespace MultiWiiWinGUI
             this.LATCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LONCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ALTCOL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.UP = new System.Windows.Forms.DataGridViewImageColumn();
+            this.Down = new System.Windows.Forms.DataGridViewImageColumn();
+            this.DEL = new System.Windows.Forms.DataGridViewImageColumn();
             this.label75 = new System.Windows.Forms.Label();
             this.label74 = new System.Windows.Forms.Label();
             this.label73 = new System.Windows.Forms.Label();
@@ -129,142 +142,6 @@ namespace MultiWiiWinGUI
             this.txtDefAlt = new System.Windows.Forms.TextBox();
             this.lDistance = new System.Windows.Forms.Label();
             this.lDefAlt = new System.Windows.Forms.Label();
-            this.tabPagePID = new System.Windows.Forms.TabPage();
-            this.naviGroup = new System.Windows.Forms.GroupBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.nLandSpeed = new System.Windows.Forms.NumericUpDown();
-            this.label71 = new System.Windows.Forms.Label();
-            this.nFence = new System.Windows.Forms.NumericUpDown();
-            this.label88 = new System.Windows.Forms.Label();
-            this.nBanking = new System.Windows.Forms.NumericUpDown();
-            this.label87 = new System.Windows.Forms.Label();
-            this.nCrosstrack = new System.Windows.Forms.NumericUpDown();
-            this.label86 = new System.Windows.Forms.Label();
-            this.nRTHAlt = new System.Windows.Forms.NumericUpDown();
-            this.label85 = new System.Windows.Forms.Label();
-            this.nMinSpeed = new System.Windows.Forms.NumericUpDown();
-            this.nWPRadius = new System.Windows.Forms.NumericUpDown();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.nMaxSpeed = new System.Windows.Forms.NumericUpDown();
-            this.nSafeWPDist = new System.Windows.Forms.NumericUpDown();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label82 = new System.Windows.Forms.Label();
-            this.nMaxAlt = new System.Windows.Forms.NumericUpDown();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.nTEXPO = new System.Windows.Forms.NumericUpDown();
-            this.nTMID = new System.Windows.Forms.NumericUpDown();
-            this.trackBar_T_EXPO = new System.Windows.Forms.TrackBar();
-            this.trackBar_T_MID = new System.Windows.Forms.TrackBar();
-            this.trackbar_RC_Rate = new System.Windows.Forms.TrackBar();
-            this.label65 = new System.Windows.Forms.Label();
-            this.trackbar_RC_Expo = new System.Windows.Forms.TrackBar();
-            this.nRCRate = new System.Windows.Forms.NumericUpDown();
-            this.nRCExpo = new System.Windows.Forms.NumericUpDown();
-            this.label66 = new System.Windows.Forms.Label();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
-            this.label50 = new System.Windows.Forms.Label();
-            this.label_sok = new System.Windows.Forms.Label();
-            this.label60 = new System.Windows.Forms.Label();
-            this.nRATE_tpid = new System.Windows.Forms.NumericUpDown();
-            this.nRATE_yaw = new System.Windows.Forms.NumericUpDown();
-            this.nRATE_rp = new System.Windows.Forms.NumericUpDown();
-            this.tabPageConf = new System.Windows.Forms.TabPage();
-            this.lVBatConf = new System.Windows.Forms.Label();
-            this.labelvbat = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label58 = new System.Windows.Forms.Label();
-            this.lMaxThr = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.nFSThr = new System.Windows.Forms.NumericUpDown();
-            this.label59 = new System.Windows.Forms.Label();
-            this.nMinThr = new System.Windows.Forms.NumericUpDown();
-            this.lMinCommand = new System.Windows.Forms.Label();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.label62 = new System.Windows.Forms.Label();
-            this.lLife = new System.Windows.Forms.Label();
-            this.label61 = new System.Windows.Forms.Label();
-            this.lArms = new System.Windows.Forms.Label();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label68 = new System.Windows.Forms.Label();
-            this.nVBatCritical = new System.Windows.Forms.NumericUpDown();
-            this.nPAlarm = new System.Windows.Forms.NumericUpDown();
-            this.nVBatWarn2 = new System.Windows.Forms.NumericUpDown();
-            this.label8 = new System.Windows.Forms.Label();
-            this.nVBatWarn1 = new System.Windows.Forms.NumericUpDown();
-            this.label63 = new System.Windows.Forms.Label();
-            this.nVBatScale = new System.Windows.Forms.NumericUpDown();
-            this.label64 = new System.Windows.Forms.Label();
-            this.label67 = new System.Windows.Forms.Label();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.cbMagSign = new System.Windows.Forms.ComboBox();
-            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
-            this.nMagDeg = new System.Windows.Forms.NumericUpDown();
-            this.label49 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
-            this.nMagMin = new System.Windows.Forms.NumericUpDown();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.nSrvRate4 = new System.Windows.Forms.NumericUpDown();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label52 = new System.Windows.Forms.Label();
-            this.label51 = new System.Windows.Forms.Label();
-            this.nSrvMax8 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvMax7 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvMax6 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID1 = new System.Windows.Forms.Label();
-            this.nSrvMax5 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID2 = new System.Windows.Forms.Label();
-            this.nSrvMax4 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID3 = new System.Windows.Forms.Label();
-            this.nSrvMax3 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID4 = new System.Windows.Forms.Label();
-            this.nSrvMax2 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID5 = new System.Windows.Forms.Label();
-            this.nSrvMax1 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID6 = new System.Windows.Forms.Label();
-            this.nSrvMid8 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID7 = new System.Windows.Forms.Label();
-            this.nSrvMid7 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvID8 = new System.Windows.Forms.Label();
-            this.nSrvMid6 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName1 = new System.Windows.Forms.Label();
-            this.nSrvMid5 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName3 = new System.Windows.Forms.Label();
-            this.nSrvMid4 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName2 = new System.Windows.Forms.Label();
-            this.nSrvMid3 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName4 = new System.Windows.Forms.Label();
-            this.nSrvMid2 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName5 = new System.Windows.Forms.Label();
-            this.nSrvMid1 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName6 = new System.Windows.Forms.Label();
-            this.nSrvMin8 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName7 = new System.Windows.Forms.Label();
-            this.nSrvMin7 = new System.Windows.Forms.NumericUpDown();
-            this.lSrvName8 = new System.Windows.Forms.Label();
-            this.nSrvMin6 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvRate1 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvMin5 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvRate2 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvMin4 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvRate3 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvMin3 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvRate5 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvMin2 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvRate6 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvMin1 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvRate7 = new System.Windows.Forms.NumericUpDown();
-            this.nSrvRate8 = new System.Windows.Forms.NumericUpDown();
-            this.tabPageRC = new System.Windows.Forms.TabPage();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tabSensorGraph = new System.Windows.Forms.TabPage();
             this.splitContainer10 = new System.Windows.Forms.SplitContainer();
             this.splitContainer11 = new System.Windows.Forms.SplitContainer();
             this.splitContainer12 = new System.Windows.Forms.SplitContainer();
@@ -323,7 +200,6 @@ namespace MultiWiiWinGUI
             this.cb_head = new System.Windows.Forms.CheckBox();
             this.l_head = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
-            this.tabPageVideo = new System.Windows.Forms.TabPage();
             this.splitContainer6 = new System.Windows.Forms.SplitContainer();
             this.videoSourcePlayer = new AForge.Controls.VideoSourcePlayer();
             this.dropdown_devices = new System.Windows.Forms.ComboBox();
@@ -337,6 +213,184 @@ namespace MultiWiiWinGUI
             this.label15 = new System.Windows.Forms.Label();
             this.nBitRate = new System.Windows.Forms.NumericUpDown();
             this.label13 = new System.Windows.Forms.Label();
+            this.tabMain = new System.Windows.Forms.TabControl();
+            this.tabPageFlightDeck = new System.Windows.Forms.TabPage();
+            this.tabPageMisson = new System.Windows.Forms.TabPage();
+            this.contextMenuStripMap = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.tsMenuAddWP = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddPosholdTimed = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddPosholdUnlim = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddRTH = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddLand = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddJump = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuAddPOI = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuSetHead = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsMenuDeleteWP = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
+            this.clearMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.createCircleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bulkAltitudeChangeToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.fetchMapTilesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPagePID = new System.Windows.Forms.TabPage();
+            this.naviGroup = new System.Windows.Forms.GroupBox();
+            this.label41 = new System.Windows.Forms.Label();
+            this.nLandSpeed = new System.Windows.Forms.NumericUpDown();
+            this.label71 = new System.Windows.Forms.Label();
+            this.nFence = new System.Windows.Forms.NumericUpDown();
+            this.cbNavBaroTakeover = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavDisableSticks = new MultiWiiGUIControls.CheckBoxEx();
+            this.cbNavGPS_filtering = new MultiWiiGUIControls.CheckBoxEx();
+            this.label88 = new System.Windows.Forms.Label();
+            this.cbNavGPS_Lead = new MultiWiiGUIControls.CheckBoxEx();
+            this.nBanking = new System.Windows.Forms.NumericUpDown();
+            this.cbNavResetHome = new MultiWiiGUIControls.CheckBoxEx();
+            this.label87 = new System.Windows.Forms.Label();
+            this.cbNavHeadingControl = new MultiWiiGUIControls.CheckBoxEx();
+            this.nCrosstrack = new System.Windows.Forms.NumericUpDown();
+            this.cbNavTailFirst = new MultiWiiGUIControls.CheckBoxEx();
+            this.label86 = new System.Windows.Forms.Label();
+            this.cbNavRTHHead = new MultiWiiGUIControls.CheckBoxEx();
+            this.nRTHAlt = new System.Windows.Forms.NumericUpDown();
+            this.cbNavWaitRTHAlt = new MultiWiiGUIControls.CheckBoxEx();
+            this.label85 = new System.Windows.Forms.Label();
+            this.cbNavSlowNav = new MultiWiiGUIControls.CheckBoxEx();
+            this.nMinSpeed = new System.Windows.Forms.NumericUpDown();
+            this.nWPRadius = new System.Windows.Forms.NumericUpDown();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.nMaxSpeed = new System.Windows.Forms.NumericUpDown();
+            this.nSafeWPDist = new System.Windows.Forms.NumericUpDown();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.nMaxAlt = new System.Windows.Forms.NumericUpDown();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.nTEXPO = new System.Windows.Forms.NumericUpDown();
+            this.nTMID = new System.Windows.Forms.NumericUpDown();
+            this.trackBar_T_EXPO = new System.Windows.Forms.TrackBar();
+            this.trackBar_T_MID = new System.Windows.Forms.TrackBar();
+            this.trackbar_RC_Rate = new System.Windows.Forms.TrackBar();
+            this.label65 = new System.Windows.Forms.Label();
+            this.trackbar_RC_Expo = new System.Windows.Forms.TrackBar();
+            this.nRCRate = new System.Windows.Forms.NumericUpDown();
+            this.nRCExpo = new System.Windows.Forms.NumericUpDown();
+            this.label66 = new System.Windows.Forms.Label();
+            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label_sok = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.nRATE_tpid = new System.Windows.Forms.NumericUpDown();
+            this.nRATE_yaw = new System.Windows.Forms.NumericUpDown();
+            this.nRATE_rp = new System.Windows.Forms.NumericUpDown();
+            this.throttle_expo_control1 = new MultiWiiGUIControls.throttle_expo_control();
+            this.rc_expo_control1 = new MultiWiiGUIControls.rc_expo_control();
+            this.tabPageConf = new System.Windows.Forms.TabPage();
+            this.lVBatConf = new System.Windows.Forms.Label();
+            this.labelvbat = new System.Windows.Forms.Label();
+            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.lMaxThr = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.nFSThr = new System.Windows.Forms.NumericUpDown();
+            this.label59 = new System.Windows.Forms.Label();
+            this.nMinThr = new System.Windows.Forms.NumericUpDown();
+            this.lMinCommand = new System.Windows.Forms.Label();
+            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.label62 = new System.Windows.Forms.Label();
+            this.lLife = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.lArms = new System.Windows.Forms.Label();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.nVBatCritical = new System.Windows.Forms.NumericUpDown();
+            this.nPAlarm = new System.Windows.Forms.NumericUpDown();
+            this.nVBatWarn2 = new System.Windows.Forms.NumericUpDown();
+            this.label8 = new System.Windows.Forms.Label();
+            this.nVBatWarn1 = new System.Windows.Forms.NumericUpDown();
+            this.label63 = new System.Windows.Forms.Label();
+            this.nVBatScale = new System.Windows.Forms.NumericUpDown();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.cbMagSign = new System.Windows.Forms.ComboBox();
+            this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.nMagDeg = new System.Windows.Forms.NumericUpDown();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.nMagMin = new System.Windows.Forms.NumericUpDown();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.nSrvRate4 = new System.Windows.Forms.NumericUpDown();
+            this.label56 = new System.Windows.Forms.Label();
+            this.cbSrvRev1 = new MultiWiiGUIControls.CheckBoxEx();
+            this.label55 = new System.Windows.Forms.Label();
+            this.cbSrvRev2 = new MultiWiiGUIControls.CheckBoxEx();
+            this.label54 = new System.Windows.Forms.Label();
+            this.cbSrvRev3 = new MultiWiiGUIControls.CheckBoxEx();
+            this.label53 = new System.Windows.Forms.Label();
+            this.cbSrvRev4 = new MultiWiiGUIControls.CheckBoxEx();
+            this.label52 = new System.Windows.Forms.Label();
+            this.cbSrvRev5 = new MultiWiiGUIControls.CheckBoxEx();
+            this.label51 = new System.Windows.Forms.Label();
+            this.cbSrvRev6 = new MultiWiiGUIControls.CheckBoxEx();
+            this.nSrvMax8 = new System.Windows.Forms.NumericUpDown();
+            this.cbSrvRev7 = new MultiWiiGUIControls.CheckBoxEx();
+            this.nSrvMax7 = new System.Windows.Forms.NumericUpDown();
+            this.cbSrvRev8 = new MultiWiiGUIControls.CheckBoxEx();
+            this.nSrvMax6 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID1 = new System.Windows.Forms.Label();
+            this.nSrvMax5 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID2 = new System.Windows.Forms.Label();
+            this.nSrvMax4 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID3 = new System.Windows.Forms.Label();
+            this.nSrvMax3 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID4 = new System.Windows.Forms.Label();
+            this.nSrvMax2 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID5 = new System.Windows.Forms.Label();
+            this.nSrvMax1 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID6 = new System.Windows.Forms.Label();
+            this.nSrvMid8 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID7 = new System.Windows.Forms.Label();
+            this.nSrvMid7 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvID8 = new System.Windows.Forms.Label();
+            this.nSrvMid6 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName1 = new System.Windows.Forms.Label();
+            this.nSrvMid5 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName3 = new System.Windows.Forms.Label();
+            this.nSrvMid4 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName2 = new System.Windows.Forms.Label();
+            this.nSrvMid3 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName4 = new System.Windows.Forms.Label();
+            this.nSrvMid2 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName5 = new System.Windows.Forms.Label();
+            this.nSrvMid1 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName6 = new System.Windows.Forms.Label();
+            this.nSrvMin8 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName7 = new System.Windows.Forms.Label();
+            this.nSrvMin7 = new System.Windows.Forms.NumericUpDown();
+            this.lSrvName8 = new System.Windows.Forms.Label();
+            this.nSrvMin6 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvRate1 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvMin5 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvRate2 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvMin4 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvRate3 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvMin3 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvRate5 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvMin2 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvRate6 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvMin1 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvRate7 = new System.Windows.Forms.NumericUpDown();
+            this.nSrvRate8 = new System.Windows.Forms.NumericUpDown();
+            this.tabPageRC = new System.Windows.Forms.TabPage();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rci_Control_settings = new MultiWiiGUIControls.rc_input_control();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.tabSensorGraph = new System.Windows.Forms.TabPage();
+            this.tabPageVideo = new System.Windows.Forms.TabPage();
             this.l_capture_file = new System.Windows.Forms.Label();
             this.tabPageSettings = new System.Windows.Forms.TabPage();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
@@ -385,80 +439,25 @@ namespace MultiWiiWinGUI
             this.cb_serial_port = new System.Windows.Forms.ToolStripComboBox();
             this.toolStripLabel2 = new System.Windows.Forms.ToolStripLabel();
             this.cb_serial_speed = new System.Windows.Forms.ToolStripComboBox();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
-            this.timer_announce = new System.Windows.Forms.Timer(this.components);
-            this.battery_indicator1 = new MultiWiiGUIControls.battery_indicator();
-            this.vertical_speed_indicator1 = new MultiWiiGUIControls.vertical_speed_indicator();
-            this.altitude_meter1 = new MultiWiiGUIControls.altitude_meter();
-            this.attitudeIndicatorInstrumentControl1 = new MultiWiiGUIControls.artifical_horizon();
-            this.gpsIndicator = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
-            this.headingIndicatorInstrumentControl1 = new MultiWiiGUIControls.heading_indicator();
-            this.rc_input_control1 = new MultiWiiGUIControls.rc_input_control();
-            this.motorsIndicator1 = new MultiWiiGUIControls.MWGUIMotors();
-            this.indACC = new MultiWiiGUIControls.indicator_lamp();
-            this.indGPS = new MultiWiiGUIControls.indicator_lamp();
-            this.indOPTIC = new MultiWiiGUIControls.indicator_lamp();
-            this.indBARO = new MultiWiiGUIControls.indicator_lamp();
-            this.indMAG = new MultiWiiGUIControls.indicator_lamp();
-            this.indSONAR = new MultiWiiGUIControls.indicator_lamp();
-            this.barNoise = new MultiWiiGUIControls.ColorProgressBar();
-            this.barRSSI = new MultiWiiGUIControls.ColorProgressBar();
-            this.battery_indicator2 = new MultiWiiGUIControls.battery_indicator();
-            this.barRSSIMission = new MultiWiiGUIControls.ColorProgressBar();
-            this.cbAutoPan = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbShowGauges = new MultiWiiGUIControls.CheckBoxEx();
-            this.altitude_meter2 = new MultiWiiGUIControls.altitude_meter();
-            this.vertical_speed_indicator2 = new MultiWiiGUIControls.vertical_speed_indicator();
-            this.gpsIndicator2 = new MultiWiiGUIControls.GpsIndicatorInstrumentControl();
-            this.cbNavBaroTakeover = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavDisableSticks = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavGPS_filtering = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavGPS_Lead = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavResetHome = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavHeadingControl = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavTailFirst = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavRTHHead = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavWaitRTHAlt = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbNavSlowNav = new MultiWiiGUIControls.CheckBoxEx();
-            this.throttle_expo_control1 = new MultiWiiGUIControls.throttle_expo_control();
-            this.rc_expo_control1 = new MultiWiiGUIControls.rc_expo_control();
-            this.cbSrvRev1 = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbSrvRev2 = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbSrvRev3 = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbSrvRev4 = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbSrvRev5 = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbSrvRev6 = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbSrvRev7 = new MultiWiiGUIControls.CheckBoxEx();
-            this.cbSrvRev8 = new MultiWiiGUIControls.CheckBoxEx();
-            this.rci_Control_settings = new MultiWiiGUIControls.rc_input_control();
-            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
-            this.tsMenuAddWP = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddPosholdTimed = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddPosholdUnlim = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsMenuAddRTH = new System.Windows.Forms.ToolStripMenuItem();
-            this.clearMissionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.UP = new System.Windows.Forms.DataGridViewImageColumn();
-            this.Down = new System.Windows.Forms.DataGridViewImageColumn();
-            this.DEL = new System.Windows.Forms.DataGridViewImageColumn();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.b_connect = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.b_read_settings = new System.Windows.Forms.ToolStripButton();
             this.b_write_settings = new System.Windows.Forms.ToolStripButton();
             this.b_reset = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.b_load_from_file = new System.Windows.Forms.ToolStripButton();
             this.b_write_to_file = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.b_log = new System.Windows.Forms.ToolStripButton();
             this.b_start_KML_log = new System.Windows.Forms.ToolStripButton();
             this.b_log_browser = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.b_about = new System.Windows.Forms.ToolStripButton();
             this.bDebugWindws = new System.Windows.Forms.ToolStripButton();
-            this.tabMain.SuspendLayout();
-            this.tabPageFlightDeck.SuspendLayout();
+            this.timer_announce = new System.Windows.Forms.Timer(this.components);
+            this.dataGridViewImageColumn1 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn2 = new System.Windows.Forms.DataGridViewImageColumn();
+            this.dataGridViewImageColumn3 = new System.Windows.Forms.DataGridViewImageColumn();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -471,8 +470,6 @@ namespace MultiWiiWinGUI
             this.splitContainer3.Panel1.SuspendLayout();
             this.splitContainer3.Panel2.SuspendLayout();
             this.splitContainer3.SuspendLayout();
-            this.tabPageMisson.SuspendLayout();
-            this.contextMenuStripMap.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).BeginInit();
             this.splitContainer7.Panel1.SuspendLayout();
             this.splitContainer7.Panel2.SuspendLayout();
@@ -490,6 +487,30 @@ namespace MultiWiiWinGUI
             this.splitContainer8.Panel2.SuspendLayout();
             this.splitContainer8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.missionDataGrid)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
+            this.splitContainer10.Panel2.SuspendLayout();
+            this.splitContainer10.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).BeginInit();
+            this.splitContainer11.Panel1.SuspendLayout();
+            this.splitContainer11.Panel2.SuspendLayout();
+            this.splitContainer11.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).BeginInit();
+            this.splitContainer12.Panel1.SuspendLayout();
+            this.splitContainer12.Panel2.SuspendLayout();
+            this.splitContainer12.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).BeginInit();
+            this.splitContainer6.Panel1.SuspendLayout();
+            this.splitContainer6.Panel2.SuspendLayout();
+            this.splitContainer6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nFrameRate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nBitRate)).BeginInit();
+            this.tabMain.SuspendLayout();
+            this.tabPageFlightDeck.SuspendLayout();
+            this.tabPageMisson.SuspendLayout();
+            this.contextMenuStripMap.SuspendLayout();
             this.tabPagePID.SuspendLayout();
             this.naviGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nLandSpeed)).BeginInit();
@@ -562,60 +583,16 @@ namespace MultiWiiWinGUI
             ((System.ComponentModel.ISupportInitialize)(this.nSrvRate7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.nSrvRate8)).BeginInit();
             this.tabPageRC.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabSensorGraph.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).BeginInit();
-            this.splitContainer10.Panel2.SuspendLayout();
-            this.splitContainer10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).BeginInit();
-            this.splitContainer11.Panel1.SuspendLayout();
-            this.splitContainer11.Panel2.SuspendLayout();
-            this.splitContainer11.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).BeginInit();
-            this.splitContainer12.Panel1.SuspendLayout();
-            this.splitContainer12.Panel2.SuspendLayout();
-            this.splitContainer12.SuspendLayout();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
             this.tabPageVideo.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).BeginInit();
-            this.splitContainer6.Panel1.SuspendLayout();
-            this.splitContainer6.Panel2.SuspendLayout();
-            this.splitContainer6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nFrameRate)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nBitRate)).BeginInit();
             this.tabPageSettings.SuspendLayout();
             this.groupBox9.SuspendLayout();
             this.groupBox11.SuspendLayout();
             this.tabPageCLI.SuspendLayout();
             this.gbTerminal.SuspendLayout();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // tabMain
-            // 
-            resources.ApplyResources(this.tabMain, "tabMain");
-            this.tabMain.Controls.Add(this.tabPageFlightDeck);
-            this.tabMain.Controls.Add(this.tabPageMisson);
-            this.tabMain.Controls.Add(this.tabPagePID);
-            this.tabMain.Controls.Add(this.tabPageConf);
-            this.tabMain.Controls.Add(this.tabPageRC);
-            this.tabMain.Controls.Add(this.tabSensorGraph);
-            this.tabMain.Controls.Add(this.tabPageVideo);
-            this.tabMain.Controls.Add(this.tabPageSettings);
-            this.tabMain.Controls.Add(this.tabPageCLI);
-            this.tabMain.Name = "tabMain";
-            this.tabMain.SelectedIndex = 1;
-            this.tabMain.SelectedIndexChanged += new System.EventHandler(this.tabMain_SelectedIndexChanged);
-            // 
-            // tabPageFlightDeck
-            // 
-            resources.ApplyResources(this.tabPageFlightDeck, "tabPageFlightDeck");
-            this.tabPageFlightDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPageFlightDeck.Controls.Add(this.splitContainer1);
-            this.tabPageFlightDeck.ForeColor = System.Drawing.Color.White;
-            this.tabPageFlightDeck.Name = "tabPageFlightDeck";
             // 
             // splitContainer1
             // 
@@ -760,10 +737,81 @@ namespace MultiWiiWinGUI
             this.splitContainer3.Panel2.Controls.Add(this.indMAG);
             this.splitContainer3.Panel2.Controls.Add(this.indSONAR);
             // 
+            // battery_indicator1
+            // 
+            resources.ApplyResources(this.battery_indicator1, "battery_indicator1");
+            this.battery_indicator1.Name = "battery_indicator1";
+            // 
+            // vertical_speed_indicator1
+            // 
+            resources.ApplyResources(this.vertical_speed_indicator1, "vertical_speed_indicator1");
+            this.vertical_speed_indicator1.Name = "vertical_speed_indicator1";
+            // 
+            // altitude_meter1
+            // 
+            resources.ApplyResources(this.altitude_meter1, "altitude_meter1");
+            this.altitude_meter1.Name = "altitude_meter1";
+            // 
+            // attitudeIndicatorInstrumentControl1
+            // 
+            resources.ApplyResources(this.attitudeIndicatorInstrumentControl1, "attitudeIndicatorInstrumentControl1");
+            this.attitudeIndicatorInstrumentControl1.Name = "attitudeIndicatorInstrumentControl1";
+            this.attitudeIndicatorInstrumentControl1.Click += new System.EventHandler(this.attitudeIndicatorInstrumentControl1_Click);
+            // 
+            // gpsIndicator
+            // 
+            resources.ApplyResources(this.gpsIndicator, "gpsIndicator");
+            this.gpsIndicator.Name = "gpsIndicator";
+            // 
+            // headingIndicatorInstrumentControl1
+            // 
+            resources.ApplyResources(this.headingIndicatorInstrumentControl1, "headingIndicatorInstrumentControl1");
+            this.headingIndicatorInstrumentControl1.Name = "headingIndicatorInstrumentControl1";
+            // 
             // label47
             // 
             resources.ApplyResources(this.label47, "label47");
             this.label47.Name = "label47";
+            // 
+            // rc_input_control1
+            // 
+            resources.ApplyResources(this.rc_input_control1, "rc_input_control1");
+            this.rc_input_control1.Name = "rc_input_control1";
+            // 
+            // motorsIndicator1
+            // 
+            resources.ApplyResources(this.motorsIndicator1, "motorsIndicator1");
+            this.motorsIndicator1.Name = "motorsIndicator1";
+            // 
+            // indACC
+            // 
+            resources.ApplyResources(this.indACC, "indACC");
+            this.indACC.Name = "indACC";
+            // 
+            // indGPS
+            // 
+            resources.ApplyResources(this.indGPS, "indGPS");
+            this.indGPS.Name = "indGPS";
+            // 
+            // indOPTIC
+            // 
+            resources.ApplyResources(this.indOPTIC, "indOPTIC");
+            this.indOPTIC.Name = "indOPTIC";
+            // 
+            // indBARO
+            // 
+            resources.ApplyResources(this.indBARO, "indBARO");
+            this.indBARO.Name = "indBARO";
+            // 
+            // indMAG
+            // 
+            resources.ApplyResources(this.indMAG, "indMAG");
+            this.indMAG.Name = "indMAG";
+            // 
+            // indSONAR
+            // 
+            resources.ApplyResources(this.indSONAR, "indSONAR");
+            this.indSONAR.Name = "indSONAR";
             // 
             // label81
             // 
@@ -779,6 +827,32 @@ namespace MultiWiiWinGUI
             // 
             resources.ApplyResources(this.label79, "label79");
             this.label79.Name = "label79";
+            // 
+            // barNoise
+            // 
+            resources.ApplyResources(this.barNoise, "barNoise");
+            this.barNoise.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.barNoise.BkgColor = System.Drawing.Color.Transparent;
+            this.barNoise.BorderColor = System.Drawing.Color.Black;
+            this.barNoise.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
+            this.barNoise.Maximum = 255;
+            this.barNoise.Minimum = 0;
+            this.barNoise.Name = "barNoise";
+            this.barNoise.Step = 1;
+            this.barNoise.Value = 0;
+            // 
+            // barRSSI
+            // 
+            resources.ApplyResources(this.barRSSI, "barRSSI");
+            this.barRSSI.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.barRSSI.BkgColor = System.Drawing.Color.Transparent;
+            this.barRSSI.BorderColor = System.Drawing.Color.Black;
+            this.barRSSI.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
+            this.barRSSI.Maximum = 255;
+            this.barRSSI.Minimum = 0;
+            this.barRSSI.Name = "barRSSI";
+            this.barRSSI.Step = 1;
+            this.barRSSI.Value = 0;
             // 
             // labelRSSI
             // 
@@ -850,94 +924,6 @@ namespace MultiWiiWinGUI
             resources.ApplyResources(this.l_powersum, "l_powersum");
             this.l_powersum.Name = "l_powersum";
             // 
-            // tabPageMisson
-            // 
-            resources.ApplyResources(this.tabPageMisson, "tabPageMisson");
-            this.tabPageMisson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.tabPageMisson.ContextMenuStrip = this.contextMenuStripMap;
-            this.tabPageMisson.Controls.Add(this.splitContainer7);
-            this.tabPageMisson.Name = "tabPageMisson";
-            // 
-            // contextMenuStripMap
-            // 
-            resources.ApplyResources(this.contextMenuStripMap, "contextMenuStripMap");
-            this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.tsMenuAddWP,
-            this.tsMenuAddPosholdTimed,
-            this.tsMenuAddPosholdUnlim,
-            this.tsMenuAddRTH,
-            this.tsMenuAddLand,
-            this.tsMenuAddJump,
-            this.tsMenuAddPOI,
-            this.tsMenuSetHead,
-            this.tsMenuDeleteWP,
-            this.toolStripSeparator5,
-            this.clearMissionToolStripMenuItem,
-            this.createCircleToolStripMenuItem,
-            this.bulkAltitudeChangeToolStripMenuItem,
-            this.toolStripSeparator6,
-            this.fetchMapTilesToolStripMenuItem});
-            this.contextMenuStripMap.Name = "contextMenuStripMap";
-            this.contextMenuStripMap.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripMap_Opening);
-            // 
-            // tsMenuAddLand
-            // 
-            resources.ApplyResources(this.tsMenuAddLand, "tsMenuAddLand");
-            this.tsMenuAddLand.Name = "tsMenuAddLand";
-            this.tsMenuAddLand.Click += new System.EventHandler(this.tsMenuAddLand_Click);
-            // 
-            // tsMenuAddJump
-            // 
-            resources.ApplyResources(this.tsMenuAddJump, "tsMenuAddJump");
-            this.tsMenuAddJump.Name = "tsMenuAddJump";
-            this.tsMenuAddJump.Click += new System.EventHandler(this.tsMenuAddJump_Click);
-            // 
-            // tsMenuAddPOI
-            // 
-            resources.ApplyResources(this.tsMenuAddPOI, "tsMenuAddPOI");
-            this.tsMenuAddPOI.Name = "tsMenuAddPOI";
-            this.tsMenuAddPOI.Click += new System.EventHandler(this.tsMenuAddPOI_Click);
-            // 
-            // tsMenuSetHead
-            // 
-            resources.ApplyResources(this.tsMenuSetHead, "tsMenuSetHead");
-            this.tsMenuSetHead.Name = "tsMenuSetHead";
-            this.tsMenuSetHead.Click += new System.EventHandler(this.tsMenuSetHead_Click);
-            // 
-            // tsMenuDeleteWP
-            // 
-            resources.ApplyResources(this.tsMenuDeleteWP, "tsMenuDeleteWP");
-            this.tsMenuDeleteWP.Name = "tsMenuDeleteWP";
-            this.tsMenuDeleteWP.Click += new System.EventHandler(this.tsMenuDeleteWP_Click);
-            // 
-            // toolStripSeparator5
-            // 
-            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
-            this.toolStripSeparator5.Name = "toolStripSeparator5";
-            // 
-            // createCircleToolStripMenuItem
-            // 
-            resources.ApplyResources(this.createCircleToolStripMenuItem, "createCircleToolStripMenuItem");
-            this.createCircleToolStripMenuItem.Name = "createCircleToolStripMenuItem";
-            this.createCircleToolStripMenuItem.Click += new System.EventHandler(this.createCircleToolStripMenuItem_Click);
-            // 
-            // bulkAltitudeChangeToolStripMenuItem
-            // 
-            resources.ApplyResources(this.bulkAltitudeChangeToolStripMenuItem, "bulkAltitudeChangeToolStripMenuItem");
-            this.bulkAltitudeChangeToolStripMenuItem.Name = "bulkAltitudeChangeToolStripMenuItem";
-            this.bulkAltitudeChangeToolStripMenuItem.Click += new System.EventHandler(this.bulkAltitudeChangeToolStripMenuItem_Click);
-            // 
-            // toolStripSeparator6
-            // 
-            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            // 
-            // fetchMapTilesToolStripMenuItem
-            // 
-            resources.ApplyResources(this.fetchMapTilesToolStripMenuItem, "fetchMapTilesToolStripMenuItem");
-            this.fetchMapTilesToolStripMenuItem.Name = "fetchMapTilesToolStripMenuItem";
-            this.fetchMapTilesToolStripMenuItem.Click += new System.EventHandler(this.fetchMapTilesToolStripMenuItem_Click);
-            // 
             // splitContainer7
             // 
             resources.ApplyResources(this.splitContainer7, "splitContainer7");
@@ -947,6 +933,7 @@ namespace MultiWiiWinGUI
             // splitContainer7.Panel1
             // 
             resources.ApplyResources(this.splitContainer7.Panel1, "splitContainer7.Panel1");
+            this.splitContainer7.Panel1.Controls.Add(this.cbGpsCorrect);
             this.splitContainer7.Panel1.Controls.Add(this.cbShowFlightPath);
             this.splitContainer7.Panel1.Controls.Add(this.cbShowPos);
             this.splitContainer7.Panel1.Controls.Add(this.cbShowWP);
@@ -959,6 +946,16 @@ namespace MultiWiiWinGUI
             // 
             resources.ApplyResources(this.splitContainer7.Panel2, "splitContainer7.Panel2");
             this.splitContainer7.Panel2.Controls.Add(this.spcontMapMain);
+            // 
+            // cbGpsCorrect
+            // 
+            resources.ApplyResources(this.cbGpsCorrect, "cbGpsCorrect");
+            this.cbGpsCorrect.Checked = true;
+            this.cbGpsCorrect.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbGpsCorrect.ForeColor = System.Drawing.Color.White;
+            this.cbGpsCorrect.Name = "cbGpsCorrect";
+            this.cbGpsCorrect.UseVisualStyleBackColor = true;
+            this.cbGpsCorrect.CheckedChanged += new System.EventHandler(this.cbGpsCorrect_CheckedChanged);
             // 
             // cbShowFlightPath
             // 
@@ -1011,7 +1008,6 @@ namespace MultiWiiWinGUI
             resources.ApplyResources(this.cbMapProviders, "cbMapProviders");
             this.cbMapProviders.FormattingEnabled = true;
             this.cbMapProviders.Name = "cbMapProviders";
-           
             // 
             // b_Clear_Route
             // 
@@ -1097,11 +1093,71 @@ namespace MultiWiiWinGUI
             this.btnMapZoomUp.UseVisualStyleBackColor = true;
             this.btnMapZoomUp.Click += new System.EventHandler(this.btnMapZoomUp_Click);
             // 
+            // battery_indicator2
+            // 
+            resources.ApplyResources(this.battery_indicator2, "battery_indicator2");
+            this.battery_indicator2.Name = "battery_indicator2";
+            // 
+            // barRSSIMission
+            // 
+            resources.ApplyResources(this.barRSSIMission, "barRSSIMission");
+            this.barRSSIMission.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.barRSSIMission.BkgColor = System.Drawing.Color.Transparent;
+            this.barRSSIMission.BorderColor = System.Drawing.Color.Black;
+            this.barRSSIMission.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
+            this.barRSSIMission.Maximum = 255;
+            this.barRSSIMission.Minimum = 0;
+            this.barRSSIMission.Name = "barRSSIMission";
+            this.barRSSIMission.Step = 1;
+            this.barRSSIMission.Value = 0;
+            // 
             // lNavError
             // 
             resources.ApplyResources(this.lNavError, "lNavError");
             this.lNavError.ForeColor = System.Drawing.Color.Red;
             this.lNavError.Name = "lNavError";
+            // 
+            // cbAutoPan
+            // 
+            resources.ApplyResources(this.cbAutoPan, "cbAutoPan");
+            this.cbAutoPan.aux = 0;
+            this.cbAutoPan.BackColor = System.Drawing.Color.Transparent;
+            this.cbAutoPan.Checked = true;
+            this.cbAutoPan.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbAutoPan.ForeColor = System.Drawing.Color.White;
+            this.cbAutoPan.IsHighlighted = false;
+            this.cbAutoPan.item = 0;
+            this.cbAutoPan.Name = "cbAutoPan";
+            this.cbAutoPan.rclevel = 0;
+            this.cbAutoPan.UseVisualStyleBackColor = false;
+            // 
+            // cbShowGauges
+            // 
+            resources.ApplyResources(this.cbShowGauges, "cbShowGauges");
+            this.cbShowGauges.aux = 0;
+            this.cbShowGauges.BackColor = System.Drawing.Color.Transparent;
+            this.cbShowGauges.ForeColor = System.Drawing.Color.White;
+            this.cbShowGauges.IsHighlighted = false;
+            this.cbShowGauges.item = 0;
+            this.cbShowGauges.Name = "cbShowGauges";
+            this.cbShowGauges.rclevel = 0;
+            this.cbShowGauges.UseVisualStyleBackColor = false;
+            this.cbShowGauges.CheckedChanged += new System.EventHandler(this.cbShowGauges_CheckedChanged);
+            // 
+            // altitude_meter2
+            // 
+            resources.ApplyResources(this.altitude_meter2, "altitude_meter2");
+            this.altitude_meter2.Name = "altitude_meter2";
+            // 
+            // vertical_speed_indicator2
+            // 
+            resources.ApplyResources(this.vertical_speed_indicator2, "vertical_speed_indicator2");
+            this.vertical_speed_indicator2.Name = "vertical_speed_indicator2";
+            // 
+            // gpsIndicator2
+            // 
+            resources.ApplyResources(this.gpsIndicator2, "gpsIndicator2");
+            this.gpsIndicator2.Name = "gpsIndicator2";
             // 
             // LMousePos
             // 
@@ -1129,6 +1185,7 @@ namespace MultiWiiWinGUI
             this.MainMap.MarkersEnabled = true;
             this.MainMap.MaxZoom = 20;
             this.MainMap.MinZoom = 5;
+            this.MainMap.MouseWheelZoomEnabled = true;
             this.MainMap.MouseWheelZoomType = GMap.NET.MouseWheelZoomType.MousePositionAndCenter;
             this.MainMap.Name = "MainMap";
             this.MainMap.NegativeMode = false;
@@ -1372,6 +1429,24 @@ namespace MultiWiiWinGUI
             resources.ApplyResources(this.ALTCOL, "ALTCOL");
             this.ALTCOL.Name = "ALTCOL";
             // 
+            // UP
+            // 
+            resources.ApplyResources(this.UP, "UP");
+            this.UP.Image = global::MultiWiiWinGUI.Properties.Resources.up_btn;
+            this.UP.Name = "UP";
+            // 
+            // Down
+            // 
+            resources.ApplyResources(this.Down, "Down");
+            this.Down.Image = global::MultiWiiWinGUI.Properties.Resources.down_btn;
+            this.Down.Name = "Down";
+            // 
+            // DEL
+            // 
+            resources.ApplyResources(this.DEL, "DEL");
+            this.DEL.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
+            this.DEL.Name = "DEL";
+            // 
             // label75
             // 
             resources.ApplyResources(this.label75, "label75");
@@ -1444,6 +1519,763 @@ namespace MultiWiiWinGUI
             resources.ApplyResources(this.lDefAlt, "lDefAlt");
             this.lDefAlt.ForeColor = System.Drawing.Color.White;
             this.lDefAlt.Name = "lDefAlt";
+            // 
+            // splitContainer10
+            // 
+            resources.ApplyResources(this.splitContainer10, "splitContainer10");
+            this.splitContainer10.Name = "splitContainer10";
+            // 
+            // splitContainer10.Panel1
+            // 
+            resources.ApplyResources(this.splitContainer10.Panel1, "splitContainer10.Panel1");
+            // 
+            // splitContainer10.Panel2
+            // 
+            resources.ApplyResources(this.splitContainer10.Panel2, "splitContainer10.Panel2");
+            this.splitContainer10.Panel2.Controls.Add(this.splitContainer11);
+            // 
+            // splitContainer11
+            // 
+            resources.ApplyResources(this.splitContainer11, "splitContainer11");
+            this.splitContainer11.Name = "splitContainer11";
+            // 
+            // splitContainer11.Panel1
+            // 
+            resources.ApplyResources(this.splitContainer11.Panel1, "splitContainer11.Panel1");
+            this.splitContainer11.Panel1.Controls.Add(this.splitContainer12);
+            // 
+            // splitContainer11.Panel2
+            // 
+            resources.ApplyResources(this.splitContainer11.Panel2, "splitContainer11.Panel2");
+            this.splitContainer11.Panel2.Controls.Add(this.groupBox1);
+            this.splitContainer11.Panel2.Controls.Add(this.groupBox2);
+            this.splitContainer11.Panel2.Controls.Add(this.cb_alt);
+            this.splitContainer11.Panel2.Controls.Add(this.label22);
+            this.splitContainer11.Panel2.Controls.Add(this.groupBox3);
+            this.splitContainer11.Panel2.Controls.Add(this.l_alt);
+            this.splitContainer11.Panel2.Controls.Add(this.cb_head);
+            this.splitContainer11.Panel2.Controls.Add(this.l_head);
+            this.splitContainer11.Panel2.Controls.Add(this.label26);
+            // 
+            // splitContainer12
+            // 
+            resources.ApplyResources(this.splitContainer12, "splitContainer12");
+            this.splitContainer12.Name = "splitContainer12";
+            // 
+            // splitContainer12.Panel1
+            // 
+            resources.ApplyResources(this.splitContainer12.Panel1, "splitContainer12.Panel1");
+            this.splitContainer12.Panel1.Controls.Add(this.zgMonitor);
+            // 
+            // splitContainer12.Panel2
+            // 
+            resources.ApplyResources(this.splitContainer12.Panel2, "splitContainer12.Panel2");
+            this.splitContainer12.Panel2.Controls.Add(this.label28);
+            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg1);
+            this.splitContainer12.Panel2.Controls.Add(this.l_dbg1);
+            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg2);
+            this.splitContainer12.Panel2.Controls.Add(this.label33);
+            this.splitContainer12.Panel2.Controls.Add(this.l_dbg2);
+            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg3);
+            this.splitContainer12.Panel2.Controls.Add(this.l_dbg4);
+            this.splitContainer12.Panel2.Controls.Add(this.label38);
+            this.splitContainer12.Panel2.Controls.Add(this.label40);
+            this.splitContainer12.Panel2.Controls.Add(this.l_dbg3);
+            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg4);
+            // 
+            // zgMonitor
+            // 
+            resources.ApplyResources(this.zgMonitor, "zgMonitor");
+            this.zgMonitor.IsZoomOnMouseCenter = true;
+            this.zgMonitor.Name = "zgMonitor";
+            this.zgMonitor.ScrollGrace = 0D;
+            this.zgMonitor.ScrollMaxX = 0D;
+            this.zgMonitor.ScrollMaxY = 0D;
+            this.zgMonitor.ScrollMaxY2 = 0D;
+            this.zgMonitor.ScrollMinX = 0D;
+            this.zgMonitor.ScrollMinY = 0D;
+            this.zgMonitor.ScrollMinY2 = 0D;
+            this.zgMonitor.UseExtendedPrintDialog = true;
+            // 
+            // label28
+            // 
+            resources.ApplyResources(this.label28, "label28");
+            this.label28.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label28.ForeColor = System.Drawing.Color.Black;
+            this.label28.Name = "label28";
+            // 
+            // cb_dbg1
+            // 
+            resources.ApplyResources(this.cb_dbg1, "cb_dbg1");
+            this.cb_dbg1.Name = "cb_dbg1";
+            this.cb_dbg1.UseVisualStyleBackColor = true;
+            // 
+            // l_dbg1
+            // 
+            resources.ApplyResources(this.l_dbg1, "l_dbg1");
+            this.l_dbg1.ForeColor = System.Drawing.Color.White;
+            this.l_dbg1.Name = "l_dbg1";
+            // 
+            // cb_dbg2
+            // 
+            resources.ApplyResources(this.cb_dbg2, "cb_dbg2");
+            this.cb_dbg2.Name = "cb_dbg2";
+            this.cb_dbg2.UseVisualStyleBackColor = true;
+            // 
+            // label33
+            // 
+            resources.ApplyResources(this.label33, "label33");
+            this.label33.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label33.ForeColor = System.Drawing.Color.Black;
+            this.label33.Name = "label33";
+            // 
+            // l_dbg2
+            // 
+            resources.ApplyResources(this.l_dbg2, "l_dbg2");
+            this.l_dbg2.ForeColor = System.Drawing.Color.White;
+            this.l_dbg2.Name = "l_dbg2";
+            // 
+            // cb_dbg3
+            // 
+            resources.ApplyResources(this.cb_dbg3, "cb_dbg3");
+            this.cb_dbg3.Name = "cb_dbg3";
+            this.cb_dbg3.UseVisualStyleBackColor = true;
+            // 
+            // l_dbg4
+            // 
+            resources.ApplyResources(this.l_dbg4, "l_dbg4");
+            this.l_dbg4.ForeColor = System.Drawing.Color.White;
+            this.l_dbg4.Name = "l_dbg4";
+            // 
+            // label38
+            // 
+            resources.ApplyResources(this.label38, "label38");
+            this.label38.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label38.ForeColor = System.Drawing.Color.Black;
+            this.label38.Name = "label38";
+            // 
+            // label40
+            // 
+            resources.ApplyResources(this.label40, "label40");
+            this.label40.BackColor = System.Drawing.Color.PaleTurquoise;
+            this.label40.ForeColor = System.Drawing.Color.Black;
+            this.label40.Name = "label40";
+            // 
+            // l_dbg3
+            // 
+            resources.ApplyResources(this.l_dbg3, "l_dbg3");
+            this.l_dbg3.ForeColor = System.Drawing.Color.White;
+            this.l_dbg3.Name = "l_dbg3";
+            // 
+            // cb_dbg4
+            // 
+            resources.ApplyResources(this.cb_dbg4, "cb_dbg4");
+            this.cb_dbg4.Name = "cb_dbg4";
+            this.cb_dbg4.UseVisualStyleBackColor = true;
+            // 
+            // groupBox1
+            // 
+            resources.ApplyResources(this.groupBox1, "groupBox1");
+            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.b_uncheck_all_ACC);
+            this.groupBox1.Controls.Add(this.b_check_all_ACC);
+            this.groupBox1.Controls.Add(this.l_acc_z);
+            this.groupBox1.Controls.Add(this.l_acc_pitch);
+            this.groupBox1.Controls.Add(this.l_acc_roll);
+            this.groupBox1.Controls.Add(this.label18);
+            this.groupBox1.Controls.Add(this.cb_acc_z);
+            this.groupBox1.Controls.Add(this.label16);
+            this.groupBox1.Controls.Add(this.cb_acc_pitch);
+            this.groupBox1.Controls.Add(this.label14);
+            this.groupBox1.Controls.Add(this.cb_acc_roll);
+            this.groupBox1.ForeColor = System.Drawing.Color.White;
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.TabStop = false;
+            // 
+            // b_uncheck_all_ACC
+            // 
+            resources.ApplyResources(this.b_uncheck_all_ACC, "b_uncheck_all_ACC");
+            this.b_uncheck_all_ACC.ForeColor = System.Drawing.Color.Black;
+            this.b_uncheck_all_ACC.Name = "b_uncheck_all_ACC";
+            this.b_uncheck_all_ACC.UseVisualStyleBackColor = true;
+            this.b_uncheck_all_ACC.Click += new System.EventHandler(this.b_uncheck_all_ACC_Click);
+            // 
+            // b_check_all_ACC
+            // 
+            resources.ApplyResources(this.b_check_all_ACC, "b_check_all_ACC");
+            this.b_check_all_ACC.ForeColor = System.Drawing.Color.Black;
+            this.b_check_all_ACC.Name = "b_check_all_ACC";
+            this.b_check_all_ACC.UseVisualStyleBackColor = true;
+            this.b_check_all_ACC.Click += new System.EventHandler(this.b_check_all_ACC_Click);
+            // 
+            // l_acc_z
+            // 
+            resources.ApplyResources(this.l_acc_z, "l_acc_z");
+            this.l_acc_z.Name = "l_acc_z";
+            // 
+            // l_acc_pitch
+            // 
+            resources.ApplyResources(this.l_acc_pitch, "l_acc_pitch");
+            this.l_acc_pitch.Name = "l_acc_pitch";
+            // 
+            // l_acc_roll
+            // 
+            resources.ApplyResources(this.l_acc_roll, "l_acc_roll");
+            this.l_acc_roll.Name = "l_acc_roll";
+            // 
+            // label18
+            // 
+            resources.ApplyResources(this.label18, "label18");
+            this.label18.BackColor = System.Drawing.Color.Blue;
+            this.label18.Name = "label18";
+            // 
+            // cb_acc_z
+            // 
+            resources.ApplyResources(this.cb_acc_z, "cb_acc_z");
+            this.cb_acc_z.Checked = true;
+            this.cb_acc_z.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_acc_z.Name = "cb_acc_z";
+            this.cb_acc_z.UseVisualStyleBackColor = true;
+            // 
+            // label16
+            // 
+            resources.ApplyResources(this.label16, "label16");
+            this.label16.BackColor = System.Drawing.Color.Green;
+            this.label16.Name = "label16";
+            // 
+            // cb_acc_pitch
+            // 
+            resources.ApplyResources(this.cb_acc_pitch, "cb_acc_pitch");
+            this.cb_acc_pitch.Checked = true;
+            this.cb_acc_pitch.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_acc_pitch.Name = "cb_acc_pitch";
+            this.cb_acc_pitch.UseVisualStyleBackColor = true;
+            // 
+            // label14
+            // 
+            resources.ApplyResources(this.label14, "label14");
+            this.label14.BackColor = System.Drawing.Color.Red;
+            this.label14.Name = "label14";
+            // 
+            // cb_acc_roll
+            // 
+            resources.ApplyResources(this.cb_acc_roll, "cb_acc_roll");
+            this.cb_acc_roll.Checked = true;
+            this.cb_acc_roll.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_acc_roll.Name = "cb_acc_roll";
+            this.cb_acc_roll.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            resources.ApplyResources(this.groupBox2, "groupBox2");
+            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox2.Controls.Add(this.b_uncheck_all_GYRO);
+            this.groupBox2.Controls.Add(this.b_check_all_GYRO);
+            this.groupBox2.Controls.Add(this.l_gyro_yaw);
+            this.groupBox2.Controls.Add(this.l_gyro_pitch);
+            this.groupBox2.Controls.Add(this.l_gyro_roll);
+            this.groupBox2.Controls.Add(this.label29);
+            this.groupBox2.Controls.Add(this.cb_gyro_yaw);
+            this.groupBox2.Controls.Add(this.label30);
+            this.groupBox2.Controls.Add(this.cb_gyro_pitch);
+            this.groupBox2.Controls.Add(this.label31);
+            this.groupBox2.Controls.Add(this.cb_gyro_roll);
+            this.groupBox2.ForeColor = System.Drawing.Color.White;
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.TabStop = false;
+            // 
+            // b_uncheck_all_GYRO
+            // 
+            resources.ApplyResources(this.b_uncheck_all_GYRO, "b_uncheck_all_GYRO");
+            this.b_uncheck_all_GYRO.ForeColor = System.Drawing.Color.Black;
+            this.b_uncheck_all_GYRO.Name = "b_uncheck_all_GYRO";
+            this.b_uncheck_all_GYRO.UseVisualStyleBackColor = true;
+            this.b_uncheck_all_GYRO.Click += new System.EventHandler(this.b_uncheck_all_GYRO_Click);
+            // 
+            // b_check_all_GYRO
+            // 
+            resources.ApplyResources(this.b_check_all_GYRO, "b_check_all_GYRO");
+            this.b_check_all_GYRO.ForeColor = System.Drawing.Color.Black;
+            this.b_check_all_GYRO.Name = "b_check_all_GYRO";
+            this.b_check_all_GYRO.UseVisualStyleBackColor = true;
+            this.b_check_all_GYRO.Click += new System.EventHandler(this.b_check_all_GYRO_Click);
+            // 
+            // l_gyro_yaw
+            // 
+            resources.ApplyResources(this.l_gyro_yaw, "l_gyro_yaw");
+            this.l_gyro_yaw.Name = "l_gyro_yaw";
+            // 
+            // l_gyro_pitch
+            // 
+            resources.ApplyResources(this.l_gyro_pitch, "l_gyro_pitch");
+            this.l_gyro_pitch.Name = "l_gyro_pitch";
+            // 
+            // l_gyro_roll
+            // 
+            resources.ApplyResources(this.l_gyro_roll, "l_gyro_roll");
+            this.l_gyro_roll.Name = "l_gyro_roll";
+            // 
+            // label29
+            // 
+            resources.ApplyResources(this.label29, "label29");
+            this.label29.BackColor = System.Drawing.Color.Magenta;
+            this.label29.ForeColor = System.Drawing.Color.Black;
+            this.label29.Name = "label29";
+            // 
+            // cb_gyro_yaw
+            // 
+            resources.ApplyResources(this.cb_gyro_yaw, "cb_gyro_yaw");
+            this.cb_gyro_yaw.Checked = true;
+            this.cb_gyro_yaw.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_gyro_yaw.Name = "cb_gyro_yaw";
+            this.cb_gyro_yaw.UseVisualStyleBackColor = true;
+            // 
+            // label30
+            // 
+            resources.ApplyResources(this.label30, "label30");
+            this.label30.BackColor = System.Drawing.Color.Cyan;
+            this.label30.ForeColor = System.Drawing.Color.Black;
+            this.label30.Name = "label30";
+            // 
+            // cb_gyro_pitch
+            // 
+            resources.ApplyResources(this.cb_gyro_pitch, "cb_gyro_pitch");
+            this.cb_gyro_pitch.Checked = true;
+            this.cb_gyro_pitch.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_gyro_pitch.Name = "cb_gyro_pitch";
+            this.cb_gyro_pitch.UseVisualStyleBackColor = true;
+            // 
+            // label31
+            // 
+            resources.ApplyResources(this.label31, "label31");
+            this.label31.BackColor = System.Drawing.Color.Khaki;
+            this.label31.ForeColor = System.Drawing.Color.Black;
+            this.label31.Name = "label31";
+            // 
+            // cb_gyro_roll
+            // 
+            resources.ApplyResources(this.cb_gyro_roll, "cb_gyro_roll");
+            this.cb_gyro_roll.Checked = true;
+            this.cb_gyro_roll.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cb_gyro_roll.Name = "cb_gyro_roll";
+            this.cb_gyro_roll.UseVisualStyleBackColor = true;
+            // 
+            // cb_alt
+            // 
+            resources.ApplyResources(this.cb_alt, "cb_alt");
+            this.cb_alt.Name = "cb_alt";
+            this.cb_alt.UseVisualStyleBackColor = true;
+            // 
+            // label22
+            // 
+            resources.ApplyResources(this.label22, "label22");
+            this.label22.BackColor = System.Drawing.Color.Gainsboro;
+            this.label22.ForeColor = System.Drawing.Color.Black;
+            this.label22.Name = "label22";
+            // 
+            // groupBox3
+            // 
+            resources.ApplyResources(this.groupBox3, "groupBox3");
+            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox3.Controls.Add(this.b_uncheck_all_MAG);
+            this.groupBox3.Controls.Add(this.b_check_all_MAG);
+            this.groupBox3.Controls.Add(this.l_mag_yaw);
+            this.groupBox3.Controls.Add(this.l_mag_pitch);
+            this.groupBox3.Controls.Add(this.l_mag_roll);
+            this.groupBox3.Controls.Add(this.label35);
+            this.groupBox3.Controls.Add(this.cb_mag_yaw);
+            this.groupBox3.Controls.Add(this.label36);
+            this.groupBox3.Controls.Add(this.cb_mag_pitch);
+            this.groupBox3.Controls.Add(this.label37);
+            this.groupBox3.Controls.Add(this.cb_mag_roll);
+            this.groupBox3.ForeColor = System.Drawing.Color.White;
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.TabStop = false;
+            // 
+            // b_uncheck_all_MAG
+            // 
+            resources.ApplyResources(this.b_uncheck_all_MAG, "b_uncheck_all_MAG");
+            this.b_uncheck_all_MAG.ForeColor = System.Drawing.Color.Black;
+            this.b_uncheck_all_MAG.Name = "b_uncheck_all_MAG";
+            this.b_uncheck_all_MAG.UseVisualStyleBackColor = true;
+            this.b_uncheck_all_MAG.Click += new System.EventHandler(this.b_uncheck_all_MAG_Click);
+            // 
+            // b_check_all_MAG
+            // 
+            resources.ApplyResources(this.b_check_all_MAG, "b_check_all_MAG");
+            this.b_check_all_MAG.ForeColor = System.Drawing.Color.Black;
+            this.b_check_all_MAG.Name = "b_check_all_MAG";
+            this.b_check_all_MAG.UseVisualStyleBackColor = true;
+            this.b_check_all_MAG.Click += new System.EventHandler(this.b_check_all_MAG_Click);
+            // 
+            // l_mag_yaw
+            // 
+            resources.ApplyResources(this.l_mag_yaw, "l_mag_yaw");
+            this.l_mag_yaw.Name = "l_mag_yaw";
+            // 
+            // l_mag_pitch
+            // 
+            resources.ApplyResources(this.l_mag_pitch, "l_mag_pitch");
+            this.l_mag_pitch.Name = "l_mag_pitch";
+            // 
+            // l_mag_roll
+            // 
+            resources.ApplyResources(this.l_mag_roll, "l_mag_roll");
+            this.l_mag_roll.Name = "l_mag_roll";
+            // 
+            // label35
+            // 
+            resources.ApplyResources(this.label35, "label35");
+            this.label35.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.label35.Name = "label35";
+            // 
+            // cb_mag_yaw
+            // 
+            resources.ApplyResources(this.cb_mag_yaw, "cb_mag_yaw");
+            this.cb_mag_yaw.Name = "cb_mag_yaw";
+            this.cb_mag_yaw.UseVisualStyleBackColor = true;
+            // 
+            // label36
+            // 
+            resources.ApplyResources(this.label36, "label36");
+            this.label36.BackColor = System.Drawing.Color.MediumPurple;
+            this.label36.Name = "label36";
+            // 
+            // cb_mag_pitch
+            // 
+            resources.ApplyResources(this.cb_mag_pitch, "cb_mag_pitch");
+            this.cb_mag_pitch.Name = "cb_mag_pitch";
+            this.cb_mag_pitch.UseVisualStyleBackColor = true;
+            // 
+            // label37
+            // 
+            resources.ApplyResources(this.label37, "label37");
+            this.label37.BackColor = System.Drawing.Color.CadetBlue;
+            this.label37.Name = "label37";
+            // 
+            // cb_mag_roll
+            // 
+            resources.ApplyResources(this.cb_mag_roll, "cb_mag_roll");
+            this.cb_mag_roll.Name = "cb_mag_roll";
+            this.cb_mag_roll.UseVisualStyleBackColor = true;
+            // 
+            // l_alt
+            // 
+            resources.ApplyResources(this.l_alt, "l_alt");
+            this.l_alt.ForeColor = System.Drawing.Color.White;
+            this.l_alt.Name = "l_alt";
+            // 
+            // cb_head
+            // 
+            resources.ApplyResources(this.cb_head, "cb_head");
+            this.cb_head.Name = "cb_head";
+            this.cb_head.UseVisualStyleBackColor = true;
+            // 
+            // l_head
+            // 
+            resources.ApplyResources(this.l_head, "l_head");
+            this.l_head.ForeColor = System.Drawing.Color.White;
+            this.l_head.Name = "l_head";
+            // 
+            // label26
+            // 
+            resources.ApplyResources(this.label26, "label26");
+            this.label26.BackColor = System.Drawing.Color.Orange;
+            this.label26.ForeColor = System.Drawing.Color.Black;
+            this.label26.Name = "label26";
+            // 
+            // splitContainer6
+            // 
+            resources.ApplyResources(this.splitContainer6, "splitContainer6");
+            this.splitContainer6.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
+            this.splitContainer6.Name = "splitContainer6";
+            // 
+            // splitContainer6.Panel1
+            // 
+            resources.ApplyResources(this.splitContainer6.Panel1, "splitContainer6.Panel1");
+            this.splitContainer6.Panel1.Controls.Add(this.videoSourcePlayer);
+            // 
+            // splitContainer6.Panel2
+            // 
+            resources.ApplyResources(this.splitContainer6.Panel2, "splitContainer6.Panel2");
+            this.splitContainer6.Panel2.Controls.Add(this.dropdown_devices);
+            this.splitContainer6.Panel2.Controls.Add(this.b_video_connect);
+            this.splitContainer6.Panel2.Controls.Add(this.label19);
+            this.splitContainer6.Panel2.Controls.Add(this.b_Record);
+            this.splitContainer6.Panel2.Controls.Add(this.cb_codec);
+            this.splitContainer6.Panel2.Controls.Add(this.nFrameRate);
+            this.splitContainer6.Panel2.Controls.Add(this.label17);
+            this.splitContainer6.Panel2.Controls.Add(this.label12);
+            this.splitContainer6.Panel2.Controls.Add(this.label15);
+            this.splitContainer6.Panel2.Controls.Add(this.nBitRate);
+            this.splitContainer6.Panel2.Controls.Add(this.label13);
+            // 
+            // videoSourcePlayer
+            // 
+            resources.ApplyResources(this.videoSourcePlayer, "videoSourcePlayer");
+            this.videoSourcePlayer.Name = "videoSourcePlayer";
+            this.videoSourcePlayer.VideoSource = null;
+            this.videoSourcePlayer.SizeChanged += new System.EventHandler(this.videoSourcePlayer_SizeChanged);
+            // 
+            // dropdown_devices
+            // 
+            resources.ApplyResources(this.dropdown_devices, "dropdown_devices");
+            this.dropdown_devices.BackColor = System.Drawing.Color.Gray;
+            this.dropdown_devices.FormattingEnabled = true;
+            this.dropdown_devices.Name = "dropdown_devices";
+            // 
+            // b_video_connect
+            // 
+            resources.ApplyResources(this.b_video_connect, "b_video_connect");
+            this.b_video_connect.Name = "b_video_connect";
+            this.b_video_connect.UseVisualStyleBackColor = true;
+            this.b_video_connect.Click += new System.EventHandler(this.b_video_connect_Click);
+            // 
+            // label19
+            // 
+            resources.ApplyResources(this.label19, "label19");
+            this.label19.ForeColor = System.Drawing.Color.White;
+            this.label19.Name = "label19";
+            // 
+            // b_Record
+            // 
+            resources.ApplyResources(this.b_Record, "b_Record");
+            this.b_Record.Name = "b_Record";
+            this.b_Record.UseVisualStyleBackColor = true;
+            this.b_Record.Click += new System.EventHandler(this.b_Record_Click);
+            // 
+            // cb_codec
+            // 
+            resources.ApplyResources(this.cb_codec, "cb_codec");
+            this.cb_codec.FormattingEnabled = true;
+            this.cb_codec.Items.AddRange(new object[] {
+            resources.GetString("cb_codec.Items"),
+            resources.GetString("cb_codec.Items1"),
+            resources.GetString("cb_codec.Items2"),
+            resources.GetString("cb_codec.Items3"),
+            resources.GetString("cb_codec.Items4"),
+            resources.GetString("cb_codec.Items5"),
+            resources.GetString("cb_codec.Items6"),
+            resources.GetString("cb_codec.Items7"),
+            resources.GetString("cb_codec.Items8")});
+            this.cb_codec.Name = "cb_codec";
+            // 
+            // nFrameRate
+            // 
+            resources.ApplyResources(this.nFrameRate, "nFrameRate");
+            this.nFrameRate.Maximum = new decimal(new int[] {
+            30,
+            0,
+            0,
+            0});
+            this.nFrameRate.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
+            this.nFrameRate.Name = "nFrameRate";
+            this.nFrameRate.Value = new decimal(new int[] {
+            25,
+            0,
+            0,
+            0});
+            // 
+            // label17
+            // 
+            resources.ApplyResources(this.label17, "label17");
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Name = "label17";
+            // 
+            // label12
+            // 
+            resources.ApplyResources(this.label12, "label12");
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Name = "label12";
+            // 
+            // label15
+            // 
+            resources.ApplyResources(this.label15, "label15");
+            this.label15.ForeColor = System.Drawing.Color.White;
+            this.label15.Name = "label15";
+            // 
+            // nBitRate
+            // 
+            resources.ApplyResources(this.nBitRate, "nBitRate");
+            this.nBitRate.DecimalPlaces = 1;
+            this.nBitRate.Increment = new decimal(new int[] {
+            1,
+            0,
+            0,
+            65536});
+            this.nBitRate.Maximum = new decimal(new int[] {
+            10,
+            0,
+            0,
+            0});
+            this.nBitRate.Minimum = new decimal(new int[] {
+            5,
+            0,
+            0,
+            65536});
+            this.nBitRate.Name = "nBitRate";
+            this.nBitRate.Value = new decimal(new int[] {
+            3,
+            0,
+            0,
+            0});
+            // 
+            // label13
+            // 
+            resources.ApplyResources(this.label13, "label13");
+            this.label13.ForeColor = System.Drawing.Color.White;
+            this.label13.Name = "label13";
+            // 
+            // tabMain
+            // 
+            resources.ApplyResources(this.tabMain, "tabMain");
+            this.tabMain.Controls.Add(this.tabPageFlightDeck);
+            this.tabMain.Controls.Add(this.tabPageMisson);
+            this.tabMain.Controls.Add(this.tabPagePID);
+            this.tabMain.Controls.Add(this.tabPageConf);
+            this.tabMain.Controls.Add(this.tabPageRC);
+            this.tabMain.Controls.Add(this.tabSensorGraph);
+            this.tabMain.Controls.Add(this.tabPageVideo);
+            this.tabMain.Controls.Add(this.tabPageSettings);
+            this.tabMain.Controls.Add(this.tabPageCLI);
+            this.tabMain.Name = "tabMain";
+            this.tabMain.SelectedIndex = 1;
+            this.tabMain.SelectedIndexChanged += new System.EventHandler(this.tabMain_SelectedIndexChanged);
+            // 
+            // tabPageFlightDeck
+            // 
+            resources.ApplyResources(this.tabPageFlightDeck, "tabPageFlightDeck");
+            this.tabPageFlightDeck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPageFlightDeck.Controls.Add(this.splitContainer1);
+            this.tabPageFlightDeck.ForeColor = System.Drawing.Color.White;
+            this.tabPageFlightDeck.Name = "tabPageFlightDeck";
+            // 
+            // tabPageMisson
+            // 
+            resources.ApplyResources(this.tabPageMisson, "tabPageMisson");
+            this.tabPageMisson.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.tabPageMisson.ContextMenuStrip = this.contextMenuStripMap;
+            this.tabPageMisson.Controls.Add(this.splitContainer7);
+            this.tabPageMisson.Name = "tabPageMisson";
+            // 
+            // contextMenuStripMap
+            // 
+            resources.ApplyResources(this.contextMenuStripMap, "contextMenuStripMap");
+            this.contextMenuStripMap.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tsMenuAddWP,
+            this.tsMenuAddPosholdTimed,
+            this.tsMenuAddPosholdUnlim,
+            this.tsMenuAddRTH,
+            this.tsMenuAddLand,
+            this.tsMenuAddJump,
+            this.tsMenuAddPOI,
+            this.tsMenuSetHead,
+            this.tsMenuDeleteWP,
+            this.toolStripSeparator5,
+            this.clearMissionToolStripMenuItem,
+            this.createCircleToolStripMenuItem,
+            this.bulkAltitudeChangeToolStripMenuItem,
+            this.toolStripSeparator6,
+            this.fetchMapTilesToolStripMenuItem});
+            this.contextMenuStripMap.Name = "contextMenuStripMap";
+            this.contextMenuStripMap.Opening += new System.ComponentModel.CancelEventHandler(this.contextMenuStripMap_Opening);
+            // 
+            // tsMenuAddWP
+            // 
+            resources.ApplyResources(this.tsMenuAddWP, "tsMenuAddWP");
+            this.tsMenuAddWP.Image = global::MultiWiiWinGUI.Properties.Resources.wpicon;
+            this.tsMenuAddWP.Name = "tsMenuAddWP";
+            this.tsMenuAddWP.Click += new System.EventHandler(this.tsMenuAddWP_Click);
+            // 
+            // tsMenuAddPosholdTimed
+            // 
+            resources.ApplyResources(this.tsMenuAddPosholdTimed, "tsMenuAddPosholdTimed");
+            this.tsMenuAddPosholdTimed.Image = global::MultiWiiWinGUI.Properties.Resources.phicon;
+            this.tsMenuAddPosholdTimed.Name = "tsMenuAddPosholdTimed";
+            this.tsMenuAddPosholdTimed.Click += new System.EventHandler(this.tsMenuAddPosholdTimed_Click);
+            // 
+            // tsMenuAddPosholdUnlim
+            // 
+            resources.ApplyResources(this.tsMenuAddPosholdUnlim, "tsMenuAddPosholdUnlim");
+            this.tsMenuAddPosholdUnlim.Image = global::MultiWiiWinGUI.Properties.Resources.poshold_unlim;
+            this.tsMenuAddPosholdUnlim.Name = "tsMenuAddPosholdUnlim";
+            this.tsMenuAddPosholdUnlim.Click += new System.EventHandler(this.tsMenuAddPosholdUnlim_Click);
+            // 
+            // tsMenuAddRTH
+            // 
+            resources.ApplyResources(this.tsMenuAddRTH, "tsMenuAddRTH");
+            this.tsMenuAddRTH.Image = global::MultiWiiWinGUI.Properties.Resources.bluehome;
+            this.tsMenuAddRTH.Name = "tsMenuAddRTH";
+            this.tsMenuAddRTH.Click += new System.EventHandler(this.tsMenuAddRTH_Click);
+            // 
+            // tsMenuAddLand
+            // 
+            resources.ApplyResources(this.tsMenuAddLand, "tsMenuAddLand");
+            this.tsMenuAddLand.Name = "tsMenuAddLand";
+            this.tsMenuAddLand.Click += new System.EventHandler(this.tsMenuAddLand_Click);
+            // 
+            // tsMenuAddJump
+            // 
+            resources.ApplyResources(this.tsMenuAddJump, "tsMenuAddJump");
+            this.tsMenuAddJump.Name = "tsMenuAddJump";
+            this.tsMenuAddJump.Click += new System.EventHandler(this.tsMenuAddJump_Click);
+            // 
+            // tsMenuAddPOI
+            // 
+            resources.ApplyResources(this.tsMenuAddPOI, "tsMenuAddPOI");
+            this.tsMenuAddPOI.Name = "tsMenuAddPOI";
+            this.tsMenuAddPOI.Click += new System.EventHandler(this.tsMenuAddPOI_Click);
+            // 
+            // tsMenuSetHead
+            // 
+            resources.ApplyResources(this.tsMenuSetHead, "tsMenuSetHead");
+            this.tsMenuSetHead.Name = "tsMenuSetHead";
+            this.tsMenuSetHead.Click += new System.EventHandler(this.tsMenuSetHead_Click);
+            // 
+            // tsMenuDeleteWP
+            // 
+            resources.ApplyResources(this.tsMenuDeleteWP, "tsMenuDeleteWP");
+            this.tsMenuDeleteWP.Name = "tsMenuDeleteWP";
+            this.tsMenuDeleteWP.Click += new System.EventHandler(this.tsMenuDeleteWP_Click);
+            // 
+            // toolStripSeparator5
+            // 
+            resources.ApplyResources(this.toolStripSeparator5, "toolStripSeparator5");
+            this.toolStripSeparator5.Name = "toolStripSeparator5";
+            // 
+            // clearMissionToolStripMenuItem
+            // 
+            resources.ApplyResources(this.clearMissionToolStripMenuItem, "clearMissionToolStripMenuItem");
+            this.clearMissionToolStripMenuItem.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
+            this.clearMissionToolStripMenuItem.Name = "clearMissionToolStripMenuItem";
+            this.clearMissionToolStripMenuItem.Click += new System.EventHandler(this.clearMissionToolStripMenuItem_Click);
+            // 
+            // createCircleToolStripMenuItem
+            // 
+            resources.ApplyResources(this.createCircleToolStripMenuItem, "createCircleToolStripMenuItem");
+            this.createCircleToolStripMenuItem.Name = "createCircleToolStripMenuItem";
+            this.createCircleToolStripMenuItem.Click += new System.EventHandler(this.createCircleToolStripMenuItem_Click);
+            // 
+            // bulkAltitudeChangeToolStripMenuItem
+            // 
+            resources.ApplyResources(this.bulkAltitudeChangeToolStripMenuItem, "bulkAltitudeChangeToolStripMenuItem");
+            this.bulkAltitudeChangeToolStripMenuItem.Name = "bulkAltitudeChangeToolStripMenuItem";
+            this.bulkAltitudeChangeToolStripMenuItem.Click += new System.EventHandler(this.bulkAltitudeChangeToolStripMenuItem_Click);
+            // 
+            // toolStripSeparator6
+            // 
+            resources.ApplyResources(this.toolStripSeparator6, "toolStripSeparator6");
+            this.toolStripSeparator6.Name = "toolStripSeparator6";
+            // 
+            // fetchMapTilesToolStripMenuItem
+            // 
+            resources.ApplyResources(this.fetchMapTilesToolStripMenuItem, "fetchMapTilesToolStripMenuItem");
+            this.fetchMapTilesToolStripMenuItem.Name = "fetchMapTilesToolStripMenuItem";
+            this.fetchMapTilesToolStripMenuItem.Click += new System.EventHandler(this.fetchMapTilesToolStripMenuItem_Click);
             // 
             // tabPagePID
             // 
@@ -1553,11 +2385,55 @@ namespace MultiWiiWinGUI
             0,
             0});
             // 
+            // cbNavBaroTakeover
+            // 
+            resources.ApplyResources(this.cbNavBaroTakeover, "cbNavBaroTakeover");
+            this.cbNavBaroTakeover.aux = 0;
+            this.cbNavBaroTakeover.ForeColor = System.Drawing.Color.White;
+            this.cbNavBaroTakeover.IsHighlighted = false;
+            this.cbNavBaroTakeover.item = 0;
+            this.cbNavBaroTakeover.Name = "cbNavBaroTakeover";
+            this.cbNavBaroTakeover.rclevel = 0;
+            this.cbNavBaroTakeover.UseVisualStyleBackColor = true;
+            // 
+            // cbNavDisableSticks
+            // 
+            resources.ApplyResources(this.cbNavDisableSticks, "cbNavDisableSticks");
+            this.cbNavDisableSticks.aux = 0;
+            this.cbNavDisableSticks.ForeColor = System.Drawing.Color.White;
+            this.cbNavDisableSticks.IsHighlighted = false;
+            this.cbNavDisableSticks.item = 0;
+            this.cbNavDisableSticks.Name = "cbNavDisableSticks";
+            this.cbNavDisableSticks.rclevel = 0;
+            this.cbNavDisableSticks.UseVisualStyleBackColor = true;
+            // 
+            // cbNavGPS_filtering
+            // 
+            resources.ApplyResources(this.cbNavGPS_filtering, "cbNavGPS_filtering");
+            this.cbNavGPS_filtering.aux = 0;
+            this.cbNavGPS_filtering.ForeColor = System.Drawing.Color.White;
+            this.cbNavGPS_filtering.IsHighlighted = false;
+            this.cbNavGPS_filtering.item = 0;
+            this.cbNavGPS_filtering.Name = "cbNavGPS_filtering";
+            this.cbNavGPS_filtering.rclevel = 0;
+            this.cbNavGPS_filtering.UseVisualStyleBackColor = true;
+            // 
             // label88
             // 
             resources.ApplyResources(this.label88, "label88");
             this.label88.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label88.Name = "label88";
+            // 
+            // cbNavGPS_Lead
+            // 
+            resources.ApplyResources(this.cbNavGPS_Lead, "cbNavGPS_Lead");
+            this.cbNavGPS_Lead.aux = 0;
+            this.cbNavGPS_Lead.ForeColor = System.Drawing.Color.White;
+            this.cbNavGPS_Lead.IsHighlighted = false;
+            this.cbNavGPS_Lead.item = 0;
+            this.cbNavGPS_Lead.Name = "cbNavGPS_Lead";
+            this.cbNavGPS_Lead.rclevel = 0;
+            this.cbNavGPS_Lead.UseVisualStyleBackColor = true;
             // 
             // nBanking
             // 
@@ -1580,11 +2456,33 @@ namespace MultiWiiWinGUI
             0,
             0});
             // 
+            // cbNavResetHome
+            // 
+            resources.ApplyResources(this.cbNavResetHome, "cbNavResetHome");
+            this.cbNavResetHome.aux = 0;
+            this.cbNavResetHome.ForeColor = System.Drawing.Color.White;
+            this.cbNavResetHome.IsHighlighted = false;
+            this.cbNavResetHome.item = 0;
+            this.cbNavResetHome.Name = "cbNavResetHome";
+            this.cbNavResetHome.rclevel = 0;
+            this.cbNavResetHome.UseVisualStyleBackColor = true;
+            // 
             // label87
             // 
             resources.ApplyResources(this.label87, "label87");
             this.label87.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label87.Name = "label87";
+            // 
+            // cbNavHeadingControl
+            // 
+            resources.ApplyResources(this.cbNavHeadingControl, "cbNavHeadingControl");
+            this.cbNavHeadingControl.aux = 0;
+            this.cbNavHeadingControl.ForeColor = System.Drawing.Color.White;
+            this.cbNavHeadingControl.IsHighlighted = false;
+            this.cbNavHeadingControl.item = 0;
+            this.cbNavHeadingControl.Name = "cbNavHeadingControl";
+            this.cbNavHeadingControl.rclevel = 0;
+            this.cbNavHeadingControl.UseVisualStyleBackColor = true;
             // 
             // nCrosstrack
             // 
@@ -1613,11 +2511,34 @@ namespace MultiWiiWinGUI
             0,
             0});
             // 
+            // cbNavTailFirst
+            // 
+            resources.ApplyResources(this.cbNavTailFirst, "cbNavTailFirst");
+            this.cbNavTailFirst.aux = 0;
+            this.cbNavTailFirst.ForeColor = System.Drawing.Color.White;
+            this.cbNavTailFirst.IsHighlighted = false;
+            this.cbNavTailFirst.item = 0;
+            this.cbNavTailFirst.Name = "cbNavTailFirst";
+            this.cbNavTailFirst.rclevel = 0;
+            this.cbNavTailFirst.UseVisualStyleBackColor = true;
+            // 
             // label86
             // 
             resources.ApplyResources(this.label86, "label86");
             this.label86.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label86.Name = "label86";
+            // 
+            // cbNavRTHHead
+            // 
+            resources.ApplyResources(this.cbNavRTHHead, "cbNavRTHHead");
+            this.cbNavRTHHead.aux = 0;
+            this.cbNavRTHHead.ForeColor = System.Drawing.Color.White;
+            this.cbNavRTHHead.IsHighlighted = false;
+            this.cbNavRTHHead.item = 0;
+            this.cbNavRTHHead.Name = "cbNavRTHHead";
+            this.cbNavRTHHead.rclevel = 0;
+            this.cbNavRTHHead.UseVisualStyleBackColor = true;
+            this.cbNavRTHHead.CheckedChanged += new System.EventHandler(this.checkBoxEx5_CheckedChanged);
             // 
             // nRTHAlt
             // 
@@ -1635,11 +2556,33 @@ namespace MultiWiiWinGUI
             0,
             0});
             // 
+            // cbNavWaitRTHAlt
+            // 
+            resources.ApplyResources(this.cbNavWaitRTHAlt, "cbNavWaitRTHAlt");
+            this.cbNavWaitRTHAlt.aux = 0;
+            this.cbNavWaitRTHAlt.ForeColor = System.Drawing.Color.White;
+            this.cbNavWaitRTHAlt.IsHighlighted = false;
+            this.cbNavWaitRTHAlt.item = 0;
+            this.cbNavWaitRTHAlt.Name = "cbNavWaitRTHAlt";
+            this.cbNavWaitRTHAlt.rclevel = 0;
+            this.cbNavWaitRTHAlt.UseVisualStyleBackColor = true;
+            // 
             // label85
             // 
             resources.ApplyResources(this.label85, "label85");
             this.label85.ForeColor = System.Drawing.SystemColors.ControlLightLight;
             this.label85.Name = "label85";
+            // 
+            // cbNavSlowNav
+            // 
+            resources.ApplyResources(this.cbNavSlowNav, "cbNavSlowNav");
+            this.cbNavSlowNav.aux = 0;
+            this.cbNavSlowNav.ForeColor = System.Drawing.Color.White;
+            this.cbNavSlowNav.IsHighlighted = false;
+            this.cbNavSlowNav.item = 0;
+            this.cbNavSlowNav.Name = "cbNavSlowNav";
+            this.cbNavSlowNav.rclevel = 0;
+            this.cbNavSlowNav.UseVisualStyleBackColor = true;
             // 
             // nMinSpeed
             // 
@@ -2015,6 +2958,16 @@ namespace MultiWiiWinGUI
             0});
             this.nRATE_rp.Name = "nRATE_rp";
             this.nRATE_rp.ValueChanged += new System.EventHandler(this.nRATE_rp_ValueChanged);
+            // 
+            // throttle_expo_control1
+            // 
+            resources.ApplyResources(this.throttle_expo_control1, "throttle_expo_control1");
+            this.throttle_expo_control1.Name = "throttle_expo_control1";
+            // 
+            // rc_expo_control1
+            // 
+            resources.ApplyResources(this.rc_expo_control1, "rc_expo_control1");
+            this.rc_expo_control1.Name = "rc_expo_control1";
             // 
             // tabPageConf
             // 
@@ -2416,11 +3369,31 @@ namespace MultiWiiWinGUI
             this.label56.ForeColor = System.Drawing.Color.White;
             this.label56.Name = "label56";
             // 
+            // cbSrvRev1
+            // 
+            resources.ApplyResources(this.cbSrvRev1, "cbSrvRev1");
+            this.cbSrvRev1.aux = 0;
+            this.cbSrvRev1.IsHighlighted = false;
+            this.cbSrvRev1.item = 0;
+            this.cbSrvRev1.Name = "cbSrvRev1";
+            this.cbSrvRev1.rclevel = 0;
+            this.cbSrvRev1.UseVisualStyleBackColor = true;
+            // 
             // label55
             // 
             resources.ApplyResources(this.label55, "label55");
             this.label55.ForeColor = System.Drawing.Color.White;
             this.label55.Name = "label55";
+            // 
+            // cbSrvRev2
+            // 
+            resources.ApplyResources(this.cbSrvRev2, "cbSrvRev2");
+            this.cbSrvRev2.aux = 0;
+            this.cbSrvRev2.IsHighlighted = false;
+            this.cbSrvRev2.item = 0;
+            this.cbSrvRev2.Name = "cbSrvRev2";
+            this.cbSrvRev2.rclevel = 0;
+            this.cbSrvRev2.UseVisualStyleBackColor = true;
             // 
             // label54
             // 
@@ -2428,11 +3401,31 @@ namespace MultiWiiWinGUI
             this.label54.ForeColor = System.Drawing.Color.White;
             this.label54.Name = "label54";
             // 
+            // cbSrvRev3
+            // 
+            resources.ApplyResources(this.cbSrvRev3, "cbSrvRev3");
+            this.cbSrvRev3.aux = 0;
+            this.cbSrvRev3.IsHighlighted = false;
+            this.cbSrvRev3.item = 0;
+            this.cbSrvRev3.Name = "cbSrvRev3";
+            this.cbSrvRev3.rclevel = 0;
+            this.cbSrvRev3.UseVisualStyleBackColor = true;
+            // 
             // label53
             // 
             resources.ApplyResources(this.label53, "label53");
             this.label53.ForeColor = System.Drawing.Color.White;
             this.label53.Name = "label53";
+            // 
+            // cbSrvRev4
+            // 
+            resources.ApplyResources(this.cbSrvRev4, "cbSrvRev4");
+            this.cbSrvRev4.aux = 0;
+            this.cbSrvRev4.IsHighlighted = false;
+            this.cbSrvRev4.item = 0;
+            this.cbSrvRev4.Name = "cbSrvRev4";
+            this.cbSrvRev4.rclevel = 0;
+            this.cbSrvRev4.UseVisualStyleBackColor = true;
             // 
             // label52
             // 
@@ -2440,11 +3433,31 @@ namespace MultiWiiWinGUI
             this.label52.ForeColor = System.Drawing.Color.White;
             this.label52.Name = "label52";
             // 
+            // cbSrvRev5
+            // 
+            resources.ApplyResources(this.cbSrvRev5, "cbSrvRev5");
+            this.cbSrvRev5.aux = 0;
+            this.cbSrvRev5.IsHighlighted = false;
+            this.cbSrvRev5.item = 0;
+            this.cbSrvRev5.Name = "cbSrvRev5";
+            this.cbSrvRev5.rclevel = 0;
+            this.cbSrvRev5.UseVisualStyleBackColor = true;
+            // 
             // label51
             // 
             resources.ApplyResources(this.label51, "label51");
             this.label51.ForeColor = System.Drawing.Color.White;
             this.label51.Name = "label51";
+            // 
+            // cbSrvRev6
+            // 
+            resources.ApplyResources(this.cbSrvRev6, "cbSrvRev6");
+            this.cbSrvRev6.aux = 0;
+            this.cbSrvRev6.IsHighlighted = false;
+            this.cbSrvRev6.item = 0;
+            this.cbSrvRev6.Name = "cbSrvRev6";
+            this.cbSrvRev6.rclevel = 0;
+            this.cbSrvRev6.UseVisualStyleBackColor = true;
             // 
             // nSrvMax8
             // 
@@ -2466,6 +3479,16 @@ namespace MultiWiiWinGUI
             0,
             0});
             // 
+            // cbSrvRev7
+            // 
+            resources.ApplyResources(this.cbSrvRev7, "cbSrvRev7");
+            this.cbSrvRev7.aux = 0;
+            this.cbSrvRev7.IsHighlighted = false;
+            this.cbSrvRev7.item = 0;
+            this.cbSrvRev7.Name = "cbSrvRev7";
+            this.cbSrvRev7.rclevel = 0;
+            this.cbSrvRev7.UseVisualStyleBackColor = true;
+            // 
             // nSrvMax7
             // 
             resources.ApplyResources(this.nSrvMax7, "nSrvMax7");
@@ -2485,6 +3508,16 @@ namespace MultiWiiWinGUI
             0,
             0,
             0});
+            // 
+            // cbSrvRev8
+            // 
+            resources.ApplyResources(this.cbSrvRev8, "cbSrvRev8");
+            this.cbSrvRev8.aux = 0;
+            this.cbSrvRev8.IsHighlighted = false;
+            this.cbSrvRev8.item = 0;
+            this.cbSrvRev8.Name = "cbSrvRev8";
+            this.cbSrvRev8.rclevel = 0;
+            this.cbSrvRev8.UseVisualStyleBackColor = true;
             // 
             // nSrvMax6
             // 
@@ -3122,476 +4155,24 @@ namespace MultiWiiWinGUI
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Name = "label4";
             // 
+            // rci_Control_settings
+            // 
+            resources.ApplyResources(this.rci_Control_settings, "rci_Control_settings");
+            this.rci_Control_settings.Name = "rci_Control_settings";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::MultiWiiWinGUI.Properties.Resources.checkbox_legend;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
+            // 
             // tabSensorGraph
             // 
             resources.ApplyResources(this.tabSensorGraph, "tabSensorGraph");
             this.tabSensorGraph.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.tabSensorGraph.Controls.Add(this.splitContainer10);
             this.tabSensorGraph.Name = "tabSensorGraph";
-            // 
-            // splitContainer10
-            // 
-            resources.ApplyResources(this.splitContainer10, "splitContainer10");
-            this.splitContainer10.Name = "splitContainer10";
-            // 
-            // splitContainer10.Panel1
-            // 
-            resources.ApplyResources(this.splitContainer10.Panel1, "splitContainer10.Panel1");
-            // 
-            // splitContainer10.Panel2
-            // 
-            resources.ApplyResources(this.splitContainer10.Panel2, "splitContainer10.Panel2");
-            this.splitContainer10.Panel2.Controls.Add(this.splitContainer11);
-            // 
-            // splitContainer11
-            // 
-            resources.ApplyResources(this.splitContainer11, "splitContainer11");
-            this.splitContainer11.Name = "splitContainer11";
-            // 
-            // splitContainer11.Panel1
-            // 
-            resources.ApplyResources(this.splitContainer11.Panel1, "splitContainer11.Panel1");
-            this.splitContainer11.Panel1.Controls.Add(this.splitContainer12);
-            // 
-            // splitContainer11.Panel2
-            // 
-            resources.ApplyResources(this.splitContainer11.Panel2, "splitContainer11.Panel2");
-            this.splitContainer11.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer11.Panel2.Controls.Add(this.groupBox2);
-            this.splitContainer11.Panel2.Controls.Add(this.cb_alt);
-            this.splitContainer11.Panel2.Controls.Add(this.label22);
-            this.splitContainer11.Panel2.Controls.Add(this.groupBox3);
-            this.splitContainer11.Panel2.Controls.Add(this.l_alt);
-            this.splitContainer11.Panel2.Controls.Add(this.cb_head);
-            this.splitContainer11.Panel2.Controls.Add(this.l_head);
-            this.splitContainer11.Panel2.Controls.Add(this.label26);
-            // 
-            // splitContainer12
-            // 
-            resources.ApplyResources(this.splitContainer12, "splitContainer12");
-            this.splitContainer12.Name = "splitContainer12";
-            // 
-            // splitContainer12.Panel1
-            // 
-            resources.ApplyResources(this.splitContainer12.Panel1, "splitContainer12.Panel1");
-            this.splitContainer12.Panel1.Controls.Add(this.zgMonitor);
-            // 
-            // splitContainer12.Panel2
-            // 
-            resources.ApplyResources(this.splitContainer12.Panel2, "splitContainer12.Panel2");
-            this.splitContainer12.Panel2.Controls.Add(this.label28);
-            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg1);
-            this.splitContainer12.Panel2.Controls.Add(this.l_dbg1);
-            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg2);
-            this.splitContainer12.Panel2.Controls.Add(this.label33);
-            this.splitContainer12.Panel2.Controls.Add(this.l_dbg2);
-            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg3);
-            this.splitContainer12.Panel2.Controls.Add(this.l_dbg4);
-            this.splitContainer12.Panel2.Controls.Add(this.label38);
-            this.splitContainer12.Panel2.Controls.Add(this.label40);
-            this.splitContainer12.Panel2.Controls.Add(this.l_dbg3);
-            this.splitContainer12.Panel2.Controls.Add(this.cb_dbg4);
-            // 
-            // zgMonitor
-            // 
-            resources.ApplyResources(this.zgMonitor, "zgMonitor");
-            this.zgMonitor.IsZoomOnMouseCenter = true;
-            this.zgMonitor.Name = "zgMonitor";
-            this.zgMonitor.ScrollGrace = 0D;
-            this.zgMonitor.ScrollMaxX = 0D;
-            this.zgMonitor.ScrollMaxY = 0D;
-            this.zgMonitor.ScrollMaxY2 = 0D;
-            this.zgMonitor.ScrollMinX = 0D;
-            this.zgMonitor.ScrollMinY = 0D;
-            this.zgMonitor.ScrollMinY2 = 0D;
-            this.zgMonitor.UseExtendedPrintDialog = true;
-            // 
-            // label28
-            // 
-            resources.ApplyResources(this.label28, "label28");
-            this.label28.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.label28.ForeColor = System.Drawing.Color.Black;
-            this.label28.Name = "label28";
-            // 
-            // cb_dbg1
-            // 
-            resources.ApplyResources(this.cb_dbg1, "cb_dbg1");
-            this.cb_dbg1.Name = "cb_dbg1";
-            this.cb_dbg1.UseVisualStyleBackColor = true;
-            // 
-            // l_dbg1
-            // 
-            resources.ApplyResources(this.l_dbg1, "l_dbg1");
-            this.l_dbg1.ForeColor = System.Drawing.Color.White;
-            this.l_dbg1.Name = "l_dbg1";
-            // 
-            // cb_dbg2
-            // 
-            resources.ApplyResources(this.cb_dbg2, "cb_dbg2");
-            this.cb_dbg2.Name = "cb_dbg2";
-            this.cb_dbg2.UseVisualStyleBackColor = true;
-            // 
-            // label33
-            // 
-            resources.ApplyResources(this.label33, "label33");
-            this.label33.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.label33.ForeColor = System.Drawing.Color.Black;
-            this.label33.Name = "label33";
-            // 
-            // l_dbg2
-            // 
-            resources.ApplyResources(this.l_dbg2, "l_dbg2");
-            this.l_dbg2.ForeColor = System.Drawing.Color.White;
-            this.l_dbg2.Name = "l_dbg2";
-            // 
-            // cb_dbg3
-            // 
-            resources.ApplyResources(this.cb_dbg3, "cb_dbg3");
-            this.cb_dbg3.Name = "cb_dbg3";
-            this.cb_dbg3.UseVisualStyleBackColor = true;
-            // 
-            // l_dbg4
-            // 
-            resources.ApplyResources(this.l_dbg4, "l_dbg4");
-            this.l_dbg4.ForeColor = System.Drawing.Color.White;
-            this.l_dbg4.Name = "l_dbg4";
-            // 
-            // label38
-            // 
-            resources.ApplyResources(this.label38, "label38");
-            this.label38.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.label38.ForeColor = System.Drawing.Color.Black;
-            this.label38.Name = "label38";
-            // 
-            // label40
-            // 
-            resources.ApplyResources(this.label40, "label40");
-            this.label40.BackColor = System.Drawing.Color.PaleTurquoise;
-            this.label40.ForeColor = System.Drawing.Color.Black;
-            this.label40.Name = "label40";
-            // 
-            // l_dbg3
-            // 
-            resources.ApplyResources(this.l_dbg3, "l_dbg3");
-            this.l_dbg3.ForeColor = System.Drawing.Color.White;
-            this.l_dbg3.Name = "l_dbg3";
-            // 
-            // cb_dbg4
-            // 
-            resources.ApplyResources(this.cb_dbg4, "cb_dbg4");
-            this.cb_dbg4.Name = "cb_dbg4";
-            this.cb_dbg4.UseVisualStyleBackColor = true;
-            // 
-            // groupBox1
-            // 
-            resources.ApplyResources(this.groupBox1, "groupBox1");
-            this.groupBox1.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox1.Controls.Add(this.b_uncheck_all_ACC);
-            this.groupBox1.Controls.Add(this.b_check_all_ACC);
-            this.groupBox1.Controls.Add(this.l_acc_z);
-            this.groupBox1.Controls.Add(this.l_acc_pitch);
-            this.groupBox1.Controls.Add(this.l_acc_roll);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.cb_acc_z);
-            this.groupBox1.Controls.Add(this.label16);
-            this.groupBox1.Controls.Add(this.cb_acc_pitch);
-            this.groupBox1.Controls.Add(this.label14);
-            this.groupBox1.Controls.Add(this.cb_acc_roll);
-            this.groupBox1.ForeColor = System.Drawing.Color.White;
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.TabStop = false;
-            // 
-            // b_uncheck_all_ACC
-            // 
-            resources.ApplyResources(this.b_uncheck_all_ACC, "b_uncheck_all_ACC");
-            this.b_uncheck_all_ACC.ForeColor = System.Drawing.Color.Black;
-            this.b_uncheck_all_ACC.Name = "b_uncheck_all_ACC";
-            this.b_uncheck_all_ACC.UseVisualStyleBackColor = true;
-            this.b_uncheck_all_ACC.Click += new System.EventHandler(this.b_uncheck_all_ACC_Click);
-            // 
-            // b_check_all_ACC
-            // 
-            resources.ApplyResources(this.b_check_all_ACC, "b_check_all_ACC");
-            this.b_check_all_ACC.ForeColor = System.Drawing.Color.Black;
-            this.b_check_all_ACC.Name = "b_check_all_ACC";
-            this.b_check_all_ACC.UseVisualStyleBackColor = true;
-            this.b_check_all_ACC.Click += new System.EventHandler(this.b_check_all_ACC_Click);
-            // 
-            // l_acc_z
-            // 
-            resources.ApplyResources(this.l_acc_z, "l_acc_z");
-            this.l_acc_z.Name = "l_acc_z";
-            // 
-            // l_acc_pitch
-            // 
-            resources.ApplyResources(this.l_acc_pitch, "l_acc_pitch");
-            this.l_acc_pitch.Name = "l_acc_pitch";
-            // 
-            // l_acc_roll
-            // 
-            resources.ApplyResources(this.l_acc_roll, "l_acc_roll");
-            this.l_acc_roll.Name = "l_acc_roll";
-            // 
-            // label18
-            // 
-            resources.ApplyResources(this.label18, "label18");
-            this.label18.BackColor = System.Drawing.Color.Blue;
-            this.label18.Name = "label18";
-            // 
-            // cb_acc_z
-            // 
-            resources.ApplyResources(this.cb_acc_z, "cb_acc_z");
-            this.cb_acc_z.Checked = true;
-            this.cb_acc_z.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_acc_z.Name = "cb_acc_z";
-            this.cb_acc_z.UseVisualStyleBackColor = true;
-            // 
-            // label16
-            // 
-            resources.ApplyResources(this.label16, "label16");
-            this.label16.BackColor = System.Drawing.Color.Green;
-            this.label16.Name = "label16";
-            // 
-            // cb_acc_pitch
-            // 
-            resources.ApplyResources(this.cb_acc_pitch, "cb_acc_pitch");
-            this.cb_acc_pitch.Checked = true;
-            this.cb_acc_pitch.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_acc_pitch.Name = "cb_acc_pitch";
-            this.cb_acc_pitch.UseVisualStyleBackColor = true;
-            // 
-            // label14
-            // 
-            resources.ApplyResources(this.label14, "label14");
-            this.label14.BackColor = System.Drawing.Color.Red;
-            this.label14.Name = "label14";
-            // 
-            // cb_acc_roll
-            // 
-            resources.ApplyResources(this.cb_acc_roll, "cb_acc_roll");
-            this.cb_acc_roll.Checked = true;
-            this.cb_acc_roll.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_acc_roll.Name = "cb_acc_roll";
-            this.cb_acc_roll.UseVisualStyleBackColor = true;
-            // 
-            // groupBox2
-            // 
-            resources.ApplyResources(this.groupBox2, "groupBox2");
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.b_uncheck_all_GYRO);
-            this.groupBox2.Controls.Add(this.b_check_all_GYRO);
-            this.groupBox2.Controls.Add(this.l_gyro_yaw);
-            this.groupBox2.Controls.Add(this.l_gyro_pitch);
-            this.groupBox2.Controls.Add(this.l_gyro_roll);
-            this.groupBox2.Controls.Add(this.label29);
-            this.groupBox2.Controls.Add(this.cb_gyro_yaw);
-            this.groupBox2.Controls.Add(this.label30);
-            this.groupBox2.Controls.Add(this.cb_gyro_pitch);
-            this.groupBox2.Controls.Add(this.label31);
-            this.groupBox2.Controls.Add(this.cb_gyro_roll);
-            this.groupBox2.ForeColor = System.Drawing.Color.White;
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.TabStop = false;
-            // 
-            // b_uncheck_all_GYRO
-            // 
-            resources.ApplyResources(this.b_uncheck_all_GYRO, "b_uncheck_all_GYRO");
-            this.b_uncheck_all_GYRO.ForeColor = System.Drawing.Color.Black;
-            this.b_uncheck_all_GYRO.Name = "b_uncheck_all_GYRO";
-            this.b_uncheck_all_GYRO.UseVisualStyleBackColor = true;
-            this.b_uncheck_all_GYRO.Click += new System.EventHandler(this.b_uncheck_all_GYRO_Click);
-            // 
-            // b_check_all_GYRO
-            // 
-            resources.ApplyResources(this.b_check_all_GYRO, "b_check_all_GYRO");
-            this.b_check_all_GYRO.ForeColor = System.Drawing.Color.Black;
-            this.b_check_all_GYRO.Name = "b_check_all_GYRO";
-            this.b_check_all_GYRO.UseVisualStyleBackColor = true;
-            this.b_check_all_GYRO.Click += new System.EventHandler(this.b_check_all_GYRO_Click);
-            // 
-            // l_gyro_yaw
-            // 
-            resources.ApplyResources(this.l_gyro_yaw, "l_gyro_yaw");
-            this.l_gyro_yaw.Name = "l_gyro_yaw";
-            // 
-            // l_gyro_pitch
-            // 
-            resources.ApplyResources(this.l_gyro_pitch, "l_gyro_pitch");
-            this.l_gyro_pitch.Name = "l_gyro_pitch";
-            // 
-            // l_gyro_roll
-            // 
-            resources.ApplyResources(this.l_gyro_roll, "l_gyro_roll");
-            this.l_gyro_roll.Name = "l_gyro_roll";
-            // 
-            // label29
-            // 
-            resources.ApplyResources(this.label29, "label29");
-            this.label29.BackColor = System.Drawing.Color.Magenta;
-            this.label29.ForeColor = System.Drawing.Color.Black;
-            this.label29.Name = "label29";
-            // 
-            // cb_gyro_yaw
-            // 
-            resources.ApplyResources(this.cb_gyro_yaw, "cb_gyro_yaw");
-            this.cb_gyro_yaw.Checked = true;
-            this.cb_gyro_yaw.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_gyro_yaw.Name = "cb_gyro_yaw";
-            this.cb_gyro_yaw.UseVisualStyleBackColor = true;
-            // 
-            // label30
-            // 
-            resources.ApplyResources(this.label30, "label30");
-            this.label30.BackColor = System.Drawing.Color.Cyan;
-            this.label30.ForeColor = System.Drawing.Color.Black;
-            this.label30.Name = "label30";
-            // 
-            // cb_gyro_pitch
-            // 
-            resources.ApplyResources(this.cb_gyro_pitch, "cb_gyro_pitch");
-            this.cb_gyro_pitch.Checked = true;
-            this.cb_gyro_pitch.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_gyro_pitch.Name = "cb_gyro_pitch";
-            this.cb_gyro_pitch.UseVisualStyleBackColor = true;
-            // 
-            // label31
-            // 
-            resources.ApplyResources(this.label31, "label31");
-            this.label31.BackColor = System.Drawing.Color.Khaki;
-            this.label31.ForeColor = System.Drawing.Color.Black;
-            this.label31.Name = "label31";
-            // 
-            // cb_gyro_roll
-            // 
-            resources.ApplyResources(this.cb_gyro_roll, "cb_gyro_roll");
-            this.cb_gyro_roll.Checked = true;
-            this.cb_gyro_roll.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cb_gyro_roll.Name = "cb_gyro_roll";
-            this.cb_gyro_roll.UseVisualStyleBackColor = true;
-            // 
-            // cb_alt
-            // 
-            resources.ApplyResources(this.cb_alt, "cb_alt");
-            this.cb_alt.Name = "cb_alt";
-            this.cb_alt.UseVisualStyleBackColor = true;
-            // 
-            // label22
-            // 
-            resources.ApplyResources(this.label22, "label22");
-            this.label22.BackColor = System.Drawing.Color.Gainsboro;
-            this.label22.ForeColor = System.Drawing.Color.Black;
-            this.label22.Name = "label22";
-            // 
-            // groupBox3
-            // 
-            resources.ApplyResources(this.groupBox3, "groupBox3");
-            this.groupBox3.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox3.Controls.Add(this.b_uncheck_all_MAG);
-            this.groupBox3.Controls.Add(this.b_check_all_MAG);
-            this.groupBox3.Controls.Add(this.l_mag_yaw);
-            this.groupBox3.Controls.Add(this.l_mag_pitch);
-            this.groupBox3.Controls.Add(this.l_mag_roll);
-            this.groupBox3.Controls.Add(this.label35);
-            this.groupBox3.Controls.Add(this.cb_mag_yaw);
-            this.groupBox3.Controls.Add(this.label36);
-            this.groupBox3.Controls.Add(this.cb_mag_pitch);
-            this.groupBox3.Controls.Add(this.label37);
-            this.groupBox3.Controls.Add(this.cb_mag_roll);
-            this.groupBox3.ForeColor = System.Drawing.Color.White;
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.TabStop = false;
-            // 
-            // b_uncheck_all_MAG
-            // 
-            resources.ApplyResources(this.b_uncheck_all_MAG, "b_uncheck_all_MAG");
-            this.b_uncheck_all_MAG.ForeColor = System.Drawing.Color.Black;
-            this.b_uncheck_all_MAG.Name = "b_uncheck_all_MAG";
-            this.b_uncheck_all_MAG.UseVisualStyleBackColor = true;
-            this.b_uncheck_all_MAG.Click += new System.EventHandler(this.b_uncheck_all_MAG_Click);
-            // 
-            // b_check_all_MAG
-            // 
-            resources.ApplyResources(this.b_check_all_MAG, "b_check_all_MAG");
-            this.b_check_all_MAG.ForeColor = System.Drawing.Color.Black;
-            this.b_check_all_MAG.Name = "b_check_all_MAG";
-            this.b_check_all_MAG.UseVisualStyleBackColor = true;
-            this.b_check_all_MAG.Click += new System.EventHandler(this.b_check_all_MAG_Click);
-            // 
-            // l_mag_yaw
-            // 
-            resources.ApplyResources(this.l_mag_yaw, "l_mag_yaw");
-            this.l_mag_yaw.Name = "l_mag_yaw";
-            // 
-            // l_mag_pitch
-            // 
-            resources.ApplyResources(this.l_mag_pitch, "l_mag_pitch");
-            this.l_mag_pitch.Name = "l_mag_pitch";
-            // 
-            // l_mag_roll
-            // 
-            resources.ApplyResources(this.l_mag_roll, "l_mag_roll");
-            this.l_mag_roll.Name = "l_mag_roll";
-            // 
-            // label35
-            // 
-            resources.ApplyResources(this.label35, "label35");
-            this.label35.BackColor = System.Drawing.Color.DarkGoldenrod;
-            this.label35.Name = "label35";
-            // 
-            // cb_mag_yaw
-            // 
-            resources.ApplyResources(this.cb_mag_yaw, "cb_mag_yaw");
-            this.cb_mag_yaw.Name = "cb_mag_yaw";
-            this.cb_mag_yaw.UseVisualStyleBackColor = true;
-            // 
-            // label36
-            // 
-            resources.ApplyResources(this.label36, "label36");
-            this.label36.BackColor = System.Drawing.Color.MediumPurple;
-            this.label36.Name = "label36";
-            // 
-            // cb_mag_pitch
-            // 
-            resources.ApplyResources(this.cb_mag_pitch, "cb_mag_pitch");
-            this.cb_mag_pitch.Name = "cb_mag_pitch";
-            this.cb_mag_pitch.UseVisualStyleBackColor = true;
-            // 
-            // label37
-            // 
-            resources.ApplyResources(this.label37, "label37");
-            this.label37.BackColor = System.Drawing.Color.CadetBlue;
-            this.label37.Name = "label37";
-            // 
-            // cb_mag_roll
-            // 
-            resources.ApplyResources(this.cb_mag_roll, "cb_mag_roll");
-            this.cb_mag_roll.Name = "cb_mag_roll";
-            this.cb_mag_roll.UseVisualStyleBackColor = true;
-            // 
-            // l_alt
-            // 
-            resources.ApplyResources(this.l_alt, "l_alt");
-            this.l_alt.ForeColor = System.Drawing.Color.White;
-            this.l_alt.Name = "l_alt";
-            // 
-            // cb_head
-            // 
-            resources.ApplyResources(this.cb_head, "cb_head");
-            this.cb_head.Name = "cb_head";
-            this.cb_head.UseVisualStyleBackColor = true;
-            // 
-            // l_head
-            // 
-            resources.ApplyResources(this.l_head, "l_head");
-            this.l_head.ForeColor = System.Drawing.Color.White;
-            this.l_head.Name = "l_head";
-            // 
-            // label26
-            // 
-            resources.ApplyResources(this.label26, "label26");
-            this.label26.BackColor = System.Drawing.Color.Orange;
-            this.label26.ForeColor = System.Drawing.Color.Black;
-            this.label26.Name = "label26";
             // 
             // tabPageVideo
             // 
@@ -3600,152 +4181,6 @@ namespace MultiWiiWinGUI
             this.tabPageVideo.Controls.Add(this.splitContainer6);
             this.tabPageVideo.Controls.Add(this.l_capture_file);
             this.tabPageVideo.Name = "tabPageVideo";
-            // 
-            // splitContainer6
-            // 
-            resources.ApplyResources(this.splitContainer6, "splitContainer6");
-            this.splitContainer6.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
-            this.splitContainer6.Name = "splitContainer6";
-            // 
-            // splitContainer6.Panel1
-            // 
-            resources.ApplyResources(this.splitContainer6.Panel1, "splitContainer6.Panel1");
-            this.splitContainer6.Panel1.Controls.Add(this.videoSourcePlayer);
-            // 
-            // splitContainer6.Panel2
-            // 
-            resources.ApplyResources(this.splitContainer6.Panel2, "splitContainer6.Panel2");
-            this.splitContainer6.Panel2.Controls.Add(this.dropdown_devices);
-            this.splitContainer6.Panel2.Controls.Add(this.b_video_connect);
-            this.splitContainer6.Panel2.Controls.Add(this.label19);
-            this.splitContainer6.Panel2.Controls.Add(this.b_Record);
-            this.splitContainer6.Panel2.Controls.Add(this.cb_codec);
-            this.splitContainer6.Panel2.Controls.Add(this.nFrameRate);
-            this.splitContainer6.Panel2.Controls.Add(this.label17);
-            this.splitContainer6.Panel2.Controls.Add(this.label12);
-            this.splitContainer6.Panel2.Controls.Add(this.label15);
-            this.splitContainer6.Panel2.Controls.Add(this.nBitRate);
-            this.splitContainer6.Panel2.Controls.Add(this.label13);
-            // 
-            // videoSourcePlayer
-            // 
-            resources.ApplyResources(this.videoSourcePlayer, "videoSourcePlayer");
-            this.videoSourcePlayer.Name = "videoSourcePlayer";
-            this.videoSourcePlayer.VideoSource = null;
-            this.videoSourcePlayer.SizeChanged += new System.EventHandler(this.videoSourcePlayer_SizeChanged);
-            // 
-            // dropdown_devices
-            // 
-            resources.ApplyResources(this.dropdown_devices, "dropdown_devices");
-            this.dropdown_devices.BackColor = System.Drawing.Color.Gray;
-            this.dropdown_devices.FormattingEnabled = true;
-            this.dropdown_devices.Name = "dropdown_devices";
-            // 
-            // b_video_connect
-            // 
-            resources.ApplyResources(this.b_video_connect, "b_video_connect");
-            this.b_video_connect.Name = "b_video_connect";
-            this.b_video_connect.UseVisualStyleBackColor = true;
-            this.b_video_connect.Click += new System.EventHandler(this.b_video_connect_Click);
-            // 
-            // label19
-            // 
-            resources.ApplyResources(this.label19, "label19");
-            this.label19.ForeColor = System.Drawing.Color.White;
-            this.label19.Name = "label19";
-            // 
-            // b_Record
-            // 
-            resources.ApplyResources(this.b_Record, "b_Record");
-            this.b_Record.Name = "b_Record";
-            this.b_Record.UseVisualStyleBackColor = true;
-            this.b_Record.Click += new System.EventHandler(this.b_Record_Click);
-            // 
-            // cb_codec
-            // 
-            resources.ApplyResources(this.cb_codec, "cb_codec");
-            this.cb_codec.FormattingEnabled = true;
-            this.cb_codec.Items.AddRange(new object[] {
-            resources.GetString("cb_codec.Items"),
-            resources.GetString("cb_codec.Items1"),
-            resources.GetString("cb_codec.Items2"),
-            resources.GetString("cb_codec.Items3"),
-            resources.GetString("cb_codec.Items4"),
-            resources.GetString("cb_codec.Items5"),
-            resources.GetString("cb_codec.Items6"),
-            resources.GetString("cb_codec.Items7"),
-            resources.GetString("cb_codec.Items8")});
-            this.cb_codec.Name = "cb_codec";
-            // 
-            // nFrameRate
-            // 
-            resources.ApplyResources(this.nFrameRate, "nFrameRate");
-            this.nFrameRate.Maximum = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
-            this.nFrameRate.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            0});
-            this.nFrameRate.Name = "nFrameRate";
-            this.nFrameRate.Value = new decimal(new int[] {
-            25,
-            0,
-            0,
-            0});
-            // 
-            // label17
-            // 
-            resources.ApplyResources(this.label17, "label17");
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Name = "label17";
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Name = "label12";
-            // 
-            // label15
-            // 
-            resources.ApplyResources(this.label15, "label15");
-            this.label15.ForeColor = System.Drawing.Color.White;
-            this.label15.Name = "label15";
-            // 
-            // nBitRate
-            // 
-            resources.ApplyResources(this.nBitRate, "nBitRate");
-            this.nBitRate.DecimalPlaces = 1;
-            this.nBitRate.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.nBitRate.Maximum = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            this.nBitRate.Minimum = new decimal(new int[] {
-            5,
-            0,
-            0,
-            65536});
-            this.nBitRate.Name = "nBitRate";
-            this.nBitRate.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            // 
-            // label13
-            // 
-            resources.ApplyResources(this.label13, "label13");
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Name = "label13";
             // 
             // l_capture_file
             // 
@@ -4134,479 +4569,17 @@ namespace MultiWiiWinGUI
             resources.ApplyResources(this.cb_serial_speed, "cb_serial_speed");
             this.cb_serial_speed.Name = "cb_serial_speed";
             // 
-            // toolStripSeparator1
-            // 
-            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            // 
-            // toolStripSeparator2
-            // 
-            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            // 
-            // toolStripSeparator3
-            // 
-            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
-            this.toolStripSeparator3.Name = "toolStripSeparator3";
-            // 
-            // toolStripSeparator4
-            // 
-            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            // 
-            // timer_announce
-            // 
-            this.timer_announce.Enabled = true;
-            this.timer_announce.Interval = 30000;
-            this.timer_announce.Tick += new System.EventHandler(this.timer_announce_Tick);
-            // 
-            // battery_indicator1
-            // 
-            resources.ApplyResources(this.battery_indicator1, "battery_indicator1");
-            this.battery_indicator1.Name = "battery_indicator1";
-            // 
-            // vertical_speed_indicator1
-            // 
-            resources.ApplyResources(this.vertical_speed_indicator1, "vertical_speed_indicator1");
-            this.vertical_speed_indicator1.Name = "vertical_speed_indicator1";
-            // 
-            // altitude_meter1
-            // 
-            resources.ApplyResources(this.altitude_meter1, "altitude_meter1");
-            this.altitude_meter1.Name = "altitude_meter1";
-            // 
-            // attitudeIndicatorInstrumentControl1
-            // 
-            resources.ApplyResources(this.attitudeIndicatorInstrumentControl1, "attitudeIndicatorInstrumentControl1");
-            this.attitudeIndicatorInstrumentControl1.Name = "attitudeIndicatorInstrumentControl1";
-            this.attitudeIndicatorInstrumentControl1.Click += new System.EventHandler(this.attitudeIndicatorInstrumentControl1_Click);
-            // 
-            // gpsIndicator
-            // 
-            resources.ApplyResources(this.gpsIndicator, "gpsIndicator");
-            this.gpsIndicator.Name = "gpsIndicator";
-            // 
-            // headingIndicatorInstrumentControl1
-            // 
-            resources.ApplyResources(this.headingIndicatorInstrumentControl1, "headingIndicatorInstrumentControl1");
-            this.headingIndicatorInstrumentControl1.Name = "headingIndicatorInstrumentControl1";
-            // 
-            // rc_input_control1
-            // 
-            resources.ApplyResources(this.rc_input_control1, "rc_input_control1");
-            this.rc_input_control1.Name = "rc_input_control1";
-            // 
-            // motorsIndicator1
-            // 
-            resources.ApplyResources(this.motorsIndicator1, "motorsIndicator1");
-            this.motorsIndicator1.Name = "motorsIndicator1";
-            // 
-            // indACC
-            // 
-            resources.ApplyResources(this.indACC, "indACC");
-            this.indACC.Name = "indACC";
-            // 
-            // indGPS
-            // 
-            resources.ApplyResources(this.indGPS, "indGPS");
-            this.indGPS.Name = "indGPS";
-            // 
-            // indOPTIC
-            // 
-            resources.ApplyResources(this.indOPTIC, "indOPTIC");
-            this.indOPTIC.Name = "indOPTIC";
-            // 
-            // indBARO
-            // 
-            resources.ApplyResources(this.indBARO, "indBARO");
-            this.indBARO.Name = "indBARO";
-            // 
-            // indMAG
-            // 
-            resources.ApplyResources(this.indMAG, "indMAG");
-            this.indMAG.Name = "indMAG";
-            // 
-            // indSONAR
-            // 
-            resources.ApplyResources(this.indSONAR, "indSONAR");
-            this.indSONAR.Name = "indSONAR";
-            // 
-            // barNoise
-            // 
-            resources.ApplyResources(this.barNoise, "barNoise");
-            this.barNoise.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.barNoise.BkgColor = System.Drawing.Color.Transparent;
-            this.barNoise.BorderColor = System.Drawing.Color.Black;
-            this.barNoise.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
-            this.barNoise.Maximum = 255;
-            this.barNoise.Minimum = 0;
-            this.barNoise.Name = "barNoise";
-            this.barNoise.Step = 1;
-            this.barNoise.Value = 0;
-            // 
-            // barRSSI
-            // 
-            resources.ApplyResources(this.barRSSI, "barRSSI");
-            this.barRSSI.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.barRSSI.BkgColor = System.Drawing.Color.Transparent;
-            this.barRSSI.BorderColor = System.Drawing.Color.Black;
-            this.barRSSI.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
-            this.barRSSI.Maximum = 255;
-            this.barRSSI.Minimum = 0;
-            this.barRSSI.Name = "barRSSI";
-            this.barRSSI.Step = 1;
-            this.barRSSI.Value = 0;
-            // 
-            // battery_indicator2
-            // 
-            resources.ApplyResources(this.battery_indicator2, "battery_indicator2");
-            this.battery_indicator2.Name = "battery_indicator2";
-            // 
-            // barRSSIMission
-            // 
-            resources.ApplyResources(this.barRSSIMission, "barRSSIMission");
-            this.barRSSIMission.BarColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.barRSSIMission.BkgColor = System.Drawing.Color.Transparent;
-            this.barRSSIMission.BorderColor = System.Drawing.Color.Black;
-            this.barRSSIMission.FillStyle = MultiWiiGUIControls.ColorProgressBar.FillStyles.Solid;
-            this.barRSSIMission.Maximum = 255;
-            this.barRSSIMission.Minimum = 0;
-            this.barRSSIMission.Name = "barRSSIMission";
-            this.barRSSIMission.Step = 1;
-            this.barRSSIMission.Value = 0;
-            // 
-            // cbAutoPan
-            // 
-            resources.ApplyResources(this.cbAutoPan, "cbAutoPan");
-            this.cbAutoPan.aux = 0;
-            this.cbAutoPan.BackColor = System.Drawing.Color.Transparent;
-            this.cbAutoPan.Checked = true;
-            this.cbAutoPan.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbAutoPan.ForeColor = System.Drawing.Color.White;
-            this.cbAutoPan.IsHighlighted = false;
-            this.cbAutoPan.item = 0;
-            this.cbAutoPan.Name = "cbAutoPan";
-            this.cbAutoPan.rclevel = 0;
-            this.cbAutoPan.UseVisualStyleBackColor = false;
-            // 
-            // cbShowGauges
-            // 
-            resources.ApplyResources(this.cbShowGauges, "cbShowGauges");
-            this.cbShowGauges.aux = 0;
-            this.cbShowGauges.BackColor = System.Drawing.Color.Transparent;
-            this.cbShowGauges.ForeColor = System.Drawing.Color.White;
-            this.cbShowGauges.IsHighlighted = false;
-            this.cbShowGauges.item = 0;
-            this.cbShowGauges.Name = "cbShowGauges";
-            this.cbShowGauges.rclevel = 0;
-            this.cbShowGauges.UseVisualStyleBackColor = false;
-            this.cbShowGauges.CheckedChanged += new System.EventHandler(this.cbShowGauges_CheckedChanged);
-            // 
-            // altitude_meter2
-            // 
-            resources.ApplyResources(this.altitude_meter2, "altitude_meter2");
-            this.altitude_meter2.Name = "altitude_meter2";
-            // 
-            // vertical_speed_indicator2
-            // 
-            resources.ApplyResources(this.vertical_speed_indicator2, "vertical_speed_indicator2");
-            this.vertical_speed_indicator2.Name = "vertical_speed_indicator2";
-            // 
-            // gpsIndicator2
-            // 
-            resources.ApplyResources(this.gpsIndicator2, "gpsIndicator2");
-            this.gpsIndicator2.Name = "gpsIndicator2";
-            // 
-            // cbNavBaroTakeover
-            // 
-            resources.ApplyResources(this.cbNavBaroTakeover, "cbNavBaroTakeover");
-            this.cbNavBaroTakeover.aux = 0;
-            this.cbNavBaroTakeover.ForeColor = System.Drawing.Color.White;
-            this.cbNavBaroTakeover.IsHighlighted = false;
-            this.cbNavBaroTakeover.item = 0;
-            this.cbNavBaroTakeover.Name = "cbNavBaroTakeover";
-            this.cbNavBaroTakeover.rclevel = 0;
-            this.cbNavBaroTakeover.UseVisualStyleBackColor = true;
-            // 
-            // cbNavDisableSticks
-            // 
-            resources.ApplyResources(this.cbNavDisableSticks, "cbNavDisableSticks");
-            this.cbNavDisableSticks.aux = 0;
-            this.cbNavDisableSticks.ForeColor = System.Drawing.Color.White;
-            this.cbNavDisableSticks.IsHighlighted = false;
-            this.cbNavDisableSticks.item = 0;
-            this.cbNavDisableSticks.Name = "cbNavDisableSticks";
-            this.cbNavDisableSticks.rclevel = 0;
-            this.cbNavDisableSticks.UseVisualStyleBackColor = true;
-            // 
-            // cbNavGPS_filtering
-            // 
-            resources.ApplyResources(this.cbNavGPS_filtering, "cbNavGPS_filtering");
-            this.cbNavGPS_filtering.aux = 0;
-            this.cbNavGPS_filtering.ForeColor = System.Drawing.Color.White;
-            this.cbNavGPS_filtering.IsHighlighted = false;
-            this.cbNavGPS_filtering.item = 0;
-            this.cbNavGPS_filtering.Name = "cbNavGPS_filtering";
-            this.cbNavGPS_filtering.rclevel = 0;
-            this.cbNavGPS_filtering.UseVisualStyleBackColor = true;
-            // 
-            // cbNavGPS_Lead
-            // 
-            resources.ApplyResources(this.cbNavGPS_Lead, "cbNavGPS_Lead");
-            this.cbNavGPS_Lead.aux = 0;
-            this.cbNavGPS_Lead.ForeColor = System.Drawing.Color.White;
-            this.cbNavGPS_Lead.IsHighlighted = false;
-            this.cbNavGPS_Lead.item = 0;
-            this.cbNavGPS_Lead.Name = "cbNavGPS_Lead";
-            this.cbNavGPS_Lead.rclevel = 0;
-            this.cbNavGPS_Lead.UseVisualStyleBackColor = true;
-            // 
-            // cbNavResetHome
-            // 
-            resources.ApplyResources(this.cbNavResetHome, "cbNavResetHome");
-            this.cbNavResetHome.aux = 0;
-            this.cbNavResetHome.ForeColor = System.Drawing.Color.White;
-            this.cbNavResetHome.IsHighlighted = false;
-            this.cbNavResetHome.item = 0;
-            this.cbNavResetHome.Name = "cbNavResetHome";
-            this.cbNavResetHome.rclevel = 0;
-            this.cbNavResetHome.UseVisualStyleBackColor = true;
-            // 
-            // cbNavHeadingControl
-            // 
-            resources.ApplyResources(this.cbNavHeadingControl, "cbNavHeadingControl");
-            this.cbNavHeadingControl.aux = 0;
-            this.cbNavHeadingControl.ForeColor = System.Drawing.Color.White;
-            this.cbNavHeadingControl.IsHighlighted = false;
-            this.cbNavHeadingControl.item = 0;
-            this.cbNavHeadingControl.Name = "cbNavHeadingControl";
-            this.cbNavHeadingControl.rclevel = 0;
-            this.cbNavHeadingControl.UseVisualStyleBackColor = true;
-            // 
-            // cbNavTailFirst
-            // 
-            resources.ApplyResources(this.cbNavTailFirst, "cbNavTailFirst");
-            this.cbNavTailFirst.aux = 0;
-            this.cbNavTailFirst.ForeColor = System.Drawing.Color.White;
-            this.cbNavTailFirst.IsHighlighted = false;
-            this.cbNavTailFirst.item = 0;
-            this.cbNavTailFirst.Name = "cbNavTailFirst";
-            this.cbNavTailFirst.rclevel = 0;
-            this.cbNavTailFirst.UseVisualStyleBackColor = true;
-            // 
-            // cbNavRTHHead
-            // 
-            resources.ApplyResources(this.cbNavRTHHead, "cbNavRTHHead");
-            this.cbNavRTHHead.aux = 0;
-            this.cbNavRTHHead.ForeColor = System.Drawing.Color.White;
-            this.cbNavRTHHead.IsHighlighted = false;
-            this.cbNavRTHHead.item = 0;
-            this.cbNavRTHHead.Name = "cbNavRTHHead";
-            this.cbNavRTHHead.rclevel = 0;
-            this.cbNavRTHHead.UseVisualStyleBackColor = true;
-            this.cbNavRTHHead.CheckedChanged += new System.EventHandler(this.checkBoxEx5_CheckedChanged);
-            // 
-            // cbNavWaitRTHAlt
-            // 
-            resources.ApplyResources(this.cbNavWaitRTHAlt, "cbNavWaitRTHAlt");
-            this.cbNavWaitRTHAlt.aux = 0;
-            this.cbNavWaitRTHAlt.ForeColor = System.Drawing.Color.White;
-            this.cbNavWaitRTHAlt.IsHighlighted = false;
-            this.cbNavWaitRTHAlt.item = 0;
-            this.cbNavWaitRTHAlt.Name = "cbNavWaitRTHAlt";
-            this.cbNavWaitRTHAlt.rclevel = 0;
-            this.cbNavWaitRTHAlt.UseVisualStyleBackColor = true;
-            // 
-            // cbNavSlowNav
-            // 
-            resources.ApplyResources(this.cbNavSlowNav, "cbNavSlowNav");
-            this.cbNavSlowNav.aux = 0;
-            this.cbNavSlowNav.ForeColor = System.Drawing.Color.White;
-            this.cbNavSlowNav.IsHighlighted = false;
-            this.cbNavSlowNav.item = 0;
-            this.cbNavSlowNav.Name = "cbNavSlowNav";
-            this.cbNavSlowNav.rclevel = 0;
-            this.cbNavSlowNav.UseVisualStyleBackColor = true;
-            // 
-            // throttle_expo_control1
-            // 
-            resources.ApplyResources(this.throttle_expo_control1, "throttle_expo_control1");
-            this.throttle_expo_control1.Name = "throttle_expo_control1";
-            // 
-            // rc_expo_control1
-            // 
-            resources.ApplyResources(this.rc_expo_control1, "rc_expo_control1");
-            this.rc_expo_control1.Name = "rc_expo_control1";
-            // 
-            // cbSrvRev1
-            // 
-            resources.ApplyResources(this.cbSrvRev1, "cbSrvRev1");
-            this.cbSrvRev1.aux = 0;
-            this.cbSrvRev1.IsHighlighted = false;
-            this.cbSrvRev1.item = 0;
-            this.cbSrvRev1.Name = "cbSrvRev1";
-            this.cbSrvRev1.rclevel = 0;
-            this.cbSrvRev1.UseVisualStyleBackColor = true;
-            // 
-            // cbSrvRev2
-            // 
-            resources.ApplyResources(this.cbSrvRev2, "cbSrvRev2");
-            this.cbSrvRev2.aux = 0;
-            this.cbSrvRev2.IsHighlighted = false;
-            this.cbSrvRev2.item = 0;
-            this.cbSrvRev2.Name = "cbSrvRev2";
-            this.cbSrvRev2.rclevel = 0;
-            this.cbSrvRev2.UseVisualStyleBackColor = true;
-            // 
-            // cbSrvRev3
-            // 
-            resources.ApplyResources(this.cbSrvRev3, "cbSrvRev3");
-            this.cbSrvRev3.aux = 0;
-            this.cbSrvRev3.IsHighlighted = false;
-            this.cbSrvRev3.item = 0;
-            this.cbSrvRev3.Name = "cbSrvRev3";
-            this.cbSrvRev3.rclevel = 0;
-            this.cbSrvRev3.UseVisualStyleBackColor = true;
-            // 
-            // cbSrvRev4
-            // 
-            resources.ApplyResources(this.cbSrvRev4, "cbSrvRev4");
-            this.cbSrvRev4.aux = 0;
-            this.cbSrvRev4.IsHighlighted = false;
-            this.cbSrvRev4.item = 0;
-            this.cbSrvRev4.Name = "cbSrvRev4";
-            this.cbSrvRev4.rclevel = 0;
-            this.cbSrvRev4.UseVisualStyleBackColor = true;
-            // 
-            // cbSrvRev5
-            // 
-            resources.ApplyResources(this.cbSrvRev5, "cbSrvRev5");
-            this.cbSrvRev5.aux = 0;
-            this.cbSrvRev5.IsHighlighted = false;
-            this.cbSrvRev5.item = 0;
-            this.cbSrvRev5.Name = "cbSrvRev5";
-            this.cbSrvRev5.rclevel = 0;
-            this.cbSrvRev5.UseVisualStyleBackColor = true;
-            // 
-            // cbSrvRev6
-            // 
-            resources.ApplyResources(this.cbSrvRev6, "cbSrvRev6");
-            this.cbSrvRev6.aux = 0;
-            this.cbSrvRev6.IsHighlighted = false;
-            this.cbSrvRev6.item = 0;
-            this.cbSrvRev6.Name = "cbSrvRev6";
-            this.cbSrvRev6.rclevel = 0;
-            this.cbSrvRev6.UseVisualStyleBackColor = true;
-            // 
-            // cbSrvRev7
-            // 
-            resources.ApplyResources(this.cbSrvRev7, "cbSrvRev7");
-            this.cbSrvRev7.aux = 0;
-            this.cbSrvRev7.IsHighlighted = false;
-            this.cbSrvRev7.item = 0;
-            this.cbSrvRev7.Name = "cbSrvRev7";
-            this.cbSrvRev7.rclevel = 0;
-            this.cbSrvRev7.UseVisualStyleBackColor = true;
-            // 
-            // cbSrvRev8
-            // 
-            resources.ApplyResources(this.cbSrvRev8, "cbSrvRev8");
-            this.cbSrvRev8.aux = 0;
-            this.cbSrvRev8.IsHighlighted = false;
-            this.cbSrvRev8.item = 0;
-            this.cbSrvRev8.Name = "cbSrvRev8";
-            this.cbSrvRev8.rclevel = 0;
-            this.cbSrvRev8.UseVisualStyleBackColor = true;
-            // 
-            // rci_Control_settings
-            // 
-            resources.ApplyResources(this.rci_Control_settings, "rci_Control_settings");
-            this.rci_Control_settings.Name = "rci_Control_settings";
-            // 
-            // dataGridViewImageColumn1
-            // 
-            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
-            this.dataGridViewImageColumn1.Image = global::MultiWiiWinGUI.Properties.Resources.up_btn;
-            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
-            // 
-            // dataGridViewImageColumn2
-            // 
-            resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
-            this.dataGridViewImageColumn2.Image = global::MultiWiiWinGUI.Properties.Resources.down_btn;
-            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
-            // 
-            // dataGridViewImageColumn3
-            // 
-            resources.ApplyResources(this.dataGridViewImageColumn3, "dataGridViewImageColumn3");
-            this.dataGridViewImageColumn3.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
-            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
-            // 
-            // tsMenuAddWP
-            // 
-            resources.ApplyResources(this.tsMenuAddWP, "tsMenuAddWP");
-            this.tsMenuAddWP.Image = global::MultiWiiWinGUI.Properties.Resources.wpicon;
-            this.tsMenuAddWP.Name = "tsMenuAddWP";
-            this.tsMenuAddWP.Click += new System.EventHandler(this.tsMenuAddWP_Click);
-            // 
-            // tsMenuAddPosholdTimed
-            // 
-            resources.ApplyResources(this.tsMenuAddPosholdTimed, "tsMenuAddPosholdTimed");
-            this.tsMenuAddPosholdTimed.Image = global::MultiWiiWinGUI.Properties.Resources.phicon;
-            this.tsMenuAddPosholdTimed.Name = "tsMenuAddPosholdTimed";
-            this.tsMenuAddPosholdTimed.Click += new System.EventHandler(this.tsMenuAddPosholdTimed_Click);
-            // 
-            // tsMenuAddPosholdUnlim
-            // 
-            resources.ApplyResources(this.tsMenuAddPosholdUnlim, "tsMenuAddPosholdUnlim");
-            this.tsMenuAddPosholdUnlim.Image = global::MultiWiiWinGUI.Properties.Resources.poshold_unlim;
-            this.tsMenuAddPosholdUnlim.Name = "tsMenuAddPosholdUnlim";
-            this.tsMenuAddPosholdUnlim.Click += new System.EventHandler(this.tsMenuAddPosholdUnlim_Click);
-            // 
-            // tsMenuAddRTH
-            // 
-            resources.ApplyResources(this.tsMenuAddRTH, "tsMenuAddRTH");
-            this.tsMenuAddRTH.Image = global::MultiWiiWinGUI.Properties.Resources.bluehome;
-            this.tsMenuAddRTH.Name = "tsMenuAddRTH";
-            this.tsMenuAddRTH.Click += new System.EventHandler(this.tsMenuAddRTH_Click);
-            // 
-            // clearMissionToolStripMenuItem
-            // 
-            resources.ApplyResources(this.clearMissionToolStripMenuItem, "clearMissionToolStripMenuItem");
-            this.clearMissionToolStripMenuItem.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
-            this.clearMissionToolStripMenuItem.Name = "clearMissionToolStripMenuItem";
-            this.clearMissionToolStripMenuItem.Click += new System.EventHandler(this.clearMissionToolStripMenuItem_Click);
-            // 
-            // UP
-            // 
-            resources.ApplyResources(this.UP, "UP");
-            this.UP.Image = global::MultiWiiWinGUI.Properties.Resources.up_btn;
-            this.UP.Name = "UP";
-            // 
-            // Down
-            // 
-            resources.ApplyResources(this.Down, "Down");
-            this.Down.Image = global::MultiWiiWinGUI.Properties.Resources.down_btn;
-            this.Down.Name = "Down";
-            // 
-            // DEL
-            // 
-            resources.ApplyResources(this.DEL, "DEL");
-            this.DEL.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
-            this.DEL.Name = "DEL";
-            // 
-            // pictureBox1
-            // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Image = global::MultiWiiWinGUI.Properties.Resources.checkbox_legend;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // b_connect
             // 
             resources.ApplyResources(this.b_connect, "b_connect");
             this.b_connect.Image = global::MultiWiiWinGUI.Properties.Resources.connect;
             this.b_connect.Name = "b_connect";
             this.b_connect.Click += new System.EventHandler(this.b_connect_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            resources.ApplyResources(this.toolStripSeparator1, "toolStripSeparator1");
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
             // 
             // b_read_settings
             // 
@@ -4629,6 +4602,11 @@ namespace MultiWiiWinGUI
             this.b_reset.Name = "b_reset";
             this.b_reset.Click += new System.EventHandler(this.b_reset_Click);
             // 
+            // toolStripSeparator2
+            // 
+            resources.ApplyResources(this.toolStripSeparator2, "toolStripSeparator2");
+            this.toolStripSeparator2.Name = "toolStripSeparator2";
+            // 
             // b_load_from_file
             // 
             resources.ApplyResources(this.b_load_from_file, "b_load_from_file");
@@ -4642,6 +4620,11 @@ namespace MultiWiiWinGUI
             this.b_write_to_file.Image = global::MultiWiiWinGUI.Properties.Resources.write_to_file;
             this.b_write_to_file.Name = "b_write_to_file";
             this.b_write_to_file.Click += new System.EventHandler(this.b_write_to_file_Click);
+            // 
+            // toolStripSeparator3
+            // 
+            resources.ApplyResources(this.toolStripSeparator3, "toolStripSeparator3");
+            this.toolStripSeparator3.Name = "toolStripSeparator3";
             // 
             // b_log
             // 
@@ -4665,6 +4648,11 @@ namespace MultiWiiWinGUI
             this.b_log_browser.Name = "b_log_browser";
             this.b_log_browser.Click += new System.EventHandler(this.b_log_browser_Click);
             // 
+            // toolStripSeparator4
+            // 
+            resources.ApplyResources(this.toolStripSeparator4, "toolStripSeparator4");
+            this.toolStripSeparator4.Name = "toolStripSeparator4";
+            // 
             // b_about
             // 
             resources.ApplyResources(this.b_about, "b_about");
@@ -4679,6 +4667,30 @@ namespace MultiWiiWinGUI
             this.bDebugWindws.Name = "bDebugWindws";
             this.bDebugWindws.Click += new System.EventHandler(this.bDebugWindws_Click);
             // 
+            // timer_announce
+            // 
+            this.timer_announce.Enabled = true;
+            this.timer_announce.Interval = 30000;
+            this.timer_announce.Tick += new System.EventHandler(this.timer_announce_Tick);
+            // 
+            // dataGridViewImageColumn1
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn1, "dataGridViewImageColumn1");
+            this.dataGridViewImageColumn1.Image = global::MultiWiiWinGUI.Properties.Resources.up_btn;
+            this.dataGridViewImageColumn1.Name = "dataGridViewImageColumn1";
+            // 
+            // dataGridViewImageColumn2
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn2, "dataGridViewImageColumn2");
+            this.dataGridViewImageColumn2.Image = global::MultiWiiWinGUI.Properties.Resources.down_btn;
+            this.dataGridViewImageColumn2.Name = "dataGridViewImageColumn2";
+            // 
+            // dataGridViewImageColumn3
+            // 
+            resources.ApplyResources(this.dataGridViewImageColumn3, "dataGridViewImageColumn3");
+            this.dataGridViewImageColumn3.Image = global::MultiWiiWinGUI.Properties.Resources.del_btn;
+            this.dataGridViewImageColumn3.Name = "dataGridViewImageColumn3";
+            // 
             // mainGUI
             // 
             resources.ApplyResources(this, "$this");
@@ -4689,8 +4701,6 @@ namespace MultiWiiWinGUI
             this.Name = "mainGUI";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.mainGUI_FormClosing);
             this.Load += new System.EventHandler(this.mainGUI_Load);
-            this.tabMain.ResumeLayout(false);
-            this.tabPageFlightDeck.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel1.PerformLayout();
             this.splitContainer1.Panel2.ResumeLayout(false);
@@ -4706,8 +4716,6 @@ namespace MultiWiiWinGUI
             this.splitContainer3.Panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).EndInit();
             this.splitContainer3.ResumeLayout(false);
-            this.tabPageMisson.ResumeLayout(false);
-            this.contextMenuStripMap.ResumeLayout(false);
             this.splitContainer7.Panel1.ResumeLayout(false);
             this.splitContainer7.Panel1.PerformLayout();
             this.splitContainer7.Panel2.ResumeLayout(false);
@@ -4729,6 +4737,37 @@ namespace MultiWiiWinGUI
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer8)).EndInit();
             this.splitContainer8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.missionDataGrid)).EndInit();
+            this.splitContainer10.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).EndInit();
+            this.splitContainer10.ResumeLayout(false);
+            this.splitContainer11.Panel1.ResumeLayout(false);
+            this.splitContainer11.Panel2.ResumeLayout(false);
+            this.splitContainer11.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).EndInit();
+            this.splitContainer11.ResumeLayout(false);
+            this.splitContainer12.Panel1.ResumeLayout(false);
+            this.splitContainer12.Panel1.PerformLayout();
+            this.splitContainer12.Panel2.ResumeLayout(false);
+            this.splitContainer12.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).EndInit();
+            this.splitContainer12.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            this.splitContainer6.Panel1.ResumeLayout(false);
+            this.splitContainer6.Panel2.ResumeLayout(false);
+            this.splitContainer6.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).EndInit();
+            this.splitContainer6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.nFrameRate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.nBitRate)).EndInit();
+            this.tabMain.ResumeLayout(false);
+            this.tabPageFlightDeck.ResumeLayout(false);
+            this.tabPageMisson.ResumeLayout(false);
+            this.contextMenuStripMap.ResumeLayout(false);
             this.tabPagePID.ResumeLayout(false);
             this.tabPagePID.PerformLayout();
             this.naviGroup.ResumeLayout(false);
@@ -4811,36 +4850,10 @@ namespace MultiWiiWinGUI
             ((System.ComponentModel.ISupportInitialize)(this.nSrvRate8)).EndInit();
             this.tabPageRC.ResumeLayout(false);
             this.tabPageRC.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tabSensorGraph.ResumeLayout(false);
-            this.splitContainer10.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer10)).EndInit();
-            this.splitContainer10.ResumeLayout(false);
-            this.splitContainer11.Panel1.ResumeLayout(false);
-            this.splitContainer11.Panel2.ResumeLayout(false);
-            this.splitContainer11.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer11)).EndInit();
-            this.splitContainer11.ResumeLayout(false);
-            this.splitContainer12.Panel1.ResumeLayout(false);
-            this.splitContainer12.Panel1.PerformLayout();
-            this.splitContainer12.Panel2.ResumeLayout(false);
-            this.splitContainer12.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer12)).EndInit();
-            this.splitContainer12.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
             this.tabPageVideo.ResumeLayout(false);
             this.tabPageVideo.PerformLayout();
-            this.splitContainer6.Panel1.ResumeLayout(false);
-            this.splitContainer6.Panel2.ResumeLayout(false);
-            this.splitContainer6.Panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer6)).EndInit();
-            this.splitContainer6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.nFrameRate)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.nBitRate)).EndInit();
             this.tabPageSettings.ResumeLayout(false);
             this.tabPageSettings.PerformLayout();
             this.groupBox9.ResumeLayout(false);
@@ -4852,7 +4865,6 @@ namespace MultiWiiWinGUI
             this.gbTerminal.PerformLayout();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -5284,6 +5296,7 @@ namespace MultiWiiWinGUI
         private System.Windows.Forms.CheckBox cbSpeakBattery;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Timer timer_announce;
+        private System.Windows.Forms.CheckBox cbGpsCorrect;
     }
 }
 

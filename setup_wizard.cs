@@ -116,7 +116,6 @@ namespace MultiWiiWinGUI
                     Settings.max_wp_number = 100; //until first connect
                     Settings.wp_radius = 200; //2 meters (until first connect);
 
-
                 }
 
                 //Write out the Settings struct

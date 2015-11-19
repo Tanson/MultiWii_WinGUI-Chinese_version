@@ -298,4 +298,53 @@
   <data name="battery_indicator_background" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\battery_indicator_background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+
+  <data name="mainGUI_timer_announce_Tick_Speek_GPS_distanceToHome" xml:space="preserve">
+    <value>距返回点 {0} 米。</value>
+  </data>
+  <data name="mainGUI_timer_announce_Tick_Speek_LowBat" xml:space="preserve">
+    <value>电压低！</value>
+  </data>
+  <data name="mainGUI_timer_announce_Tick_Speek_Bat" xml:space="preserve">
+    <value>电压{0}伏。</value>
+  </data>
+  <data name="mainGUI_tsMenuDeleteWP_Click_航点错误__请重新选择_提示" xml:space="preserve">
+    <value>航点错误, 请重新选择.</value>
+  </data>
+  <data name="mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_body" xml:space="preserve">
+    <value>请输入所需的高度变化（正负值）</value>
+  </data>
+  <data name="mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_title" xml:space="preserve">
+    <value>变更高度</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_无效的方向数据" xml:space="preserve">
+    <value>无效的方向数据</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_无效的位置点" xml:space="preserve">
+    <value>无效的位置点</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_无效半径" xml:space="preserve">
+    <value>无效半径</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_位置" xml:space="preserve">
+    <value>位置</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_Directionin" xml:space="preserve">
+    <value>圆的飞行方向（- 1或1）</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_Pointsin" xml:space="preserve">
+    <value>圆上生成的点（最小5，最大30）</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_半径" xml:space="preserve">
+    <value>半径</value>
+  </data>
+  <data name="mainGUI_createCircleToolStripMenuItem_Click_RadiusIn" xml:space="preserve">
+    <value>半径（最小20米）</value>
+  </data>
+  <data name="mainGUI_tsMenuSetHead_Click_设置航向" xml:space="preserve">
+    <value>设置航向</value>
+  </data>
+  <data name="mainGUI_tsMenuSetHead_Click_设置飞行器的航向位置" xml:space="preserve">
+    <value>设置飞行器的航向位置 (0-360度) -1标示清除航向控制</value>
+  </data>
 </root>

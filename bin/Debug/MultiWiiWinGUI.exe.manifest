@@ -4,7 +4,7 @@
   <description asmv2:iconFile="mwwingui.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5757.26037" language="neutral" processorArchitecture="x86" />
+    <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5801.23921" language="neutral" processorArchitecture="x86" />
     <commandLine file="MultiWiiWinGUI.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -127,50 +127,50 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GMap.NET.Core.dll" size="2443264">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GMap.NET.Core.dll" size="2988032">
       <assemblyIdentity name="GMap.NET.Core" version="1.7.0.0" publicKeyToken="B85B9027B614AFEF" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>m1IEP2X5o+2R6fOnhzBEkh2YSLQ=</dsig:DigestValue>
+        <dsig:DigestValue>ExMWmiUT2Kmi2z28feRZWuQYgK4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GMap.NET.WindowsForms.dll" size="145920">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="GMap.NET.WindowsForms.dll" size="150016">
       <assemblyIdentity name="GMap.NET.WindowsForms" version="1.7.0.0" publicKeyToken="B85B9027B614AFEF" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>tt6OLtq/l3OaykOr8T6Hz7btA18=</dsig:DigestValue>
+        <dsig:DigestValue>fyUqNHt8KBPZLMgZ9FH9p1fI5IE=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MultiWiiWinGUI.exe" size="7608832">
-      <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5757.26037" language="neutral" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="MultiWiiWinGUI.exe" size="7626752">
+      <assemblyIdentity name="MultiWiiWinGUI" version="2.3.5801.23921" language="neutral" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>64rrj/CfT0ux/lKn18iMMY4cl7M=</dsig:DigestValue>
+        <dsig:DigestValue>oHBkZP1xEqBu76fT4Vctf8BuHWM=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hans\MultiWiiWinGUI.resources.dll" size="92160">
-      <assemblyIdentity name="MultiWiiWinGUI.resources" version="2.3.5757.26037" language="zh-Hans" processorArchitecture="x86" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zh-Hans\MultiWiiWinGUI.resources.dll" size="92672">
+      <assemblyIdentity name="MultiWiiWinGUI.resources" version="2.3.5801.23921" language="zh-Hans" processorArchitecture="x86" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
-        <dsig:DigestValue>h4xME4Ul3YhLbp7f+e5wOfzZmSU=</dsig:DigestValue>
+        <dsig:DigestValue>nOLLeSQUyi5MtyVfNK47H/Uzvm4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

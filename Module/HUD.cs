@@ -82,13 +82,13 @@ namespace MultiWiiWinGUI.Module
 
         private static float airspeed = 0f;
 
-        private static Pen linePen = new Pen(Color.FromArgb(120, Color.Red));
+        private static Pen linePen = new Pen(Color.FromArgb(60, Color.Red));
 
-        private static SolidBrush textBrush = new SolidBrush(Color.FromArgb(200, Color.GreenYellow));
+        private static SolidBrush textBrush = new SolidBrush(Color.FromArgb(100, Color.GreenYellow));
 
-        private static SolidBrush textBackgroundBrush = new SolidBrush(Color.FromArgb(60, Color.Black));
+        private static SolidBrush textBackgroundBrush = new SolidBrush(Color.FromArgb(40, Color.Black));
 
-        private static SolidBrush alphaBrush = new SolidBrush(Color.FromArgb(60, Color.ForestGreen));
+        private static SolidBrush alphaBrush = new SolidBrush(Color.FromArgb(20, Color.ForestGreen));
 
 
       
@@ -114,7 +114,7 @@ namespace MultiWiiWinGUI.Module
             Matrix matrix = new Matrix(1f, 0f, 0f, 1f, 0f, 0f);
             matrix.Translate((float)(width / 2), (float)(height / 2));
             matrix.Rotate(roll);
-            int num3 = 15;
+            int num3 = 10;
             int num4 = (int)(pitch * (float)num3);
             GraphicsPath graphicsPath = new GraphicsPath();
             Rectangle rectangle1 = new Rectangle(-num2 / 2, -num2, test + 2 * num2, (test2 + 2 * num2) / 2 + num4);
@@ -126,96 +126,116 @@ namespace MultiWiiWinGUI.Module
             graphicsPath.AddRectangle(rectangle3);
             graphicsPath.Transform(matrix);
 
+
+            Pen penCenter = new Pen(Color.FromArgb(50, Color.White));
+            penCenter.Width = 2;
             graphicsPath = new GraphicsPath();
             graphicsPath.AddLine(-11, num4, -test / 2, num4);
             graphicsPath.Transform(matrix);
-            g.DrawPath(Pens.White, graphicsPath);
+            g.DrawPath(penCenter, graphicsPath);
             graphicsPath = new GraphicsPath();
             graphicsPath.AddLine(test / 2, num4, 11, num4);
             graphicsPath.Transform(matrix);
-            g.DrawPath(Pens.White, graphicsPath);
+            g.DrawPath(penCenter, graphicsPath);
 
 
+            Pen penCenter2 = new Pen(Color.FromArgb(50, Color.Red));
+            penCenter2.Width = 2;
              graphicsPath = new GraphicsPath();
-            graphicsPath.AddLine(10, 0, -10, 0);
+            graphicsPath.AddLine(5, 0, -5, 0);
             graphicsPath.Transform(matrix);
-            g.DrawPath(Pens.Red, graphicsPath);
+            g.DrawPath(penCenter2, graphicsPath);
 
             graphicsPath = new GraphicsPath();
-            graphicsPath.AddLine(0, 10, 0, -10);
+            graphicsPath.AddLine(0, 5, 0, -5);
             graphicsPath.Transform(matrix);
-            g.DrawPath(Pens.Red, graphicsPath);
+            g.DrawPath(penCenter2, graphicsPath);
 
             graphicsPath = new GraphicsPath();
             RectangleF rectangleF = new RectangleF();
-            StringFormat stringFormat = new StringFormat(StringFormatFlags.DirectionRightToLeft);
+            //StringFormat stringFormat = new StringFormat(StringFormatFlags.DirectionRightToLeft);
+            StringFormat stringFormat = StringFormat.GenericDefault;
             for (i = -180; i <= 180; i = i + 5)
             {
                 if (i % 10 != 0)
                 {
-                    rectangleF.X = -100f;
+                    num1 = -i;
+
+                    rectangleF.X = -45f -  (7f * num1.ToString().Length-7f);
                     rectangleF.Y = (float)(i * num3) + (float)num4;
                     rectangleF.Width = 60f;
                     rectangleF.Height = 15f;
-                    num1 = -i;
+                  
                     graphicsPath.AddString(num1.ToString(), new FontFamily("Arial"), 0, 12f, rectangleF, stringFormat);
-                    rectangleF.X = 45f;
+                    rectangleF.X = 35f;
                     rectangleF.Y = (float)(i * num3) + (float)num4;
                     rectangleF.Width = 60f;
                     rectangleF.Height = 15f;
                     num1 = -i;
                     graphicsPath.AddString(num1.ToString(), new FontFamily("Arial"), 0, 12f, rectangleF, StringFormat.GenericDefault);
+                   
                 }
                 else if (i != 0)
                 {
-                    rectangleF.X = -130f;
+                    num1 = -i;
+
+                    rectangleF.X = -65f - (7f * num1.ToString().Length - 7f);
+                    rectangleF.Y = (float)(i * num3) + (float)num4 - 3f;
+                    rectangleF.Width = 60f;
+                    rectangleF.Height = 15f;
+                   
+                    graphicsPath.AddString(num1.ToString(), new FontFamily("Arial"), 0, 12f, rectangleF, stringFormat);
+                    rectangleF.X = 58f;
                     rectangleF.Y = (float)(i * num3) + (float)num4 - 3f;
                     rectangleF.Width = 60f;
                     rectangleF.Height = 15f;
                     num1 = -i;
-                    graphicsPath.AddString(num1.ToString(), new FontFamily("Arial"), 0, 15f, rectangleF, stringFormat);
-                    rectangleF.X = 75f;
-                    rectangleF.Y = (float)(i * num3) + (float)num4 - 3f;
-                    rectangleF.Width = 60f;
-                    rectangleF.Height = 15f;
-                    num1 = -i;
-                    graphicsPath.AddString(num1.ToString(), new FontFamily("Arial"), 0, 15f, rectangleF, StringFormat.GenericDefault);
+                    graphicsPath.AddString(num1.ToString(), new FontFamily("Arial"), 0, 12f, rectangleF, StringFormat.GenericDefault);
+                    
                 }
+               
             }
             graphicsPath.Transform(matrix);
             graphicsPath.FillMode = FillMode.Winding;
             g.TextRenderingHint = TextRenderingHint.SingleBitPerPixelGridFit;
             g.SmoothingMode = SmoothingMode.HighQuality;
-            g.FillPath(new SolidBrush(Color.FromArgb(200, Color.Red)), graphicsPath);
+            g.FillPath(new SolidBrush(Color.FromArgb(100, Color.Green)), graphicsPath);
+
+            Pen penline = new Pen(Color.FromArgb(40, Color.Yellow));
+            penline.Width = 2;
             for (i = -180; i <= 180; i = i + 5)
             {
                 if (i % 10 != 0)
                 {
-                    num = i * num3 + num4 + 5;
+                   
+
+                   // pen.DashStyle=DashStyle.Dot;
+
+                    num = i * num3 + num4;
                     graphicsPath = new GraphicsPath();
-                    graphicsPath.AddLine(new PointF(-20f, (float)num), new PointF(-40f, (float)num));
-                    graphicsPath.AddLine(new PointF(-40f, (float)num), new PointF(-40f, (float)(num + 5)));
+                    graphicsPath.AddLine(new PointF(-10f, (float)num), new PointF(-35f, (float)num));
+                    graphicsPath.AddLine(new PointF(-35f, (float)num), new PointF(-35f, (float)(num + 5)));
                     graphicsPath.Transform(matrix);
-                    g.DrawPath(Pens.White, graphicsPath);
+                    g.DrawPath(penline, graphicsPath);
                     graphicsPath = new GraphicsPath();
-                    graphicsPath.AddLine(new PointF(25f, (float)num), new PointF(45f, (float)num));
-                    graphicsPath.AddLine(new PointF(45f, (float)num), new PointF(45f, (float)(num + 5)));
+                    graphicsPath.AddLine(new PointF(10f, (float)num), new PointF(35f, (float)num));
+                    graphicsPath.AddLine(new PointF(35f, (float)num), new PointF(35f, (float)(num + 5)));
                     graphicsPath.Transform(matrix);
-                    g.DrawPath(Pens.White, graphicsPath);
+                    g.DrawPath(penline, graphicsPath);
                 }
                 else if (i != 0)
                 {
                     num = i * num3 + num4;
                     graphicsPath = new GraphicsPath();
-                    graphicsPath.AddLine(new PointF(-20f, (float)num), new PointF(-70f, (float)num));
-                    graphicsPath.AddLine(new PointF(-70f, (float)num), new PointF(-70f, (float)(num + 10)));
+                    graphicsPath.AddLine(new PointF(-25f, (float)num), new PointF(-55f, (float)num));
+                    graphicsPath.AddLine(new PointF(-55f, (float)num), new PointF(-55f, (float)(num + 10)));
                     graphicsPath.Transform(matrix);
-                    g.DrawPath(Pens.White, graphicsPath);
+                    g.DrawPath(penline, graphicsPath);
                     graphicsPath = new GraphicsPath();
-                    graphicsPath.AddLine(new PointF(25f, (float)num), new PointF(75f, (float)num));
-                    graphicsPath.AddLine(new PointF(75f, (float)num), new PointF(75f, (float)(num + 10)));
+                    graphicsPath.AddLine(new PointF(25f, (float)num), new PointF(55f, (float)num));
+                    graphicsPath.AddLine(new PointF(55f, (float)num), new PointF(55f, (float)(num + 10)));
                     graphicsPath.Transform(matrix);
-                    g.DrawPath(Pens.White, graphicsPath);
+                    g.DrawPath(penline, graphicsPath);
                 }
             }
         }
@@ -226,8 +246,7 @@ namespace MultiWiiWinGUI.Module
             int num1 = 300;
             Rectangle rectangle = new Rectangle(topCorner.X, topCorner.Y, num, num1);
             Rectangle rectangle1 = new Rectangle(topCorner.X, topCorner.Y, num - 25, num1);
-            g.FillRectangle(alphaBrush, rectangle);
-            g.DrawRectangle(Pens.White, rectangle);
+         
             StringFormat stringFormat = new StringFormat()
             {
                 Alignment = StringAlignment.Far,
@@ -276,6 +295,8 @@ namespace MultiWiiWinGUI.Module
             g.DrawPolygon(linePen, x);
             Font font1 = new Font(new FontFamily("Arial"), 12, GraphicsUnit.Pixel);
             g.DrawString(airspeed.ToString(), font1, Brushes.Red, new PointF((float)(topCorner.X + num - 19), (float)y1+9), stringFormat);
+            g.FillRectangle(alphaBrush, rectangle);
+            g.DrawRectangle(new Pen(Color.FromArgb(40, Color.White)), rectangle);
         }
         public static void DrawAltitudeGuage(Graphics g, Point topCorner)
         {
@@ -283,8 +304,7 @@ namespace MultiWiiWinGUI.Module
             int num1 = 300;
             Rectangle rectangle = new Rectangle(topCorner.X, topCorner.Y, num, num1);
             Rectangle rectangle1 = new Rectangle(topCorner.X, topCorner.Y, num - 25, num1);
-            g.FillRectangle(alphaBrush, rectangle);
-            g.DrawRectangle(Pens.White, rectangle);
+          
             StringFormat stringFormat = new StringFormat()
             {
                 Alignment = StringAlignment.Near,
@@ -300,7 +320,7 @@ namespace MultiWiiWinGUI.Module
                 if (num2 % 100 == 0)
                 {
                     g.DrawLine(linePen, new PointF((float)topCorner.X, (float)((int)((double)i * num3) + y)), new PointF((float)(topCorner.X + 20), (float)((int)((double)i * num3) + y)));
-                    if ((i <= 15 ? false : i < 595))
+                    if ((i > 15 && i < 595))
                     {
                         g.DrawString(num2.ToString(), font, textBrush, new PointF((float)(topCorner.X + 20), (float)((int)((double)i * num3) + y - font.Height / 2)), stringFormat);
                     }
@@ -333,6 +353,8 @@ namespace MultiWiiWinGUI.Module
             g.DrawPolygon(linePen, x);
             Font font1 = new Font(new FontFamily("Arial"), 12, GraphicsUnit.Pixel);
             g.DrawString(altitude.ToString(), font1, Brushes.White, new PointF((float)(topCorner.X + 20), (float)y1 + 9), stringFormat);
+            g.FillRectangle(alphaBrush, rectangle);
+            g.DrawRectangle(new Pen(Color.FromArgb(40, Color.White)), rectangle);
         }
         public static void DrawRollGuage(Graphics g, Point center)
         {
@@ -478,11 +500,11 @@ namespace MultiWiiWinGUI.Module
                                 {
                                     goto IL_4E0;
                                 }
-                                g.DrawString("NE", font, textBrush, p, stringFormat);
+                                g.DrawString("东北", font, textBrush, p, stringFormat);
                             }
                             else
                             {
-                                g.DrawString("N", font, textBrush, p, stringFormat);
+                                g.DrawString("北", font, textBrush, p, stringFormat);
                             }
                         }
                         else
@@ -493,11 +515,11 @@ namespace MultiWiiWinGUI.Module
                                 {
                                     goto IL_4E0;
                                 }
-                                g.DrawString("SE", font, textBrush, p, stringFormat);
+                                g.DrawString("东南", font, textBrush, p, stringFormat);
                             }
                             else
                             {
-                                g.DrawString("E", font, textBrush, p, stringFormat);
+                                g.DrawString("东", font, textBrush, p, stringFormat);
                             }
                         }
                     }
@@ -511,11 +533,11 @@ namespace MultiWiiWinGUI.Module
                                 {
                                     goto IL_4E0;
                                 }
-                                g.DrawString("NW", font, textBrush, p, stringFormat);
+                                g.DrawString("西南", font, textBrush, p, stringFormat);
                             }
                             else
                             {
-                                g.DrawString("S", font, textBrush, p, stringFormat);
+                                g.DrawString("南", font, textBrush, p, stringFormat);
                             }
                         }
                         else
@@ -526,11 +548,11 @@ namespace MultiWiiWinGUI.Module
                                 {
                                     goto IL_4E0;
                                 }
-                                g.DrawString("W", font, textBrush, p, stringFormat);
+                                g.DrawString("西", font, textBrush, p, stringFormat);
                             }
                             else
                             {
-                                g.DrawString("SW", font, textBrush, p, stringFormat);
+                                g.DrawString("西南", font, textBrush, p, stringFormat);
                             }
                         }
                     }

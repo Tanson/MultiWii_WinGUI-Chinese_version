@@ -118,1693 +118,361 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="splitContainer1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer1.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
   <data name="bBind.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="bBind.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 21</value>
   </data>
   <data name="b_cal_acc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="b_cal_acc.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 21</value>
-  </data>
-  <data name="cb_monitor_rate.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="cb_monitor_rate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 3</value>
-  </data>
-  <data name="cb_monitor_rate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 20</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 16</value>
-  </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>刷新频率</value>
   </data>
   <data name="b_pause.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="b_pause.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 21</value>
-  </data>
-  <data name="b_pause.Text" xml:space="preserve">
-    <value>暂停</value>
-  </data>
   <data name="b_cal_mag.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_cal_mag.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 21</value>
-  </data>
-  <data name="b_cal_mag.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="b_cal_mag.Text" xml:space="preserve">
-    <value>校准磁力计</value>
-  </data>
-  <data name="l_cycletime.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="l_cycletime.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_cycletime.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="l_cycletime.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_cycletime.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 17</value>
-  </data>
-  <data name="l_cycletime.Text" xml:space="preserve">
-    <value>0000 毫秒</value>
-  </data>
-  <data name="label11.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
   <data name="label11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 17</value>
-  </data>
-  <data name="label11.Text" xml:space="preserve">
-    <value>循环周期时间:</value>
-  </data>
-  <data name="splitContainer2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer3.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="battery_indicator1.Text" xml:space="preserve">
-    <value>battery_indicator1</value>
-  </data>
-  <data name="vertical_speed_indicator1.Text" xml:space="preserve">
-    <value>vertical_speed_indicator1</value>
-  </data>
-  <data name="altitude_meter1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 148</value>
-  </data>
-  <data name="altitude_meter1.TabIndex" type="System.Int32, mscorlib">
-    <value>108</value>
-  </data>
-  <data name="altitude_meter1.Text" xml:space="preserve">
-    <value>altitude_meter1</value>
-  </data>
-  <data name="attitudeIndicatorInstrumentControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 148</value>
-  </data>
-  <data name="attitudeIndicatorInstrumentControl1.Text" xml:space="preserve">
-    <value>attitudeIndicatorInstrumentControl1</value>
-  </data>
-  <data name="gpsIndicator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 148</value>
-  </data>
-  <data name="gpsIndicator.Text" xml:space="preserve">
-    <value>gpsIndicator</value>
-  </data>
-  <data name="headingIndicatorInstrumentControl1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>326, 7</value>
-  </data>
-  <data name="headingIndicatorInstrumentControl1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 148</value>
-  </data>
-  <data name="headingIndicatorInstrumentControl1.Text" xml:space="preserve">
-    <value>headingIndicatorInstrumentControl1</value>
-  </data>
-  <data name="label47.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label47.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label47.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
-  </data>
-  <data name="label47.Text" xml:space="preserve">
-    <value>传感器状态</value>
-  </data>
-  <data name="rc_input_control1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="rc_input_control1.Text" xml:space="preserve">
-    <value>rc_input_control1</value>
-  </data>
-  <data name="motorsIndicator1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="motorsIndicator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>182, 197</value>
-  </data>
-  <data name="motorsIndicator1.Text" xml:space="preserve">
-    <value>motorsIndicator1</value>
-  </data>
-  <data name="indACC.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="indACC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="indACC.Text" xml:space="preserve">
-    <value>ACC</value>
-  </data>
-  <data name="indGPS.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="indGPS.Text" xml:space="preserve">
-    <value>GPS</value>
-  </data>
-  <data name="indOPTIC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="indBARO.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="indBARO.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="indBARO.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="indBARO.Text" xml:space="preserve">
-    <value>BARO</value>
-  </data>
-  <data name="indMAG.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="indMAG.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="indMAG.Text" xml:space="preserve">
-    <value>MAG</value>
-  </data>
-  <data name="indSONAR.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="indSONAR.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="indSONAR.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 17</value>
-  </data>
-  <data name="indSONAR.Text" xml:space="preserve">
-    <value>SONAR</value>
-  </data>
-  <data name="label81.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label81.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
   <data name="label81.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label81.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 17</value>
-  </data>
-  <data name="label81.Text" xml:space="preserve">
-    <value>遥测链路信息</value>
-  </data>
-  <data name="label80.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label80.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="label80.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label80.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 17</value>
-  </data>
-  <data name="label80.Text" xml:space="preserve">
-    <value>无线信号干扰（Noise）</value>
-  </data>
-  <data name="label79.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label79.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
-  </data>
   <data name="label79.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label79.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 17</value>
-  </data>
-  <data name="label79.Text" xml:space="preserve">
-    <value>无线信号强度（RSSI）</value>
-  </data>
-  <data name="barNoise.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 14</value>
-  </data>
-  <data name="barNoise.Text" xml:space="preserve">
-    <value>barNoise</value>
-  </data>
-  <data name="barRSSI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 14</value>
-  </data>
-  <data name="barRSSI.Text" xml:space="preserve">
-    <value>colorProgressBar1</value>
-  </data>
-  <data name="labelRSSI.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelRSSI.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="labelRSSI.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelRSSI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 17</value>
-  </data>
-  <data name="label69.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label69.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label69.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
-  </data>
-  <data name="label69.Text" xml:space="preserve">
-    <value>发送数据包</value>
-  </data>
-  <data name="labelNoise.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="labelNoise.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="labelNoise.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelNoise.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 17</value>
-  </data>
-  <data name="labelNoise.Text" xml:space="preserve">
-    <value>no data</value>
-  </data>
-  <data name="labelSentPackets.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="labelSentPackets.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="labelSentPackets.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="labelSentPackets.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="l_i2cerrors.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_i2cerrors.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="l_i2cerrors.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_i2cerrors.Location" type="System.Drawing.Point, System.Drawing">
-    <value>957, 21</value>
-  </data>
-  <data name="l_i2cerrors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 17</value>
-  </data>
-  <data name="l_i2cerrors.Text" xml:space="preserve">
-    <value>0000</value>
-  </data>
   <data name="label44.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label44.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
-  </data>
-  <data name="label44.Text" xml:space="preserve">
-    <value>CRC校验错误包</value>
-  </data>
-  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label21.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="label21.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
-    <value>78, 17</value>
-  </data>
-  <data name="label21.Text" xml:space="preserve">
-    <value>I2C错误统计:</value>
-  </data>
-  <data name="label43.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label43.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label43.Size" type="System.Drawing.Size, System.Drawing">
-    <value>65, 12</value>
-  </data>
-  <data name="label43.Text" xml:space="preserve">
-    <value>接收数据包</value>
-  </data>
-  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 17</value>
-  </data>
-  <data name="label6.Text" xml:space="preserve">
-    <value>电池电压:</value>
-  </data>
-  <data name="labelReceivedPackets.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="labelReceivedPackets.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="labelReceivedPackets.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 27</value>
-  </data>
-  <data name="labelReceivedPackets.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="labelReceivedPackets.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="l_vbatt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_vbatt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="l_vbatt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_vbatt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 17</value>
-  </data>
-  <data name="l_vbatt.Text" xml:space="preserve">
-    <value>0.0 伏</value>
-  </data>
-  <data name="labelCRCErrors.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="labelCRCErrors.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="labelCRCErrors.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="labelCRCErrors.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt</value>
   </data>
   <data name="label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 17</value>
-  </data>
-  <data name="label7.Text" xml:space="preserve">
-    <value>功率统计:</value>
-  </data>
-  <data name="l_powersum.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="l_powersum.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_powersum.Size" type="System.Drawing.Size, System.Drawing">
-    <value>36, 17</value>
-  </data>
-  <data name="l_powersum.Text" xml:space="preserve">
-    <value>0000</value>
-  </data>
-  <data name="splitContainer2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 408</value>
-  </data>
-  <data name="splitContainer2.SplitterDistance" type="System.Int32, mscorlib">
-    <value>312</value>
-  </data>
-  <data name="splitContainer1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="splitContainer1.SplitterDistance" type="System.Int32, mscorlib">
-    <value>32</value>
-  </data>
-  <data name="splitContainer7.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer7.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="cbShowFlightPath.AutoSize" type="System.Boolean, mscorlib">
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="cbGpsCorrect.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="cbGpsCorrect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="cbGpsCorrect.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 16</value>
+  </data>
+  <data name="cbGpsCorrect.Text" xml:space="preserve">
+    <value>GPS纠偏算法</value>
   </data>
   <data name="cbShowFlightPath.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbShowFlightPath.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="cbShowFlightPath.Text" xml:space="preserve">
-    <value>显示飞行路径</value>
-  </data>
-  <data name="cbShowPos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbShowPos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbShowPos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="cbShowPos.Text" xml:space="preserve">
-    <value>显示当前航点</value>
-  </data>
-  <data name="cbShowWP.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cbShowWP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbShowWP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="cbShowWP.Text" xml:space="preserve">
-    <value>显示航点</value>
-  </data>
-  <data name="cbShowMission.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbShowMission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbShowMission.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 7</value>
-  </data>
-  <data name="cbShowMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="cbShowMission.Text" xml:space="preserve">
-    <value>显示任务路径</value>
-  </data>
-  <data name="label23.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label23.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label23.Text" xml:space="preserve">
-    <value>地图类型</value>
-  </data>
-  <data name="cbMapProviders.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="cbMapProviders.Size" type="System.Drawing.Size, System.Drawing">
-    <value>154, 20</value>
-  </data>
-  <data name="b_Clear_Route.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Right</value>
-  </data>
   <data name="b_Clear_Route.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_Clear_Route.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 22</value>
-  </data>
-  <data name="b_Clear_Route.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
-  <data name="spcontMapMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="spcontMapMain.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="splitContainer9.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer9.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
   </data>
   <data name="btnMapZoopDown.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnMapZoopDown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 22</value>
-  </data>
-  <data name="btnMapZoopDown.Text" xml:space="preserve">
-    <value>&amp;-</value>
-  </data>
   <data name="btnMapZoomUp.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="btnMapZoomUp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>25, 22</value>
-  </data>
-  <data name="btnMapZoomUp.Text" xml:space="preserve">
-    <value>&amp;+</value>
-  </data>
-  <data name="battery_indicator2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="battery_indicator2.Text" xml:space="preserve">
-    <value>battery_indicator2</value>
-  </data>
-  <data name="battery_indicator2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="barRSSIMission.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="barRSSIMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 14</value>
-  </data>
-  <data name="barRSSIMission.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="lNavError.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lNavError.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="lNavError.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lNavError.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 16</value>
-  </data>
-  <data name="cbAutoPan.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="cbAutoPan.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbAutoPan.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbAutoPan.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="cbAutoPan.Text" xml:space="preserve">
-    <value>绘制航迹</value>
-  </data>
-  <data name="cbShowGauges.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="cbShowGauges.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cbShowGauges.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbShowGauges.Size" type="System.Drawing.Size, System.Drawing">
-    <value>84, 16</value>
-  </data>
-  <data name="cbShowGauges.Text" xml:space="preserve">
-    <value>显示仪表盘</value>
-  </data>
-  <data name="altitude_meter2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="altitude_meter2.Text" xml:space="preserve">
-    <value>altitude_meter2</value>
-  </data>
-  <data name="altitude_meter2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="vertical_speed_indicator2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="vertical_speed_indicator2.Text" xml:space="preserve">
-    <value>vertical_speed_indicator2</value>
-  </data>
-  <data name="vertical_speed_indicator2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="gpsIndicator2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left</value>
-  </data>
-  <data name="gpsIndicator2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>160, 148</value>
-  </data>
-  <data name="gpsIndicator2.Text" xml:space="preserve">
-    <value>gpsIndicatorInstrumentControl1</value>
-  </data>
-  <data name="gpsIndicator2.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="LMousePos.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="LMousePos.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="LMousePos.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 12</value>
-  </data>
-  <data name="LMousePos.Text" xml:space="preserve">
-    <value>0,0</value>
-  </data>
-  <data name="label45.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label45.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label45.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
-  </data>
-  <data name="label45.Text" xml:space="preserve">
-    <value>POS@Mouse</value>
-  </data>
-  <data name="MainMap.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="MainMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>601, 331</value>
-  </data>
-  <data name="lNavState.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lNavState.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lNavState.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="lGpsMode.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lGpsMode.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lGpsMode.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="lGpsMode.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="l11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="l11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
-  </data>
-  <data name="l11.Text" xml:space="preserve">
-    <value>NAV_STATE</value>
   </data>
   <data name="label72.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label72.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="label72.Text" xml:space="preserve">
-    <value>GPSMODE</value>
-  </data>
-  <data name="cbSendGTCAlt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSendGTCAlt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSendGTCAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="cbSendGTCAlt.Text" xml:space="preserve">
-    <value>发送高度</value>
-  </data>
-  <data name="txtGTCAlt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="txtGTCAlt.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtGTCAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
-  </data>
-  <data name="txtGTCAlt.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="label46.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label46.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label46.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 12</value>
-  </data>
   <data name="bClickToGo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="bClickToGo.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 40</value>
-  </data>
-  <data name="bClickToGo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 22</value>
-  </data>
-  <data name="bClickToGo.Text" xml:space="preserve">
-    <value>鼠标飞行模式(关闭)</value>
-  </data>
-  <data name="l_GPS_numsat.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_GPS_numsat.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9.75pt, style=Bold</value>
   </data>
   <data name="l_GPS_numsat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_GPS_numsat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 19</value>
-  </data>
-  <data name="l_GPS_numsat.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label25.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label25.Text" xml:space="preserve">
-    <value>纬度</value>
-  </data>
-  <data name="label39.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label39.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label39.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label39.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
-  </data>
-  <data name="label39.Text" xml:space="preserve">
-    <value>卫星数量</value>
-  </data>
-  <data name="label32.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label32.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label32.Text" xml:space="preserve">
-    <value>经度</value>
-  </data>
-  <data name="l_GPS_alt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_GPS_alt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9.75pt, style=Bold</value>
   </data>
   <data name="l_GPS_alt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_GPS_alt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 19</value>
-  </data>
-  <data name="l_GPS_alt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="lGPS_lon.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lGPS_lon.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9.75pt, style=Bold</value>
-  </data>
   <data name="lGPS_lon.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lGPS_lon.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 19</value>
-  </data>
-  <data name="lGPS_lon.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label34.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label34.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label34.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="label34.Text" xml:space="preserve">
-    <value>GPS 高度</value>
-  </data>
-  <data name="lGPS_lat.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lGPS_lat.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9.75pt, style=Bold</value>
-  </data>
   <data name="lGPS_lat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lGPS_lat.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="splitContainer9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>601, 409</value>
-  </data>
-  <data name="splitContainer9.SplitterDistance" type="System.Int32, mscorlib">
-    <value>331</value>
-  </data>
-  <data name="splitContainer8.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer8.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="UP.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="missionDataGrid.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="missionDataGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>1, 1, 1, 1</value>
-  </data>
-  <data name="missionDataGrid.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Vertical</value>
-  </data>
-  <data name="missionDataGrid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>443, 274</value>
-  </data>
-  <data name="label75.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label75.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label75.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 16</value>
-  </data>
-  <data name="label75.Text" xml:space="preserve">
-    <value>右键点击显示地图菜单</value>
-  </data>
-  <data name="label74.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label74.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label74.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label74.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 16</value>
-  </data>
-  <data name="label74.Text" xml:space="preserve">
-    <value>增加任务</value>
-  </data>
-  <data name="label73.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label73.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="label73.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label73.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 70</value>
-  </data>
-  <data name="label73.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 16</value>
-  </data>
-  <data name="lDistLastWP.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lDistLastWP.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lDistLastWP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
-  </data>
-  <data name="lDistLastWP.Text" xml:space="preserve">
-    <value>距离选中航点:</value>
   </data>
   <data name="btnLoadMission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnLoadMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
-  </data>
-  <data name="btnLoadMission.Text" xml:space="preserve">
-    <value>打开任务文件</value>
-  </data>
   <data name="btnSaveMission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="btnSaveMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
-  </data>
-  <data name="btnSaveMission.Text" xml:space="preserve">
-    <value>保存任务文件</value>
   </data>
   <data name="btnDownLoadMission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="btnDownLoadMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
-  </data>
-  <data name="btnDownLoadMission.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="btnDownLoadMission.Text" xml:space="preserve">
-    <value>下载任务</value>
-  </data>
   <data name="btnUploadMission.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="btnUploadMission.Size" type="System.Drawing.Size, System.Drawing">
-    <value>109, 22</value>
-  </data>
-  <data name="btnUploadMission.Text" xml:space="preserve">
-    <value>上传任务</value>
-  </data>
-  <data name="txtDefAlt.MaxLength" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="txtDefAlt.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtDefAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>33, 20</value>
-  </data>
-  <data name="lDistance.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lDistance.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lDistance.Size" type="System.Drawing.Size, System.Drawing">
-    <value>71, 12</value>
-  </data>
-  <data name="lDistance.Text" xml:space="preserve">
-    <value>任务总距离:</value>
-  </data>
   <data name="lDefAlt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lDefAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 12</value>
-  </data>
-  <data name="lDefAlt.Text" xml:space="preserve">
-    <value>默认高度(AGL)</value>
-  </data>
-  <data name="splitContainer8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>443, 409</value>
-  </data>
-  <data name="splitContainer8.SplitterDistance" type="System.Int32, mscorlib">
-    <value>274</value>
-  </data>
-  <data name="spcontMapMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 409</value>
-  </data>
-  <data name="spcontMapMain.SplitterDistance" type="System.Int32, mscorlib">
-    <value>601</value>
-  </data>
-  <data name="splitContainer7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="splitContainer7.SplitterDistance" type="System.Int32, mscorlib">
-    <value>31</value>
-  </data>
-  <data name="splitContainer7.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="splitContainer10.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer11.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer12.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="splitContainer12.Orientation" type="System.Windows.Forms.Orientation, System.Windows.Forms">
-    <value>Horizontal</value>
-  </data>
-  <data name="zgMonitor.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="zgMonitor.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
-    <value>GrowAndShrink</value>
-  </data>
-  <data name="zgMonitor.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>None</value>
-  </data>
-  <data name="zgMonitor.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="zgMonitor.Size" type="System.Drawing.Size, System.Drawing">
-    <value>806, 309</value>
-  </data>
-  <data name="zgMonitor.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="label28.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
   </data>
   <data name="label28.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label28.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label28.Text" xml:space="preserve">
-    <value>DBG1</value>
-  </data>
-  <data name="cb_dbg1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_dbg1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_dbg1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="l_dbg1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="l_dbg1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_dbg1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="l_dbg1.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cb_dbg2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_dbg2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_dbg2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label33.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
   </data>
   <data name="label33.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label33.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label33.Text" xml:space="preserve">
-    <value>DBG2</value>
-  </data>
-  <data name="l_dbg2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_dbg2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="l_dbg2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_dbg2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="l_dbg2.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cb_dbg3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_dbg3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_dbg3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="l_dbg4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="l_dbg4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_dbg4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="l_dbg4.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label38.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
   </data>
   <data name="label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label38.TabIndex" type="System.Int32, mscorlib">
-    <value>78</value>
-  </data>
-  <data name="label38.Text" xml:space="preserve">
-    <value>DBG3</value>
-  </data>
-  <data name="label40.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
   <data name="label40.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label40.Text" xml:space="preserve">
-    <value>DBG4</value>
-  </data>
-  <data name="l_dbg3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_dbg3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="l_dbg3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_dbg3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 16</value>
-  </data>
-  <data name="l_dbg3.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cb_dbg4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_dbg4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_dbg4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="splitContainer12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>806, 385</value>
-  </data>
-  <data name="groupBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 68</value>
-  </data>
-  <data name="groupBox1.Text" xml:space="preserve">
-    <value>Accelerometer</value>
-  </data>
-  <data name="groupBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 68</value>
-  </data>
-  <data name="groupBox2.Text" xml:space="preserve">
-    <value>Gyroscope</value>
-  </data>
-  <data name="cb_alt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cb_alt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cb_alt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label22.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
-  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label22.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label22.Text" xml:space="preserve">
-    <value>ALT</value>
-  </data>
-  <data name="groupBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 68</value>
-  </data>
-  <data name="groupBox3.Text" xml:space="preserve">
-    <value>Magnetometer</value>
-  </data>
-  <data name="l_alt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_alt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="l_alt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_alt.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="cb_head.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="cb_head.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="cb_head.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="l_head.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="l_head.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="l_head.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_head.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label26.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
-  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label26.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label26.Text" xml:space="preserve">
-    <value>HEAD</value>
-  </data>
-  <data name="splitContainer10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="splitContainer10.SplitterDistance" type="System.Int32, mscorlib">
-    <value>55</value>
   </data>
   <data name="b_uncheck_all_ACC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="b_uncheck_all_ACC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 20</value>
-  </data>
-  <data name="b_uncheck_all_ACC.Text" xml:space="preserve">
-    <value>X</value>
-  </data>
   <data name="b_check_all_ACC.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_check_all_ACC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 20</value>
-  </data>
-  <data name="l_acc_z.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="l_acc_z.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_acc_z.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_acc_z.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="l_acc_pitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_acc_pitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_acc_pitch.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="l_acc_pitch.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="l_acc_roll.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="l_acc_roll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_acc_roll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_acc_roll.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
   <data name="label18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label18.Text" xml:space="preserve">
-    <value>Z</value>
-  </data>
-  <data name="cb_acc_z.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_acc_z.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
   <data name="label16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label16.Text" xml:space="preserve">
-    <value>PITCH</value>
-  </data>
-  <data name="cb_acc_pitch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_acc_pitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_acc_pitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
   <data name="label14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label14.Text" xml:space="preserve">
-    <value>ROLL</value>
-  </data>
-  <data name="cb_acc_roll.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_acc_roll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_acc_roll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
   <data name="b_uncheck_all_GYRO.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_uncheck_all_GYRO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 20</value>
-  </data>
-  <data name="b_uncheck_all_GYRO.Text" xml:space="preserve">
-    <value>X</value>
   </data>
   <data name="b_check_all_GYRO.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="b_check_all_GYRO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 20</value>
-  </data>
-  <data name="b_check_all_GYRO.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="l_gyro_yaw.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="l_gyro_yaw.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_gyro_yaw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_gyro_yaw.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="l_gyro_pitch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="l_gyro_pitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_gyro_pitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_gyro_pitch.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="l_gyro_roll.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="l_gyro_roll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_gyro_roll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 16</value>
-  </data>
-  <data name="l_gyro_roll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_gyro_roll.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label29.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
   </data>
   <data name="label29.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label29.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label29.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="label29.Text" xml:space="preserve">
-    <value>YAW</value>
-  </data>
   <data name="cb_gyro_yaw.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_gyro_yaw.Location" type="System.Drawing.Point, System.Drawing">
-    <value>10, 43</value>
-  </data>
-  <data name="cb_gyro_yaw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
   </data>
   <data name="label30.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label30.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label30.Text" xml:space="preserve">
-    <value>PITCH</value>
-  </data>
-  <data name="cb_gyro_pitch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_gyro_pitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_gyro_pitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="cb_gyro_pitch.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="label31.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
   </data>
   <data name="label31.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label31.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label31.Text" xml:space="preserve">
-    <value>ROLL</value>
-  </data>
   <data name="cb_gyro_roll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_gyro_roll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+  <data name="cb_alt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label22.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="b_uncheck_all_MAG.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="b_uncheck_all_MAG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 20</value>
-  </data>
-  <data name="b_uncheck_all_MAG.Text" xml:space="preserve">
-    <value>X</value>
-  </data>
   <data name="b_check_all_MAG.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_check_all_MAG.Size" type="System.Drawing.Size, System.Drawing">
-    <value>22, 20</value>
-  </data>
-  <data name="b_check_all_MAG.TabIndex" type="System.Int32, mscorlib">
-    <value>106</value>
-  </data>
-  <data name="b_check_all_MAG.Text" xml:space="preserve">
-    <value>+</value>
-  </data>
-  <data name="l_mag_yaw.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="l_mag_yaw.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_mag_yaw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_mag_yaw.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="l_mag_pitch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="l_mag_pitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_mag_pitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_mag_roll.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="l_mag_roll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_mag_roll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>70, 16</value>
-  </data>
-  <data name="l_mag_roll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>11, 12</value>
-  </data>
-  <data name="l_mag_roll.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label35.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
   <data name="label35.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label35.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label35.Text" xml:space="preserve">
-    <value>YAW</value>
-  </data>
-  <data name="cb_mag_yaw.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_mag_yaw.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_mag_yaw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label36.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
   <data name="label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label36.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label36.Text" xml:space="preserve">
-    <value>PITCH</value>
-  </data>
-  <data name="cb_mag_pitch.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_mag_pitch.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_mag_pitch.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label37.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt</value>
-  </data>
   <data name="label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label37.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 14</value>
-  </data>
-  <data name="label37.Text" xml:space="preserve">
-    <value>ROLL</value>
-  </data>
-  <data name="cb_mag_roll.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_mag_roll.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_mag_roll.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
+  <data name="l_alt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="cb_head.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="l_head.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label26.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="videoSourcePlayer.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
@@ -1818,330 +486,41 @@
   <data name="videoSourcePlayer.Text" xml:space="preserve">
     <value>videoSourcePlayer</value>
   </data>
-  <data name="dropdown_devices.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="dropdown_devices.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
-    <value>Flat</value>
-  </data>
-  <data name="dropdown_devices.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 20</value>
-  </data>
-  <data name="b_video_connect.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="b_video_connect.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_video_connect.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 22</value>
-  </data>
-  <data name="b_video_connect.Text" xml:space="preserve">
-    <value>连接视频设备</value>
-  </data>
-  <data name="label19.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>35, 12</value>
-  </data>
-  <data name="label19.Text" xml:space="preserve">
-    <value>CODEC</value>
-  </data>
-  <data name="b_Record.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
   <data name="b_Record.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_Record.Size" type="System.Drawing.Size, System.Drawing">
-    <value>202, 22</value>
-  </data>
-  <data name="b_Record.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="b_Record.Text" xml:space="preserve">
-    <value>录制视频</value>
-  </data>
-  <data name="cb_codec.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="cb_codec.Items7" xml:space="preserve">
-    <value>MPEG2</value>
-  </data>
-  <data name="cb_codec.Size" type="System.Drawing.Size, System.Drawing">
-    <value>110, 20</value>
-  </data>
-  <data name="cb_codec.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="nFrameRate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="nFrameRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 21</value>
-  </data>
-  <data name="label17.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label17.Text" xml:space="preserve">
-    <value>Mbit/sec</value>
-  </data>
-  <data name="label12.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>FrameRate</value>
-  </data>
-  <data name="label15.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 12</value>
-  </data>
-  <data name="label15.Text" xml:space="preserve">
-    <value>FPS</value>
-  </data>
-  <data name="nBitRate.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="nBitRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 21</value>
-  </data>
-  <data name="label13.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>BitRate</value>
-  </data>
-  <data name="splitContainer6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="splitContainer6.SplitterDistance" type="System.Int32, mscorlib">
-    <value>829</value>
-  </data>
-  <data name="tabMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tabMain.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 470</value>
-  </data>
-  <data name="tabPageFlightDeck.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabPageFlightDeck.Text" xml:space="preserve">
-    <value>飞行仪表界面</value>
-  </data>
-  <data name="contextMenuStripMap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>195, 302</value>
-  </data>
-  <data name="tsMenuAddWP.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
-  </data>
-  <data name="tsMenuAddWP.Text" xml:space="preserve">
-    <value>添加航点</value>
-  </data>
-  <data name="tsMenuAddWP.ToolTipText" xml:space="preserve">
-    <value>在点击处增加一个航点</value>
-  </data>
-  <data name="tsMenuAddPosholdTimed.Text" xml:space="preserve">
-    <value>位置保持点 </value>
-  </data>
-  <data name="tsMenuAddPosholdTimed.ToolTipText" xml:space="preserve">
-    <value>根据设置的时间在当前位置上悬停保持位置</value>
-  </data>
-  <data name="tsMenuAddPosholdUnlim.Text" xml:space="preserve">
-    <value>任务结束保持点</value>
-  </data>
-  <data name="tsMenuAddPosholdUnlim.ToolTipText" xml:space="preserve">
-    <value>增加一个点去保持位置（结束任务）</value>
-  </data>
-  <data name="tsMenuAddRTH.Text" xml:space="preserve">
-    <value>添加自动返航开始位置</value>
-  </data>
-  <data name="tsMenuAddRTH.ToolTipText" xml:space="preserve">
-    <value>开始自动返回</value>
-  </data>
-  <data name="tsMenuAddLand.Text" xml:space="preserve">
-    <value>添加降落地点</value>
-  </data>
-  <data name="tsMenuAddJump.Text" xml:space="preserve">
-    <value>任务跳转</value>
-  </data>
-  <data name="tsMenuAddJump.ToolTipText" xml:space="preserve">
-    <value>跳转到指定点 </value>
-  </data>
-  <data name="tsMenuAddPOI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
-  </data>
-  <data name="tsMenuAddPOI.Text" xml:space="preserve">
-    <value>设置兴趣点</value>
-  </data>
-  <data name="tsMenuAddPOI.ToolTipText" xml:space="preserve">
-    <value>设置一个兴趣点
-（飞行器将调整走向这一点）</value>
-  </data>
-  <data name="tsMenuSetHead.Text" xml:space="preserve">
-    <value>设置航向</value>
-  </data>
-  <data name="tsMenuSetHead.ToolTipText" xml:space="preserve">
-    <value>设置飞行器航向 </value>
-  </data>
-  <data name="tsMenuDeleteWP.Text" xml:space="preserve">
-    <value>删除任务点</value>
-  </data>
-  <data name="clearMissionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>194, 22</value>
-  </data>
-  <data name="clearMissionToolStripMenuItem.Text" xml:space="preserve">
-    <value>清除任务</value>
-  </data>
-  <data name="clearMissionToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>清除任务（注意，只在软件界面清除，需要上传才能生效！）</value>
-  </data>
-  <data name="createCircleToolStripMenuItem.Text" xml:space="preserve">
-    <value>圆形路径</value>
-  </data>
-  <data name="createCircleToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>在这一点上放置一个圆形的路径</value>
-  </data>
-  <data name="bulkAltitudeChangeToolStripMenuItem.Text" xml:space="preserve">
-    <value>改变高度</value>
-  </data>
-  <data name="bulkAltitudeChangeToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>在任务中改变所有导航点的高度</value>
-  </data>
-  <data name="toolStripSeparator6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>191, 6</value>
-  </data>
-  <data name="fetchMapTilesToolStripMenuItem.ToolTipText" xml:space="preserve">
-    <value>离线保存地图数据</value>
-  </data>
-  <data name="tabPagePID.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPagePID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabPagePID.Text" xml:space="preserve">
-    <value>飞行参数(PID/GPS)调整</value>
-  </data>
-  <data name="naviGroup.Location" type="System.Drawing.Point, System.Drawing">
-    <value>598, 9</value>
-  </data>
-  <data name="naviGroup.Size" type="System.Drawing.Size, System.Drawing">
-    <value>447, 430</value>
-  </data>
-  <data name="naviGroup.Text" xml:space="preserve">
-    <value>导航设置</value>
-  </data>
-  <data name="label41.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label41.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label41.Size" type="System.Drawing.Size, System.Drawing">
-    <value>119, 12</value>
-  </data>
-  <data name="label41.Text" xml:space="preserve">
-    <value>降落速度（厘米/秒）</value>
-  </data>
-  <data name="nLandSpeed.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nLandSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="label71.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label71.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label71.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 12</value>
-  </data>
-  <data name="label71.Text" xml:space="preserve">
-    <value>远离返回点启动自动返航(米)</value>
-  </data>
-  <data name="nFence.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nFence.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="cbNavBaroTakeover.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cbNavBaroTakeover.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbNavBaroTakeover.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 16</value>
-  </data>
-  <data name="cbNavDisableSticks.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbNavDisableSticks.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbNavDisableSticks.Text" xml:space="preserve">
-    <value>导航模式忽略油门输入</value>
-  </data>
-  <data name="cbNavGPS_filtering.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbNavGPS_filtering.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbNavGPS_filtering.Size" type="System.Drawing.Size, System.Drawing">
-    <value>90, 16</value>
-  </data>
-  <data name="cbNavGPS_filtering.Text" xml:space="preserve">
-    <value>启用GPS滤波</value>
-  </data>
-  <data name="label88.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label88.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2152,41 +531,11 @@
   <data name="label88.Text" xml:space="preserve">
     <value>最大倾斜角度 (度)</value>
   </data>
-  <data name="cbNavGPS_Lead.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbNavGPS_Lead.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbNavGPS_Lead.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 16</value>
-  </data>
-  <data name="cbNavGPS_Lead.Text" xml:space="preserve">
-    <value>启用GPS移动滤波</value>
-  </data>
-  <data name="nBanking.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nBanking.Location" type="System.Drawing.Point, System.Drawing">
-    <value>171, 405</value>
-  </data>
-  <data name="nBanking.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="cbNavResetHome.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbNavResetHome.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbNavResetHome.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 16</value>
-  </data>
-  <data name="cbNavResetHome.Text" xml:space="preserve">
-    <value>在解锁的时候不重置返回地点</value>
-  </data>
-  <data name="label87.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label87.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2197,1928 +546,326 @@
   <data name="label87.Text" xml:space="preserve">
     <value>偏航修正量</value>
   </data>
-  <data name="cbNavHeadingControl.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbNavHeadingControl.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbNavHeadingControl.Size" type="System.Drawing.Size, System.Drawing">
-    <value>144, 16</value>
-  </data>
-  <data name="cbNavHeadingControl.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="cbNavHeadingControl.Text" xml:space="preserve">
-    <value>自动导航系统控制航向</value>
-  </data>
-  <data name="nCrosstrack.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nCrosstrack.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="cbNavTailFirst.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cbNavTailFirst.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbNavTailFirst.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 16</value>
-  </data>
-  <data name="cbNavTailFirst.Text" xml:space="preserve">
-    <value>飞行器起飞时尾部首先飞起来</value>
-  </data>
-  <data name="label86.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label86.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label86.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 12</value>
-  </data>
-  <data name="label86.Text" xml:space="preserve">
-    <value>到达返回点前预定高度 (米)</value>
   </data>
   <data name="cbNavRTHHead.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbNavRTHHead.Size" type="System.Drawing.Size, System.Drawing">
-    <value>264, 16</value>
-  </data>
-  <data name="cbNavRTHHead.Text" xml:space="preserve">
-    <value>到达返回地点后，旋转头部方向与起飞时一致</value>
-  </data>
-  <data name="nRTHAlt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nRTHAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="cbNavWaitRTHAlt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbNavWaitRTHAlt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbNavWaitRTHAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 16</value>
-  </data>
-  <data name="cbNavWaitRTHAlt.Text" xml:space="preserve">
-    <value>前往返回点前调整到预定高度</value>
-  </data>
-  <data name="label85.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label85.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label85.Size" type="System.Drawing.Size, System.Drawing">
-    <value>161, 12</value>
-  </data>
-  <data name="label85.Text" xml:space="preserve">
-    <value>最小导航飞行速度 (厘米/秒)</value>
-  </data>
-  <data name="cbNavSlowNav.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbNavSlowNav.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbNavSlowNav.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="cbNavSlowNav.Text" xml:space="preserve">
-    <value>启用慢速导航</value>
-  </data>
-  <data name="nMinSpeed.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nMinSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="nWPRadius.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nWPRadius.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="label84.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label84.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label84.Size" type="System.Drawing.Size, System.Drawing">
-    <value>155, 12</value>
-  </data>
-  <data name="label84.Text" xml:space="preserve">
-    <value>最大导航飞行速度(厘米/秒)</value>
-  </data>
-  <data name="label76.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label76.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label76.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 12</value>
-  </data>
-  <data name="label76.Text" xml:space="preserve">
-    <value>航点半径 (厘米)</value>
-  </data>
-  <data name="nMaxSpeed.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nMaxSpeed.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="nSafeWPDist.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nSafeWPDist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="label83.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label83.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label83.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 12</value>
-  </data>
-  <data name="label83.Text" xml:space="preserve">
-    <value>导航飞行最大高度(米)</value>
-  </data>
-  <data name="label82.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label82.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label82.Size" type="System.Drawing.Size, System.Drawing">
-    <value>113, 12</value>
-  </data>
-  <data name="label82.Text" xml:space="preserve">
-    <value>航点间最大间距(米)</value>
-  </data>
-  <data name="nMaxAlt.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
-  </data>
-  <data name="nMaxAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 19</value>
-  </data>
-  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>59, 12</value>
-  </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Thr. EXPO</value>
-  </data>
-  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label1.Text" xml:space="preserve">
-    <value>Thr. MID</value>
-  </data>
-  <data name="nTEXPO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 18</value>
-  </data>
-  <data name="nTMID.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nTMID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 18</value>
-  </data>
-  <data name="trackBar_T_EXPO.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="trackBar_T_EXPO.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="trackBar_T_EXPO.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 20</value>
-  </data>
   <data name="trackBar_T_MID.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="trackBar_T_MID.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 20</value>
-  </data>
-  <data name="trackbar_RC_Rate.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="trackbar_RC_Rate.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="trackbar_RC_Rate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 20</value>
-  </data>
-  <data name="label65.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label65.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label65.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="trackbar_RC_Expo.AutoSize" type="System.Boolean, mscorlib">
-    <value>False</value>
   </data>
   <data name="trackbar_RC_Expo.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="trackbar_RC_Expo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>239, 20</value>
-  </data>
-  <data name="nRCRate.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nRCRate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 18</value>
-  </data>
-  <data name="nRCExpo.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nRCExpo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 18</value>
-  </data>
-  <data name="label66.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label66.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label66.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="label66.Text" xml:space="preserve">
-    <value>RC Expo</value>
-  </data>
-  <data name="groupBox12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
-  <data name="groupBox12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>263, 94</value>
-  </data>
-  <data name="groupBox12.Text" xml:space="preserve">
-    <value>Rates/Expo</value>
-  </data>
-  <data name="label50.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label50.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="label50.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label50.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 16</value>
-  </data>
-  <data name="label50.Text" xml:space="preserve">
-    <value>Throttle PID attenuation</value>
-  </data>
-  <data name="label50.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label_sok.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label_sok.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label_sok.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label_sok.Size" type="System.Drawing.Size, System.Drawing">
-    <value>62, 16</value>
-  </data>
-  <data name="label_sok.Text" xml:space="preserve">
-    <value>Yaw RATE</value>
-  </data>
-  <data name="label_sok.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label60.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label60.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="label60.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label60.Size" type="System.Drawing.Size, System.Drawing">
-    <value>94, 16</value>
-  </data>
-  <data name="label60.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="label60.Text" xml:space="preserve">
-    <value>Roll/Pitch RATE</value>
-  </data>
-  <data name="label60.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="nRATE_tpid.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nRATE_tpid.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="nRATE_yaw.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nRATE_yaw.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="nRATE_rp.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nRATE_rp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>170, 16</value>
-  </data>
-  <data name="nRATE_rp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="throttle_expo_control1.TabIndex" type="System.Int32, mscorlib">
-    <value>25</value>
-  </data>
-  <data name="throttle_expo_control1.Text" xml:space="preserve">
-    <value>throttle_expo_control1</value>
-  </data>
-  <data name="rc_expo_control1.Text" xml:space="preserve">
-    <value>rc_expo_control1</value>
-  </data>
-  <data name="tabPageConf.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tabPageConf.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageConf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabPageConf.Text" xml:space="preserve">
-    <value>飞控其他参数调整</value>
-  </data>
-  <data name="lVBatConf.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lVBatConf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lVBatConf.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="lVBatConf.Text" xml:space="preserve">
-    <value>label77</value>
-  </data>
-  <data name="labelvbat.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="labelvbat.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="labelvbat.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="labelvbat.Text" xml:space="preserve">
-    <value>当前电压</value>
-  </data>
-  <data name="groupBox8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 201</value>
-  </data>
-  <data name="groupBox8.Text" xml:space="preserve">
-    <value>油门限制</value>
-  </data>
-  <data name="label58.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label58.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label58.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label58.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 16</value>
-  </data>
-  <data name="label58.Text" xml:space="preserve">
-    <value>最大油门</value>
-  </data>
-  <data name="label58.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lMaxThr.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lMaxThr.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lMaxThr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 17</value>
-  </data>
-  <data name="lMaxThr.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 16</value>
-  </data>
-  <data name="label9.Text" xml:space="preserve">
-    <value>最小油门</value>
-  </data>
-  <data name="label9.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label57.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label57.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="label57.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label57.Size" type="System.Drawing.Size, System.Drawing">
-    <value>63, 16</value>
-  </data>
-  <data name="label57.Text" xml:space="preserve">
-    <value>最小命令值</value>
-  </data>
-  <data name="label57.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="nFSThr.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nFSThr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="label59.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label59.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label59.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label59.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 16</value>
-  </data>
-  <data name="label59.Text" xml:space="preserve">
-    <value>失控保护油门</value>
-  </data>
-  <data name="label59.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="nMinThr.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nMinThr.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="lMinCommand.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lMinCommand.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="lMinCommand.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lMinCommand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 17</value>
-  </data>
-  <data name="lMinCommand.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBox7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>249, 78</value>
-  </data>
-  <data name="groupBox7.Text" xml:space="preserve">
-    <value>时间统计 (PLog)</value>
-  </data>
-  <data name="label62.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label62.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label62.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label62.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 16</value>
-  </data>
-  <data name="label62.Text" xml:space="preserve">
-    <value>飞行时间 (解锁)</value>
-  </data>
-  <data name="label62.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lLife.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lLife.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="lLife.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lLife.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 17</value>
-  </data>
-  <data name="lLife.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label61.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label61.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label61.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label61.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 46</value>
-  </data>
-  <data name="label61.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 16</value>
-  </data>
-  <data name="label61.Text" xml:space="preserve">
-    <value>解锁飞行总时间</value>
-  </data>
-  <data name="label61.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="lArms.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="lArms.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
   </data>
   <data name="lArms.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lArms.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 17</value>
-  </data>
-  <data name="lArms.Text" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="groupBox6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 142</value>
-  </data>
-  <data name="groupBox6.Text" xml:space="preserve">
-    <value>电池监控</value>
-  </data>
-  <data name="label68.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label68.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label68.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 16</value>
-  </data>
-  <data name="label68.Text" xml:space="preserve">
-    <value>电池初始电压</value>
-  </data>
-  <data name="label68.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="nPAlarm.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nPAlarm.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="nVBatWarn2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nVBatWarn2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 16</value>
-  </data>
-  <data name="label8.Text" xml:space="preserve">
-    <value>电池功率告警</value>
-  </data>
-  <data name="label8.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="nVBatWarn1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nVBatWarn1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="label63.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label63.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label63.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="label63.Text" xml:space="preserve">
-    <value>电池耗尽临界电压</value>
-  </data>
-  <data name="label63.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="nVBatScale.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nVBatScale.Size" type="System.Drawing.Size, System.Drawing">
-    <value>73, 18</value>
-  </data>
-  <data name="label64.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label64.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
   </data>
   <data name="label64.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label64.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 16</value>
-  </data>
-  <data name="label64.Text" xml:space="preserve">
-    <value>第二级告警电压</value>
-  </data>
-  <data name="label64.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="label67.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label67.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 8.25pt, style=Bold</value>
-  </data>
   <data name="label67.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label67.Size" type="System.Drawing.Size, System.Drawing">
-    <value>85, 16</value>
-  </data>
-  <data name="label67.Text" xml:space="preserve">
-    <value>第一级告警电压</value>
-  </data>
-  <data name="label67.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleRight</value>
-  </data>
-  <data name="groupBox5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>390, 78</value>
-  </data>
-  <data name="groupBox5.Text" xml:space="preserve">
-    <value>磁偏角</value>
-  </data>
-  <data name="cbMagSign.Size" type="System.Drawing.Size, System.Drawing">
-    <value>74, 20</value>
-  </data>
-  <data name="linkLabel1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="linkLabel1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="linkLabel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>293, 12</value>
-  </data>
-  <data name="linkLabel1.Text" xml:space="preserve">
-    <value>磁偏角参考网站  http://magnetic-declination.com/</value>
-  </data>
-  <data name="nMagDeg.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="nMagDeg.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
-  </data>
-  <data name="label49.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="label49.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9.75pt, style=Bold</value>
-  </data>
   <data name="label49.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label49.Size" type="System.Drawing.Size, System.Drawing">
-    <value>39, 19</value>
-  </data>
-  <data name="label49.Text" xml:space="preserve">
-    <value>(0.0)</value>
-  </data>
-  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 12</value>
-  </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>度</value>
-  </data>
-  <data name="label48.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label48.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label48.Size" type="System.Drawing.Size, System.Drawing">
-    <value>17, 12</value>
-  </data>
-  <data name="label48.Text" xml:space="preserve">
-    <value>分</value>
-  </data>
-  <data name="nMagMin.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="nMagMin.Size" type="System.Drawing.Size, System.Drawing">
-    <value>42, 23</value>
-  </data>
-  <data name="groupBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>678, 270</value>
-  </data>
-  <data name="groupBox4.Text" xml:space="preserve">
-    <value>舵机设置</value>
-  </data>
-  <data name="nSrvRate4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
   </data>
   <data name="label56.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label56.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 12</value>
-  </data>
-  <data name="label56.Text" xml:space="preserve">
-    <value>Max</value>
-  </data>
-  <data name="cbSrvRev1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSrvRev1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSrvRev1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label55.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label55.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label55.Location" type="System.Drawing.Point, System.Drawing">
-    <value>505, 16</value>
-  </data>
-  <data name="label55.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="label55.Text" xml:space="preserve">
-    <value>Middle</value>
-  </data>
-  <data name="cbSrvRev2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSrvRev2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSrvRev2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label54.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label54.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label54.Size" type="System.Drawing.Size, System.Drawing">
-    <value>23, 12</value>
-  </data>
-  <data name="label54.Text" xml:space="preserve">
-    <value>Min</value>
-  </data>
-  <data name="cbSrvRev3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSrvRev3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSrvRev3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 99</value>
-  </data>
-  <data name="cbSrvRev3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label53.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label53.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label53.Location" type="System.Drawing.Point, System.Drawing">
-    <value>347, 16</value>
-  </data>
-  <data name="label53.Size" type="System.Drawing.Size, System.Drawing">
-    <value>29, 12</value>
-  </data>
-  <data name="label53.Text" xml:space="preserve">
-    <value>Rate</value>
-  </data>
-  <data name="cbSrvRev4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSrvRev4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSrvRev4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
   </data>
   <data name="label52.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label52.Size" type="System.Drawing.Size, System.Drawing">
-    <value>47, 12</value>
-  </data>
-  <data name="label52.Text" xml:space="preserve">
-    <value>Reverse</value>
-  </data>
-  <data name="cbSrvRev5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSrvRev5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSrvRev5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="label51.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label51.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label51.Size" type="System.Drawing.Size, System.Drawing">
-    <value>53, 12</value>
-  </data>
-  <data name="label51.Text" xml:space="preserve">
-    <value>Function</value>
-  </data>
-  <data name="cbSrvRev6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSrvRev6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSrvRev6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>215, 182</value>
-  </data>
-  <data name="cbSrvRev6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="nSrvMax8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMax8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="cbSrvRev7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cbSrvRev7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbSrvRev7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="nSrvMax7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMax7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
   <data name="cbSrvRev8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSrvRev8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>15, 14</value>
-  </data>
-  <data name="nSrvMax6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMax6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvID1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvID1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 44</value>
-  </data>
-  <data name="lSrvID1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="lSrvID1.Text" xml:space="preserve">
-    <value>Servo1</value>
-  </data>
-  <data name="nSrvMax5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMax5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvID2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvID2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="lSrvID2.Text" xml:space="preserve">
-    <value>Servo2</value>
-  </data>
-  <data name="nSrvMax4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMax4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvID3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvID3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="lSrvID3.Text" xml:space="preserve">
-    <value>Servo3</value>
-  </data>
-  <data name="nSrvMax3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMax3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvID4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvID4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 127</value>
-  </data>
-  <data name="lSrvID4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="lSrvID4.Text" xml:space="preserve">
-    <value>Servo4</value>
-  </data>
-  <data name="nSrvMax2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvID5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvID5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="lSrvID5.Text" xml:space="preserve">
-    <value>Servo5</value>
-  </data>
-  <data name="nSrvMax1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMax1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvID6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvID6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="lSrvID6.Text" xml:space="preserve">
-    <value>Servo6</value>
-  </data>
-  <data name="nSrvMid8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvID7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvID7.Text" xml:space="preserve">
-    <value>Servo7</value>
-  </data>
-  <data name="nSrvMid7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvID8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvID8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvID8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>41, 12</value>
-  </data>
-  <data name="lSrvID8.Text" xml:space="preserve">
-    <value>Servo8</value>
-  </data>
-  <data name="nSrvMid6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvName1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvName1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName1.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMid5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvName3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvName3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName3.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMid4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvName2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvName2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName2.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMid3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvName4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvName4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName4.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMid2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvName5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvName5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName5.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMid1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMid1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvName6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvName6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName6.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMin8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMin8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="lSrvName7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="lSrvName7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName7.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMin7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMin7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="lSrvName8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="lSrvName8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="lSrvName8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>233, 12</value>
-  </data>
-  <data name="lSrvName8.Text" xml:space="preserve">
-    <value>--------------------------------------</value>
-  </data>
-  <data name="nSrvMin6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>338, 42</value>
-  </data>
-  <data name="nSrvRate1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
-  </data>
-  <data name="nSrvMin5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMin5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="nSrvRate2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
-  </data>
-  <data name="nSrvMin4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMin4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="nSrvRate3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
-  </data>
-  <data name="nSrvMin3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvMin3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="nSrvRate5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
-  </data>
-  <data name="nSrvMin2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>68, 22</value>
-  </data>
-  <data name="nSrvRate6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
-  </data>
-  <data name="nSrvMin1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 23</value>
-  </data>
-  <data name="nSrvRate8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
-  <data name="nSrvRate8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 22</value>
-  </data>
-  <data name="tabPageRC.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageRC.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabPageRC.Text" xml:space="preserve">
-    <value>飞行模式配置</value>
-  </data>
-  <data name="label5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 12</value>
-  </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>遥控实时数据</value>
-  </data>
-  <data name="label4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>209, 12</value>
-  </data>
-  <data name="label4.Text" xml:space="preserve">
-    <value>橙色边框表示，该配置还没有写入飞控</value>
-  </data>
-  <data name="rci_Control_settings.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="rci_Control_settings.Text" xml:space="preserve">
-    <value>rc_input_control2</value>
-  </data>
-  <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>37, 20</value>
-  </data>
-  <data name="tabSensorGraph.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabSensorGraph.Text" xml:space="preserve">
-    <value>传感器曲线图</value>
-  </data>
-  <data name="tabPageVideo.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabPageVideo.Text" xml:space="preserve">
-    <value>视频记录</value>
-  </data>
-  <data name="l_capture_file.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="l_capture_file.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_capture_file.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 12</value>
-  </data>
-  <data name="l_capture_file.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="tabPageSettings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabPageSettings.Text" xml:space="preserve">
-    <value>软件界面配置</value>
-  </data>
-  <data name="groupBox9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>193, 205</value>
-  </data>
-  <data name="groupBox9.Text" xml:space="preserve">
-    <value>软件语音配置</value>
-  </data>
-  <data name="label42.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label42.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label42.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 12</value>
-  </data>
-  <data name="label42.Text" xml:space="preserve">
-    <value>语音读取周期</value>
-  </data>
-  <data name="comboSpeakInterval.Items3" xml:space="preserve">
-    <value>60s</value>
-  </data>
-  <data name="comboSpeakInterval.Items4" xml:space="preserve">
-    <value>90s</value>
-  </data>
-  <data name="comboSpeakInterval.Location" type="System.Drawing.Point, System.Drawing">
-    <value>20, 144</value>
-  </data>
-  <data name="comboSpeakInterval.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
   <data name="cbSpeakDist.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSpeakDist.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 16</value>
-  </data>
-  <data name="cbSpeakDist.Text" xml:space="preserve">
-    <value>读出距起飞点距离</value>
-  </data>
-  <data name="cbSpeakAlt.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cbSpeakAlt.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbSpeakAlt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="cbSpeakAlt.TabIndex" type="System.Int32, mscorlib">
-    <value>35</value>
-  </data>
-  <data name="cbSpeakBattery.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cbSpeakBattery.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cbSpeakBattery.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="cbGUISpeechEnabled.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cbGUISpeechEnabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cbGUISpeechEnabled.Size" type="System.Drawing.Size, System.Drawing">
-    <value>96, 16</value>
-  </data>
-  <data name="cbGUISpeechEnabled.Text" xml:space="preserve">
-    <value>开启语音提醒</value>
-  </data>
-  <data name="cbCellcount.Items7" xml:space="preserve">
-    <value>8s</value>
-  </data>
-  <data name="cbCellcount.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 20</value>
-  </data>
   <data name="label70.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label70.Size" type="System.Drawing.Size, System.Drawing">
-    <value>215, 12</value>
-  </data>
-  <data name="label70.Text" xml:space="preserve">
-    <value>电池串联数量（12V是3s，你懂的。。）</value>
-  </data>
-  <data name="l_i2cdatasupress.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="l_i2cdatasupress.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_i2cdatasupress.Location" type="System.Drawing.Point, System.Drawing">
-    <value>164, 50</value>
-  </data>
-  <data name="l_i2cdatasupress.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 12</value>
-  </data>
   <data name="b_check_update.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_check_update.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 22</value>
-  </data>
-  <data name="b_check_update.Text" xml:space="preserve">
-    <value>检查更新</value>
-  </data>
-  <data name="b_select_settings_folder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 12pt, style=Bold</value>
   </data>
   <data name="b_select_settings_folder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="b_select_settings_folder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 26</value>
-  </data>
-  <data name="b_select_settings_folder.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
   <data name="l_Settings_folder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_Settings_folder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 19</value>
-  </data>
-  <data name="l_Settings_folder.Text" xml:space="preserve">
-    <value>C:\Hello world\kisfaszom</value>
-  </data>
-  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label27.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 12</value>
-  </data>
-  <data name="label27.Text" xml:space="preserve">
-    <value>配置文件保存目录</value>
-  </data>
-  <data name="groupBox11.TabIndex" type="System.Int32, mscorlib">
-    <value>23</value>
-  </data>
-  <data name="groupBox11.Text" xml:space="preserve">
-    <value>日志数据</value>
-  </data>
-  <data name="cb_Log10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_Log10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_Log10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>54, 16</value>
-  </data>
-  <data name="cb_Log10.Text" xml:space="preserve">
-    <value>Debug</value>
-  </data>
-  <data name="cb_Log9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_Log9.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_Log9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 16</value>
-  </data>
-  <data name="cb_Log9.Text" xml:space="preserve">
-    <value>循环周期, I2C错误, 电池</value>
-  </data>
-  <data name="cb_Log8.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_Log8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_Log8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log8.Text" xml:space="preserve">
-    <value>GPS数据</value>
-  </data>
-  <data name="cb_Log7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_Log7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_Log7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="cb_Log7.Text" xml:space="preserve">
-    <value>舵机数据</value>
-  </data>
-  <data name="cb_Log6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_Log6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_Log6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="cb_Log6.Text" xml:space="preserve">
-    <value>马达数据</value>
-  </data>
-  <data name="cb_Log5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_Log5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_Log5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 16</value>
-  </data>
-  <data name="cb_Log5.Text" xml:space="preserve">
-    <value>遥控的AUX通道数据</value>
-  </data>
-  <data name="cb_Log4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_Log4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_Log4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>15, 86</value>
-  </data>
-  <data name="cb_Log4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 16</value>
-  </data>
-  <data name="cb_Log4.Text" xml:space="preserve">
-    <value>遥控数据</value>
-  </data>
-  <data name="cb_Log3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_Log3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_Log3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>108, 16</value>
-  </data>
-  <data name="cb_Log3.Text" xml:space="preserve">
-    <value>磁力计和气压计</value>
-  </data>
-  <data name="cb_Log2.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
   <data name="cb_Log2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cb_Log2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 16</value>
-  </data>
-  <data name="cb_Log2.Text" xml:space="preserve">
-    <value>姿态数据 (Roll, Pitch)</value>
-  </data>
-  <data name="cb_Log1.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_Log1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_Log1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="cb_Log1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>120, 16</value>
-  </data>
-  <data name="cb_Log1.Text" xml:space="preserve">
-    <value>原始的传感器数据</value>
-  </data>
   <data name="b_save_gui_settings.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_save_gui_settings.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 37</value>
-  </data>
-  <data name="b_save_gui_settings.Text" xml:space="preserve">
-    <value>保存配置</value>
-  </data>
-  <data name="cb_Logging_enabled.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="cb_Logging_enabled.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="cb_Logging_enabled.Size" type="System.Drawing.Size, System.Drawing">
-    <value>156, 16</value>
-  </data>
-  <data name="cb_Logging_enabled.Text" xml:space="preserve">
-    <value>连接飞控后开始记录日志</value>
-  </data>
-  <data name="b_select_capture_folder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 12pt, style=Bold</value>
-  </data>
   <data name="b_select_capture_folder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="b_select_capture_folder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 26</value>
-  </data>
-  <data name="b_select_capture_folder.Text" xml:space="preserve">
-    <value>...</value>
   </data>
   <data name="l_Capture_folder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="l_Capture_folder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 19</value>
-  </data>
-  <data name="l_Capture_folder.Text" xml:space="preserve">
-    <value>C:\Hello world\kisfaszom</value>
-  </data>
   <data name="label24.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="label24.Text" xml:space="preserve">
-    <value>视频录制文件保存目录</value>
-  </data>
-  <data name="b_select_log_folder.Font" type="System.Drawing.Font, System.Drawing">
-    <value>微软雅黑, 12pt, style=Bold</value>
   </data>
   <data name="b_select_log_folder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="b_select_log_folder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>38, 26</value>
-  </data>
-  <data name="b_select_log_folder.Text" xml:space="preserve">
-    <value>...</value>
-  </data>
-  <data name="b_select_log_folder.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>TopCenter</value>
-  </data>
   <data name="l_LogFolder.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="l_LogFolder.Size" type="System.Drawing.Size, System.Drawing">
-    <value>492, 19</value>
-  </data>
-  <data name="l_LogFolder.Text" xml:space="preserve">
-    <value>C:\Hello world\kisfaszom</value>
-  </data>
-  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
   </data>
   <data name="label20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
-  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 12</value>
-  </data>
-  <data name="label20.Text" xml:space="preserve">
-    <value>日志存放目录</value>
-  </data>
-  <data name="tabPageCLI.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tabPageCLI.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1048, 444</value>
-  </data>
-  <data name="tabPageCLI.Text" xml:space="preserve">
-    <value>CLI</value>
-  </data>
-  <data name="gbTerminal.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1030, 431</value>
-  </data>
-  <data name="gbTerminal.Text" xml:space="preserve">
-    <value>Terminal</value>
-  </data>
-  <data name="cmdCLISend.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
   <data name="cmdCLISend.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
-  </data>
-  <data name="cmdCLISend.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 22</value>
-  </data>
-  <data name="txtCLICommand.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Left, Right</value>
-  </data>
-  <data name="txtCLICommand.Size" type="System.Drawing.Size, System.Drawing">
-    <value>931, 21</value>
-  </data>
-  <data name="txtCLIResult.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="txtCLIResult.Multiline" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="txtCLIResult.ScrollBars" type="System.Windows.Forms.ScrollBars, System.Windows.Forms">
-    <value>Both</value>
-  </data>
-  <data name="txtCLIResult.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1018, 379</value>
-  </data>
-  <data name="txtCLIResult.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="toolStrip1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="toolStrip1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 54</value>
-  </data>
-  <data name="toolStrip1.Text" xml:space="preserve">
-    <value>toolStrip1</value>
-  </data>
-  <data name="toolStripLabel1.Text" xml:space="preserve">
-    <value>串口</value>
-  </data>
-  <data name="toolStripLabel2.Text" xml:space="preserve">
-    <value>速率</value>
-  </data>
-  <data name="b_connect.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_connect.Text" xml:space="preserve">
-    <value>连接</value>
-  </data>
-  <data name="b_connect.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_read_settings.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_read_settings.Text" xml:space="preserve">
-    <value>读取配置</value>
-  </data>
-  <data name="b_read_settings.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_write_settings.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_write_settings.Text" xml:space="preserve">
-    <value>写入配置</value>
-  </data>
-  <data name="b_write_settings.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_reset.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_reset.Text" xml:space="preserve">
-    <value>恢复默认配置</value>
-  </data>
-  <data name="b_reset.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_load_from_file.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_load_from_file.Text" xml:space="preserve">
-    <value>从文件加载配置</value>
-  </data>
-  <data name="b_load_from_file.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_write_to_file.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_write_to_file.Text" xml:space="preserve">
-    <value>保存配置到文件</value>
-  </data>
-  <data name="b_write_to_file.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_log.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_log.Text" xml:space="preserve">
-    <value>开始记录日志</value>
-  </data>
-  <data name="b_log.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_start_KML_log.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_start_KML_log.Text" xml:space="preserve">
-    <value>开始记录卫星日志</value>
-  </data>
-  <data name="b_start_KML_log.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="b_log_browser.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_log_browser.Text" xml:space="preserve">
-    <value>日志浏览</value>
-  </data>
-  <data name="b_about.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="b_about.Text" xml:space="preserve">
-    <value>关于</value>
-  </data>
-  <data name="b_about.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
   </data>
   <data name="bDebugWindws.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4134,27 +881,6 @@
         kx0g8BTA3aZlButjSTyjODq/WcQcW/B/Je4OQhLvKQDnzN1mp0nnkvAhR8VuMzNrpm1mpjgkoVwB/v8D
         TgDQASA1MVpwzwAAAABJRU5ErkJggg==
 </value>
-  </data>
-  <data name="bDebugWindws.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
-    <value>Magenta</value>
-  </data>
-  <data name="bDebugWindws.Text" xml:space="preserve">
-    <value>调试</value>
-  </data>
-  <data name="bDebugWindws.TextImageRelation" type="System.Windows.Forms.TextImageRelation, System.Windows.Forms">
-    <value>ImageAboveText</value>
-  </data>
-  <data name="bDebugWindws.ToolTipText" xml:space="preserve">
-    <value>Debug Window</value>
-  </data>
-  <data name="dataGridViewImageColumn2.HeaderText" xml:space="preserve">
-    <value />
-  </data>
-  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1056, 524</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
@@ -4734,11 +1460,5 @@
         d4KAgIDzhIWF/IGBgf6Ghob+iYmJ/o6Ojv6ZmZn8lZSU8pmZmYL///8A////AP///wDgBwAAwAMAAIAB
         AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAgAEAAMADAADgBwAA
 </value>
-  </data>
-  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
-    <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>WinGUI</value>
   </data>
 </root>

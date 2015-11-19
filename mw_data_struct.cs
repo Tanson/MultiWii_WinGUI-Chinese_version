@@ -39,7 +39,7 @@ namespace MultiWiiWinGUI
 
         public byte max_wp_number { get; set; }
         public ushort wp_radius { get; set; }
-
+        public bool GpsCorrect { get; set; }
         public bool speech_enabled { get; set; }
         public bool announce_alt_enabled { get; set; }
         public bool announce_vbat_enabled { get; set; }
@@ -61,6 +61,7 @@ namespace MultiWiiWinGUI
             iSoftwareVersion = 23;
             bEnableLogging = false;
             iMapProviderSelectedIndex = 1;  //Bing Map
+            GpsCorrect = false;
             speech_enabled = true;
             announce_alt_enabled = false;
             announce_dist_enabled = false;
@@ -123,7 +124,7 @@ namespace MultiWiiWinGUI
             tw.WriteStartElement("MAX_WP_NUMBER value=\"" + max_wp_number + "\""); tw.WriteEndElement();
             tw.WriteStartElement("WP_RADIUS value=\"" +  wp_radius + "\""); tw.WriteEndElement();
 
-
+            tw.WriteStartElement("GpsCorrect value=\"" + GpsCorrect + "\""); tw.WriteEndElement();
             tw.WriteEndElement();
 
             tw.WriteEndDocument();
@@ -167,10 +168,14 @@ namespace MultiWiiWinGUI
                             if (String.Compare(reader.Name, "lognav", true) == 0 && reader.HasAttributes) { logGnav = Convert.ToBoolean(reader.GetAttribute("value")); }
                             if (String.Compare(reader.Name, "logpar", true) == 0 && reader.HasAttributes) { logGpar = Convert.ToBoolean(reader.GetAttribute("value")); }
                             if (String.Compare(reader.Name, "logdbg", true) == 0 && reader.HasAttributes) { logGdbg = Convert.ToBoolean(reader.GetAttribute("value")); }
+                            
+                            if (String.Compare(reader.Name, "GpsCorrect", true) == 0 && reader.HasAttributes) { GpsCorrect = Convert.ToBoolean(reader.GetAttribute("value")); }
+
 
                             if (String.Compare(reader.Name, "mapprovider", true) == 0 && reader.HasAttributes) { iMapProviderSelectedIndex  = Convert.ToInt16(reader.GetAttribute("value")); }
                             if (String.Compare(reader.Name, "max_wp_number", true) == 0 && reader.HasAttributes) { max_wp_number = Convert.ToByte(reader.GetAttribute("value")); }
                             if (String.Compare(reader.Name, "wp_radius", true) == 0 && reader.HasAttributes) { wp_radius = Convert.ToUInt16(reader.GetAttribute("value")); }
+                            
                             if (String.Compare(reader.Name, "speech_enabled", true) == 0 && reader.HasAttributes) { speech_enabled = Convert.ToBoolean(reader.GetAttribute("value")); }
 
                             if (String.Compare(reader.Name, "announce_alt", true) == 0 && reader.HasAttributes) { announce_alt_enabled = Convert.ToBoolean(reader.GetAttribute("value")); }

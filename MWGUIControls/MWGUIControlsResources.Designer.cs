@@ -411,6 +411,150 @@ namespace MultiWiiWinGUI.MWGUIControls {
         }
         
         /// <summary>
+        ///   查找类似 请输入所需的高度变化（正负值） 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_body {
+            get {
+                return ResourceManager.GetString("mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_body", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 变更高度 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_title {
+            get {
+                return ResourceManager.GetString("mainGUI_bulkAltitudeChangeToolStripMenuItem_Click_Message_title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 圆的飞行方向（- 1或1） 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_Directionin {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_Directionin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 圆上生成的点（最小5，最大30） 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_Pointsin {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_Pointsin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 半径（最小20米） 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_RadiusIn {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_RadiusIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 位置 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_位置 {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_位置", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 半径 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_半径 {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_半径", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 无效半径 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_无效半径 {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_无效半径", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 无效的位置点 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_无效的位置点 {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_无效的位置点", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 无效的方向数据 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_createCircleToolStripMenuItem_Click_无效的方向数据 {
+            get {
+                return ResourceManager.GetString("mainGUI_createCircleToolStripMenuItem_Click_无效的方向数据", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 电压{0}伏。 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_timer_announce_Tick_Speek_Bat {
+            get {
+                return ResourceManager.GetString("mainGUI_timer_announce_Tick_Speek_Bat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 距返回点 {0} 米。 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_timer_announce_Tick_Speek_GPS_distanceToHome {
+            get {
+                return ResourceManager.GetString("mainGUI_timer_announce_Tick_Speek_GPS_distanceToHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 电压低！ 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_timer_announce_Tick_Speek_LowBat {
+            get {
+                return ResourceManager.GetString("mainGUI_timer_announce_Tick_Speek_LowBat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 航点错误, 请重新选择. 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_tsMenuDeleteWP_Click_航点错误__请重新选择_提示 {
+            get {
+                return ResourceManager.GetString("mainGUI_tsMenuDeleteWP_Click_航点错误__请重新选择_提示", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 设置航向 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_tsMenuSetHead_Click_设置航向 {
+            get {
+                return ResourceManager.GetString("mainGUI_tsMenuSetHead_Click_设置航向", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   查找类似 设置飞行器的航向位置 (0-360度) -1标示清除航向控制 的本地化字符串。
+        /// </summary>
+        public static string mainGUI_tsMenuSetHead_Click_设置飞行器的航向位置 {
+            get {
+                return ResourceManager.GetString("mainGUI_tsMenuSetHead_Click_设置飞行器的航向位置", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
         public static System.Drawing.Bitmap Maquette_Avion {

@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!--MultiWiiWinGUI, Version 2.3.5797.27773-->
+<!--MultiWiiWinGUI, Version 2.3.5801.23921-->
 <!--GUI Settings-->
 <!--Do not change this file manually, unless you know what are you doing-->
 <PARAMETERS>
@@ -20,7 +20,7 @@
     <LOGNAV value="True" />
     <LOGPAR value="True" />
     <LOGDBG value="False" />
-    <MAPPROVIDER value="17" />
+    <MAPPROVIDER value="27" />
     <SPEECH_ENABLED value="True" />
     <ANNOUNCE_ALT value="False" />
     <ANNOUNCE_VBAT value="True" />

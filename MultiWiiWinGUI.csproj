@@ -193,6 +193,9 @@
     <Compile Include="log_downloader.Designer.cs">
       <DependentUpon>log_downloader.cs</DependentUpon>
     </Compile>
+    <Compile Include="Module\BaiDuMapCorrect.cs" />
+    <Compile Include="Module\EvilTransform.cs" />
+    <Compile Include="Module\GpsCorrect.cs" />
     <Compile Include="Module\HUD.cs" />
     <Compile Include="MWGUIControls\altitude_meter.cs">
       <SubType>Component</SubType>
