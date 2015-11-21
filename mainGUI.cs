@@ -305,6 +305,8 @@ namespace MultiWiiWinGUI
             MainMap.Manager.Mode = AccessMode.ServerAndCache;
 
             MainMap.Position = GetChinesePoint(copterPos);
+            
+
             //MainMap.Position = copterPos;
 
             Pen penRoute = new Pen(Color.Yellow, 3);
@@ -1748,6 +1750,7 @@ namespace MultiWiiWinGUI
                         lng = 0;
                         lat = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
                         lng = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+
                         point = GetChinesePoint(lat / 10000000, lng / 10000000);
                         mw_gui.GPS_poshold_lat = (int)(point.Lat * 10000000);
                         mw_gui.GPS_poshold_lon = (int)(point.Lng * 10000000);
@@ -1759,8 +1762,12 @@ namespace MultiWiiWinGUI
                     {
                         mission_step.wp_number = wp_no;
                         mission_step.action = inBuf[ptr++];
-                        mission_step.lat = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
-                        mission_step.lon = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        lat = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        lng = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
+                        point = GetChinesePoint(lat / 10000000, lng / 10000000);
+
+                        mission_step.lat = (int)(point.Lat * 10000000);
+                        mission_step.lon = (int)(point.Lng * 10000000);
                         mission_step.altitude = BitConverter.ToInt32(inBuf, ptr); ptr += 4;
                         mission_step.p1 = BitConverter.ToInt16(inBuf, ptr); ptr += 2;
                         mission_step.p2 = BitConverter.ToInt16(inBuf, ptr); ptr += 2;
@@ -4618,11 +4625,11 @@ namespace MultiWiiWinGUI
         }
 
         //Temporary implementation to 
-        private void sendWPToMultiWii(SerialPort serialport, int wp_number, byte action, double lat, double lon, int alt, int p1,int p2, int p3, byte flag)  
+        private void sendWPToMultiWii(SerialPort serialport, int wp_number, byte action, double lat2, double lon2, int alt, int p1,int p2, int p3, byte flag)  
         {
-            var point = GetGpsPoint(lat, lon);
-            lat = point.Lat;
-            lon = point.Lng;
+            var point = GetGpsPoint(lat2, lon2);
+            double lat = point.Lat;
+            double lon = point.Lng;
 
             byte[] buffer = new byte[250];          //this must be long enough
             int bptr = 0;                           //buffer pointer
@@ -5048,11 +5055,16 @@ namespace MultiWiiWinGUI
                 //In this case the waypoint reload will be successfull, but data comes from pervious mission
 
                 //Check wp_action and lat/lon to make it sure
-                if ((mission_step.action != action) || (mission_step.lat != (int)(Math.Round(lat * 10000000))) || (mission_step.lon != (int)(Math.Round(lon * 10000000))))
+                if ((mission_step.action != action))
                 {
-                    MessageBox.Show("上传失败 - 可能发生通信错误\r\n请检查飞控，调试线路后再重试.", "上传错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    qStatus = WP_Query.Error;
-                    break;
+                    var point = GetChinesePoint(mission_step.lat, mission_step.lon);
+                    if ((point.Lat != (int) (Math.Round(lat*10000000))) ||
+                        (point.Lng != (int) (Math.Round(lon*10000000))))
+                    {
+                        MessageBox.Show("上传失败 - 可能发生通信错误\r\n请检查飞控，调试线路后再重试.", "上传错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        qStatus = WP_Query.Error;
+                        break;
+                    }
                 }
             }
             if (qStatus == WP_Query.OK)
